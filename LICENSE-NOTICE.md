@@ -1,7 +1,13 @@
-# Licensing status
+# Licensing
 
-This repository is publicly readable, but **no explicit reuse license has yet been selected**.
+Modern Objectivity documentation, guidelines, examples, and templates in this repository are licensed under the **GNU General Public License, version 2 only (GPL-2.0-only)**.
 
-Public visibility does not itself grant permission to redistribute, adapt, or commercially reuse the documentation, examples, or templates. The owner should select an appropriate license before promoting the material as freely reusable by third parties.
+Read the complete license in [LICENSE](LICENSE).
 
-Documentation and future software assets may require different license choices. No particular Creative Commons or software license is implied.
+The GPL permits copying, modification, and redistribution under its terms. Anyone redistributing or adapting the covered material must comply with the GPL, including applicable notices and source-availability obligations.
+
+**Version selection:** GPL version **2 only**, not “version 2 or any later version.”
+
+Third-party materials, if any are incorporated in the future, may have separate copyright and license notices; review those before redistribution.
+
+SPDX-License-Identifier: GPL-2.0-only
