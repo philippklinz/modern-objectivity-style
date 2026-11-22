@@ -74,6 +74,6 @@ See [the full principles and evaluation questions](docs/03-principles.md).
 
 **Version:** 0.1.0-draft. This is an initial standalone handbook, not an external certification or proof of successful testing. Specific implementations must validate their own choices.
 
-This repository is publicly accessible, but a reuse license has **not yet been selected**. See [LICENSE-NOTICE.md](LICENSE-NOTICE.md).
+This repository's documentation, examples and templates are licensed under the **GNU General Public License version 2 only (GPL-2.0-only)**. See the full [LICENSE](LICENSE) and [licensing notes](LICENSE-NOTICE.md).
 
 [Contributing](CONTRIBUTING.md) · [Project guidelines](guides/adoption.md)
