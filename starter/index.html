@@ -128,7 +128,7 @@
  $("search").addEventListener("input",render);
  $("mode").addEventListener("change",render);
  $("clear").addEventListener("click",()=>{if(!samples.length)return;if(!confirm("Remove all synthetic observations from this session?"))return;samples.length=0;render();window.MODemo?.toast("Observations cleared.");});
- $("save-settings").addEventListener("click",()=>{window.MODemo?.toast("Configuration saved for this page session.");});
+ $("save-settings").addEventListener("click",()=>{const name=$("name").value.trim(); if(!name){$("name").setAttribute("aria-invalid","true"); $("name").focus(); return;} $("name").removeAttribute("aria-invalid"); document.querySelector(".mo-content h1").firstChild.nodeValue=name; document.querySelector(".mo-topbar-path strong").textContent=name.toUpperCase(); document.title=name+" / Modern Objectivity Starter";window.MODemo?.toast("Experiment name updated for this page session.");});
  $("export").addEventListener("click",()=>{
    const meta=$("include-meta").checked;
    const csv=(meta?"id,value,source\n":"id,value\n")+samples.map(s=>s.id+","+s.value.toFixed(3)+(meta?","+s.source:"")).join("\n")+"\n";
