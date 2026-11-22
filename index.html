@@ -181,7 +181,7 @@ try{var m=localStorage.getItem("mo-theme");if(m==="dark"||m==="light")document.d
       <section class="mo-section" id="data">
         <div class="mo-section-head"><div><span class="mo-kicker">03 / Data</span><h2>Designed for actual information.</h2><p>Tables, figures, metadata, real units and accessible filters. The example data are explicitly simulated.</p></div><span class="mo-tag">FILTERABLE DATA</span></div>
         <div class="mo-grid mo-grid-3">
-          <div class="mo-card"><div class="mo-stat"><span class="mo-stat-label">Sample rate</span><span class="mo-stat-value">24.0 <small style="font-size:14px">Hz</small></span><span class="mo-stat-foot">CONFIGURED / SIMULATED</span></div></div>
+          <div class="mo-card"><div class="mo-stat"><span class="mo-stat-label">Measurement range</span><span class="mo-stat-value">1.6 <small style="font-size:14px">°C</small></span><span class="mo-stat-foot">SIMULATED / MAX − MIN</span></div></div>
           <div class="mo-card"><div class="mo-stat"><span class="mo-stat-label">Average value</span><span class="mo-stat-value">23.6 <small style="font-size:14px">°C</small></span><span class="mo-stat-foot">6 DATA POINTS</span></div></div>
           <div class="mo-card"><div class="mo-stat"><span class="mo-stat-label">State</span><span class="mo-stat-value" style="font-size:28px">Ready</span><span class="mo-stat-foot">GENERATED DATASET</span></div></div>
         </div>
@@ -192,9 +192,9 @@ try{var m=localStorage.getItem("mo-theme");if(m==="dark"||m==="light")document.d
               <svg viewBox="0 0 510 240" role="img" aria-label="Simulated temperature readings from 22.7 to 24.3 degrees Celsius over six samples">
                 <g><path class="mo-chart-grid" d="M48 35H486M48 90H486M48 145H486M48 200H486"/><path class="mo-chart-grid" d="M48 35V200M136 35V200M224 35V200M312 35V200M400 35V200M486 35V200"/></g>
                 <g class="mo-chart-label"><text x="10" y="38">25°C</text><text x="10" y="93">24°C</text><text x="10" y="148">23°C</text><text x="10" y="203">22°C</text><text x="48" y="225">00</text><text x="135" y="225">01</text><text x="222" y="225">02</text><text x="310" y="225">03</text><text x="398" y="225">04</text><text x="481" y="225" text-anchor="end">05</text></g>
-                <path class="mo-chart-area" d="M48 162 L136 123 L224 140 L312 101 L400 74 L486 57 L486 200 L48 200Z"/>
-                <path class="mo-chart-line" d="M48 162 L136 123 L224 140 L312 101 L400 74 L486 57"/>
-                <g fill="var(--mo-accent)" stroke="var(--mo-surface)" stroke-width="2"><circle cx="48" cy="162" r="5"/><circle cx="136" cy="123" r="5"/><circle cx="224" cy="140" r="5"/><circle cx="312" cy="101" r="5"/><circle cx="400" cy="74" r="5"/><circle cx="486" cy="57" r="5"/></g>
+                <path class="mo-chart-area" d="M48 162 L136 123 L224 140 L312 101 L400 84.5 L486 73.5 L486 200 L48 200Z"/>
+                <path class="mo-chart-line" d="M48 162 L136 123 L224 140 L312 101 L400 84.5 L486 73.5"/>
+                <g fill="var(--mo-accent)" stroke="var(--mo-surface)" stroke-width="2"><circle cx="48" cy="162" r="5"/><circle cx="136" cy="123" r="5"/><circle cx="224" cy="140" r="5"/><circle cx="312" cy="101" r="5"/><circle cx="400" cy="84.5" r="5"/><circle cx="486" cy="73.5" r="5"/></g>
               </svg>
             </div>
             <div class="meta-foot" style="margin-top:11px"><span>SOURCE / GENERATED</span><span>UNITS / °C</span><span>TIME / SAMPLE INDEX</span></div>
