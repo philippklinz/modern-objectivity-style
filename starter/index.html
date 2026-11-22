@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="A ready-to-copy laboratory app shell using the Modern Objectivity practical CSS style.">
+<title>New Laboratory / Modern Objectivity Starter</title>
+<link rel="stylesheet" href="modern-objectivity.css">
+<style>
+  .starter-figure {height:190px;position:relative;background:var(--mo-surface-2);overflow:hidden;border:1px solid var(--mo-border);border-radius:8px}
+  .starter-figure svg {width:100%;height:100%;display:block}
+  .starter-sample-list td,.starter-sample-list th {padding:11px 13px}
+  .starter-empty {padding:28px;text-align:center;color:var(--mo-muted);font-size:13px}
+</style>
+<script>try{const t=localStorage.getItem("mo-theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t;}catch(_){}</script>
+<script defer src="demo.js"></script>
+</head>
+<body>
+<div class="mo-shell">
+ <aside class="mo-sidebar">
+   <a class="mo-brand" href="#home"><span class="mo-brand-mark" aria-hidden="true">L·</span><span>LABORATORY<br>ZERO<small>Starter / v0.1</small></span></a>
+   <nav aria-label="Laboratory navigation">
+     <div class="mo-nav-group"><div class="mo-nav-title">Workspace</div><div class="mo-nav"><a href="#home" aria-current="page">Overview</a><a href="#observations">Observations</a><a href="#configuration">Configuration</a></div></div>
+     <div class="mo-nav-group"><div class="mo-nav-title">About this starter</div><div class="mo-nav"><a href="#notes">Implementation notes</a></div></div>
+   </nav>
+   <div class="mo-sidebar-foot">A REUSABLE APP SHELL.<br>NO BACKEND REQUIRED.<br><br>GPL-2.0-only</div>
+ </aside>
+ <main class="mo-main" id="home">
+   <header class="mo-topbar">
+     <div class="mo-topbar-path">LABS / <strong>LABORATORY ZERO</strong> / OBSERVATIONS</div>
+     <div class="mo-topbar-actions"><span id="global-state" class="mo-badge mo-badge-success">Ready</span><button class="mo-btn mo-btn-sm" data-theme-toggle aria-pressed="false">◐ Dark mode</button></div>
+   </header>
+   <div class="mo-content">
+     <section style="margin-bottom:30px">
+       <span class="mo-kicker">Project / 00 — Replace with your lab title</span>
+       <div class="mo-between mo-wrap" style="align-items:end">
+         <div><h1 style="font-size:clamp(2.2rem,4vw,3.8rem);margin-bottom:10px">Laboratory zero<span class="mo-mark">.</span></h1><p class="mo-lead" style="margin-bottom:0">A minimal scientific workspace to adapt for your own experiment. Its controls, states, data and layout are real HTML.</p></div>
+         <button class="mo-btn mo-btn-primary mo-btn-lg" id="record">+ Generate observation</button>
+       </div>
+     </section>
+     <div class="mo-note" style="margin-bottom:17px"><span aria-hidden="true">ⓘ</span><span><strong>Demo mode.</strong> Observations below are synthetic, generated in the browser. Replace <code>simulateObservation()</code> with your actual data pipeline when integrating a lab.</span></div>
+     <div class="mo-grid mo-grid-3" aria-label="Laboratory summary">
+       <div class="mo-card mo-stat"><span class="mo-stat-label">Observations</span><strong class="mo-stat-value" id="stat-count">0</strong><span class="mo-stat-foot">THIS SESSION</span></div>
+       <div class="mo-card mo-stat"><span class="mo-stat-label">Latest value</span><strong class="mo-stat-value" id="stat-latest">—</strong><span class="mo-stat-foot">SIMULATED / UNIT</span></div>
+       <div class="mo-card mo-stat"><span class="mo-stat-label">Collection state</span><strong class="mo-stat-value" style="font-size:26px" id="stat-state">Idle</strong><span class="mo-stat-foot">NO REMOTE STORAGE</span></div>
+     </div>
+
+     <section class="mo-section" id="observations">
+       <div class="mo-section-head"><div><span class="mo-kicker">Dataset / 01</span><h2>Observations</h2><p>A search-ready table with an honest empty state, real values and accessible controls.</p></div><button class="mo-btn mo-btn-sm" id="export">↓ Export CSV</button></div>
+       <div class="mo-grid mo-grid-2" style="margin-bottom:15px">
+         <label class="mo-field"><span class="mo-field-label">Find observation</span><input class="mo-input" id="search" placeholder="OBS-001" aria-controls="table"></label>
+         <label class="mo-field"><span class="mo-field-label">Display mode</span><select class="mo-select" id="mode"><option value="all">All observations</option><option value="high">Values ≥ 50</option><option value="low">Values below 50</option></select></label>
+       </div>
+       <div class="mo-table-wrap">
+         <table id="table" class="mo-table starter-sample-list">
+           <thead><tr><th>Observation</th><th>Source</th><th class="mo-num">Value</th><th>State</th></tr></thead>
+           <tbody id="rows"></tbody>
+         </table>
+         <div class="starter-empty" id="empty">There are no observations yet. Select “Generate observation” to create synthetic data.</div>
+       </div>
+       <p class="mo-small mo-muted" id="results" aria-live="polite" style="margin-top:12px">0 observations</p>
+     </section>
+
+     <section class="mo-section" id="configuration">
+       <div class="mo-section-head"><div><span class="mo-kicker">Settings / 02</span><h2>Experiment configuration</h2><p>The configuration can be edited without breaking the shared app-shell structure.</p></div></div>
+       <div class="mo-grid mo-grid-2">
+         <div class="mo-card mo-stack">
+           <label class="mo-field"><span class="mo-field-label">Experiment name</span><input class="mo-input" id="name" value="Untitled laboratory experiment"></label>
+           <label class="mo-field"><span class="mo-field-label">Local data source</span><select class="mo-select"><option>Demonstration function</option><option disabled>Physical instrumentation (not connected)</option></select><span class="mo-field-help">No real instruments are available in the starter.</span></label>
+           <label class="mo-check"><input type="checkbox" id="include-meta" checked> Include provenance in CSV export</label>
+           <div class="mo-between mo-wrap"><button class="mo-btn mo-btn-primary" id="save-settings">Save configuration</button><button class="mo-btn mo-btn-danger" id="clear">Clear observations</button></div>
+         </div>
+         <div class="mo-card">
+          <div class="mo-card-head"><h3>Readout specimen</h3><span class="mo-tag">VISUAL COMPONENT</span></div>
+          <div class="starter-figure">
+           <svg viewBox="0 0 500 190" role="img" aria-label="Decorative line illustration representing a test laboratory, not actual measured data">
+             <g stroke="var(--mo-border-strong)" opacity=".5"><path d="M0 45H500M0 95H500M0 145H500"/><path d="M45 0V190M145 0V190M245 0V190M345 0V190M445 0V190"/></g>
+             <path d="M0 130L90 130L120 55L154 160L195 82L240 96L290 72L355 120L400 59L455 100L500 85" fill="none" stroke="var(--mo-accent)" stroke-width="3"/>
+             <circle cx="400" cy="59" r="6" fill="var(--mo-accent-glow)" stroke="var(--mo-text-strong)" stroke-width="2"/>
+           </svg>
+          </div>
+          <p class="mo-small mo-muted" style="margin:12px 0 0">Illustration only — not generated from the observation table. Replace this panel with your own scientifically truthful visualization.</p>
+         </div>
+       </div>
+     </section>
+     <section class="mo-section" id="notes">
+       <div class="mo-section-head"><div><span class="mo-kicker">Development / 03</span><h2>Where to begin</h2><p>This is a starting point, not a framework you must adopt.</p></div></div>
+       <div class="mo-grid mo-grid-3">
+         <div class="mo-panel"><span class="mo-eyebrow">01 / Content</span><h3 style="margin:13px 0">Change the lab</h3><p class="mo-muted">Update the header, entities, table columns and the labels that describe the actual experiment.</p></div>
+         <div class="mo-panel"><span class="mo-eyebrow">02 / Tokens</span><h3 style="margin:13px 0">Style the stage</h3><p class="mo-muted">Override the semantic CSS variables in <code>modern-objectivity.css</code> to create a distinctive visual identity.</p></div>
+         <div class="mo-panel"><span class="mo-eyebrow">03 / Behavior</span><h3 style="margin:13px 0">Connect your data</h3><p class="mo-muted">Replace the local data generator, then test loading, errors, permissions and realistic operating conditions.</p></div>
+       </div>
+     </section>
+     <footer class="mo-between mo-wrap"><span class="mo-small mo-muted mo-mono">LAB / STARTER V0.1 · MODERN OBJECTIVITY</span><a href="README.md">Setup notes</a></footer>
+   </div>
+ </main>
+</div>
+<script>
+(() => {
+ "use strict";
+ const $=id=>document.getElementById(id), samples=[];
+ function simulateObservation(index){return 50 + 20*Math.sin(index*.69)+8*Math.cos(index*1.37);}
+ function addSample(){
+   const i=samples.length+1;
+   samples.push({id:"OBS-"+String(i).padStart(3,"0"),value:simulateObservation(i),source:"local simulation"});
+   render(); window.MODemo?.toast("Synthetic observation created.");
+ }
+ function render(){
+   $("stat-count").textContent=String(samples.length);
+   $("stat-latest").textContent=samples.length?samples.at(-1).value.toFixed(1):"—";
+   $("stat-state").textContent=samples.length?"Ready":"Idle";
+   const q=$("search").value.trim().toLowerCase(),mode=$("mode").value;
+   const visible=samples.filter(s=>s.id.toLowerCase().includes(q)&&(mode==="all"||(mode==="high"?s.value>=50:s.value<50)));
+   const tbody=$("rows");tbody.replaceChildren();
+   for(const s of visible){
+     const tr=document.createElement("tr");
+     const name=document.createElement("td");name.textContent=s.id;
+     const src=document.createElement("td");src.textContent=s.source;
+     const val=document.createElement("td");val.className="mo-num";val.textContent=s.value.toFixed(2);
+     const status=document.createElement("td");
+     const b=document.createElement("span");b.className="mo-badge mo-badge-success";b.textContent="Generated";status.append(b);
+     tr.append(name,src,val,status);tbody.append(tr);
+   }
+   $("empty").hidden=visible.length!==0;
+   $("empty").textContent=!samples.length?"There are no observations yet. Select “Generate observation” to create synthetic data.":"No observations match this filter. Change your search or display mode.";
+   $("results").textContent=visible.length+" of "+samples.length+" observations shown";
+ }
+ $("record").addEventListener("click",addSample);
+ $("search").addEventListener("input",render);
+ $("mode").addEventListener("change",render);
+ $("clear").addEventListener("click",()=>{if(!samples.length)return;if(!confirm("Remove all synthetic observations from this session?"))return;samples.length=0;render();window.MODemo?.toast("Observations cleared.");});
+ $("save-settings").addEventListener("click",()=>{window.MODemo?.toast("Configuration saved for this page session.");});
+ $("export").addEventListener("click",()=>{
+   const meta=$("include-meta").checked;
+   const csv=(meta?"id,value,source\n":"id,value\n")+samples.map(s=>s.id+","+s.value.toFixed(3)+(meta?","+s.source:"")).join("\n")+"\n";
+   const url=URL.createObjectURL(new Blob([csv],{type:"text/csv;charset=utf-8"}));
+   const a=document.createElement("a");a.href=url;a.download="lab-observations.csv";a.click();setTimeout(()=>URL.revokeObjectURL(url),1200);
+   window.MODemo?.toast("CSV export ready.");
+ });
+ render();
+})();
+</script>
+</body>
+</html>

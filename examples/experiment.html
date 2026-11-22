@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A functioning oscillation experiment demonstrating Modern Objectivity: point, line, space and time.">
+<title>Live Experiment / Modern Objectivity</title>
+<link rel="stylesheet" href="../styles/modern-objectivity.css">
+<style>
+ .wave-display{background:var(--mo-surface);border-radius:9px;border:1px solid var(--mo-border);overflow:hidden}
+ .wave-display svg{display:block;width:100%;height:auto;aspect-ratio:760/310}
+ .wave-grid{stroke:var(--mo-border);stroke-width:1}
+ .wave-path{stroke:var(--mo-accent);stroke-width:2.7;fill:none;vector-effect:non-scaling-stroke}
+ .wave-axis{stroke:var(--mo-border-strong);stroke-width:1.4}
+ .wave-probe{stroke:var(--mo-warning);stroke-dasharray:4 5;stroke-width:1.5}
+ .wave-probe-dot{fill:var(--mo-accent-glow);stroke:var(--mo-text-strong);stroke-width:2}
+ .wave-label{fill:var(--mo-muted);font:11px var(--mo-mono)}
+ .wave-values{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}
+ .wave-values>div{border:1px solid var(--mo-border);background:var(--mo-surface-2);border-radius:6px;padding:13px}
+ .wave-values span{display:block;font:10px var(--mo-mono);color:var(--mo-muted);margin-bottom:5px}
+ .wave-values strong{font:700 18px var(--mo-mono);color:var(--mo-text-strong)}
+ .wave-controls{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+ .wave-equation{font:13px/1.8 var(--mo-mono);white-space:normal;word-break:break-word;background:var(--mo-surface-2);padding:16px;border-radius:6px;color:var(--mo-text-strong);border:1px solid var(--mo-border)}
+ @media(max-width:760px){.wave-values,.wave-controls{grid-template-columns:1fr 1fr}}
+ @media(max-width:460px){.wave-values,.wave-controls{grid-template-columns:1fr}}
+</style>
+<script>try{const t=localStorage.getItem("mo-theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t;}catch(_){}</script>
+<script defer src="../styles/demo.js"></script>
+</head>
+<body>
+<div class="mo-shell">
+ <aside class="mo-sidebar">
+  <a class="mo-brand" href="../index.html"><span class="mo-brand-mark" aria-hidden="true">M·</span><span>MODERN<br>OBJECTIVITY<small>Example / Experiment</small></span></a>
+  <nav aria-label="Example navigation">
+   <div class="mo-nav-group"><div class="mo-nav-title">Wave laboratory</div><div class="mo-nav"><a href="#visualization" aria-current="page">Oscillation model</a><a href="#parameters">Parameters</a><a href="#observations">Observations</a></div></div>
+   <div class="mo-nav-group"><div class="mo-nav-title">Explore</div><div class="mo-nav"><a href="../index.html">Style kit ↗</a><a href="lab-console.html">Lab console ↗</a><a href="../starter/index.html">Starter ↗</a></div></div>
+  </nav>
+  <div class="mo-sidebar-foot">MODEL / MATHEMATICAL<br>DATA / GENERATED<br>GPL-2.0-only</div>
+ </aside>
+ <main class="mo-main" id="visualization">
+  <header class="mo-topbar"><div class="mo-topbar-path">EXAMPLES / <strong>INTERACTIVE EXPERIMENT</strong></div><div class="mo-topbar-actions"><span class="mo-badge mo-badge-info">Mathematical model</span><button class="mo-btn mo-btn-sm" data-theme-toggle aria-pressed="false">◐ Dark mode</button></div></header>
+  <div class="mo-content">
+   <section style="margin-bottom:26px">
+     <span class="mo-kicker">Laboratory / 002 — point · line · time</span>
+     <h1 style="font-size:clamp(2.2rem,4vw,3.8rem);margin-bottom:12px">A live, testable model<span class="mo-mark">.</span></h1>
+     <p class="mo-lead">Change amplitude, frequency and phase. The line responds immediately; a movable point lets you inspect its computed value. Time advances only while the model is running.</p>
+   </section>
+   <div class="mo-note" style="margin-bottom:20px"><span aria-hidden="true">ⓘ</span><span><strong>Demonstration, not a physical instrument.</strong> Values are derived from a sinusoidal function. No sensor, network, or experiment dataset is connected.</span></div>
+   <section class="mo-card" aria-label="Interactive wave plot">
+     <div class="mo-card-head">
+       <div class="mo-flex"><h3 style="margin:0">Displacement / normalized space</h3><span id="run-state" class="mo-badge mo-badge-info">Paused</span></div>
+       <div class="mo-flex mo-wrap"><button class="mo-btn mo-btn-primary mo-btn-sm" id="toggle-play" aria-pressed="false">▶ Play</button><button class="mo-btn mo-btn-sm" id="single-step">Step +0.2s</button><button class="mo-btn mo-btn-sm" id="reset">Reset</button></div>
+     </div>
+     <div class="wave-display">
+      <svg id="plot" viewBox="0 0 760 310" role="img" aria-label="Interactive model of a sinusoidal wave across normalized position. The exact probe displacement is displayed directly below.">
+        <g class="wave-grid"><path d="M48 45H727M48 95H727M48 145H727M48 195H727M48 245H727"/><path d="M48 45V245M161 45V245M274 45V245M387 45V245M500 45V245M613 45V245M727 45V245"/></g>
+        <line class="wave-axis" x1="48" y1="145" x2="727" y2="145"/>
+        <path class="wave-path" id="wave" d=""/>
+        <line class="wave-probe" id="probe-line" x1="387" x2="387" y1="45" y2="245"/>
+        <circle class="wave-probe-dot" id="probe-dot" cx="387" cy="145" r="6"/>
+        <g class="wave-label"><text x="13" y="49">+100</text><text x="24" y="149">0</text><text x="18" y="249">−100</text><text x="48" y="275">0.0</text><text x="387" y="275" text-anchor="middle">x/L = 0.5</text><text x="727" y="275" text-anchor="end">1.0</text><text x="387" y="299" text-anchor="middle">NORMALIZED POSITION x/L →</text></g>
+      </svg>
+     </div>
+     <div class="wave-values" style="margin-top:14px">
+       <div><span>TIME / t</span><strong id="time-value">0.00 s</strong></div>
+       <div><span>PROBE / x/L</span><strong id="position-value">0.50</strong></div>
+       <div><span>MODEL VALUE / y</span><strong id="y-value">—</strong></div>
+       <div><span>STATUS</span><strong id="state-value">Paused</strong></div>
+     </div>
+   </section>
+   <section class="mo-section" id="parameters">
+    <div class="mo-section-head"><div><span class="mo-kicker">Configuration / 01</span><h2>Change the system.</h2><p>Every slider changes a real function parameter. The plot and readouts share the same model.</p></div></div>
+    <div class="mo-grid mo-grid-2">
+      <div class="mo-card">
+        <div class="mo-card-head"><h3>Model parameters</h3><span class="mo-tag">LIVE CONTROLS</span></div>
+        <div class="wave-controls">
+         <label class="mo-field"><span class="mo-between"><span class="mo-field-label">Amplitude</span><strong class="mo-mono mo-small" id="amp-value">45</strong></span><input class="mo-range" type="range" id="amplitude" min="5" max="90" step="1" value="45"></label>
+         <label class="mo-field"><span class="mo-between"><span class="mo-field-label">Spatial cycles</span><strong class="mo-mono mo-small" id="freq-value">2.0</strong></span><input class="mo-range" type="range" id="frequency" min="0.5" max="5" step="0.1" value="2"></label>
+         <label class="mo-field"><span class="mo-between"><span class="mo-field-label">Phase angle</span><strong class="mo-mono mo-small" id="phase-value">0°</strong></span><input class="mo-range" type="range" id="phase" min="0" max="360" step="5" value="0"></label>
+         <label class="mo-field"><span class="mo-between"><span class="mo-field-label">Temporal speed</span><strong class="mo-mono mo-small" id="speed-value">1.0×</strong></span><input class="mo-range" type="range" id="speed" min="0.2" max="3" step="0.1" value="1"></label>
+         <label class="mo-field" style="grid-column:1/-1"><span class="mo-between"><span class="mo-field-label">Probe position</span><strong class="mo-mono mo-small" id="probe-value">0.50</strong></span><input class="mo-range" type="range" id="position" min="0" max="1" step="0.01" value="0.5"></label>
+        </div>
+      </div>
+      <div class="mo-card">
+        <div class="mo-card-head"><h3>Model definition</h3><span class="mo-tag">EXPLICIT ASSUMPTIONS</span></div>
+        <div class="wave-equation">y(x,t) = A sin(2π f x + φ − 2π · 0.2 · v · t)</div>
+        <dl style="font-size:13px;line-height:1.7;margin:16px 0 0">
+          <dt class="mo-strong">A — amplitude</dt><dd style="margin:0 0 10px;color:var(--mo-muted)">Output magnitude in abstract model units (not physical displacement).</dd>
+          <dt class="mo-strong">f — spatial cycles</dt><dd style="margin:0 0 10px;color:var(--mo-muted)">Number of cycles across x ∈ [0, 1].</dd>
+          <dt class="mo-strong">φ — phase</dt><dd style="margin:0 0 10px;color:var(--mo-muted)">Starting phase in radians, entered as degrees.</dd>
+          <dt class="mo-strong">v — speed</dt><dd style="margin:0;color:var(--mo-muted)">A visualization rate multiplier; no physical wave speed is inferred.</dd>
+        </dl>
+      </div>
+    </div>
+   </section>
+   <section class="mo-section" id="observations">
+    <div class="mo-section-head"><div><span class="mo-kicker">Interpretation / 02</span><h2>See the relation.</h2><p>Point identifies the probe; line visualizes relations across space; time changes the model. The stage keeps controls and interpretation separate.</p></div></div>
+    <div class="mo-grid mo-grid-3">
+      <div class="mo-card"><span class="mo-eyebrow">POINT</span><h3 style="margin:15px 0 7px">Position</h3><p class="mo-muted">The highlighted point exposes a single computed value at the selected normalized position.</p></div>
+      <div class="mo-card"><span class="mo-eyebrow">LINE + SPACE</span><h3 style="margin:15px 0 7px">Relationship</h3><p class="mo-muted">A continuous line shows the model across space, with axes and a centerline for orientation.</p></div>
+      <div class="mo-card"><span class="mo-eyebrow">TIME</span><h3 style="margin:15px 0 7px">Change</h3><p class="mo-muted">Playback evolves the display. Pause, single-step and reset make the state controllable.</p></div>
+    </div>
+   </section>
+   <footer class="mo-between mo-wrap"><a href="lab-console.html">← Lab console</a><a href="../starter/index.html">Use the starter template →</a></footer>
+  </div>
+ </main>
+</div>
+<script>
+(() => {
+"use strict";
+const $=id=>document.getElementById(id), reduced=window.matchMedia("(prefers-reduced-motion: reduce)");
+let playing=!reduced.matches,modelTime=0,lastFrame=null,frame=null;
+if(reduced.matches){$("run-state").className="mo-badge mo-badge-warning";$("run-state").textContent="Paused · reduced motion";}
+function param(id){return Number($(id).value);}
+function waveAt(x,t){
+ const a=param("amplitude"), f=param("frequency"),p=param("phase")*Math.PI/180,s=param("speed");
+ return a*Math.sin(2*Math.PI*f*x+p-2*Math.PI*0.2*s*t);
+}
+function redraw(){
+ const samples=240,coords=[];
+ for(let i=0;i<=samples;i++){const x=i/samples,y=waveAt(x,modelTime);coords.push([48+679*x,145-y]);}
+ $("wave").setAttribute("d","M"+coords.map(p=>p[0].toFixed(2)+","+p[1].toFixed(2)).join("L"));
+ const x=param("position"),value=waveAt(x,modelTime),px=48+679*x,py=145-value;
+ $("probe-line").setAttribute("x1",px);$("probe-line").setAttribute("x2",px);
+ $("probe-dot").setAttribute("cx",px);$("probe-dot").setAttribute("cy",py);
+ $("time-value").textContent=modelTime.toFixed(2)+" s";
+ $("position-value").textContent=x.toFixed(2);
+ $("probe-value").textContent=x.toFixed(2);
+ $("y-value").textContent=value.toFixed(2);
+ $("amp-value").textContent=String(param("amplitude"));
+ $("freq-value").textContent=param("frequency").toFixed(1);
+ $("phase-value").textContent=param("phase")+"°";
+ $("speed-value").textContent=param("speed").toFixed(1)+"×";
+ $("state-value").textContent=playing?"Running":"Paused";
+ $("run-state").className="mo-badge "+(playing?"mo-badge-success":"mo-badge-info");
+ $("run-state").textContent=playing?"Running":"Paused";
+ $("toggle-play").textContent=playing?"Ⅱ Pause":"▶ Play";
+ $("toggle-play").setAttribute("aria-pressed",String(playing));
+}
+function tick(timestamp){
+ if(!playing)return;
+ if(lastFrame!==null)modelTime+=Math.min((timestamp-lastFrame)/1000,0.05);
+ lastFrame=timestamp;redraw();frame=requestAnimationFrame(tick);
+}
+function setPlay(on){
+ if(playing===on)return;
+ playing=on;lastFrame=null;
+ if(!on&&frame!==null){cancelAnimationFrame(frame);frame=null;}
+ redraw();
+ if(playing)frame=requestAnimationFrame(tick);
+}
+$("toggle-play").addEventListener("click",()=>setPlay(!playing));
+$("single-step").addEventListener("click",()=>{setPlay(false);modelTime+=0.2;redraw();});
+$("reset").addEventListener("click",()=>{setPlay(false);modelTime=0;redraw();});
+for(const id of ["amplitude","frequency","phase","speed","position"])$(id).addEventListener("input",redraw);
+reduced.addEventListener?.("change",e=>{if(e.matches)setPlay(false);});
+document.addEventListener("visibilitychange",()=>{if(document.hidden)setPlay(false);});
+redraw();if(playing)frame=requestAnimationFrame(tick);
+})();
+</script>
+</body>
+</html>

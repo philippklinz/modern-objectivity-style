@@ -1,79 +1,68 @@
-# Modern Objectivity
+# Modern Objectivity / Practical Style Kit
 
-**An independent design language for understandable, testable digital systems.**
+**Actual HTML and CSS for digital laboratories.** Not just a design manifesto.
 
-Modern Objectivity is a reusable methodology for digital interfaces, scientific applications, educational experiments, data-intensive tools, and interactive laboratories. It brings together design reasoning, engineering, human experience, and evidence-based validation.
+[**Open the live style kit →**](https://philippklinz.github.io/modern-objectivity-style/)
 
-> Problem → requirement → design hypothesis → functional prototype → observation → revision.
+## View the style
 
-The language is **not** a visual theme, a corporate identity, or a finished UI component library. It imposes no universal font, color palette, icon style, motion duration, or software framework.
-
-## Handbook
-
-1. [Introduction & Purpose](docs/01-introduction.md)
-2. [Philosophy & Model](docs/02-philosophy.md)
-3. [Fundamental Principles](docs/03-principles.md)
-4. [Visual Language](docs/04-visual-language.md)
-5. [Time & Interaction](docs/05-time-interaction.md)
-6. [Stage & Identity](docs/06-stage-identity.md)
-7. [Technical Principles](docs/07-technical-principles.md)
-8. [Applications & Validation](docs/08-validation.md)
-9. [References & Context](docs/09-references.md)
-
-## Practical guidelines
-
-- [Adopting Modern Objectivity](guides/adoption.md)
-- [Component Patterns](guides/components.md)
-- [Data Visualization](guides/data-visualization.md)
-- [Emotional Intent](guides/emotional-intent.md)
-
-## Worked examples
-
-- [Modular Research Console](examples/modular-research-console.md)
-- [Interactive Learning Laboratory](examples/interactive-learning.md)
-
-These examples describe proposed scenarios and tests, **not completed empirical studies**.
-
-## Reusable templates
-
-- [Design Decision Record](templates/design-decision-record.md)
-- [Component Contract](templates/component-contract.md)
-- [Stage Profile](templates/stage-profile.md)
-- [Validation Plan](templates/validation-plan.md)
-
-## Core vocabulary
-
-**Point** denotes an identifiable element, event, or observation. **Line** denotes a relation, direction, or boundary. **Space** is the arrangement of these relationships. **Time** concerns states, duration, transitions, history, and data freshness.
-
-A **stage** is the designed environment where content and interaction take place; it can be calm, expressive, flat, layered, or spatial. Different stages can follow the same language without looking identical.
-
-**Emotional Intent** is an experience the designer hopes to support. **Subjective Experience** is what an individual actually experiences in context. Emotional effects can be planned and examined but never guaranteed.
-
-**Validation by Design** treats claims about usability, correctness, performance, and experience as hypotheses to investigate through appropriate prototypes and evidence.
-
-## Principles at a glance
-
-| ID | Principle |
+| Live example | What it demonstrates |
 | --- | --- |
-| MO-01 | Purpose before appearance |
-| MO-02 | Honest representation |
-| MO-03 | Consistency of equivalent behavior |
-| MO-04 | Controlled diversity |
-| MO-05 | Reuse before reinvention |
-| MO-06 | Design time and states |
-| MO-07 | Engineering is part of design |
-| MO-08 | Accessibility is foundational |
-| MO-09 | Structure complexity without hiding it |
-| MO-10 | Validate design claims |
-| MO-11 | Make systems explainable |
-| MO-12 | Emotion as Function |
+| [Style showcase](index.html) | Colors, typography, layout, cards, buttons, inputs, states, tables, charts and themes |
+| [Lab console](examples/lab-console.html) | Functional data generation, plotting, filter/search, inspection, CSV export |
+| [Interactive experiment](examples/experiment.html) | Real point–line–time wave model with sliders, play/pause, stepping and probing |
+| [Starter lab](starter/index.html) | Copyable app shell for a new laboratory, with standalone CSS and JavaScript |
 
-See [the full principles and evaluation questions](docs/03-principles.md).
+## Start a laboratory
 
-## Status and licensing
+```sh
+git clone https://github.com/philippklinz/modern-objectivity-style.git
+cp -r modern-objectivity-style/starter my-new-lab
+cd my-new-lab
+python3 -m http.server 8000
+```
 
-**Version:** 0.1.0-draft. This is an initial standalone handbook, not an external certification or proof of successful testing. Specific implementations must validate their own choices.
+Open [http://localhost:8000](http://localhost:8000).
 
-This repository's documentation, examples and templates are licensed under the **GNU General Public License version 2 only (GPL-2.0-only)**. See the full [LICENSE](LICENSE) and [licensing notes](LICENSE-NOTICE.md).
+**No framework, build process or CDN required.** The starter folder includes its own `index.html`, `modern-objectivity.css` and `demo.js`. For implementation details see the [style specification](guides/visual-style-spec.md).
 
-[Contributing](CONTRIBUTING.md) · [Project guidelines](guides/adoption.md)
+## Style in one snippet
+
+```html
+<link rel="stylesheet" href="modern-objectivity.css">
+<div class="mo-card">
+  <span class="mo-eyebrow">LAB / 01</span>
+  <h3>Observation series</h3>
+  <span class="mo-badge mo-badge-success">Ready</span>
+  <button class="mo-btn mo-btn-primary">Run experiment</button>
+</div>
+```
+
+## Design specification
+
+- **Colors:** light canvas, graphite, peacock-teal accents; full light and dark themes with semantic tokens.
+- **Typography:** Liberation Sans / Liberation Mono with system fallbacks.
+- **Layout:** responsive laboratory rail, data panels, 4 px base spacing, deliberate hierarchy.
+- **Components:** actions, inputs, tables, status, progress, tab navigation, charts.
+- **Real demonstrations:** JavaScript behavior and generated values, explicitly marked as simulations.
+- **Customization:** override semantic CSS tokens to develop your lab's own identity.
+
+[Full visual specification](guides/visual-style-spec.md) · [Source CSS](styles/modern-objectivity.css) · [Starter instructions](starter/README.md).
+
+## Design language documentation
+
+The practical style is one **reference implementation** of Modern Objectivity. The framework-neutral reasoning is documented separately:
+
+1. [Introduction](docs/01-introduction.md)
+2. [Philosophy](docs/02-philosophy.md)
+3. [Principles](docs/03-principles.md)
+4. [Visual language](docs/04-visual-language.md)
+5. [Time and interaction](docs/05-time-interaction.md)
+6. [Stage and identity](docs/06-stage-identity.md)
+7. [Technical principles](docs/07-technical-principles.md)
+8. [Validation](docs/08-validation.md)
+9. [References](docs/09-references.md)
+
+The actual lab UI examples intentionally have a **specific aesthetic**. It can be modified without abandoning the design language.
+
+**License:** [GNU GPL version 2 only (GPL-2.0-only)](LICENSE). **Version:** practical style v0.1.0-draft. Verify accessibility and scientific correctness for your real use cases.

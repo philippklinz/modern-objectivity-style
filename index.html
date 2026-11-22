@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="Modern Objectivity: practical, reusable laboratory UI kit with live components and working application examples.">
+<title>Modern Objectivity / Practical Style Kit</title>
+<link rel="stylesheet" href="styles/modern-objectivity.css">
+<style>
+  .demo-type {display:grid;gap:15px;padding:5px 0}
+  .demo-type>div {display:flex;align-items:baseline;gap:19px;flex-wrap:wrap}
+  .demo-type small {color:var(--mo-muted);font:11px var(--mo-mono);width:83px;flex:none}
+  .demo-type .display {font-size:clamp(2.2rem,4vw,3.7rem);font-weight:650;line-height:1.05;letter-spacing:-.065em;color:var(--mo-text-strong)}
+  .demo-type .editorial {font:italic 25px var(--mo-serif);color:var(--mo-text-strong)}
+  .demo-type .technical {font:14px var(--mo-mono);color:var(--mo-accent)}
+  .demo-type .body-sample {font-size:15px;line-height:1.6}
+  .swatch-row {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+  .sample-bars {display:flex;gap:6px;align-items:end;height:76px}
+  .sample-bars i {display:block;flex:1;background:var(--mo-accent);border-radius:3px 3px 0 0;opacity:.55}
+  .sample-bars i:nth-child(2n){opacity:1}
+  .mo-demo-rail {display:flex;gap:10px;align-items:center;padding:12px;background:var(--mo-surface-2);border:1px solid var(--mo-border);border-radius:7px;flex-wrap:wrap}
+  .mo-demo-miniicon {display:grid;place-items:center;width:29px;height:29px;border:1px solid var(--mo-border-strong);border-radius:5px;color:var(--mo-accent);font:700 15px var(--mo-mono)}
+  .mini-lab {display:grid;grid-template-columns:170px minmax(0,1fr);min-height:310px;border:1px solid var(--mo-border);border-radius:9px;overflow:hidden;background:var(--mo-surface)}
+  .mini-lab aside {background:#0b2229;padding:18px;color:#bfd7d7}
+  .mini-lab aside b {color:#e9f9f6;display:block;margin-bottom:20px;font:700 12px var(--mo-mono)}
+  .mini-lab aside span {display:block;font-size:11px;padding:8px 9px;margin:4px 0;border-radius:4px}
+  .mini-lab aside span:first-of-type {color:#74e8d4;background:#1b4346}
+  .mini-lab main {padding:21px;min-width:0}
+  .mini-lab .mo-table {min-width:370px}
+  .mini-lab .mo-table td,.mini-lab .mo-table th {padding:9px 10px}
+  .bar-system {display:flex;gap:8px;align-items:center}
+  .bar-system b {display:block;background:var(--mo-accent);height:9px;border-radius:2px}
+  .meta-foot {display:flex;gap:12px;flex-wrap:wrap;color:var(--mo-muted);font:11px var(--mo-mono)}
+  @media(max-width:760px){.swatch-row{grid-template-columns:repeat(2,minmax(0,1fr))}.mini-lab{grid-template-columns:1fr}.mini-lab aside{display:none}}
+</style>
+<script>
+try{var m=localStorage.getItem("mo-theme");if(m==="dark"||m==="light")document.documentElement.dataset.theme=m;}catch(e){}
+</script>
+<script defer src="styles/demo.js"></script>
+</head>
+<body>
+<div class="mo-shell">
+  <aside class="mo-sidebar">
+    <a class="mo-brand" href="index.html" aria-label="Modern Objectivity home">
+      <span class="mo-brand-mark" aria-hidden="true">M·</span>
+      <span>MODERN<br>OBJECTIVITY<small>Practical style kit / 0.1</small></span>
+    </a>
+    <nav aria-label="Main navigation">
+      <div class="mo-nav-group">
+        <div class="mo-nav-title">01 / System</div>
+        <div class="mo-nav">
+          <a class="is-active" href="#overview">Overview</a>
+          <a href="#foundations">Visual foundations</a>
+          <a href="#components">Components</a>
+          <a href="#data">Data &amp; tables</a>
+          <a href="#interaction">Interaction</a>
+        </div>
+      </div>
+      <div class="mo-nav-group">
+        <div class="mo-nav-title">02 / Applications</div>
+        <div class="mo-nav">
+          <a href="examples/lab-console.html">Lab console ↗</a>
+          <a href="examples/experiment.html">Live experiment ↗</a>
+          <a href="starter/index.html">Starter template ↗</a>
+        </div>
+      </div>
+      <div class="mo-nav-group">
+        <div class="mo-nav-title">03 / Reference</div>
+        <div class="mo-nav">
+          <a href="#implementation">Implement</a>
+          <a href="docs/03-principles.md">Principles ↗</a>
+          <a href="docs/08-validation.md">Validation ↗</a>
+        </div>
+      </div>
+    </nav>
+    <div class="mo-sidebar-foot">DESIGN IS TESTABLE.<br>INTERFACES ARE SYSTEMS.<br><br>GPL-2.0-only</div>
+  </aside>
+  <main class="mo-main" id="overview">
+    <header class="mo-topbar">
+      <div class="mo-topbar-path">STYLE / <strong>REFERENCE IMPLEMENTATION</strong> <span aria-hidden="true">·</span> V0.1</div>
+      <div class="mo-topbar-actions">
+        <span class="mo-badge mo-badge-success">CSS + HTML</span>
+        <button class="mo-btn mo-btn-sm" data-theme-toggle aria-pressed="false">◐ Dark mode</button>
+        <a class="mo-btn mo-btn-primary mo-btn-sm" href="starter/index.html">Use this style ↗</a>
+      </div>
+    </header>
+    <div class="mo-content">
+      <section class="mo-hero" aria-labelledby="hero-heading">
+        <span class="mo-eyebrow">Modern Objectivity / Laboratory UI</span>
+        <h1 id="hero-heading">A style you<br>can <span style="color:#5de6cd">actually use.</span></h1>
+        <p>A concrete visual system for scientific tools and interactive labs. See the typography, colors, components, states and working examples—not just the philosophy.</p>
+        <div class="mo-hero-actions">
+          <a class="mo-btn mo-btn-primary mo-btn-lg" href="examples/lab-console.html">Explore a working lab ↗</a>
+          <a class="mo-btn mo-btn-on-dark mo-btn-lg" href="starter/index.html">Open starter template ↗</a>
+        </div>
+      </section>
+
+      <section class="mo-section" id="foundations">
+        <div class="mo-section-head"><div><span class="mo-kicker">01 / Foundations</span><h2>Structured, not sterile.</h2><p>A practical reference palette, type system and spacing rhythm. Themes can be overridden per lab.</p></div><span class="mo-tag">LIVE THEME</span></div>
+        <div class="mo-grid mo-grid-2">
+          <div class="mo-panel">
+            <div class="mo-card-head"><h3>Color roles</h3><span class="mo-tag">SEMANTIC TOKENS</span></div>
+            <div class="swatch-row">
+              <div class="mo-swatch"><div class="mo-swatch-fill" style="background:#08191e"></div><div class="mo-swatch-caption"><strong>Graphite</strong><code>#08191E</code></div></div>
+              <div class="mo-swatch"><div class="mo-swatch-fill" style="background:#f3f7f7"></div><div class="mo-swatch-caption"><strong>Canvas</strong><code>#F3F7F7</code></div></div>
+              <div class="mo-swatch"><div class="mo-swatch-fill" style="background:#007e77"></div><div class="mo-swatch-caption"><strong>Accent</strong><code>#007E77</code></div></div>
+              <div class="mo-swatch"><div class="mo-swatch-fill" style="background:#49d9c6"></div><div class="mo-swatch-caption"><strong>Active</strong><code>#49D9C6</code></div></div>
+            </div>
+            <p class="mo-small mo-muted" style="margin:15px 0 0">Tokens change with the theme switch. These colors are an example lab skin, not a universal brand palette.</p>
+          </div>
+          <div class="mo-panel">
+            <div class="mo-card-head"><h3>Typography</h3><span class="mo-tag">LIBERATION / FALLBACKS</span></div>
+            <div class="demo-type">
+              <div><small>Display / 60</small><span class="display">Observation.</span></div>
+              <div><small>Editorial / 25</small><span class="editorial">A measurable idea.</span></div>
+              <div><small>System / 14</small><span class="technical">RUN_0028 / ΔT 23.6 °C</span></div>
+              <div><small>Body / 15</small><span class="body-sample">Information stays readable and details remain inspectable.</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="mo-grid mo-grid-4" style="margin-top:16px">
+          <div class="mo-panel"><span class="mo-eyebrow">04 px</span><div style="height:18px;width:4px;background:var(--mo-accent);margin-top:15px"></div><small class="mo-muted">Base spacing unit</small></div>
+          <div class="mo-panel"><span class="mo-eyebrow">08 px</span><div style="height:18px;width:24px;background:var(--mo-accent);margin-top:15px"></div><small class="mo-muted">Tight grouping</small></div>
+          <div class="mo-panel"><span class="mo-eyebrow">16 px</span><div style="height:18px;width:48px;background:var(--mo-accent);margin-top:15px"></div><small class="mo-muted">Default rhythm</small></div>
+          <div class="mo-panel"><span class="mo-eyebrow">32 px</span><div style="height:18px;width:88px;background:var(--mo-accent);margin-top:15px"></div><small class="mo-muted">Section rhythm</small></div>
+        </div>
+      </section>
+
+      <section class="mo-section" id="components">
+        <div class="mo-section-head"><div><span class="mo-kicker">02 / Components</span><h2>Controls with real states.</h2><p>Buttons, inputs, decisions, feedback and navigation—styled and responsive.</p></div><span class="mo-tag">INTERACTIVE</span></div>
+        <div class="mo-grid mo-grid-2">
+          <div class="mo-card">
+            <div class="mo-card-head"><h3>Actions</h3><span class="mo-tag">BUTTONS</span></div>
+            <div class="mo-flex mo-wrap" style="margin:15px 0 23px">
+              <button class="mo-btn mo-btn-primary" data-toast="Measurement saved.">Save experiment</button>
+              <button class="mo-btn" data-toast="Settings opened (demo).">Secondary action</button>
+              <button class="mo-btn mo-btn-quiet" data-toast="More options (demo).">Quiet action</button>
+              <button class="mo-btn mo-btn-danger" data-toast="Delete is disabled in this visual demonstration.">Destructive</button>
+              <button class="mo-btn" disabled>Disabled</button>
+            </div>
+            <div class="mo-demo-rail">
+              <span class="mo-demo-miniicon" aria-hidden="true">◉</span><span class="mo-demo-miniicon" aria-hidden="true">↗</span><span class="mo-demo-miniicon" aria-hidden="true">≡</span>
+              <span class="mo-badge mo-badge-success">Ready</span><span class="mo-badge mo-badge-warning">Pending</span><span class="mo-badge mo-badge-danger">Error</span>
+            </div>
+          </div>
+          <div class="mo-card">
+            <div class="mo-card-head"><h3>Input and choice</h3><span class="mo-tag">FORMS</span></div>
+            <div class="mo-grid mo-grid-2" style="margin-top:12px">
+              <label class="mo-field"><span class="mo-field-label">Experiment name</span><input class="mo-input" value="Calibration run A" aria-label="Experiment name"></label>
+              <label class="mo-field"><span class="mo-field-label">Data source</span><select class="mo-select" aria-label="Data source"><option>Simulated readings</option><option>Recorded readings</option></select></label>
+            </div>
+            <div class="mo-between mo-wrap" style="margin-top:20px">
+              <label class="mo-check"><input type="checkbox" checked> Include metadata</label>
+              <label class="mo-switch"><input type="checkbox" id="preview-live-toggle" checked> Live preview</label>
+            </div>
+            <span class="mo-field-help" style="display:block;margin-top:16px">Labels remain visible. Focus is not conveyed by color alone.</span>
+          </div>
+        </div>
+        <div class="mo-grid mo-grid-2" style="margin-top:16px">
+          <div class="mo-panel">
+            <div class="mo-card-head"><h3>Status messages</h3><span class="mo-tag">FEEDBACK</span></div>
+            <div class="mo-stack">
+              <div class="mo-note"><strong>Info</strong> This simulation uses generated values, not instrument measurements.</div>
+              <div class="mo-note mo-note-warning"><strong>Warning</strong> The last reading may be out of date.</div>
+              <div class="mo-note mo-note-danger"><strong>Error</strong> A data request failed. Retrying is available.</div>
+            </div>
+          </div>
+          <div class="mo-panel">
+            <div class="mo-card-head"><h3>States are not interchangeable</h3><span class="mo-tag">STATE MODEL</span></div>
+            <div class="mo-stack">
+              <div class="mo-between"><span>Ready</span><span class="mo-badge mo-badge-success">Data available</span></div>
+              <div class="mo-between"><span>Loading</span><span class="mo-badge mo-badge-info">Processing</span></div>
+              <div class="mo-between"><span>No results</span><span class="mo-badge">Change filters</span></div>
+              <div class="mo-between"><span>Denied</span><span class="mo-badge mo-badge-danger">No access</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mo-section" id="data">
+        <div class="mo-section-head"><div><span class="mo-kicker">03 / Data</span><h2>Designed for actual information.</h2><p>Tables, figures, metadata, real units and accessible filters. The example data are explicitly simulated.</p></div><span class="mo-tag">FILTERABLE DATA</span></div>
+        <div class="mo-grid mo-grid-3">
+          <div class="mo-card"><div class="mo-stat"><span class="mo-stat-label">Sample rate</span><span class="mo-stat-value">24.0 <small style="font-size:14px">Hz</small></span><span class="mo-stat-foot">CONFIGURED / SIMULATED</span></div></div>
+          <div class="mo-card"><div class="mo-stat"><span class="mo-stat-label">Average value</span><span class="mo-stat-value">23.6 <small style="font-size:14px">°C</small></span><span class="mo-stat-foot">6 DATA POINTS</span></div></div>
+          <div class="mo-card"><div class="mo-stat"><span class="mo-stat-label">State</span><span class="mo-stat-value" style="font-size:28px">Ready</span><span class="mo-stat-foot">GENERATED DATASET</span></div></div>
+        </div>
+        <div class="mo-grid mo-grid-2" style="margin-top:16px">
+          <div class="mo-card">
+            <div class="mo-card-head"><h3>Temperature / six samples</h3><span class="mo-badge mo-badge-info">Simulation</span></div>
+            <div class="mo-chart">
+              <svg viewBox="0 0 510 240" role="img" aria-label="Simulated temperature readings from 22.7 to 24.3 degrees Celsius over six samples">
+                <g><path class="mo-chart-grid" d="M48 35H486M48 90H486M48 145H486M48 200H486"/><path class="mo-chart-grid" d="M48 35V200M136 35V200M224 35V200M312 35V200M400 35V200M486 35V200"/></g>
+                <g class="mo-chart-label"><text x="10" y="38">25°C</text><text x="10" y="93">24°C</text><text x="10" y="148">23°C</text><text x="10" y="203">22°C</text><text x="48" y="225">00</text><text x="135" y="225">01</text><text x="222" y="225">02</text><text x="310" y="225">03</text><text x="398" y="225">04</text><text x="481" y="225" text-anchor="end">05</text></g>
+                <path class="mo-chart-area" d="M48 162 L136 123 L224 140 L312 101 L400 74 L486 57 L486 200 L48 200Z"/>
+                <path class="mo-chart-line" d="M48 162 L136 123 L224 140 L312 101 L400 74 L486 57"/>
+                <g fill="var(--mo-accent)" stroke="var(--mo-surface)" stroke-width="2"><circle cx="48" cy="162" r="5"/><circle cx="136" cy="123" r="5"/><circle cx="224" cy="140" r="5"/><circle cx="312" cy="101" r="5"/><circle cx="400" cy="74" r="5"/><circle cx="486" cy="57" r="5"/></g>
+              </svg>
+            </div>
+            <div class="meta-foot" style="margin-top:11px"><span>SOURCE / GENERATED</span><span>UNITS / °C</span><span>TIME / SAMPLE INDEX</span></div>
+          </div>
+          <div class="mo-card">
+            <div class="mo-card-head"><h3>Measurement log</h3><span class="mo-tag">SEARCH + STATE</span></div>
+            <label class="mo-field" style="margin-bottom:14px"><span class="mo-field-label">Filter sample ID</span><input id="sample-filter" class="mo-input" placeholder="Example: S-003" aria-controls="sample-table" autocomplete="off"></label>
+            <div class="mo-table-wrap">
+              <table class="mo-table" id="sample-table"><thead><tr><th>Sample</th><th class="mo-num">Value</th><th>Status</th></tr></thead>
+              <tbody>
+                <tr data-id="S-001"><td><strong>S-001</strong></td><td class="mo-num">22.7 °C</td><td><span class="mo-badge mo-badge-success">Valid</span></td></tr>
+                <tr data-id="S-002"><td><strong>S-002</strong></td><td class="mo-num">23.4 °C</td><td><span class="mo-badge mo-badge-success">Valid</span></td></tr>
+                <tr data-id="S-003"><td><strong>S-003</strong></td><td class="mo-num">23.1 °C</td><td><span class="mo-badge mo-badge-success">Valid</span></td></tr>
+                <tr data-id="S-004"><td><strong>S-004</strong></td><td class="mo-num">23.8 °C</td><td><span class="mo-badge mo-badge-success">Valid</span></td></tr>
+                <tr data-id="S-005"><td><strong>S-005</strong></td><td class="mo-num">24.1 °C</td><td><span class="mo-badge mo-badge-success">Valid</span></td></tr>
+                <tr data-id="S-006"><td><strong>S-006</strong></td><td class="mo-num">24.3 °C</td><td><span class="mo-badge mo-badge-success">Valid</span></td></tr>
+              </tbody></table>
+            </div>
+            <p class="mo-small mo-muted" id="sample-count" aria-live="polite" style="margin:12px 0 0">6 of 6 samples shown</p>
+            <p class="mo-small mo-muted" id="sample-no-results" hidden>No matches. Clear the filter to see all samples.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mo-section" id="interaction">
+        <div class="mo-section-head"><div><span class="mo-kicker">04 / Interaction</span><h2>Inspect every state.</h2><p>Components are defined by their behavior, not just their resting appearance.</p></div><span class="mo-tag">KEYBOARD OPERABLE</span></div>
+        <div class="mo-grid mo-grid-2">
+          <div class="mo-card">
+            <div class="mo-card-head"><h3>Tabs</h3><span class="mo-tag">ARROW KEYS</span></div>
+            <div class="mo-tabs" role="tablist" aria-label="Example content tabs">
+              <button class="mo-tab" role="tab" id="tab-dataset" aria-controls="pane-dataset" aria-selected="true" tabindex="0">Dataset</button>
+              <button class="mo-tab" role="tab" id="tab-method" aria-controls="pane-method" aria-selected="false" tabindex="-1">Method</button>
+              <button class="mo-tab" role="tab" id="tab-output" aria-controls="pane-output" aria-selected="false" tabindex="-1">Output</button>
+            </div>
+            <div id="pane-dataset" role="tabpanel" aria-labelledby="tab-dataset" tabindex="0"><strong>Dataset:</strong> six generated readings, labeled in degrees Celsius. No claim of physical measurement.</div>
+            <div id="pane-method" role="tabpanel" aria-labelledby="tab-method" tabindex="0" hidden><strong>Method:</strong> deterministic sample values used for design validation, not scientific inference.</div>
+            <div id="pane-output" role="tabpanel" aria-labelledby="tab-output" tabindex="0" hidden><strong>Output:</strong> a visible chart and table with matching values, units, and source notes.</div>
+          </div>
+          <div class="mo-card">
+            <div class="mo-card-head"><h3>Feedback</h3><span class="mo-tag">CONTROL</span></div>
+            <label class="mo-field" for="load-range"><span class="mo-field-label">Simulated task completion</span><input type="range" class="mo-range" id="load-range" min="0" max="100" step="5" value="70"></label>
+            <div class="mo-meter" style="margin-top:17px"><div class="mo-meter-label"><span>Progress</span><strong id="load-number">70%</strong></div><div class="mo-progress" role="progressbar" id="load-progress" aria-label="Simulated task completion" aria-valuemin="0" aria-valuemax="100" aria-valuenow="70"><span id="load-bar" style="width:70%"></span></div></div>
+            <div class="mo-between" style="margin-top:19px"><span id="load-status" class="mo-badge mo-badge-info">In progress</span><button class="mo-btn mo-btn-sm" id="reset-progress">Reset</button></div>
+            <p class="mo-small mo-muted" style="margin:14px 0 0">This slider is a demonstrative control; no background task is running.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mo-section" id="implementation">
+        <div class="mo-section-head"><div><span class="mo-kicker">05 / Use in a real project</span><h2>Copy it. Extend it. Test it.</h2><p>The components above share one stylesheet with the examples below. No frameworks or build chain.</p></div></div>
+        <div class="mo-grid mo-grid-3">
+          <article class="mo-card mo-stack">
+            <span class="mo-eyebrow">Example / 01</span><div class="sample-bars" aria-hidden="true"><i style="height:20%"></i><i style="height:68%"></i><i style="height:44%"></i><i style="height:80%"></i><i style="height:55%"></i><i style="height:95%"></i><i style="height:58%"></i></div>
+            <h3>Lab console</h3><p class="mo-muted">Run simulations, filter records and inspect log states in a realistic technical dashboard.</p><a class="mo-btn mo-btn-primary" href="examples/lab-console.html">Open console ↗</a>
+          </article>
+          <article class="mo-card mo-stack">
+            <span class="mo-eyebrow">Example / 02</span><svg viewBox="0 0 220 76" width="100%" height="76" aria-hidden="true"><path d="M0 38H220" stroke="var(--mo-border)" stroke-width="1"/><path d="M0 38 C15 0 25 0 40 38 S65 76 80 38 S105 0 120 38 S145 76 160 38 S185 0 200 38 S210 76 220 38" stroke="var(--mo-accent)" fill="none" stroke-width="2.5"/></svg>
+            <h3>Interactive experiment</h3><p class="mo-muted">Explore amplitude, frequency and phase in a functioning point–line–time visualization.</p><a class="mo-btn mo-btn-primary" href="examples/experiment.html">Open experiment ↗</a>
+          </article>
+          <article class="mo-card mo-stack">
+            <span class="mo-eyebrow">Starter / 00</span><div class="mo-demo-rail" style="height:76px" aria-hidden="true"><span class="mo-demo-miniicon">≡</span><span class="mo-badge mo-badge-info">Configured</span><span class="mo-tag">LAB / NEW</span></div>
+            <h3>Starter template</h3><p class="mo-muted">A minimal lab page with navigation, real semantic controls and local tokens ready to adapt.</p><a class="mo-btn mo-btn-primary" href="starter/index.html">Open template ↗</a>
+          </article>
+        </div>
+        <div class="mo-panel" style="margin-top:16px">
+          <h3>Use the stylesheet</h3>
+          <pre class="mo-code">&lt;link rel="stylesheet" href="modern-objectivity.css"&gt;
+
+&lt;div class="mo-card"&gt;
+  &lt;span class="mo-eyebrow"&gt;LAB / 01&lt;/span&gt;
+  &lt;h3&gt;Live measurements&lt;/h3&gt;
+  &lt;span class="mo-badge mo-badge-success"&gt;Ready&lt;/span&gt;
+  &lt;button class="mo-btn mo-btn-primary"&gt;Run&lt;/button&gt;
+&lt;/div&gt;</pre>
+          <p class="mo-small mo-muted" style="margin:13px 0 0">Use <code>styles/modern-objectivity.css</code>. For a standalone copy, see <code>starter/</code>. The JavaScript file drives demo interactions only; the CSS is independent.</p>
+        </div>
+      </section>
+
+      <footer class="mo-between mo-wrap" style="padding:30px 0 0">
+        <span class="mo-small mo-muted mo-mono">MODERN OBJECTIVITY / PRACTICAL STYLE KIT / GPL-2.0-only</span>
+        <div class="mo-flex"><a href="docs/01-introduction.md">Design language</a><a href="https://github.com/philippklinz/modern-objectivity-style">Source code ↗</a></div>
+      </footer>
+    </div>
+  </main>
+</div>
+<script>
+(() => {
+ const filter = document.getElementById("sample-filter");
+ const count = document.getElementById("sample-count");
+ const missing = document.getElementById("sample-no-results");
+ const rows = [...document.querySelectorAll("#sample-table tbody tr")];
+ filter.addEventListener("input", () => {
+   const query = filter.value.trim().toLowerCase();
+   let shown=0;
+   rows.forEach(r => {const visible = r.dataset.id.toLowerCase().includes(query); r.hidden = !visible; if(visible) shown++;});
+   missing.hidden=shown!==0;
+   count.textContent=shown+" of "+rows.length+" samples shown";
+ });
+ const range=document.getElementById("load-range"), number=document.getElementById("load-number");
+ const bar=document.getElementById("load-bar"), progress=document.getElementById("load-progress"), status=document.getElementById("load-status");
+ function redraw(){
+  const v=Number(range.value);number.textContent=v+"%";bar.style.width=v+"%";progress.setAttribute("aria-valuenow",String(v));
+  status.className="mo-badge "+(v===100?"mo-badge-success":"mo-badge-info");
+  status.textContent=v===100?"Completed":v===0?"Not started":"In progress";
+ }
+ range.addEventListener("input",redraw);
+ document.getElementById("reset-progress").addEventListener("click",()=>{range.value=0;redraw();});
+})();
+</script>
+</body>
+</html>
