@@ -152,7 +152,7 @@ try{var m=localStorage.getItem("mo-theme");if(m==="dark"||m==="light")document.d
             </div>
             <div class="mo-between mo-wrap" style="margin-top:20px">
               <label class="mo-check"><input type="checkbox" checked> Include metadata</label>
-              <label class="mo-switch"><input type="checkbox" id="preview-live-toggle" checked> Live preview</label>
+              <label class="mo-switch"><input type="checkbox" id="preview-live-toggle" checked> Show sample chart</label>
             </div>
             <span class="mo-field-help" style="display:block;margin-top:16px">Labels remain visible. Focus is not conveyed by color alone.</span>
           </div>
@@ -282,6 +282,8 @@ try{var m=localStorage.getItem("mo-theme");if(m==="dark"||m==="light")document.d
 </div>
 <script>
 (() => {
+ const preview=document.getElementById("preview-live-toggle");
+ preview.addEventListener("change",()=>{document.querySelector("#data .mo-chart").hidden=!preview.checked;});
  const filter = document.getElementById("sample-filter");
  const count = document.getElementById("sample-count");
  const missing = document.getElementById("sample-no-results");
