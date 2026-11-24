@@ -32,7 +32,7 @@ async function main(){
    document.querySelector('#mo-language-bar')?.getAttribute('aria-busy')==='false'||document.querySelector('#localized-demo')?.getAttribute('aria-busy')==='false'),code);
   const change=async code=>{await page.locator('#mo-language,#language').selectOption(code);await ready(code);};
   const selected=sourceOnly?languages.filter(item=>item.code==='en'):languages;
-  let combinations=0;
+  let combinations=0; const layoutIssues=[];
   for(const [module,info] of Object.entries(pages)){
    await page.setViewportSize({width:1280,height:900});
    await page.goto(base+'/'+info.page+'?keep=1');await ready();
@@ -40,7 +40,11 @@ async function main(){
     await change(code);
     for(const width of [390,1280]){
      await page.setViewportSize({width,height:900});
-     assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth+1),`${module}/${code}: overflow at ${width}`);
+     if(!await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth+1)){
+      const overflow=await page.evaluate(()=>[...document.body.querySelectorAll('*')].filter(node=>{const r=node.getBoundingClientRect();return r.width&&r.right>innerWidth+1;}).slice(0,12).map(node=>({tag:node.tagName,id:node.id,class:node.className,left:Math.round(node.getBoundingClientRect().left),width:Math.round(node.getBoundingClientRect().width),text:node.textContent.slice(0,60)})));
+      layoutIssues.push(`${module}/${code}: overflow at ${width}: ${JSON.stringify(overflow)}`);
+      if(process.env.MO_I18N_SCREENSHOT_DIR){await fs.mkdir(process.env.MO_I18N_SCREENSHOT_DIR,{recursive:true});await page.screenshot({path:path.join(process.env.MO_I18N_SCREENSHOT_DIR,`overflow-${module}-${code}-${width}.png`),fullPage:true});}
+     }
      assert.equal(await page.locator('html').getAttribute('lang'),code);
      assert.equal(new URL(page.url()).searchParams.get('keep'),'1');
      const rawSlots=await page.locator('body').innerText();
@@ -49,6 +53,7 @@ async function main(){
     }
    }
   }
+  assert.deepEqual(layoutIssues,[],'Page layout issues');
   assert.deepEqual(errors,[],'Uncaught page errors');assert.deepEqual(badRequests,[],'Missing local assets');
   const target=sourceOnly?'en':'de';
   await page.goto(base+'/examples/lab-console.html');await ready();

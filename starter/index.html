@@ -128,7 +128,9 @@
  }
  function renderCustomName(){
    if(customExperimentName===null)return;
-   document.querySelector(".mo-content h1").firstChild.nodeValue=customExperimentName;
+   const heading=document.querySelector(".mo-content h1"),mark=heading.querySelector(".mo-mark");
+   heading.replaceChildren(document.createTextNode(customExperimentName));
+   if(mark)heading.append(mark);
    document.querySelector(".mo-topbar-path strong").textContent=customExperimentName.toLocaleUpperCase(document.documentElement.lang);
    document.title=window.MOSite.t("starter.title",{name:customExperimentName});
  }
