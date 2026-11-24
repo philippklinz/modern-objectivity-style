@@ -1,6 +1,6 @@
 # 03 — Fundamental Principles
 
-The following rules are a proposed, reviewable set. Each principle should be applied in the context of actual tasks and verified with appropriate evidence.
+The following principles guide implementation and review. Apply them to actual tasks and verify their implementation with appropriate evidence. MO-13 defines the required language-coverage baseline; partial implementation must be identified explicitly.
 
 | ID | Principle | Practical review question |
 | --- | --- | --- |
@@ -16,6 +16,7 @@ The following rules are a proposed, reviewable set. Each principle should be app
 | **MO-10** | **Validate design claims.** Test hypotheses and document what was actually observed. | What evidence supports the claim? |
 | **MO-11** | **Make systems explainable.** Communicate state, causes, and consequences. | Can someone tell what the system does and why? |
 | **MO-12** | **Emotion as Function.** Consider emotional and aesthetic effects as legitimate goals, not assured results. | Is the intended experience supported and ethically appropriate? |
+| **MO-13** | **Language is part of access.** Provide complete user-facing journeys in all 24 official EU languages, with honest coverage status. | Can people understand the content, operate the interface and receive feedback in their selected language? |
 
 ## Applying the rules
 
@@ -26,6 +27,8 @@ The following rules are a proposed, reviewable set. Each principle should be app
 **Realism:** A mockup cannot demonstrate keyboard handling, resilience to long identifiers, performance, or successful error recovery.
 
 **Accessibility:** Test keyboard navigation, visible focus, semantic labels, magnification, and alternatives to pointer-only interactions.
+
+**Language access:** Design translations, plural forms, flexible layouts and state-preserving language changes from the start. Follow [Multilingual Access](10-multilingual-access.md), the central requirement, and the [working programming pattern](../guides/multilingual-pattern.md). A phased rollout must not be advertised as complete 24-language support.
 
 **Validation:** A design can be attractive and still fail its task; a successful task can still feel stressful. System performance, behavior, and subjective reports are different evidence sources.
 

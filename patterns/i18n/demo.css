@@ -1,0 +1,24 @@
+/* Stage-specific layout. Reference CSS remains unchanged. GPL-2.0-only. */
+.pattern-wrap{max-width:1120px;margin:auto;padding:clamp(20px,5vw,64px);min-width:0}
+.pattern-header{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:48px}
+.pattern-header a{font:12px var(--mo-mono)}
+.pattern-title{font-size:clamp(38px,6vw,72px);letter-spacing:-.055em;line-height:1.06;margin:16px 0 22px;max-width:840px}
+.pattern-intro{max-width:740px;font-size:17px;color:var(--mo-muted);line-height:1.7}
+.pattern-demo{margin-block:36px;padding:clamp(18px,3vw,32px);border:1px solid var(--mo-border);background:var(--mo-surface);border-radius:var(--mo-radius);min-width:0}
+.pattern-demo-head{display:flex;align-items:start;justify-content:space-between;flex-wrap:wrap;gap:24px;margin-bottom:24px}
+.pattern-demo-head>div{flex:1;min-width:0}.pattern-demo-head h2{font-size:28px;margin-bottom:8px;overflow-wrap:anywhere;hyphens:auto}
+.pattern-demo-head .mo-field{width:min(100%,240px);flex:none}
+.pattern-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px}
+.pattern-fields{display:grid;align-content:start;gap:22px}.pattern-fields .mo-between{gap:16px}
+.pattern-result{padding:24px;background:var(--mo-surface-2);border-radius:var(--mo-radius);min-width:0}
+.pattern-value{font:clamp(28px,5vw,48px) var(--mo-mono);margin-block:8px 4px;overflow-wrap:anywhere}
+.pattern-chart{display:block;width:100%;height:auto;margin-top:20px}.pattern-chart rect{fill:var(--mo-accent)}
+.pattern-chart text{fill:var(--mo-muted);font:12px var(--mo-mono)}
+.pattern-chart line{stroke:var(--mo-border-strong)}
+.pattern-status{min-height:1.5em;margin-block:20px 0;font-size:13px;color:var(--mo-muted)}
+.pattern-status[data-fallback=true]{color:var(--mo-text);border-inline-start:3px solid var(--mo-warning);padding-inline-start:12px}
+.pattern-notes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-block:36px}
+.pattern-notes h3{font-size:17px}.pattern-notes p{font-size:14px;color:var(--mo-muted)}
+.pattern-footer{border-top:1px solid var(--mo-border);padding-top:22px;font-size:12px;display:flex;gap:20px;flex-wrap:wrap}
+.pattern-demo p,.pattern-notes p{overflow-wrap:anywhere}.pattern-demo button{white-space:normal;height:auto}
+@media(max-width:680px){.pattern-grid,.pattern-notes{grid-template-columns:1fr}.pattern-demo-head .mo-field{width:100%}.pattern-header{margin-bottom:28px}}

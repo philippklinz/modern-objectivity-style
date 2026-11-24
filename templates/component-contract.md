@@ -14,6 +14,11 @@ transitions: []
 keyboard_behavior: ""
 focus_behavior: ""
 assistive_technology_behavior: ""
+source_language: ""
+target_languages: [bg, hr, cs, da, nl, en, et, fi, fr, de, el, hu, ga, it, lv, lt, mt, pl, pt, ro, sk, sl, es, sv]
+language_coverage_and_review: {}
+message_catalogues_and_source_revision: ""
+language_switch_and_fallback_behavior: ""
 semantic_tokens: []
 visual_variants: []
 error_recovery: ""

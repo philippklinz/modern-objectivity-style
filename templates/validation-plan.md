@@ -12,6 +12,9 @@ tasks: []
 criteria_defined_before_testing: []
 observations_and_metrics: []
 accessibility_checks: []
+language_coverage_and_source_freshness: []
+plural_formatting_and_language_switch_checks: []
+translation_review_and_limits: ""
 edge_cases: []
 emotional_intent: ""
 subjective_questions: []

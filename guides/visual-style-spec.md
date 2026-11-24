@@ -1,6 +1,6 @@
 # Visual Style Specification — Reference Lab Theme v0.1
 
-This page documents the **actual CSS implementation**, not theoretical recommendations. All examples on the [style showcase](../index.html) and both working laboratories use [the same source stylesheet](../styles/modern-objectivity.css). The [starter](../starter/) includes a standalone copy.
+This page documents the **actual CSS implementation**, not theoretical recommendations. The [style showcase](../index.html) and working laboratories use [the same source stylesheet](../styles/modern-objectivity.css). The [starter](../starter/) and [multilingual pattern](../patterns/i18n/) include standalone copies.
 
 ## 1. Concrete visual direction
 
@@ -87,6 +87,7 @@ Check contrast, focus visibility and status differentiation again after any pale
 - [Lab console](../examples/lab-console.html): local synthetic data generation, status classification, filtering, detail inspection, chart updates and CSV export.
 - [Live experiment](../examples/experiment.html): mathematically defined wave, changing parameters, pause, play, step, reset and inspectable probe values.
 - [Standalone starter](../starter/index.html): working application shell, local synthetic observations, search, filtering, CSV export and clear empty state.
+- [Multilingual pattern](../patterns/i18n/index.html): a 24-language sample panel with local catalogues, number/plural formatting, state-preserving switches and source checks. This is the reference for [MO-13](../docs/10-multilingual-access.md); earlier examples still have incomplete language coverage.
 
 **Data integrity:** Every generated value is explicitly labeled synthetic. No example implies a real instrument has been connected or a user study has been completed.
 

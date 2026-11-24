@@ -11,6 +11,7 @@
 | [Style showcase](index.html) | Colors, typography, layout, cards, buttons, inputs, states, tables, charts and themes |
 | [Lab console](examples/lab-console.html) | Functional data generation, plotting, filter/search, inspection, CSV export |
 | [Interactive experiment](examples/experiment.html) | Real point–line–time wave model with sliders, play/pause, stepping and probing |
+| [Multilingual pattern](patterns/i18n/index.html) | 24 local sample catalogues, plural forms, numeric formatting, checked source revisions and state-preserving language changes |
 | [Starter lab](starter/index.html) | Copyable app shell for a new laboratory, with standalone CSS and JavaScript |
 
 ## Start a laboratory
@@ -51,6 +52,8 @@ Open [http://localhost:8000](http://localhost:8000).
 
 ## Design language documentation
 
+**MO-13 requires complete user-facing journeys in all 24 official EU languages.** See the [central language-access requirement](docs/10-multilingual-access.md) and [programming pattern](guides/multilingual-pattern.md). The copyable multilingual panel demonstrates all 24 languages; its translations are AI-assisted examples awaiting independent language review. Earlier examples remain English and have not yet met full language coverage. Developer documentation is maintained in English.
+
 The practical style is one **reference implementation** of Modern Objectivity. The framework-neutral reasoning is documented separately:
 
 1. [Introduction](docs/01-introduction.md)
@@ -62,6 +65,7 @@ The practical style is one **reference implementation** of Modern Objectivity. T
 7. [Technical principles](docs/07-technical-principles.md)
 8. [Validation](docs/08-validation.md)
 9. [References](docs/09-references.md)
+10. [Multilingual access](docs/10-multilingual-access.md)
 
 The actual lab UI examples intentionally have a **specific aesthetic**. It can be modified without abandoning the design language.
 

@@ -18,7 +18,9 @@ Test slow and missing responses, duplicate actions, changing permissions, and un
 
 ## Internationalization
 
-Separate translatable text from layout. Support appropriate number, time, and date formats. Test diacritics, long translated strings, and mixed technical identifiers. Language support must be implemented and checked rather than merely advertised.
+Implement [MO-13: Multilingual Access](10-multilingual-access.md): complete user-facing journeys in all 24 official EU languages. Keep model values separate from keyed message catalogues, use locale-aware formatting and plural rules, and preserve application state when changing language. Test long text, Greek/Cyrillic glyphs, accessible descriptions and failure paths.
+
+The [local-catalogue programming pattern](../guides/multilingual-pattern.md) supplies a working static example, source-revision checks and a copyable helper. It requires no remote translation service or cross-repository runtime. Coverage, source freshness and linguistic review are separate properties; report partial rollout honestly.
 
 ## Component contracts
 

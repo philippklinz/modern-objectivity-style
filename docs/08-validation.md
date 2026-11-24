@@ -22,6 +22,7 @@ Design is a hypothesis about function, interpretation, or experience. Use an ite
 | Interpretability | Explanation questions |
 | Feasibility | Working implementation |
 | Accessibility | Keyboard, zoom, screenreader tests |
+| Language access | Complete journey coverage, source freshness, language-specific plurals/formatting, translated graphics and state-preserving switches |
 | Robustness | Failure and edge-case tests |
 | Performance | Instrumented measurements |
 | Emotional experience | Subjective feedback and behavioral observation |
@@ -43,6 +44,8 @@ These classify **evidence type**, not universal quality. Do not call an E1 mocku
 For reusable components, test normal content; empty versus no results; errors and permission denial; long and large datasets; keyboard/focus; relevant locales; loading and retries; integration with the host.
 
 Document exceptions if a scenario is not applicable.
+
+For [MO-13](10-multilingual-access.md), check each published module/language for missing keys, stale source revisions, placeholder changes and plural forms. Exercise controls, feedback, graphics and accessible descriptions in the selected language. Test fallback, deep links, back/forward, long text and Greek/Cyrillic text. Automatic coverage checks do not establish linguistic or scientific correctness. Record translation review separately; keep unimplemented coverage visible.
 
 ## Emotional Intent validation
 

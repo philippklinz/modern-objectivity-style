@@ -18,6 +18,7 @@ What other approaches were considered?
 - [ ] Claims distinguished from hypotheses
 - [ ] Accessibility and human experience considered
 - [ ] Related examples/templates updated
+- [ ] MO-13 language coverage, source freshness and translation-review limits stated
 - [ ] Licensing and attribution checked
 
 ## Known limitations

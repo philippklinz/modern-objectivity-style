@@ -16,6 +16,7 @@ Explain **problem → rationale → proposal → alternatives → verification �
 - Consider technical feasibility, accessibility, ethics, and subjective human experience.
 - Respect copyright and attribution for external research, text, and imagery.
 - Update cross-links, examples, and templates when changing a principle.
+- Apply [MO-13](docs/10-multilingual-access.md) to user-facing examples and applications. New content must account for translation, source freshness and honest coverage; English developer documentation is a separate editorial scope.
 
 Preserve principle IDs where possible. If a definition changes materially, document compatibility implications.
 

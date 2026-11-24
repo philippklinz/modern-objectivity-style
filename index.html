@@ -55,6 +55,7 @@ try{var m=localStorage.getItem("mo-theme");if(m==="dark"||m==="light")document.d
           <a href="#components">Components</a>
           <a href="#data">Data &amp; tables</a>
           <a href="#interaction">Interaction</a>
+          <a href="#language-access">Language access</a>
         </div>
       </div>
       <div class="mo-nav-group">
@@ -62,6 +63,7 @@ try{var m=localStorage.getItem("mo-theme");if(m==="dark"||m==="light")document.d
         <div class="mo-nav">
           <a href="examples/lab-console.html">Lab console ↗</a>
           <a href="examples/experiment.html">Live experiment ↗</a>
+          <a href="patterns/i18n/index.html">24-language pattern ↗</a>
           <a href="starter/index.html">Starter template ↗</a>
         </div>
       </div>
@@ -240,6 +242,14 @@ try{var m=localStorage.getItem("mo-theme");if(m==="dark"||m==="light")document.d
             <div class="mo-between" style="margin-top:19px"><span id="load-status" class="mo-badge mo-badge-info">In progress</span><button class="mo-btn mo-btn-sm" id="reset-progress">Reset</button></div>
             <p class="mo-small mo-muted" style="margin:14px 0 0">This slider is a demonstrative control; no background task is running.</p>
           </div>
+        </div>
+      </section>
+
+      <section class="mo-section" id="language-access">
+        <div class="mo-section-head"><div><span class="mo-kicker">MO-13 / Language access</span><h2>Understanding is part of access.</h2><p>Modern Objectivity requires complete user-facing journeys in all 24 official EU languages: content, controls, explanations and feedback.</p></div><span class="mo-tag">24 EU LANGUAGES</span></div>
+        <div class="mo-grid mo-grid-2">
+          <article class="mo-panel mo-stack"><span class="mo-eyebrow">A design requirement</span><h3>Build language into the interface.</h3><p class="mo-muted">Keep scientific meaning and application state intact. Let text grow, format values locally and show the actual translation coverage.</p><a href="docs/10-multilingual-access.md">Read the central requirement →</a></article>
+          <article class="mo-panel mo-stack"><span class="mo-eyebrow">A working programming pattern</span><h3>One model. Local language packs.</h3><p class="mo-muted">Switch a small sampling plan between 24 languages. Its values stay put while text, numbers, plural forms and accessible descriptions change.</p><a class="mo-btn mo-btn-primary" href="patterns/i18n/index.html">Try the multilingual pattern ↗</a><small class="mo-muted">AI-assisted sample translations; independent language review pending. Earlier examples remain English.</small></article>
         </div>
       </section>
 

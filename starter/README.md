@@ -2,6 +2,8 @@
 
 This folder is a **complete static HTML lab starter**.
 
+This dashboard scaffold currently uses English. [MO-13](../docs/10-multilingual-access.md) requires complete 24-language journeys for adopting applications. Start language integration with the [copyable multilingual pattern](../patterns/i18n/) and its [programming guide](../guides/multilingual-pattern.md); this dashboard is not yet a complete multilingual edition.
+
 ## Files
 
 - `index.html` — a usable laboratory dashboard with navigation, controls, synthetic data, table, search, empty state and CSV export.

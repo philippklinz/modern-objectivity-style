@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A copyable Modern Objectivity pattern: local language packs, 24 EU languages, shared model state and checked translations.">
+  <title>Multilingual access / Modern Objectivity</title>
+  <link rel="stylesheet" href="modern-objectivity.css">
+  <link rel="stylesheet" href="demo.css">
+  <script defer src="languages.js"></script>
+  <script defer src="i18n.js"></script>
+  <script defer src="locales/en.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+<main class="pattern-wrap">
+  <header class="pattern-header"><a href="../../index.html">MODERN OBJECTIVITY / STYLE KIT</a><span class="mo-tag">PATTERN / 01</span></header>
+  <span class="mo-eyebrow">MO-13 / Multilingual access</span>
+  <h1 class="pattern-title">One model.<br>Twenty-four languages.</h1>
+  <p class="pattern-intro">Language access is part of the design. This working example keeps the calculation and your settings together while the words, number formats and plural forms change.</p>
+
+  <section id="localized-demo" class="pattern-demo" lang="en" aria-labelledby="demo-title">
+    <div class="pattern-demo-head">
+      <div><h2 id="demo-title" data-i18n="title">Sampling plan</h2><p class="mo-muted" data-i18n="intro">Change the count or interval. Switching language keeps your values.</p></div>
+      <label class="mo-field" for="language"><span class="mo-field-label" data-i18n="language">Language</span><select disabled id="language" class="mo-select"></select></label>
+    </div>
+    <div class="pattern-grid">
+      <div class="pattern-fields">
+        <label class="mo-field" for="count"><span class="mo-between"><span class="mo-field-label" data-i18n="countLabel">Number of samples</span><output for="count" id="count-value">6</output></span><input disabled id="count" class="mo-range" type="range" min="0" max="30" step="1" value="6"></label>
+        <label class="mo-field" for="interval"><span class="mo-between"><span class="mo-field-label" data-i18n="intervalLabel">Interval (s)</span><output for="interval" id="interval-value">0.25</output></span><input disabled id="interval" class="mo-range" type="range" min="0.25" max="2" step="0.25" value="0.25"></label>
+        <div><button disabled id="reset" class="mo-btn" type="button" data-i18n="reset">Reset</button></div>
+      </div>
+      <div class="pattern-result">
+        <span class="mo-field-label" data-i18n="durationLabel">Time budget</span>
+        <div id="duration" class="pattern-value" data-value="1.5">1.50 s</div>
+        <p id="summary">6 samples</p>
+        <svg class="pattern-chart" viewBox="0 0 600 114" role="img" aria-labelledby="diagram-title">
+          <title id="diagram-title">Timing plan. Sample count: 6. Total: 1.50 s.</title>
+          <line x1="16" y1="82" x2="584" y2="82"></line>
+          <g id="diagram-bars"></g>
+          <text x="16" y="105">0</text><text id="diagram-end" x="584" y="105" text-anchor="end">1.50 s</text>
+        </svg>
+      </div>
+    </div>
+    <p class="mo-small mo-muted" style="margin-top:24px" data-i18n="modelNote">Illustrative timing model: total = count × interval. Bars represent samples; height represents the interval. No measurements are taken.</p>
+    <a id="share-link" href="?lang=en" data-i18n="share">Link to this language</a>
+    <p id="language-status" class="pattern-status" role="status" aria-live="polite"></p>
+    <noscript><p>The interactive example needs JavaScript. Its English description and initial values remain visible.</p></noscript>
+  </section>
+
+  <div class="pattern-notes">
+    <section><h3>Complete sample messages</h3><p>All 24 EU languages cover this small panel. The English guide and earlier style-kit examples are separate. These translations are AI-assisted examples awaiting independent language review.</p></section>
+    <section><h3>Local and independent</h3><p>Language packs ship with the page. The selected language is in the URL. No accounts, cookies, preference storage or translation service.</p></section>
+    <section><h3>Copy the working pattern</h3><p>Reuse the language catalogue, helper and checks. Keep your own scientific model and translate complete modules.</p><a href="README.md">Code and integration guide →</a></section>
+  </div>
+  <footer class="pattern-footer"><a href="../../docs/10-multilingual-access.md">Central requirement</a><a href="../../guides/multilingual-pattern.md">Programming pattern</a><a href="https://github.com/philippklinz/modern-objectivity-style/tree/main/patterns/i18n">Source code</a><span>GPL-2.0-only</span></footer>
+</main>
+</body>
+</html>
