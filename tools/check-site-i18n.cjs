@@ -12,6 +12,7 @@ const languages=languageContext.MOLanguages;
 const {validate}=require('../patterns/i18n/i18n.js');
 const {sourceRevision}=require('../patterns/i18n/check.cjs');
 const vars=text=>[...new Set([...text.matchAll(/\{([a-zA-Z][\w]*)\}/g)].map(x=>x[1]))].sort().join(',');
+const bindings=Object.assign({},...Object.values(pages).map(info=>info.bindings));
 const forms=value=>typeof value==='string'?[value]:Object.values(value.forms||{});
 const slotShape=text=>{
  const stack=[],slots=[];
@@ -33,7 +34,12 @@ function validateMessages(locale,messages){
   issues.push(...check);
   for(const candidate of forms(value)){
    if(typeof candidate!=='string')continue;
-   try{if(slotShape(candidate)!==slotShape(forms(original)[0]))issues.push(`${key}: changed formatting slots`);}catch(error){issues.push(`${key}: ${error.message}`);}
+   try{
+    if(slotShape(candidate)!==slotShape(forms(original)[0]))issues.push(`${key}: changed formatting slots`);
+    const slots=bindings[key]?.slots||[];
+    if(slots.length&&candidate.replace(/<\/?s\d+>/g,'').includes('<'))issues.push(`${key}: undeclared markup`);
+    for(const [index,slot] of slots.entries())if(Object.hasOwn(slot,'literal')&&!candidate.includes(`<s${index}></s${index}>`))issues.push(`${key}: protected code slot ${index} changed`);
+   }catch(error){issues.push(`${key}: ${error.message}`);}
   }
  }
  for(const key of Object.keys(messages))if(!Object.hasOwn(source,key))issues.push(`${key}: extra`);

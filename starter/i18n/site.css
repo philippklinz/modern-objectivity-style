@@ -18,3 +18,9 @@
 [data-mo-key]{overflow-wrap:anywhere}.mo-topbar-actions,.mo-card-head{flex-wrap:wrap}.mo-card-head>*{min-width:0}
 .mo-btn{white-space:normal;height:auto}.mo-sidebar-foot{overflow-wrap:anywhere}.mo-nav a{max-width:100%}
 @media(max-width:640px){.mo-language-bar{justify-content:flex-start}.mo-language-bar label{width:100%}.mo-language-bar select{flex:1}.mo-handbook{padding:20px}.mo-handbook table{font-size:12px}}
+
+/* Long language editions must not expand an automatic grid minimum. */
+.mo-grid>*{min-width:0}.mo-input,.mo-select,.mo-textarea{min-width:0;max-width:100%}
+.mo-badge,.mo-tag{white-space:normal;overflow-wrap:anywhere}.mo-badge::before{flex:none}
+.mo-alert>strong{flex-shrink:0}
+@media(max-width:640px){.mo-grid-2,.mo-grid-3,.mo-grid-4{grid-template-columns:minmax(0,1fr)}}

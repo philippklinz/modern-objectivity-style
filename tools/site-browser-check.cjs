@@ -40,9 +40,11 @@ async function main(){
     await change(code);
     for(const width of [390,1280]){
      await page.setViewportSize({width,height:900});
+     await page.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))));
      if(!await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth+1)){
       const overflow=await page.evaluate(()=>[...document.body.querySelectorAll('*')].filter(node=>{const r=node.getBoundingClientRect();return r.width&&r.right>innerWidth+1;}).slice(0,12).map(node=>({tag:node.tagName,id:node.id,class:node.className,left:Math.round(node.getBoundingClientRect().left),width:Math.round(node.getBoundingClientRect().width),text:node.textContent.slice(0,60)})));
-      layoutIssues.push(`${module}/${code}: overflow at ${width}: ${JSON.stringify(overflow)}`);
+      const dimensions=await page.evaluate(()=>({scroll:document.documentElement.scrollWidth,inner:innerWidth,body:document.body.scrollWidth}));
+      layoutIssues.push(`${module}/${code}: overflow at ${width}: ${JSON.stringify(dimensions)} ${JSON.stringify(overflow)}`);
       if(process.env.MO_I18N_SCREENSHOT_DIR){await fs.mkdir(process.env.MO_I18N_SCREENSHOT_DIR,{recursive:true});await page.screenshot({path:path.join(process.env.MO_I18N_SCREENSHOT_DIR,`overflow-${module}-${code}-${width}.png`),fullPage:true});}
      }
      assert.equal(await page.locator('html').getAttribute('lang'),code);
