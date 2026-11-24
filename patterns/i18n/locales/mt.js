@@ -1,31 +1,3 @@
-/* Modern Objectivity sample messages. GPL-2.0-only. */
+/* Generated local catalogue. GPL-2.0-only. */
 globalThis.MOCatalogues ??= Object.create(null);
-globalThis.MOCatalogues.mt = {
-  "status": "example",
-  "sourceRevision": "7cc2555e9f06e397a352ea474267f98b3a2e9c3fa3c43508a89928228efc24ca",
-  "review": "AI-assisted example; independent language review pending",
-  "messages": {
-    "title": "Pjan tat-teħid tal-kampjuni",
-    "intro": "Ibdel l-għadd jew l-intervall. Il-valuri tiegħek jibqgħu l-istess meta tibdel il-lingwa.",
-    "language": "Lingwa",
-    "countLabel": "Għadd ta’ kampjuni",
-    "intervalLabel": "Intervall (s)",
-    "reset": "Irrisettja",
-    "durationLabel": "Ħin meħtieġ",
-    "samples": {
-      "plural": "count",
-      "forms": {
-        "one": "{count} kampjun",
-        "two": "{count} kampjuni",
-        "few": "{count} kampjuni",
-        "many": "{count}-il kampjun",
-        "other": "{count} kampjun"
-      }
-    },
-    "diagram": "Pjan taż-żmien. Għadd ta’ kampjuni: {count}. Ħin totali: {duration} s.",
-    "modelNote": "Mudell illustrattiv taż-żmien: ħin totali = għadd × intervall. Il-vireg jirrappreżentaw il-kampjuni; l-għoli tagħhom jirrappreżenta l-intervall. Ma jsir l-ebda kejl.",
-    "share": "Link għal din il-verżjoni lingwistika",
-    "selected": "Lingwa: {language}. Is-settings tiegħek jibqgħu l-istess.",
-    "unavailable": "Din it-traduzzjoni mhijiex disponibbli. Il-lingwa murija hi {language}; is-settings tiegħek jibqgħu l-istess."
-  }
-};
+globalThis.MOCatalogues.mt = {"status":"example","sourceRevision":"44e0328b658e520a9b01016b5038fb1bee1b46f0b13383bb6a2553d34e428b8a","review":"AI-assisted translation; independent language review pending","messages":{"title":"Pjan tat-teħid tal-kampjuni","intro":"Ibdel l-għadd jew l-intervall. Il-valuri tiegħek jibqgħu l-istess meta tibdel il-lingwa.","language":"Lingwa","countLabel":"Għadd ta’ kampjuni","intervalLabel":"Intervall (s)","reset":"Irrisettja","durationLabel":"Ħin meħtieġ","samples":{"plural":"count","forms":{"one":"{count} kampjun","two":"{count} kampjuni","few":"{count} kampjuni","many":"{count}-il kampjun","other":"{count} kampjun"}},"diagram":"Pjan taż-żmien. Għadd ta’ kampjuni: {count}. Ħin totali: {duration} s.","modelNote":"Mudell illustrattiv taż-żmien: ħin totali = għadd × intervall. Il-vireg jirrappreżentaw il-kampjuni; l-għoli tagħhom jirrappreżenta l-intervall. Ma jsir l-ebda kejl.","share":"Link għal din il-verżjoni lingwistika","selected":"Lingwa: {language}. L-issettjar tiegħek jibqgħu l-istess.","unavailable":"Din it-traduzzjoni mhijiex disponibbli. Il-lingwa murija hi {language}; l-issettjar tiegħek jibqgħu l-istess.","chrome.text001":"Aċċess multilingwi / Modern Objectivity","chrome.text002":"MODERN OBJECTIVITY / KIT TAL-ISTIL","chrome.text003":"MUDELL / 01","chrome.text004":"MO-13 / Aċċess multilingwi","chrome.text005":"Mudell wieħed. Erbgħa u għoxrin lingwa.","chrome.text006":"L-aċċess lingwistiku huwa parti mid-disinn. Dan l-eżempju li jaħdem iżomm il-kalkolu u s-issettjar tiegħek flimkien filwaqt li jinbidlu l-kliem, il-formati tan-numri u l-forom tal-plural.","chrome.text007":"Pjan taż-żmien. Għadd ta’ kampjuni: 6. Total: 1.50 s.","chrome.text008":"L-eżempju interattiv jeħtieġ JavaScript. Id-deskrizzjoni tiegħu bl-Ingliż u l-valuri inizjali jibqgħu viżibbli.","chrome.text009":"Kopertura sħiħa tal-paġna","chrome.text010":"Is-sit sħiħ ta’ referenza, il-manwal u l-eżempji għandhom edizzjonijiet lingwistiċi lokali. Dawn it-traduzzjonijiet saru bl-għajnuna tal-IA u jistennew reviżjoni lingwistika indipendenti.","chrome.text011":"Lokali u indipendenti","chrome.text012":"Il-pakketti lingwistiċi jitqassmu mal-paġna. Il-lingwa magħżula tinsab fil-URL. Mingħajr kontijiet, cookies, ħażna tal-preferenzi jew servizz ta’ traduzzjoni.","chrome.text013":"Ikkopja l-mudell li jaħdem","chrome.text014":"Erġa’ uża l-katalgu tal-lingwi, l-għodda awżiljarja u l-kontrolli. Żomm il-mudell xjentifiku tiegħek u ttraduċi moduli sħaħ.","chrome.text015":"Gwida għall-kodiċi u l-integrazzjoni →","chrome.text016":"Rekwiżit ċentrali","chrome.text017":"Mudell ta’ programmazzjoni","chrome.text018":"Kodiċi sors","chrome.description":"Mudell ta’ Modern Objectivity li jista’ jiġi kkupjat: pakketti lingwistiċi lokali, 24 lingwa tal-UE, stat komuni tal-mudell u traduzzjonijiet ivverifikati."}};

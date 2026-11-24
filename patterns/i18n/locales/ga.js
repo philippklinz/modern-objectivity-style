@@ -1,31 +1,3 @@
-/* Modern Objectivity sample messages. GPL-2.0-only. */
+/* Generated local catalogue. GPL-2.0-only. */
 globalThis.MOCatalogues ??= Object.create(null);
-globalThis.MOCatalogues.ga = {
-  "status": "example",
-  "sourceRevision": "7cc2555e9f06e397a352ea474267f98b3a2e9c3fa3c43508a89928228efc24ca",
-  "review": "AI-assisted example; independent language review pending",
-  "messages": {
-    "title": "Plean samplála",
-    "intro": "Athraigh an líon nó an t-eatramh. Coinnítear do luachanna nuair a athraíonn tú an teanga.",
-    "language": "Teanga",
-    "countLabel": "Líon na samplaí",
-    "intervalLabel": "Eatramh (s)",
-    "reset": "Athshocraigh",
-    "durationLabel": "Am riachtanach",
-    "samples": {
-      "plural": "count",
-      "forms": {
-        "one": "{count} sampla",
-        "two": "{count} shampla",
-        "few": "{count} shampla",
-        "many": "{count} sampla",
-        "other": "{count} sampla"
-      }
-    },
-    "diagram": "Plean ama. Líon na samplaí: {count}. Am iomlán: {duration} s.",
-    "modelNote": "Samhail ama léiritheach: am iomlán = líon × eatramh. Léiríonn na barraí na samplaí agus léiríonn a n-airde an t-eatramh. Ní dhéantar aon tomhais.",
-    "share": "Nasc chuig an leagan teanga seo",
-    "selected": "Teanga: {language}. Coinnítear do shocruithe.",
-    "unavailable": "Níl an t-aistriúchán seo ar fáil. Teanga ar taispeáint: {language}; coinnítear do shocruithe."
-  }
-};
+globalThis.MOCatalogues.ga = {"status":"example","sourceRevision":"44e0328b658e520a9b01016b5038fb1bee1b46f0b13383bb6a2553d34e428b8a","review":"AI-assisted translation; independent language review pending","messages":{"title":"Plean samplála","intro":"Athraigh an líon nó an t-eatramh. Coinnítear do luachanna nuair a athraíonn tú an teanga.","language":"Teanga","countLabel":"Líon na samplaí","intervalLabel":"Eatramh (s)","reset":"Athshocraigh","durationLabel":"Am riachtanach","samples":{"plural":"count","forms":{"one":"{count} sampla","two":"{count} shampla","few":"{count} shampla","many":"{count} sampla","other":"{count} sampla"}},"diagram":"Plean ama. Líon na samplaí: {count}. Am iomlán: {duration} s.","modelNote":"Samhail ama léiritheach: am iomlán = líon × eatramh. Léiríonn na barraí na samplaí agus léiríonn a n-airde an t-eatramh. Ní dhéantar aon tomhais.","share":"Nasc chuig an leagan teanga seo","selected":"Teanga: {language}. Coinnítear do shocruithe.","unavailable":"Níl an t-aistriúchán seo ar fáil. Teanga ar taispeáint: {language}; coinnítear do shocruithe.","chrome.text001":"Rochtain ilteangach / Modern Objectivity","chrome.text002":"MODERN OBJECTIVITY / FOIREANN STÍLE","chrome.text003":"PATRÚN / 01","chrome.text004":"MO-13 / Rochtain ilteangach","chrome.text005":"Samhail amháin. Ceithre theanga is fiche.","chrome.text006":"Is cuid den dearadh í rochtain teanga. Coinníonn an sampla oibre seo an ríomh agus do shocruithe le chéile agus athraíonn na focail, formáidí uimhreacha agus foirmeacha iolra.","chrome.text007":"Plean ama. Líon na samplaí: 6. Iomlán: 1.50 s.","chrome.text008":"Teastaíonn JavaScript ón sampla idirghníomhach. Fanann a thuairisc Bhéarla agus a luachanna tosaigh le feiceáil.","chrome.text009":"Cumhdach iomlán leathanaigh","chrome.text010":"Tá eagráin áitiúla teanga ag an suíomh tagartha iomlán, an lámhleabhar agus na samplaí. Rinneadh na haistriúcháin seo le cúnamh IS agus tá athbhreithniú neamhspleách teanga le déanamh fós.","chrome.text011":"Áitiúil agus neamhspleách","chrome.text012":"Seoltar pacáistí teanga leis an leathanach. Tá an teanga roghnaithe san URL. Gan cuntais, fianáin, stóráil roghanna ná seirbhís aistriúcháin.","chrome.text013":"Cóipeáil an patrún oibre","chrome.text014":"Athúsáid an chatalóg teanga, an cúntóir agus na seiceálacha. Coinnigh do shamhail eolaíoch féin agus aistrigh modúil iomlána.","chrome.text015":"Treoir cóid agus comhtháthaithe →","chrome.text016":"Ceanglas lárnach","chrome.text017":"Patrún ríomhchlárúcháin","chrome.text018":"Cód foinseach","chrome.description":"Patrún Modern Objectivity inchóipeáilte: pacáistí teanga áitiúla, 24 theanga an AE, staid samhla chomhroinnte agus aistriúcháin sheiceáilte."}};
