@@ -70,7 +70,7 @@
       for (const node of document.querySelectorAll(`[data-mo-attr-${name}]`)) {
         const value = i18n.text(node.getAttribute(`data-mo-attr-${name}`));
         if (name === 'value') {
-          if (!dirtyInputs.has(node)) { node.value = value; node.defaultValue = value; }
+          if (!dirtyInputs.has(node) && !node.hasAttribute('data-mo-preserve-value')) { node.value = value; node.defaultValue = value; }
         } else node.setAttribute(name,value);
       }
     }

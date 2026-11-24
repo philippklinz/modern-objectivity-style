@@ -2,6 +2,19 @@
 """Author-side source extraction and static language-pack generation.
 
 The checked-in site runs without Python, Node or a server build.
+
+Author workflow (Node 24+, dependencies in tools/package.json and requirements.txt):
+1. Edit the English live HTML, public Markdown, or i18n/dynamic-en.json.
+2. Run `python3 tools/build-site-i18n.py extract`. Review the source diff;
+   i18n/source/keys.json retains identifiers across text edits and rearrangements.
+3. Reconcile only affected entries in i18n/translations/<language>.json.
+4. Run `node tools/check-site-i18n.cjs --authoring-only` and review the text.
+5. `node tools/check-site-i18n.cjs --source-revisions` prints module fingerprints.
+   Record the appropriate values in each reconciled <language>.revisions.json;
+   neither extraction nor generation stamps translations current automatically.
+6. Run `python3 tools/build-site-i18n.py build`, then the catalogue and browser
+   checks in .github/workflows/i18n-checks.yml. Commit source and generated files.
+The --locale option is for intermediate authoring checks, not complete releases.
 """
 from pathlib import Path
 from urllib.parse import urlsplit, urlunsplit
@@ -224,7 +237,7 @@ def build(locales=None):
                 source={key.removeprefix('pattern.'):value for key,value in source.items()}
                 target={key.removeprefix('pattern.'):value for key,value in target.items()}
             if locale!='en' and revisions.get(module)!=digest(source): raise ValueError(f'{locale}/{module}: translation source revision missing or stale')
-            pack={'status':'available','sourceRevision':digest(source),'review':'English authoring source' if locale=='en' else 'AI-assisted translation; independent language review pending','messages':target}
+            pack={'status':'example' if module=='pattern' else 'available','sourceRevision':digest(source),'review':'English authoring source' if locale=='en' else 'AI-assisted translation; independent language review pending','messages':target}
             destination=ROOT/info['assetdir']
             destination.mkdir(parents=True,exist_ok=True)
             filename=destination/(locale+'.js')

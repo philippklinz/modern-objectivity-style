@@ -4,6 +4,7 @@ const assert=require('node:assert/strict');
 const fs=require('node:fs/promises');
 const path=require('node:path');
 const http=require('node:http');
+const os=require('node:os');
 const {pathToFileURL}=require('node:url');
 const {chromium}=require('playwright');
 const {pages,languages,root}=require('./check-site-i18n.cjs');
@@ -21,11 +22,12 @@ async function main(){
  });
  await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
  const base=`http://127.0.0.1:${server.address().port}`;
- let browser;
+ let browser,copyRoot;
  try{
   browser=await chromium.launch({headless:true,...(process.env.MO_BROWSER_EXECUTABLE?{executablePath:process.env.MO_BROWSER_EXECUTABLE}:{})});
   const context=await browser.newContext({reducedMotion:'reduce'}),page=await context.newPage();
-  const errors=[],badRequests=[];
+  const errors=[],badRequests=[],external=[];
+  page.on('request',request=>{if(/^https?:/.test(request.url())&&!request.url().startsWith(base))external.push(request.url());});
   page.on('pageerror',error=>errors.push(error.message));
   page.on('response',response=>{if(response.status()>=400&&!response.url().endsWith('favicon.ico'))badRequests.push(response.url()+':'+response.status());});
   const ready=async(code='en')=>page.waitForFunction(code=>document.documentElement.lang===code&&(
@@ -56,8 +58,23 @@ async function main(){
    }
   }
   assert.deepEqual(layoutIssues,[],'Page layout issues');
-  assert.deepEqual(errors,[],'Uncaught page errors');assert.deepEqual(badRequests,[],'Missing local assets');
+  assert.deepEqual(errors,[],'Uncaught page errors');assert.deepEqual(badRequests,[],'Missing local assets');assert.deepEqual(external,[],'Unexpected external runtime dependency');
   const target=sourceOnly?'en':'de';
+  await page.goto(base+'/index.html');await ready();
+  await page.locator('#sample-filter').fill('S-003');await page.locator('#tab-method').click();
+  await page.locator('#load-range').press('ArrowRight');await page.locator('#preview-live-toggle').uncheck();
+  await page.locator('[data-theme-toggle]').click();
+  await change(target);
+  assert.equal(await page.locator('#sample-filter').inputValue(),'S-003');
+  assert.equal(await page.locator('#sample-table tbody tr:visible').count(),1);
+  assert.equal(await page.locator('#tab-method').getAttribute('aria-selected'),'true');
+  assert.equal(await page.locator('#load-range').inputValue(),'75');
+  assert.equal(await page.locator('#load-progress').getAttribute('aria-valuenow'),'75');
+  assert.equal(await page.locator('#preview-live-toggle').isChecked(),false);
+  assert.equal(await page.locator('#data .mo-chart').isVisible(),false);
+  assert.equal(await page.locator('html').getAttribute('data-theme'),'dark');
+  assert.ok((await page.locator('#sample-table tr[data-id="S-003"] .mo-num').textContent()).includes(sourceOnly?'23.1':'23,1'));
+  await page.locator('[data-theme-toggle]').click();
   await page.goto(base+'/examples/lab-console.html');await ready();
   await page.locator('#target').selectOption('10');
   await page.locator('#generate').click();
@@ -85,12 +102,16 @@ async function main(){
   assert.equal(await page.locator('#amplitude').inputValue(),amplitude);
   assert.equal(await page.locator('#toggle-play').getAttribute('aria-pressed'),'false');
   await page.goto(base+'/starter/index.html');await ready();
+  const savedDefault=await page.locator('#name').inputValue();await page.locator('#save-settings').click();
+  await change(target);
+  assert.equal(await page.locator('#name').inputValue(),savedDefault);
+  assert.ok((await page.locator('.mo-content h1').textContent()).includes(savedDefault));
   await page.locator('#name').fill('My retained experiment <42>');await page.locator('#save-settings').click();
   await page.locator('#record').click();
   await page.locator('#record').click();
   await page.locator('#search').fill('OBS-002');
   const rows=await page.locator('#table tbody tr').count();
-  await change(target);
+  await change('en');await change(target);
   assert.ok((await page.locator('.mo-content h1').textContent()).includes('My retained experiment <42>'));
   assert.equal(await page.locator('#name').inputValue(),'My retained experiment <42>');
   assert.equal(await page.locator('#table tbody tr').count(),rows);
@@ -107,10 +128,15 @@ async function main(){
    await page.unroute('**/i18n/pages/index/fr.js');
    await change('fr');
   }
-  await page.goto(pathToFileURL(path.join(root,'starter/index.html')).href+'?lang='+target);await ready(target);
+  copyRoot=await fs.mkdtemp(path.join(os.tmpdir(),'mo-copy-'));
+  await fs.cp(path.join(root,'starter'),path.join(copyRoot,'starter'),{recursive:true});
+  await fs.cp(path.join(root,'patterns/i18n'),path.join(copyRoot,'pattern'),{recursive:true});
+  const fileFailures=[];page.on('requestfailed',request=>{if(request.url().startsWith('file:'))fileFailures.push(request.url());});
+  await page.goto(pathToFileURL(path.join(copyRoot,'starter/index.html')).href+'?lang='+target);await ready(target);
   assert.equal(await page.locator('#mo-language').inputValue(),target);
-  await page.goto(pathToFileURL(path.join(root,'patterns/i18n/index.html')).href+'?lang='+target);await ready(target);
+  await page.goto(pathToFileURL(path.join(copyRoot,'pattern/index.html')).href+'?lang='+target);await ready(target);
   assert.equal(await page.locator('html').getAttribute('lang'),target);
+  assert.deepEqual(fileFailures,[],'Copied folders have all local runtime assets');
   if(process.env.MO_I18N_SCREENSHOT_DIR){
    await fs.mkdir(process.env.MO_I18N_SCREENSHOT_DIR,{recursive:true});
    for(const [file,width,code] of [['index.html',1280,target],['docs/10-multilingual-access.html',390,sourceOnly?'en':'el'],['examples/lab-console.html',1280,target]]){
@@ -121,6 +147,6 @@ async function main(){
   assert.deepEqual(errors,[]);
   console.log(`${combinations} page/language/viewport combinations checked; console data, filters, inspection, logs, CSV, wave state, user names, language links, history, fallback and file:// verified.`);
   await context.close();
- }finally{if(browser)await browser.close();await new Promise(resolve=>server.close(resolve));}
+ }finally{if(browser)await browser.close();await new Promise(resolve=>server.close(resolve));if(copyRoot)await fs.rm(copyRoot,{recursive:true,force:true});}
 }
 main().catch(error=>{console.error(error);process.exitCode=1;});

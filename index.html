@@ -298,6 +298,17 @@ try{var m=localStorage.getItem("mo-theme");if(m==="dark"||m==="light")document.d
  const count = document.getElementById("sample-count");
  const missing = document.getElementById("sample-no-results");
  const rows = [...document.querySelectorAll("#sample-table tbody tr")];
+ const readings=[22.7,23.4,23.1,23.8,24.1,24.3];
+ function renderReadings(){
+   const temperature=value=>window.MOSite.number(value,{style:"unit",unit:"celsius",unitDisplay:"short",minimumFractionDigits:1,maximumFractionDigits:1});
+   rows.forEach((row,index)=>row.querySelector(".mo-num").textContent=temperature(readings[index]));
+   const values=document.querySelectorAll("#data .mo-stat-value");
+   for(const [index,value] of [[0,1.6],[1,23.6]]){
+    const unit=values[index].querySelector("small");
+    values[index].replaceChildren(document.createTextNode(window.MOSite.number(value,{minimumFractionDigits:1,maximumFractionDigits:1})+" "));
+    if(unit)values[index].append(unit);
+   }
+ }
  function renderSamples() {
    const query = filter.value.trim().toLowerCase();
    let shown=0;
@@ -315,8 +326,8 @@ try{var m=localStorage.getItem("mo-theme");if(m==="dark"||m==="light")document.d
  }
  range.addEventListener("input",redraw);
  document.getElementById("reset-progress").addEventListener("click",()=>{range.value=0;redraw();});
- window.addEventListener("mo:language",()=>{renderSamples();redraw();});
- renderSamples();redraw();
+ window.addEventListener("mo:language",()=>{renderSamples();renderReadings();redraw();});
+ renderSamples();renderReadings();redraw();
 })();
 </script>
 </body>

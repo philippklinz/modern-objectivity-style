@@ -14,19 +14,36 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
-      - name: Check source integration
-        run: node tools/check-site-i18n.cjs --source-only
+      - name: Check every catalogue and fallback behavior
+        run: |
+          node tools/check-site-i18n.cjs
+          node patterns/i18n/check.cjs
+          node --test patterns/i18n/test.cjs
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify reproducible source extraction and static generation
+        run: |
+          python3 -m pip install -r tools/requirements.txt
+          npm install --prefix tools --ignore-scripts
+          python3 tools/build-site-i18n.py extract
+          python3 tools/build-site-i18n.py build
+          git diff --exit-code
       - name: Install browser test tools
         run: |
           npm install --no-save playwright@1.56.1
           npx playwright install --with-deps chromium
-      - name: Exercise complete English source site
+      - name: Exercise every page and language in Chromium
         env:
           MO_I18N_SCREENSHOT_DIR: test-results/site
-        run: node tools/site-browser-check.cjs --source-only
+        run: node tools/site-browser-check.cjs
+      - name: Check the independent sampling pattern
+        env:
+          MO_I18N_SCREENSHOT_DIR: test-results/pattern
+        run: node patterns/i18n/browser-check.cjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: complete-site-screenshots
-          path: test-results/site
+          path: test-results
           if-no-files-found: ignore

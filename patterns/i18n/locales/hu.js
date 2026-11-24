@@ -1,28 +1,3 @@
-/* Modern Objectivity sample messages. GPL-2.0-only. */
+/* Generated local catalogue. GPL-2.0-only. */
 globalThis.MOCatalogues ??= Object.create(null);
-globalThis.MOCatalogues.hu = {
-  "status": "example",
-  "sourceRevision": "7cc2555e9f06e397a352ea474267f98b3a2e9c3fa3c43508a89928228efc24ca",
-  "review": "AI-assisted example; independent language review pending",
-  "messages": {
-    "title": "Mintavételi terv",
-    "intro": "Módosítsd a darabszámot vagy az időközt. Nyelvváltáskor az értékeid megmaradnak.",
-    "language": "Nyelv",
-    "countLabel": "Minták száma",
-    "intervalLabel": "Időköz (s)",
-    "reset": "Alaphelyzet",
-    "durationLabel": "Időigény",
-    "samples": {
-      "plural": "count",
-      "forms": {
-        "one": "{count} minta",
-        "other": "{count} minta"
-      }
-    },
-    "diagram": "Időterv. Minták száma: {count}. Teljes idő: {duration} s.",
-    "modelNote": "Szemléltető időmodell: teljes idő = darabszám × időköz. Az oszlopok a mintákat, magasságuk az időközt jelölik. Nem történik mérés.",
-    "share": "Hivatkozás erre a nyelvi változatra",
-    "selected": "Nyelv: {language}. A beállításaid megmaradnak.",
-    "unavailable": "Ez a fordítás nem érhető el. Megjelenített nyelv: {language}; a beállításaid megmaradnak."
-  }
-};
+globalThis.MOCatalogues.hu = {"status":"example","sourceRevision":"44e0328b658e520a9b01016b5038fb1bee1b46f0b13383bb6a2553d34e428b8a","review":"AI-assisted translation; independent language review pending","messages":{"title":"Mintavételi terv","intro":"Módosítsd a darabszámot vagy az időközt. Nyelvváltáskor az értékeid megmaradnak.","language":"Nyelv","countLabel":"Minták száma","intervalLabel":"Időköz (s)","reset":"Alaphelyzet","durationLabel":"Időkeret","samples":{"plural":"count","forms":{"one":"{count} minta","other":"{count} minta"}},"diagram":"Időterv. Minták száma: {count}. Teljes idő: {duration} s.","modelNote":"Szemléltető időmodell: teljes idő = darabszám × időköz. Az oszlopok a mintákat, magasságuk az időközt jelölik. Nem történik mérés.","share":"Hivatkozás erre a nyelvi változatra","selected":"Nyelv: {language}. A beállításaid megmaradnak.","unavailable":"Ez a fordítás nem érhető el. Megjelenített nyelv: {language}; a beállításaid megmaradnak.","chrome.text001":"Többnyelvű hozzáférés / Modern Objectivity","chrome.text002":"MODERN OBJECTIVITY / STÍLUSKÉSZLET","chrome.text003":"MINTA / 01","chrome.text004":"MO-13 / Többnyelvű hozzáférés","chrome.text005":"Egy modell. Huszonnégy nyelv.","chrome.text006":"A nyelvi hozzáférés a tervezés része. Ez a működő példa együtt tartja a számítást és beállításaidat, miközben a szavak, számformátumok és többes számú alakok változnak.","chrome.text007":"Időterv. Minták száma: 6. Összesen: 1.50 s.","chrome.text008":"Az interaktív példához JavaScript szükséges. Angol leírása és kezdeti értékei láthatók maradnak.","chrome.text009":"Teljes oldallefedettség","chrome.text010":"A teljes referenciawebhely, kézikönyv és példák helyi nyelvi kiadásokkal rendelkeznek. Ezek a fordítások MI-vel támogatottak és független nyelvi ellenőrzésre várnak.","chrome.text011":"Helyi és független","chrome.text012":"A nyelvi csomagokat az oldallal együtt szállítjuk. A kiválasztott nyelv az URL-ben van. Nincsenek fiókok, sütik, beállítástárolás vagy fordítószolgáltatás.","chrome.text013":"A működő minta másolása","chrome.text014":"Hasznosítsd újra a nyelvi katalógust, segédeszközt és ellenőrzéseket. Tartsd meg saját tudományos modelledet, és teljes modulokat fordíts.","chrome.text015":"Kód és integrációs útmutató →","chrome.text016":"Központi követelmény","chrome.text017":"Programozási minta","chrome.text018":"Forráskód","chrome.description":"Másolható Modern Objectivity minta: helyi nyelvi csomagok, 24 uniós nyelv, közös modellállapot és ellenőrzött fordítások."}};
