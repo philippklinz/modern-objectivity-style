@@ -1,30 +1,3 @@
-/* Modern Objectivity sample messages. GPL-2.0-only. */
+/* Generated local catalogue. GPL-2.0-only. */
 globalThis.MOCatalogues ??= Object.create(null);
-globalThis.MOCatalogues.lt = {
-  "status": "example",
-  "sourceRevision": "7cc2555e9f06e397a352ea474267f98b3a2e9c3fa3c43508a89928228efc24ca",
-  "review": "AI-assisted example; independent language review pending",
-  "messages": {
-    "title": "Mėginių ėmimo planas",
-    "intro": "Keiskite skaičių arba intervalą. Keičiant kalbą jūsų reikšmės išlieka.",
-    "language": "Kalba",
-    "countLabel": "Mėginių skaičius",
-    "intervalLabel": "Intervalas (s)",
-    "reset": "Atkurti",
-    "durationLabel": "Reikalingas laikas",
-    "samples": {
-      "plural": "count",
-      "forms": {
-        "one": "{count} mėginys",
-        "few": "{count} mėginiai",
-        "many": "{count} mėginio",
-        "other": "{count} mėginių"
-      }
-    },
-    "diagram": "Laiko planas. Mėginių skaičius: {count}. Bendras laikas: {duration} s.",
-    "modelNote": "Iliustracinis laiko modelis: bendras laikas = skaičius × intervalas. Stulpeliai žymi mėginius, o jų aukštis — intervalą. Matavimai neatliekami.",
-    "share": "Nuoroda į šią kalbinę versiją",
-    "selected": "Kalba: {language}. Jūsų nustatymai išlieka.",
-    "unavailable": "Šis vertimas nepasiekiamas. Rodoma kalba: {language}; jūsų nustatymai išlieka."
-  }
-};
+globalThis.MOCatalogues.lt = {"status":"example","sourceRevision":"44e0328b658e520a9b01016b5038fb1bee1b46f0b13383bb6a2553d34e428b8a","review":"AI-assisted translation; independent language review pending","messages":{"title":"Mėginių ėmimo planas","intro":"Keiskite skaičių arba intervalą. Keičiant kalbą jūsų reikšmės išlieka.","language":"Kalba","countLabel":"Mėginių skaičius","intervalLabel":"Intervalas (s)","reset":"Atkurti","durationLabel":"Reikalingas laikas","samples":{"plural":"count","forms":{"one":"{count} mėginys","few":"{count} mėginiai","many":"{count} mėginio","other":"{count} mėginių"}},"diagram":"Laiko planas. Mėginių skaičius: {count}. Bendras laikas: {duration} s.","modelNote":"Iliustracinis laiko modelis: bendras laikas = skaičius × intervalas. Stulpeliai žymi mėginius, o jų aukštis — intervalą. Matavimai neatliekami.","share":"Nuoroda į šią kalbinę versiją","selected":"Kalba: {language}. Jūsų nustatymai išlieka.","unavailable":"Šis vertimas nepasiekiamas. Rodoma kalba: {language}; jūsų nustatymai išlieka.","chrome.text001":"Daugiakalbis prieinamumas / Modern Objectivity","chrome.text002":"MODERN OBJECTIVITY / STILIAUS RINKINYS","chrome.text003":"PAVYZDYS / 01","chrome.text004":"MO-13 / Daugiakalbis prieinamumas","chrome.text005":"Vienas modelis. Dvidešimt keturios kalbos.","chrome.text006":"Kalbinis prieinamumas yra dizaino dalis. Šis veikiantis pavyzdys išlaiko skaičiavimą ir jūsų nuostatas kartu, kol keičiasi žodžiai, skaičių formatai ir daugiskaitos formos.","chrome.text007":"Laiko planas. Mėginių skaičius: 6. Iš viso: 1.50 s.","chrome.text008":"Interaktyviam pavyzdžiui reikia JavaScript. Jo angliškas aprašas ir pradinės reikšmės lieka matomos.","chrome.text009":"Visa puslapio aprėptis","chrome.text010":"Visa pavyzdinė svetainė, vadovas ir pavyzdžiai turi vietines kalbines versijas. Šie vertimai parengti pasitelkus DI ir laukia nepriklausomos kalbos peržiūros.","chrome.text011":"Vietinis ir nepriklausomas","chrome.text012":"Kalbų paketai pateikiami su puslapiu. Pasirinkta kalba yra URL. Be paskyrų, slapukų, nuostatų saugojimo ar vertimo paslaugos.","chrome.text013":"Kopijuoti veikiantį pavyzdį","chrome.text014":"Pakartotinai naudokite kalbų katalogą, pagalbinę priemonę ir patikras. Išlaikykite savo mokslinį modelį ir verskite visus modulius.","chrome.text015":"Kodo ir integracijos vadovas →","chrome.text016":"Pagrindinis reikalavimas","chrome.text017":"Programavimo pavyzdys","chrome.text018":"Pirminis kodas","chrome.description":"Kopijuojamas Modern Objectivity pavyzdys: vietiniai kalbų paketai, 24 ES kalbos, bendra modelio būsena ir patikrinti vertimai."}};

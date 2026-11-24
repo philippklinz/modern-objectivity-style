@@ -1,30 +1,3 @@
-/* Modern Objectivity sample messages. GPL-2.0-only. */
+/* Generated local catalogue. GPL-2.0-only. */
 globalThis.MOCatalogues ??= Object.create(null);
-globalThis.MOCatalogues.cs = {
-  "status": "example",
-  "sourceRevision": "7cc2555e9f06e397a352ea474267f98b3a2e9c3fa3c43508a89928228efc24ca",
-  "review": "AI-assisted example; independent language review pending",
-  "messages": {
-    "title": "Plán vzorkování",
-    "intro": "Změňte počet nebo interval. Při změně jazyka zůstanou vaše hodnoty zachovány.",
-    "language": "Jazyk",
-    "countLabel": "Počet vzorků",
-    "intervalLabel": "Interval (s)",
-    "reset": "Obnovit výchozí hodnoty",
-    "durationLabel": "Potřebný čas",
-    "samples": {
-      "plural": "count",
-      "forms": {
-        "one": "{count} vzorek",
-        "few": "{count} vzorky",
-        "many": "{count} vzorku",
-        "other": "{count} vzorků"
-      }
-    },
-    "diagram": "Časový plán. Počet vzorků: {count}. Celkový čas: {duration} s.",
-    "modelNote": "Ilustrační časový model: celkový čas = počet × interval. Sloupce představují vzorky, jejich výška interval. Neprovádí se žádné měření.",
-    "share": "Odkaz na tuto jazykovou verzi",
-    "selected": "Jazyk: {language}. Vaše nastavení zůstává zachováno.",
-    "unavailable": "Tento překlad není dostupný. Zobrazuje se {language}; vaše nastavení zůstává zachováno."
-  }
-};
+globalThis.MOCatalogues.cs = {"status":"example","sourceRevision":"44e0328b658e520a9b01016b5038fb1bee1b46f0b13383bb6a2553d34e428b8a","review":"AI-assisted translation; independent language review pending","messages":{"title":"Plán vzorkování","intro":"Změňte počet nebo interval. Přepnutí jazyka zachová vaše hodnoty.","language":"Jazyk","countLabel":"Počet vzorků","intervalLabel":"Interval (s)","reset":"Obnovit","durationLabel":"Časový rozpočet","samples":{"plural":"count","forms":{"one":"{count} vzorek","few":"{count} vzorky","many":"{count} vzorku","other":"{count} vzorků"}},"diagram":"Časový plán. Počet vzorků: {count}. Celkem: {duration} s.","modelNote":"Názorný časový model: celkem = počet × interval. Sloupce představují vzorky, výška představuje interval. Neprovádějí se žádná měření.","share":"Odkaz na tento jazyk","selected":"Jazyk: {language}. Vaše nastavení zůstává beze změny.","unavailable":"Tento překlad není dostupný. Zobrazuje se {language}; vaše nastavení zůstává beze změny.","chrome.text001":"Vícejazyčná dostupnost / Modern Objectivity","chrome.text002":"MODERN OBJECTIVITY / SADA STYLŮ","chrome.text003":"VZOR / 01","chrome.text004":"MO-13 / Vícejazyčná dostupnost","chrome.text005":"Jeden model. Dvacet čtyři jazyků.","chrome.text006":"Jazyková dostupnost je součástí návrhu. Tento funkční příklad zachovává výpočet i vaše nastavení, zatímco se mění slova, formáty čísel a tvary množného čísla.","chrome.text007":"Časový plán. Počet vzorků: 6. Celkem: 1.50 s.","chrome.text008":"Interaktivní příklad vyžaduje JavaScript. Jeho anglický popis a počáteční hodnoty zůstávají viditelné.","chrome.text009":"Úplné pokrytí stránky","chrome.text010":"Celý referenční web, příručka a příklady mají místní jazykové verze. Tyto překlady vznikly s podporou AI a čekají na nezávislou jazykovou kontrolu.","chrome.text011":"Místní a nezávislé","chrome.text012":"Jazykové balíčky se dodávají se stránkou. Zvolený jazyk je v URL. Bez účtů, cookies, ukládání preferencí či překladové služby.","chrome.text013":"Zkopírujte funkční vzor","chrome.text014":"Znovu použijte jazykový katalog, pomocný modul a kontroly. Zachovejte vlastní vědecký model a překládejte celé moduly.","chrome.text015":"Průvodce kódem a integrací →","chrome.text016":"Hlavní požadavek","chrome.text017":"Programovací vzor","chrome.text018":"Zdrojový kód","chrome.description":"Kopírovatelný vzor Modern Objectivity: místní jazykové balíčky, 24 jazyků EU, sdílený stav modelu a kontrolované překlady."}};

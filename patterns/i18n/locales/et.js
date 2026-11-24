@@ -1,28 +1,3 @@
-/* Modern Objectivity sample messages. GPL-2.0-only. */
+/* Generated local catalogue. GPL-2.0-only. */
 globalThis.MOCatalogues ??= Object.create(null);
-globalThis.MOCatalogues.et = {
-  "status": "example",
-  "sourceRevision": "7cc2555e9f06e397a352ea474267f98b3a2e9c3fa3c43508a89928228efc24ca",
-  "review": "AI-assisted example; independent language review pending",
-  "messages": {
-    "title": "Proovivõtuplaan",
-    "intro": "Muuda arvu või intervalli. Keele vahetamisel jäävad sinu väärtused alles.",
-    "language": "Keel",
-    "countLabel": "Proovide arv",
-    "intervalLabel": "Intervall (s)",
-    "reset": "Lähtesta",
-    "durationLabel": "Ajakulu",
-    "samples": {
-      "plural": "count",
-      "forms": {
-        "one": "{count} proov",
-        "other": "{count} proovi"
-      }
-    },
-    "diagram": "Ajakava. Proovide arv: {count}. Koguaeg: {duration} s.",
-    "modelNote": "Näitlik ajamudel: koguaeg = arv × intervall. Tulbad tähistavad proove, nende kõrgus intervalli. Mõõtmisi ei tehta.",
-    "share": "Link sellele keeleversioonile",
-    "selected": "Keel: {language}. Sinu seaded jäävad alles.",
-    "unavailable": "See tõlge pole saadaval. Kuvatakse {language}; sinu seaded jäävad alles."
-  }
-};
+globalThis.MOCatalogues.et = {"status":"example","sourceRevision":"44e0328b658e520a9b01016b5038fb1bee1b46f0b13383bb6a2553d34e428b8a","review":"AI-assisted translation; independent language review pending","messages":{"title":"Proovivõtuplaan","intro":"Muuda arvu või intervalli. Keele vahetamisel jäävad sinu väärtused alles.","language":"Keel","countLabel":"Proovide arv","intervalLabel":"Intervall (s)","reset":"Lähtesta","durationLabel":"Ajakulu","samples":{"plural":"count","forms":{"one":"{count} proov","other":"{count} proovi"}},"diagram":"Ajakava. Proovide arv: {count}. Koguaeg: {duration} s.","modelNote":"Näitlik ajamudel: koguaeg = arv × intervall. Tulbad tähistavad proove, nende kõrgus intervalli. Mõõtmisi ei tehta.","share":"Link sellele keeleversioonile","selected":"Keel: {language}. Sinu seaded jäävad alles.","unavailable":"See tõlge pole saadaval. Kuvatakse {language}; sinu seaded jäävad alles.","chrome.text001":"Mitmekeelne ligipääs / Modern Objectivity","chrome.text002":"MODERN OBJECTIVITY / STIILIKOMPLEKT","chrome.text003":"MUSTER / 01","chrome.text004":"MO-13 / Mitmekeelne ligipääs","chrome.text005":"Üks mudel. Kakskümmend neli keelt.","chrome.text006":"Keeleline ligipääs on osa disainist. See töötav näide hoiab arvutuse ja sinu seaded koos, samal ajal kui sõnad, arvuvormingud ja mitmusevormid muutuvad.","chrome.text007":"Ajakava. Proovide arv: 6. Kokku: 1.50 s.","chrome.text008":"Interaktiivne näide vajab JavaScripti. Ingliskeelne kirjeldus ja algväärtused jäävad nähtavaks.","chrome.text009":"Kogu lehe katvus","chrome.text010":"Kogu näidissaidil, käsiraamatul ja näidetel on kohalikud keeleversioonid. Tõlked on tehisintellekti abil loodud ja ootavad sõltumatut keelekontrolli.","chrome.text011":"Kohalik ja sõltumatu","chrome.text012":"Keelepakid tulevad lehega kaasa. Valitud keel on URL-is. Ilma kontode, küpsiste, eelistuste salvestuse ja tõlketeenuseta.","chrome.text013":"Kopeeri töötav muster","chrome.text014":"Taaskasuta keelekataloogi, abifunktsiooni ja kontrolle. Hoia oma teadusmudel ning tõlgi terveid mooduleid.","chrome.text015":"Koodi- ja lõimimisjuhend →","chrome.text016":"Keskne nõue","chrome.text017":"Programmeerimismuster","chrome.text018":"Lähtekood","chrome.description":"Kopeeritav Modern Objectivity muster: kohalikud keelepakid, 24 ELi keelt, ühine mudeliolek ja kontrollitud tõlked."}};

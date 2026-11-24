@@ -1,29 +1,3 @@
-/* Modern Objectivity sample messages. GPL-2.0-only. */
+/* Generated local catalogue. GPL-2.0-only. */
 globalThis.MOCatalogues ??= Object.create(null);
-globalThis.MOCatalogues.lv = {
-  "status": "example",
-  "sourceRevision": "7cc2555e9f06e397a352ea474267f98b3a2e9c3fa3c43508a89928228efc24ca",
-  "review": "AI-assisted example; independent language review pending",
-  "messages": {
-    "title": "Paraugu ņemšanas plāns",
-    "intro": "Maini skaitu vai intervālu. Mainot valodu, tavas vērtības tiek saglabātas.",
-    "language": "Valoda",
-    "countLabel": "Paraugu skaits",
-    "intervalLabel": "Intervāls (s)",
-    "reset": "Atiestatīt",
-    "durationLabel": "Nepieciešamais laiks",
-    "samples": {
-      "plural": "count",
-      "forms": {
-        "zero": "{count} paraugu",
-        "one": "{count} paraugs",
-        "other": "{count} paraugi"
-      }
-    },
-    "diagram": "Laika plāns. Paraugu skaits: {count}. Kopējais laiks: {duration} s.",
-    "modelNote": "Ilustratīvs laika modelis: kopējais laiks = skaits × intervāls. Stabiņi attēlo paraugus, to augstums — intervālu. Mērījumi netiek veikti.",
-    "share": "Saite uz šo valodas versiju",
-    "selected": "Valoda: {language}. Tavi iestatījumi ir saglabāti.",
-    "unavailable": "Šis tulkojums nav pieejams. Attēlotā valoda: {language}; tavi iestatījumi ir saglabāti."
-  }
-};
+globalThis.MOCatalogues.lv = {"status":"example","sourceRevision":"44e0328b658e520a9b01016b5038fb1bee1b46f0b13383bb6a2553d34e428b8a","review":"AI-assisted translation; independent language review pending","messages":{"title":"Paraugu ņemšanas plāns","intro":"Maini skaitu vai intervālu. Mainot valodu, tavas vērtības tiek saglabātas.","language":"Valoda","countLabel":"Paraugu skaits","intervalLabel":"Intervāls (s)","reset":"Atiestatīt","durationLabel":"Nepieciešamais laiks","samples":{"plural":"count","forms":{"zero":"{count} paraugu","one":"{count} paraugs","other":"{count} paraugi"}},"diagram":"Laika plāns. Paraugu skaits: {count}. Kopējais laiks: {duration} s.","modelNote":"Ilustratīvs laika modelis: kopējais laiks = skaits × intervāls. Stabiņi attēlo paraugus, to augstums — intervālu. Mērījumi netiek veikti.","share":"Saite uz šo valodas versiju","selected":"Valoda: {language}. Tavi iestatījumi ir saglabāti.","unavailable":"Šis tulkojums nav pieejams. Attēlotā valoda: {language}; tavi iestatījumi ir saglabāti.","chrome.text001":"Daudzvalodu pieejamība / Modern Objectivity","chrome.text002":"MODERN OBJECTIVITY / STILA KOMPLEKTS","chrome.text003":"PARAUGS / 01","chrome.text004":"MO-13 / Daudzvalodu pieejamība","chrome.text005":"Viens modelis. Divdesmit četras valodas.","chrome.text006":"Valodu pieejamība ir dizaina daļa. Šis darbojošais piemērs saglabā aprēķinu un iestatījumus kopā, kamēr mainās vārdi, skaitļu formāti un daudzskaitļa formas.","chrome.text007":"Laika plāns. Paraugu skaits: 6. Kopā: 1.50 s.","chrome.text008":"Interaktīvajam piemēram vajadzīgs JavaScript. Tā angļu apraksts un sākotnējās vērtības paliek redzamas.","chrome.text009":"Pilns lapas pārklājums","chrome.text010":"Visai atsauces vietnei, rokasgrāmatai un piemēriem ir lokālas valodu versijas. Šie tulkojumi veidoti ar mākslīgā intelekta palīdzību un gaida neatkarīgu valodas pārbaudi.","chrome.text011":"Lokāls un neatkarīgs","chrome.text012":"Valodu pakotnes tiek piegādātas kopā ar lapu. Atlasītā valoda ir URL. Bez kontiem, sīkdatnēm, preferenču glabāšanas vai tulkošanas pakalpojuma.","chrome.text013":"Kopēt darbojošos paraugu","chrome.text014":"Atkārtoti izmantojiet valodu katalogu, palīgrīku un pārbaudes. Saglabājiet savu zinātnisko modeli un tulkojiet pilnus moduļus.","chrome.text015":"Koda un integrācijas ceļvedis →","chrome.text016":"Centrālā prasība","chrome.text017":"Programmēšanas paraugs","chrome.text018":"Pirmkods","chrome.description":"Kopējams Modern Objectivity paraugs: lokālas valodu pakotnes, 24 ES valodas, kopīgs modeļa stāvoklis un pārbaudīti tulkojumi."}};

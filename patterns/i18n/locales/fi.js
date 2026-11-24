@@ -1,28 +1,3 @@
-/* Modern Objectivity sample messages. GPL-2.0-only. */
+/* Generated local catalogue. GPL-2.0-only. */
 globalThis.MOCatalogues ??= Object.create(null);
-globalThis.MOCatalogues.fi = {
-  "status": "example",
-  "sourceRevision": "7cc2555e9f06e397a352ea474267f98b3a2e9c3fa3c43508a89928228efc24ca",
-  "review": "AI-assisted example; independent language review pending",
-  "messages": {
-    "title": "Näytteenottosuunnitelma",
-    "intro": "Muuta määrää tai aikaväliä. Arvosi säilyvät, kun vaihdat kieltä.",
-    "language": "Kieli",
-    "countLabel": "Näytteiden määrä",
-    "intervalLabel": "Aikaväli (s)",
-    "reset": "Palauta oletusarvot",
-    "durationLabel": "Tarvittava aika",
-    "samples": {
-      "plural": "count",
-      "forms": {
-        "one": "{count} näyte",
-        "other": "{count} näytettä"
-      }
-    },
-    "diagram": "Aikataulu. Näytteiden määrä: {count}. Kokonaisaika: {duration} s.",
-    "modelNote": "Havainnollistava aikamalli: kokonaisaika = määrä × aikaväli. Pylväät kuvaavat näytteitä ja niiden korkeus aikaväliä. Mittauksia ei tehdä.",
-    "share": "Linkki tähän kieliversioon",
-    "selected": "Kieli: {language}. Asetuksesi säilyvät ennallaan.",
-    "unavailable": "Tämä käännös ei ole saatavilla. Näytettävä kieli on {language}; asetuksesi säilyvät ennallaan."
-  }
-};
+globalThis.MOCatalogues.fi = {"status":"example","sourceRevision":"44e0328b658e520a9b01016b5038fb1bee1b46f0b13383bb6a2553d34e428b8a","review":"AI-assisted translation; independent language review pending","messages":{"title":"Näytteenottosuunnitelma","intro":"Muuta määrää tai aikaväliä. Arvosi säilyvät, kun vaihdat kieltä.","language":"Kieli","countLabel":"Näytteiden määrä","intervalLabel":"Aikaväli (s)","reset":"Palauta oletusarvot","durationLabel":"Tarvittava aika","samples":{"plural":"count","forms":{"one":"{count} näyte","other":"{count} näytettä"}},"diagram":"Aikataulu. Näytteiden määrä: {count}. Kokonaisaika: {duration} s.","modelNote":"Havainnollistava aikamalli: kokonaisaika = määrä × aikaväli. Pylväät kuvaavat näytteitä ja niiden korkeus aikaväliä. Mittauksia ei tehdä.","share":"Linkki tähän kieliversioon","selected":"Kieli: {language}. Asetuksesi säilyvät ennallaan.","unavailable":"Tämä käännös ei ole saatavilla. Näytettävä kieli on {language}; asetuksesi säilyvät ennallaan.","chrome.text001":"Monikielinen saavutettavuus / Modern Objectivity","chrome.text002":"MODERN OBJECTIVITY / TYYLIPAKETTI","chrome.text003":"MALLI / 01","chrome.text004":"MO-13 / Monikielinen saavutettavuus","chrome.text005":"Yksi malli. Kaksikymmentäneljä kieltä.","chrome.text006":"Kielellinen saavutettavuus kuuluu suunnitteluun. Tämä toimiva esimerkki pitää laskennan ja asetuksesi yhdessä, kun sanat, lukumuodot ja monikkomuodot muuttuvat.","chrome.text007":"Aikataulu. Näytteiden määrä: 6. Yhteensä: 1.50 s.","chrome.text008":"Interaktiivinen esimerkki tarvitsee JavaScriptiä. Englanninkielinen kuvaus ja alkuarvot pysyvät näkyvissä.","chrome.text009":"Koko sivun kattavuus","chrome.text010":"Koko viitesivustolla, käsikirjalla ja esimerkeillä on paikalliset kieliversiot. Käännökset ovat tekoälyavusteisia ja odottavat riippumatonta kielentarkistusta.","chrome.text011":"Paikallinen ja itsenäinen","chrome.text012":"Kielipaketit toimitetaan sivun mukana. Valittu kieli on URL-osoitteessa. Ei tilejä, evästeitä, asetustallennusta tai käännöspalvelua.","chrome.text013":"Kopioi toimiva malli","chrome.text014":"Hyödynnä kieliluetteloa, apurutiinia ja tarkistuksia. Säilytä oma tieteellinen mallisi ja käännä kokonaiset moduulit.","chrome.text015":"Koodi- ja integraatio-opas →","chrome.text016":"Keskeinen vaatimus","chrome.text017":"Ohjelmointimalli","chrome.text018":"Lähdekoodi","chrome.description":"Kopioitava Modern Objectivity -malli: paikalliset kielipaketit, EU:n 24 kieltä, yhteinen mallitila ja tarkistetut käännökset."}};

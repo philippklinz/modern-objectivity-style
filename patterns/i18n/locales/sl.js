@@ -1,30 +1,3 @@
-/* Modern Objectivity sample messages. GPL-2.0-only. */
+/* Generated local catalogue. GPL-2.0-only. */
 globalThis.MOCatalogues ??= Object.create(null);
-globalThis.MOCatalogues.sl = {
-  "status": "example",
-  "sourceRevision": "7cc2555e9f06e397a352ea474267f98b3a2e9c3fa3c43508a89928228efc24ca",
-  "review": "AI-assisted example; independent language review pending",
-  "messages": {
-    "title": "Načrt vzorčenja",
-    "intro": "Spremenite število ali interval. Ob spremembi jezika se vaše vrednosti ohranijo.",
-    "language": "Jezik",
-    "countLabel": "Število vzorcev",
-    "intervalLabel": "Interval (s)",
-    "reset": "Ponastavi",
-    "durationLabel": "Potreben čas",
-    "samples": {
-      "plural": "count",
-      "forms": {
-        "one": "{count} vzorec",
-        "two": "{count} vzorca",
-        "few": "{count} vzorci",
-        "other": "{count} vzorcev"
-      }
-    },
-    "diagram": "Časovni načrt. Število vzorcev: {count}. Skupni čas: {duration} s.",
-    "modelNote": "Ponazoritveni časovni model: skupni čas = število × interval. Stolpci predstavljajo vzorce, njihova višina pa interval. Meritve se ne izvajajo.",
-    "share": "Povezava do te jezikovne različice",
-    "selected": "Jezik: {language}. Vaše nastavitve se ohranijo.",
-    "unavailable": "Ta prevod ni na voljo. Prikazani jezik: {language}; vaše nastavitve se ohranijo."
-  }
-};
+globalThis.MOCatalogues.sl = {"status":"example","sourceRevision":"44e0328b658e520a9b01016b5038fb1bee1b46f0b13383bb6a2553d34e428b8a","review":"AI-assisted translation; independent language review pending","messages":{"title":"Načrt vzorčenja","intro":"Spremenite število ali interval. Preklop jezika ohrani vaše vrednosti.","language":"Jezik","countLabel":"Število vzorcev","intervalLabel":"Interval (s)","reset":"Ponastavi","durationLabel":"Časovna poraba","samples":{"plural":"count","forms":{"one":"{count} vzorec","two":"{count} vzorca","few":"{count} vzorci","other":"{count} vzorcev"}},"diagram":"Časovni načrt. Število vzorcev: {count}. Skupaj: {duration} s.","modelNote":"Ponazoritveni časovni model: skupaj = število × interval. Stolpci predstavljajo vzorce, višina predstavlja interval. Meritve se ne izvajajo.","share":"Povezava do tega jezika","selected":"Jezik: {language}. Vaše nastavitve ostajajo nespremenjene.","unavailable":"Ta prevod ni na voljo. Prikazani jezik: {language}; vaše nastavitve ostajajo nespremenjene.","chrome.text001":"Večjezična dostopnost / Modern Objectivity","chrome.text002":"MODERN OBJECTIVITY / ZBIRKA SLOGOV","chrome.text003":"VZOREC / 01","chrome.text004":"MO-13 / Večjezična dostopnost","chrome.text005":"En model. Štiriindvajset jezikov.","chrome.text006":"Jezikovna dostopnost je del zasnove. Ta delujoči primer ohrani izračun in vaše nastavitve, medtem ko se spreminjajo besede, zapisi števil in številske oblike.","chrome.text007":"Časovni načrt. Število vzorcev: 6. Skupaj: 1.50 s.","chrome.text008":"Interaktivni primer potrebuje JavaScript. Njegov angleški opis in začetne vrednosti ostanejo vidni.","chrome.text009":"Celovita pokritost strani","chrome.text010":"Celotno referenčno spletišče, priročnik in primeri imajo lokalne jezikovne izdaje. Ti prevodi so nastali s pomočjo umetne inteligence in čakajo na neodvisni jezikovni pregled.","chrome.text011":"Lokalno in neodvisno","chrome.text012":"Jezikovni paketi so priloženi strani. Izbrani jezik je v URL. Brez računov, piškotkov, shranjevanja nastavitev ali prevajalske storitve.","chrome.text013":"Kopirajte delujoči vzorec","chrome.text014":"Ponovno uporabite jezikovni katalog, pomožni modul in preverjanja. Ohranite svoj znanstveni model in prevedite celotne module.","chrome.text015":"Vodnik po kodi in integraciji →","chrome.text016":"Osrednja zahteva","chrome.text017":"Programski vzorec","chrome.text018":"Izvorna koda","chrome.description":"Vzorec Modern Objectivity za kopiranje: lokalni jezikovni paketi, 24 jezikov EU, skupno stanje modela in preverjeni prevodi."}};

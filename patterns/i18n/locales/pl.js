@@ -1,30 +1,3 @@
-/* Modern Objectivity sample messages. GPL-2.0-only. */
+/* Generated local catalogue. GPL-2.0-only. */
 globalThis.MOCatalogues ??= Object.create(null);
-globalThis.MOCatalogues.pl = {
-  "status": "example",
-  "sourceRevision": "7cc2555e9f06e397a352ea474267f98b3a2e9c3fa3c43508a89928228efc24ca",
-  "review": "AI-assisted example; independent language review pending",
-  "messages": {
-    "title": "Plan pobierania próbek",
-    "intro": "Zmień liczbę lub odstęp. Zmiana języka zachowuje Twoje wartości.",
-    "language": "Język",
-    "countLabel": "Liczba próbek",
-    "intervalLabel": "Odstęp (s)",
-    "reset": "Przywróć wartości początkowe",
-    "durationLabel": "Potrzebny czas",
-    "samples": {
-      "plural": "count",
-      "forms": {
-        "one": "{count} próbka",
-        "few": "{count} próbki",
-        "many": "{count} próbek",
-        "other": "{count} próbki"
-      }
-    },
-    "diagram": "Plan czasowy. Liczba próbek: {count}. Łączny czas: {duration} s.",
-    "modelNote": "Poglądowy model czasowy: łączny czas = liczba × odstęp. Słupki oznaczają próbki, a ich wysokość oznacza odstęp. Nie są wykonywane żadne pomiary.",
-    "share": "Link do tej wersji językowej",
-    "selected": "Język: {language}. Twoje ustawienia pozostają bez zmian.",
-    "unavailable": "To tłumaczenie jest niedostępne. Wyświetlany język: {language}; Twoje ustawienia pozostają bez zmian."
-  }
-};
+globalThis.MOCatalogues.pl = {"status":"example","sourceRevision":"44e0328b658e520a9b01016b5038fb1bee1b46f0b13383bb6a2553d34e428b8a","review":"AI-assisted translation; independent language review pending","messages":{"title":"Plan pobierania próbek","intro":"Zmień liczbę lub odstęp. Zmiana języka zachowuje Twoje wartości.","language":"Język","countLabel":"Liczba próbek","intervalLabel":"Odstęp (s)","reset":"Resetuj","durationLabel":"Potrzebny czas","samples":{"plural":"count","forms":{"one":"{count} próbka","few":"{count} próbki","many":"{count} próbek","other":"{count} próbki"}},"diagram":"Plan czasowy. Liczba próbek: {count}. Łączny czas: {duration} s.","modelNote":"Poglądowy model czasowy: łączny czas = liczba × odstęp. Słupki oznaczają próbki, a ich wysokość oznacza odstęp. Nie są wykonywane żadne pomiary.","share":"Link do tej wersji językowej","selected":"Język: {language}. Twoje ustawienia pozostają bez zmian.","unavailable":"To tłumaczenie jest niedostępne. Wyświetlany język: {language}; Twoje ustawienia pozostają bez zmian.","chrome.text001":"Dostęp wielojęzyczny / Modern Objectivity","chrome.text002":"MODERN OBJECTIVITY / ZESTAW STYLÓW","chrome.text003":"WZORZEC / 01","chrome.text004":"MO-13 / Dostęp wielojęzyczny","chrome.text005":"Jeden model. Dwadzieścia cztery języki.","chrome.text006":"Dostęp językowy jest częścią projektu. Ten działający przykład zachowuje obliczenia i Twoje ustawienia, gdy zmieniają się słowa, formaty liczb i formy liczby mnogiej.","chrome.text007":"Plan czasowy. Liczba próbek: 6. Łączny czas: 1.50 s.","chrome.text008":"Interaktywny przykład wymaga JavaScript. Jego angielski opis i początkowe wartości pozostają widoczne.","chrome.text009":"Pełne pokrycie strony","chrome.text010":"Cała witryna referencyjna, podręcznik i przykłady mają lokalne wersje językowe. Te tłumaczenia są wspomagane przez AI i oczekują na niezależną weryfikację językową.","chrome.text011":"Lokalnie i niezależnie","chrome.text012":"Pakiety językowe są dostarczane ze stroną. Wybrany język jest w URL. Bez kont, ciasteczek, zapisywania preferencji ani usługi tłumaczeniowej.","chrome.text013":"Skopiuj działający wzorzec","chrome.text014":"Wykorzystaj ponownie katalog językowy, pomocnik i kontrole. Zachowaj własny model naukowy i tłumacz całe moduły.","chrome.text015":"Przewodnik po kodzie i integracji →","chrome.text016":"Główny wymóg","chrome.text017":"Wzorzec programistyczny","chrome.text018":"Kod źródłowy","chrome.description":"Wzorzec Modern Objectivity do skopiowania: lokalne pakiety językowe, 24 języki UE, wspólny stan modelu i sprawdzane tłumaczenia."}};
