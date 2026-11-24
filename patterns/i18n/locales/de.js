@@ -1,28 +1,3 @@
-/* Modern Objectivity sample messages. GPL-2.0-only. */
+/* Generated local catalogue. GPL-2.0-only. */
 globalThis.MOCatalogues ??= Object.create(null);
-globalThis.MOCatalogues.de = {
-  "status": "example",
-  "sourceRevision": "7cc2555e9f06e397a352ea474267f98b3a2e9c3fa3c43508a89928228efc24ca",
-  "review": "AI-assisted example; independent language review pending",
-  "messages": {
-    "title": "Probenplan",
-    "intro": "Ändere die Anzahl oder das Intervall. Beim Sprachwechsel bleiben deine Werte erhalten.",
-    "language": "Sprache",
-    "countLabel": "Anzahl der Proben",
-    "intervalLabel": "Intervall (s)",
-    "reset": "Zurücksetzen",
-    "durationLabel": "Zeitbedarf",
-    "samples": {
-      "plural": "count",
-      "forms": {
-        "one": "{count} Probe",
-        "other": "{count} Proben"
-      }
-    },
-    "diagram": "Zeitplan. Probenanzahl: {count}. Gesamtzeit: {duration} s.",
-    "modelNote": "Vereinfachtes Zeitmodell: Gesamtzeit = Anzahl × Intervall. Balken stehen für Proben, ihre Höhe für das Intervall. Es werden keine Messungen durchgeführt.",
-    "share": "Link zu dieser Sprachfassung",
-    "selected": "Sprache: {language}. Deine Einstellungen bleiben erhalten.",
-    "unavailable": "Diese Übersetzung ist nicht verfügbar. Angezeigt wird {language}; deine Einstellungen bleiben erhalten."
-  }
-};
+globalThis.MOCatalogues.de = {"status":"example","sourceRevision":"44e0328b658e520a9b01016b5038fb1bee1b46f0b13383bb6a2553d34e428b8a","review":"AI-assisted translation; independent language review pending","messages":{"title":"Probenplan","intro":"Ändere die Anzahl oder das Intervall. Beim Sprachwechsel bleiben deine Werte erhalten.","language":"Sprache","countLabel":"Anzahl der Proben","intervalLabel":"Intervall (s)","reset":"Zurücksetzen","durationLabel":"Zeitbedarf","samples":{"plural":"count","forms":{"one":"{count} Probe","other":"{count} Proben"}},"diagram":"Zeitplan. Probenanzahl: {count}. Gesamtzeit: {duration} s.","modelNote":"Vereinfachtes Zeitmodell: Gesamtzeit = Anzahl × Intervall. Balken stehen für Proben, ihre Höhe für das Intervall. Es werden keine Messungen durchgeführt.","share":"Link zu dieser Sprachfassung","selected":"Sprache: {language}. Deine Einstellungen bleiben erhalten.","unavailable":"Diese Übersetzung ist nicht verfügbar. Angezeigt wird {language}; deine Einstellungen bleiben erhalten.","chrome.text001":"Mehrsprachiger Zugang / Modern Objectivity","chrome.text002":"MODERN OBJECTIVITY / STIL-KIT","chrome.text003":"MUSTER / 01","chrome.text004":"MO-13 / Mehrsprachiger Zugang","chrome.text005":"Ein Modell. Vierundzwanzig Sprachen.","chrome.text006":"Sprachlicher Zugang ist Teil der Gestaltung. Dieses funktionsfähige Beispiel hält Berechnung und Einstellungen zusammen, während Wörter, Zahlenformate und Pluralformen wechseln.","chrome.text007":"Zeitplan. Probenanzahl: 6. Gesamtzeit: 1,50 s.","chrome.text008":"Das interaktive Beispiel benötigt JavaScript. Seine englische Beschreibung und Ausgangswerte bleiben sichtbar.","chrome.text009":"Vollständige Seitenabdeckung","chrome.text010":"Die vollständige Referenzwebsite, das Handbuch und die Beispiele haben lokale Sprachausgaben. Diese Übersetzungen sind KI-unterstützt und warten auf unabhängige sprachliche Prüfung.","chrome.text011":"Lokal und unabhängig","chrome.text012":"Sprachpakete werden mit der Seite ausgeliefert. Die gewählte Sprache steht in der URL. Keine Konten, Cookies, Präferenzspeicherung oder Übersetzungsdienste.","chrome.text013":"Das funktionsfähige Muster kopieren","chrome.text014":"Verwende Sprachkatalog, Hilfsfunktion und Prüfungen wieder. Behalte dein eigenes wissenschaftliches Modell und übersetze vollständige Module.","chrome.text015":"Code- und Integrationsleitfaden →","chrome.text016":"Zentrale Anforderung","chrome.text017":"Programmiermuster","chrome.text018":"Quellcode","chrome.description":"Ein kopierbares Modern Objectivity Muster: lokale Sprachpakete, 24 EU-Sprachen, gemeinsamer Modellzustand und geprüfte Übersetzungen."}};

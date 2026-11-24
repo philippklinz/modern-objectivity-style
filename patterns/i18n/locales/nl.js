@@ -1,28 +1,3 @@
-/* Modern Objectivity sample messages. GPL-2.0-only. */
+/* Generated local catalogue. GPL-2.0-only. */
 globalThis.MOCatalogues ??= Object.create(null);
-globalThis.MOCatalogues.nl = {
-  "status": "example",
-  "sourceRevision": "7cc2555e9f06e397a352ea474267f98b3a2e9c3fa3c43508a89928228efc24ca",
-  "review": "AI-assisted example; independent language review pending",
-  "messages": {
-    "title": "Bemonsteringsplan",
-    "intro": "Wijzig het aantal of het interval. Bij een taalwissel blijven je waarden behouden.",
-    "language": "Taal",
-    "countLabel": "Aantal monsters",
-    "intervalLabel": "Interval (s)",
-    "reset": "Herstellen",
-    "durationLabel": "Benodigde tijd",
-    "samples": {
-      "plural": "count",
-      "forms": {
-        "one": "{count} monster",
-        "other": "{count} monsters"
-      }
-    },
-    "diagram": "Tijdschema. Aantal monsters: {count}. Totale tijd: {duration} s.",
-    "modelNote": "Illustratief tijdmodel: totale tijd = aantal × interval. Balken stellen monsters voor; hun hoogte stelt het interval voor. Er worden geen metingen uitgevoerd.",
-    "share": "Link naar deze taalversie",
-    "selected": "Taal: {language}. Je instellingen blijven behouden.",
-    "unavailable": "Deze vertaling is niet beschikbaar. De pagina wordt getoond in {language}; je instellingen blijven behouden."
-  }
-};
+globalThis.MOCatalogues.nl = {"status":"example","sourceRevision":"44e0328b658e520a9b01016b5038fb1bee1b46f0b13383bb6a2553d34e428b8a","review":"AI-assisted translation; independent language review pending","messages":{"title":"Bemonsteringsplan","intro":"Wijzig het aantal of het interval. Bij een taalwissel blijven je waarden behouden.","language":"Taal","countLabel":"Aantal monsters","intervalLabel":"Interval (s)","reset":"Herstellen","durationLabel":"Benodigde tijd","samples":{"plural":"count","forms":{"one":"{count} monster","other":"{count} monsters"}},"diagram":"Tijdschema. Aantal monsters: {count}. Totale tijd: {duration} s.","modelNote":"Illustratief tijdmodel: totale tijd = aantal × interval. Balken stellen monsters voor; hun hoogte stelt het interval voor. Er worden geen metingen uitgevoerd.","share":"Link naar deze taalversie","selected":"Taal: {language}. Je instellingen blijven behouden.","unavailable":"Deze vertaling is niet beschikbaar. De pagina wordt getoond in {language}; je instellingen blijven behouden.","chrome.text001":"Meertalige toegang / Modern Objectivity","chrome.text002":"MODERN OBJECTIVITY / STIJLKIT","chrome.text003":"PATROON / 01","chrome.text004":"MO-13 / Meertalige toegang","chrome.text005":"Eén model. Vierentwintig talen.","chrome.text006":"Toegang via taal maakt deel uit van het ontwerp. Dit werkende voorbeeld houdt de berekening en je instellingen bij elkaar terwijl woorden, getalnotaties en meervoudsvormen veranderen.","chrome.text007":"Tijdschema. Aantal monsters: 6. Totaal: 1,50 s.","chrome.text008":"Het interactieve voorbeeld heeft JavaScript nodig. De Engelse beschrijving en beginwaarden blijven zichtbaar.","chrome.text009":"Volledige paginadekking","chrome.text010":"De volledige referentiesite, het handboek en de voorbeelden hebben lokale taalversies. Deze vertalingen zijn AI-ondersteund en wachten op onafhankelijke taalcontrole.","chrome.text011":"Lokaal en onafhankelijk","chrome.text012":"Taalpakketten worden met de pagina meegeleverd. De gekozen taal staat in de URL. Geen accounts, cookies, voorkeurenopslag of vertaaldienst.","chrome.text013":"Het werkende patroon kopiëren","chrome.text014":"Hergebruik de taalcatalogus, helper en controles. Behoud je eigen wetenschappelijke model en vertaal volledige modules.","chrome.text015":"Code- en integratiegids →","chrome.text016":"Centrale vereiste","chrome.text017":"Programmeerpatroon","chrome.text018":"Broncode","chrome.description":"Een kopieerbaar Modern Objectivity-patroon: lokale taalpakketten, 24 EU-talen, gedeelde modeltoestand en gecontroleerde vertalingen."}};

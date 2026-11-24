@@ -1,28 +1,3 @@
-/* Modern Objectivity sample messages. GPL-2.0-only. */
+/* Generated local catalogue. GPL-2.0-only. */
 globalThis.MOCatalogues ??= Object.create(null);
-globalThis.MOCatalogues.da = {
-  "status": "example",
-  "sourceRevision": "7cc2555e9f06e397a352ea474267f98b3a2e9c3fa3c43508a89928228efc24ca",
-  "review": "AI-assisted example; independent language review pending",
-  "messages": {
-    "title": "Prøvetagningsplan",
-    "intro": "Ændr antallet eller intervallet. Dine værdier bevares, når du skifter sprog.",
-    "language": "Sprog",
-    "countLabel": "Antal prøver",
-    "intervalLabel": "Interval (s)",
-    "reset": "Nulstil",
-    "durationLabel": "Tidsforbrug",
-    "samples": {
-      "plural": "count",
-      "forms": {
-        "one": "{count} prøve",
-        "other": "{count} prøver"
-      }
-    },
-    "diagram": "Tidsplan. Antal prøver: {count}. Samlet tid: {duration} s.",
-    "modelNote": "Illustrativ tidsmodel: samlet tid = antal × interval. Søjlerne repræsenterer prøver, og højden repræsenterer intervallet. Der udføres ingen målinger.",
-    "share": "Link til denne sprogversion",
-    "selected": "Sprog: {language}. Dine indstillinger er uændrede.",
-    "unavailable": "Denne oversættelse er ikke tilgængelig. Viser {language}; dine indstillinger er uændrede."
-  }
-};
+globalThis.MOCatalogues.da = {"status":"example","sourceRevision":"44e0328b658e520a9b01016b5038fb1bee1b46f0b13383bb6a2553d34e428b8a","review":"AI-assisted translation; independent language review pending","messages":{"title":"Prøvetagningsplan","intro":"Ændr antallet eller intervallet. Dine værdier bevares, når du skifter sprog.","language":"Sprog","countLabel":"Antal prøver","intervalLabel":"Interval (s)","reset":"Nulstil","durationLabel":"Tidsforbrug","samples":{"plural":"count","forms":{"one":"{count} prøve","other":"{count} prøver"}},"diagram":"Tidsplan. Antal prøver: {count}. Samlet tid: {duration} s.","modelNote":"Illustrativ tidsmodel: samlet tid = antal × interval. Søjlerne repræsenterer prøver, og højden repræsenterer intervallet. Der udføres ingen målinger.","share":"Link til denne sprogversion","selected":"Sprog: {language}. Dine indstillinger er uændrede.","unavailable":"Denne oversættelse er ikke tilgængelig. Viser {language}; dine indstillinger er uændrede.","chrome.text001":"Flersproget adgang / Modern Objectivity","chrome.text002":"MODERN OBJECTIVITY / STILSÆT","chrome.text003":"MØNSTER / 01","chrome.text004":"MO-13 / Flersproget adgang","chrome.text005":"Én model. Fireogtyve sprog.","chrome.text006":"Sproglig adgang er en del af designet. Dette fungerende eksempel holder beregningen og dine indstillinger samlet, mens ord, talformater og flertalsformer ændres.","chrome.text007":"Tidsplan. Antal prøver: 6. I alt: 1,50 s.","chrome.text008":"Det interaktive eksempel kræver JavaScript. Den engelske beskrivelse og startværdierne forbliver synlige.","chrome.text009":"Komplet sidedækning","chrome.text010":"Hele referencewebstedet, håndbogen og eksemplerne har lokale sprogudgaver. Oversættelserne er AI-assisterede og afventer uafhængig sproglig gennemgang.","chrome.text011":"Lokalt og uafhængigt","chrome.text012":"Sprogpakker leveres med siden. Det valgte sprog er i URL'en. Ingen konti, cookies, præferencelagring eller oversættelsestjeneste.","chrome.text013":"Kopiér det fungerende mønster","chrome.text014":"Genbrug sprogkataloget, hjælpefunktionen og kontrollerne. Behold din egen videnskabelige model, og oversæt hele moduler.","chrome.text015":"Kode- og integrationsguide →","chrome.text016":"Centralt krav","chrome.text017":"Programmeringsmønster","chrome.text018":"Kildekode","chrome.description":"Et kopierbart Modern Objectivity-mønster: lokale sprogpakker, 24 EU-sprog, fælles modeltilstand og kontrollerede oversættelser."}};
