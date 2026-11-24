@@ -40,7 +40,9 @@
     return request;
   }
   function render() {
-    i18n.apply(scope);
+    i18n.apply(document.documentElement);
+    scope.lang = i18n.locale;
+    document.querySelector('meta[name="description"]').content = i18n.text('chrome.description');
     $('count-value').textContent = i18n.number(state.count);
     $('interval-value').textContent = i18n.number(state.interval, {minimumFractionDigits: 2});
     $('summary').textContent = i18n.text('samples', {count: state.count});
@@ -61,6 +63,12 @@
     }
     const link = new URL(location.href); link.searchParams.set('lang', i18n.locale);
     $('share-link').href = link.href;
+    for (const anchor of document.querySelectorAll('a[href]')) {
+      const target = new URL(anchor.getAttribute('href'), location.href);
+      if (target.origin === location.origin && /\.html$|\/$/.test(target.pathname)) {
+        target.searchParams.set('lang',i18n.locale); anchor.href=target.href;
+      }
+    }
   }
   async function choose(code, updateURL = false) {
     const ticket = ++generation;

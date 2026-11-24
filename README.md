@@ -52,7 +52,7 @@ Open [http://localhost:8000](http://localhost:8000).
 
 ## Design language documentation
 
-**MO-13 requires complete user-facing journeys in all 24 official EU languages.** See the [central language-access requirement](docs/10-multilingual-access.md) and [programming pattern](guides/multilingual-pattern.md). The copyable multilingual panel demonstrates all 24 languages; its translations are AI-assisted examples awaiting independent language review. Earlier examples remain English and have not yet met full language coverage. Developer documentation is maintained in English.
+**MO-13 requires complete user-facing journeys in all 24 official EU languages, including this entire published style guide, handbook and every example.** See the [central language-access requirement](docs/10-multilingual-access.md) and [programming pattern](guides/multilingual-pattern.md). English Markdown is the authoring source for translated handbook pages; published technical guidance follows the same language requirement. Translations are AI-assisted and await independent language review. Mechanical coverage and source-freshness checks do not certify their linguistic quality.
 
 The practical style is one **reference implementation** of Modern Objectivity. The framework-neutral reasoning is documented separately:
 

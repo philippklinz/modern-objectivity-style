@@ -16,7 +16,7 @@ The following principles guide implementation and review. Apply them to actual t
 | **MO-10** | **Validate design claims.** Test hypotheses and document what was actually observed. | What evidence supports the claim? |
 | **MO-11** | **Make systems explainable.** Communicate state, causes, and consequences. | Can someone tell what the system does and why? |
 | **MO-12** | **Emotion as Function.** Consider emotional and aesthetic effects as legitimate goals, not assured results. | Is the intended experience supported and ethically appropriate? |
-| **MO-13** | **Language is part of access.** Provide complete user-facing journeys in all 24 official EU languages, with honest coverage status. | Can people understand the content, operate the interface and receive feedback in their selected language? |
+| **MO-13** | **Language is part of access.** Provide complete user-facing journeys, including the published guide, handbook and examples, in all 24 official EU languages, with honest coverage status. | Can people understand the content, operate the interface and receive feedback in their selected language? |
 
 ## Applying the rules
 

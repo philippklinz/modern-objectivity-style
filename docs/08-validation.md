@@ -45,7 +45,7 @@ For reusable components, test normal content; empty versus no results; errors an
 
 Document exceptions if a scenario is not applicable.
 
-For [MO-13](10-multilingual-access.md), check each published module/language for missing keys, stale source revisions, placeholder changes and plural forms. Exercise controls, feedback, graphics and accessible descriptions in the selected language. Test fallback, deep links, back/forward, long text and Greek/Cyrillic text. Automatic coverage checks do not establish linguistic or scientific correctness. Record translation review separately; keep unimplemented coverage visible.
+For [MO-13](10-multilingual-access.md), inventory every published page, handbook chapter and example, then check each language for complete content, missing keys, stale source revisions, placeholder changes and plural forms. Check prose, tables, navigation, metadata and link destinations alongside controls, feedback, graphics and accessible descriptions. Test fallback, deep links, back/forward, long text and Greek/Cyrillic text. Automatic coverage checks do not establish linguistic or scientific correctness. Record translation review separately; keep unimplemented coverage visible.
 
 ## Emotional Intent validation
 

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en" data-mo-page="guides-components"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title data-mo-key="guides-components.msg0001">Component Patterns / Modern Objectivity</title>
+<script src="../i18n/core.js" data-mo-generated="runtime"></script><script src="../i18n/pages/guides-components/source.js" data-mo-generated="runtime"></script><script src="../i18n/runtime.js" data-mo-generated="runtime"></script><link rel="stylesheet" href="../styles/modern-objectivity.css"><link rel="stylesheet" href="../i18n/site.css" data-mo-generated="style"></head>
+<body><main class="mo-handbook"><header class="mo-handbook-nav"><a href="../index.html" data-mo-key="guides-components.msg0002">Modern Objectivity / Style kit</a><a href="../README.html" data-mo-key="guides-components.msg0003">Handbook contents</a></header>
+<article><h1 data-mo-key="guides-components.msg0004">Component Patterns</h1>
+<p data-mo-key="guides-components.msg0005">A reusable component is a contract for behavior <strong>and</strong> presentation, not a screenshot.</p>
+<h2 data-mo-key="guides-components.msg0006">Search</h2>
+<ul>
+<li data-mo-key="guides-components.msg0007">Make current filters legible and revisable.</li>
+<li data-mo-key="guides-components.msg0008">Distinguish an empty dataset from zero matching results.</li>
+<li data-mo-key="guides-components.msg0009">Avoid presenting unknown totals as exact counts.</li>
+</ul>
+<h2 data-mo-key="guides-components.msg0010">Lists and details</h2>
+<ul>
+<li data-mo-key="guides-components.msg0011">Keep keyboard focus and selection distinct.</li>
+<li data-mo-key="guides-components.msg0012">Preserve relevant filter and navigation context when returning from a detail.</li>
+<li data-mo-key="guides-components.msg0013">Test long labels, missing fields, and high-volume collections.</li>
+</ul>
+<h2 data-mo-key="guides-components.msg0014">Forms</h2>
+<ul>
+<li data-mo-key="guides-components.msg0015">Provide persistent labels and actionable validation messages.</li>
+<li data-mo-key="guides-components.msg0016">Explain whether changes are pending, saved, or rejected.</li>
+<li data-mo-key="guides-components.msg0017">Prevent harmful duplicate submissions.</li>
+<li data-mo-key="guides-components.msg0018">Provide recovery for destructive actions where feasible.</li>
+</ul>
+<h2 data-mo-key="guides-components.msg0019">Dialogs and panels</h2>
+<ul>
+<li data-mo-key="guides-components.msg0020">Use modal interruption only when necessary.</li>
+<li data-mo-key="guides-components.msg0021">Move and restore focus predictably.</li>
+<li data-mo-key="guides-components.msg0022">Describe consequences, not merely “Are you sure?”</li>
+</ul>
+<h2 data-mo-key="guides-components.msg0023">States</h2>
+<p data-mo-key="guides-components.msg0024">Specify initial, loading, ready, empty, no-results, partial, stale, error, forbidden, and disabled only where relevant. A spinner alone cannot explain a failed operation.</p>
+<h2 data-mo-key="guides-components.msg0025">Reference contract</h2>
+<pre translate="no" lang="en"><code class="language-text" translate="no" lang="en">Component: EntityBrowser
+Purpose: search and inspect records
+Inputs: records or data source, filters, selection
+States: initial, loading, ready, empty, no-results, error
+Events: filter-change, select, retry
+Accessibility: semantic labels, keyboard, restored focus
+Variants: comfortable, compact
+Evidence: keyboard test, realistic data, error/empty states
+</code></pre>
+<p data-mo-key="guides-components.msg0026">Extend with the <a href="../templates/component-contract.html">Component Contract template</a>.</p>
+</article><footer class="mo-handbook-footer" data-mo-key="guides-components.msg0027"><a href="../README.html">Handbook contents</a><a href="https://github.com/philippklinz/modern-objectivity-style/blob/main/guides/components.md">English authoring source</a><span>GPL-2.0-only</span></footer></main></body></html>

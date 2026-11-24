@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en" data-mo-page="docs-07-technical-principles"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title data-mo-key="docs-07-technical-principles.msg0001">07 — Technical Principles / Modern Objectivity</title>
+<script src="../i18n/core.js" data-mo-generated="runtime"></script><script src="../i18n/pages/docs-07-technical-principles/source.js" data-mo-generated="runtime"></script><script src="../i18n/runtime.js" data-mo-generated="runtime"></script><link rel="stylesheet" href="../styles/modern-objectivity.css"><link rel="stylesheet" href="../i18n/site.css" data-mo-generated="style"></head>
+<body><main class="mo-handbook"><header class="mo-handbook-nav"><a href="../index.html" data-mo-key="docs-07-technical-principles.msg0002">Modern Objectivity / Style kit</a><a href="../README.html" data-mo-key="docs-07-technical-principles.msg0003">Handbook contents</a></header>
+<article><h1 data-mo-key="docs-07-technical-principles.msg0004">07 — Technical Principles</h1>
+<h2 data-mo-key="docs-07-technical-principles.msg0005">Implementation is a design constraint</h2>
+<p data-mo-key="docs-07-technical-principles.msg0006">Prototype complete interaction slices early. Test representative data, input, loading, failures, long strings, permissions, and scale. A visually polished image is not a working component.</p>
+<h2 data-mo-key="docs-07-technical-principles.msg0007">Accessibility</h2>
+<p data-mo-key="docs-07-technical-principles.msg0008">For applicable web projects, consider <a href="https://www.w3.org/TR/WCAG22/">WCAG 2.2</a> Level AA as a baseline; concrete legal requirements are context-specific. This handbook does not certify compliance.</p>
+<p data-mo-key="docs-07-technical-principles.msg0009">Prefer semantic native controls. Test keyboard navigation, focus visibility, labels, assistive technology, zoom and reflow, contrast, and alternatives to complex visual gestures. Automated checks are insufficient on their own.</p>
+<h2 data-mo-key="docs-07-technical-principles.msg0010">Performance and robustness</h2>
+<p data-mo-key="docs-07-technical-principles.msg0011">Set locally meaningful budgets for devices, latency, data volume, and memory. Do not assume universal performance numbers. Consider pagination, virtualization, server-side filtering, reduced-complexity display, or degraded-mode operation when necessary.</p>
+<p data-mo-key="docs-07-technical-principles.msg0012">Test slow and missing responses, duplicate actions, changing permissions, and unknown outcomes.</p>
+<h2 data-mo-key="docs-07-technical-principles.msg0013">Internationalization</h2>
+<p data-mo-key="docs-07-technical-principles.msg0014">Implement <a href="10-multilingual-access.html">MO-13: Multilingual Access</a>: complete user-facing journeys in all 24 official EU languages, including the entire published guide, handbook and examples. Keep model values separate from keyed message catalogues, use locale-aware formatting and plural rules, and preserve application state when changing language. Test long text, Greek/Cyrillic glyphs, accessible descriptions and failure paths.</p>
+<p data-mo-key="docs-07-technical-principles.msg0015">The <a href="../guides/multilingual-pattern.html">local-catalogue programming pattern</a> supplies a working static example, source-revision checks and a copyable helper. It requires no remote translation service or cross-repository runtime. Coverage, source freshness and linguistic review are separate properties; report partial rollout honestly.</p>
+<h2 data-mo-key="docs-07-technical-principles.msg0016">Component contracts</h2>
+<p data-mo-key="docs-07-technical-principles.msg0017">A shared component specifies purpose, inputs, outputs, events, states, focus behavior, keyboard and screenreader behavior, semantic tokens, variants, errors, performance assumptions, tests, and versioning.</p>
+<p data-mo-key="docs-07-technical-principles.msg0018">See <a href="../templates/component-contract.html">Component Contract</a>.</p>
+<h2 data-mo-key="docs-07-technical-principles.msg0019">Versioning</h2>
+<p data-mo-key="docs-07-technical-principles.msg0020">Treat changes in status semantics, accessibility, component APIs, and design tokens as potentially breaking. Record the reason, scope, owner, migration strategy, and test results.</p>
+<p data-mo-key="docs-07-technical-principles.msg0021">A local rule can move through <strong>draft → evaluated → adopted → superseded</strong>.</p>
+<h2 data-mo-key="docs-07-technical-principles.msg0022">Transparency and security</h2>
+<p data-mo-key="docs-07-technical-principles.msg0023">Do not imply a security property from appearance alone. Show permission and failure states accurately, without exposing secrets in client-side messages or logs.</p>
+</article><footer class="mo-handbook-footer" data-mo-key="docs-07-technical-principles.msg0024"><a href="../README.html">Handbook contents</a><a href="https://github.com/philippklinz/modern-objectivity-style/blob/main/docs/07-technical-principles.md">English authoring source</a><span>GPL-2.0-only</span></footer></main></body></html>

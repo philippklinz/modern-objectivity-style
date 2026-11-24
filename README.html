@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en" data-mo-page="readme"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title data-mo-key="readme.msg0001">Modern Objectivity / Practical Style Kit / Modern Objectivity</title>
+<script src="i18n/core.js" data-mo-generated="runtime"></script><script src="i18n/pages/readme/source.js" data-mo-generated="runtime"></script><script src="i18n/runtime.js" data-mo-generated="runtime"></script><link rel="stylesheet" href="styles/modern-objectivity.css"><link rel="stylesheet" href="i18n/site.css" data-mo-generated="style"></head>
+<body><main class="mo-handbook"><header class="mo-handbook-nav"><a href="index.html" data-mo-key="readme.msg0002">Modern Objectivity / Style kit</a><a href="README.html" data-mo-key="readme.msg0003">Handbook contents</a></header>
+<article><h1 data-mo-key="readme.msg0004">Modern Objectivity / Practical Style Kit</h1>
+<p data-mo-key="readme.msg0005"><strong>Actual HTML and CSS for digital laboratories.</strong> Not just a design manifesto.</p>
+<p data-mo-key="readme.msg0006"><a href="https://philippklinz.github.io/modern-objectivity-style/"><strong>Open the live style kit →</strong></a></p>
+<h2 data-mo-key="readme.msg0007">View the style</h2>
+<table>
+<thead>
+<tr>
+<th data-mo-key="readme.msg0008">Live example</th>
+<th data-mo-key="readme.msg0009">What it demonstrates</th>
+</tr>
+</thead>
+<tbody><tr>
+<td data-mo-key="readme.msg0010"><a href="index.html">Style showcase</a></td>
+<td data-mo-key="readme.msg0011">Colors, typography, layout, cards, buttons, inputs, states, tables, charts and themes</td>
+</tr>
+<tr>
+<td data-mo-key="readme.msg0012"><a href="examples/lab-console.html">Lab console</a></td>
+<td data-mo-key="readme.msg0013">Functional data generation, plotting, filter/search, inspection, CSV export</td>
+</tr>
+<tr>
+<td data-mo-key="readme.msg0014"><a href="examples/experiment.html">Interactive experiment</a></td>
+<td data-mo-key="readme.msg0015">Real point–line–time wave model with sliders, play/pause, stepping and probing</td>
+</tr>
+<tr>
+<td data-mo-key="readme.msg0016"><a href="patterns/i18n/index.html">Multilingual pattern</a></td>
+<td data-mo-key="readme.msg0017">24 local sample catalogues, plural forms, numeric formatting, checked source revisions and state-preserving language changes</td>
+</tr>
+<tr>
+<td data-mo-key="readme.msg0018"><a href="starter/index.html">Starter lab</a></td>
+<td data-mo-key="readme.msg0019">Copyable app shell for a new laboratory, with standalone CSS and JavaScript</td>
+</tr>
+</tbody></table>
+<h2 data-mo-key="readme.msg0020">Start a laboratory</h2>
+<pre translate="no" lang="en"><code class="language-sh" translate="no" lang="en">git clone https://github.com/philippklinz/modern-objectivity-style.git
+cp -r modern-objectivity-style/starter my-new-lab
+cd my-new-lab
+python3 -m http.server 8000
+</code></pre>
+<p data-mo-key="readme.msg0021">Open <a href="http://localhost:8000">http://localhost:8000</a>.</p>
+<p data-mo-key="readme.msg0022"><strong>No framework, build process or CDN required.</strong> The starter folder includes its own <code translate="no" lang="en">index.html</code>, <code translate="no" lang="en">modern-objectivity.css</code> and <code translate="no" lang="en">demo.js</code>. For implementation details see the <a href="guides/visual-style-spec.html">style specification</a>.</p>
+<h2 data-mo-key="readme.msg0023">Style in one snippet</h2>
+<pre translate="no" lang="en"><code class="language-html" translate="no" lang="en">&lt;link rel="stylesheet" href="modern-objectivity.css"&gt;
+&lt;div class="mo-card"&gt;
+  &lt;span class="mo-eyebrow"&gt;LAB / 01&lt;/span&gt;
+  &lt;h3&gt;Observation series&lt;/h3&gt;
+  &lt;span class="mo-badge mo-badge-success"&gt;Ready&lt;/span&gt;
+  &lt;button class="mo-btn mo-btn-primary"&gt;Run experiment&lt;/button&gt;
+&lt;/div&gt;
+</code></pre>
+<h2 data-mo-key="readme.msg0024">Design specification</h2>
+<ul>
+<li data-mo-key="readme.msg0025"><strong>Colors:</strong> light canvas, graphite, peacock-teal accents; full light and dark themes with semantic tokens.</li>
+<li data-mo-key="readme.msg0026"><strong>Typography:</strong> Liberation Sans / Liberation Mono with system fallbacks.</li>
+<li data-mo-key="readme.msg0027"><strong>Layout:</strong> responsive laboratory rail, data panels, 4 px base spacing, deliberate hierarchy.</li>
+<li data-mo-key="readme.msg0028"><strong>Components:</strong> actions, inputs, tables, status, progress, tab navigation, charts.</li>
+<li data-mo-key="readme.msg0029"><strong>Real demonstrations:</strong> JavaScript behavior and generated values, explicitly marked as simulations.</li>
+<li data-mo-key="readme.msg0030"><strong>Customization:</strong> override semantic CSS tokens to develop your lab's own identity.</li>
+</ul>
+<p data-mo-key="readme.msg0031"><a href="guides/visual-style-spec.html">Full visual specification</a> · <a href="styles/modern-objectivity.css">Source CSS</a> · <a href="starter/README.html">Starter instructions</a>.</p>
+<h2 data-mo-key="readme.msg0032">Design language documentation</h2>
+<p data-mo-key="readme.msg0033"><strong>MO-13 requires complete user-facing journeys in all 24 official EU languages, including this entire published style guide, handbook and every example.</strong> See the <a href="docs/10-multilingual-access.html">central language-access requirement</a> and <a href="guides/multilingual-pattern.html">programming pattern</a>. English Markdown is the authoring source for translated handbook pages; published technical guidance follows the same language requirement. Translations are AI-assisted and await independent language review. Mechanical coverage and source-freshness checks do not certify their linguistic quality.</p>
+<p data-mo-key="readme.msg0034">The practical style is one <strong>reference implementation</strong> of Modern Objectivity. The framework-neutral reasoning is documented separately:</p>
+<ol>
+<li data-mo-key="readme.msg0035"><a href="docs/01-introduction.html">Introduction</a></li>
+<li data-mo-key="readme.msg0036"><a href="docs/02-philosophy.html">Philosophy</a></li>
+<li data-mo-key="readme.msg0037"><a href="docs/03-principles.html">Principles</a></li>
+<li data-mo-key="readme.msg0038"><a href="docs/04-visual-language.html">Visual language</a></li>
+<li data-mo-key="readme.msg0039"><a href="docs/05-time-interaction.html">Time and interaction</a></li>
+<li data-mo-key="readme.msg0040"><a href="docs/06-stage-identity.html">Stage and identity</a></li>
+<li data-mo-key="readme.msg0041"><a href="docs/07-technical-principles.html">Technical principles</a></li>
+<li data-mo-key="readme.msg0042"><a href="docs/08-validation.html">Validation</a></li>
+<li data-mo-key="readme.msg0043"><a href="docs/09-references.html">References</a></li>
+<li data-mo-key="readme.msg0044"><a href="docs/10-multilingual-access.html">Multilingual access</a></li>
+</ol>
+<p data-mo-key="readme.msg0045">The actual lab UI examples intentionally have a <strong>specific aesthetic</strong>. It can be modified without abandoning the design language.</p>
+<p data-mo-key="readme.msg0046"><strong>License:</strong> <a href="LICENSE">GNU GPL version 2 only (GPL-2.0-only)</a>. <strong>Version:</strong> practical style v0.1.0-draft. Verify accessibility and scientific correctness for your real use cases.</p>
+</article><footer class="mo-handbook-footer" data-mo-key="readme.msg0047"><a href="README.html">Handbook contents</a><a href="https://github.com/philippklinz/modern-objectivity-style/blob/main/README.md">English authoring source</a><span>GPL-2.0-only</span></footer></main></body></html>

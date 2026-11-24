@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en" data-mo-page="guides-multilingual-pattern"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title data-mo-key="guides-multilingual-pattern.msg0001">Programming Pattern — Local Catalogues, Shared State / Modern Objectivity</title>
+<script src="../i18n/core.js" data-mo-generated="runtime"></script><script src="../i18n/pages/guides-multilingual-pattern/source.js" data-mo-generated="runtime"></script><script src="../i18n/runtime.js" data-mo-generated="runtime"></script><link rel="stylesheet" href="../styles/modern-objectivity.css"><link rel="stylesheet" href="../i18n/site.css" data-mo-generated="style"></head>
+<body><main class="mo-handbook"><header class="mo-handbook-nav"><a href="../index.html" data-mo-key="guides-multilingual-pattern.msg0002">Modern Objectivity / Style kit</a><a href="../README.html" data-mo-key="guides-multilingual-pattern.msg0003">Handbook contents</a></header>
+<article><h1 data-mo-key="guides-multilingual-pattern.msg0004">Programming Pattern — Local Catalogues, Shared State</h1>
+<p data-mo-key="guides-multilingual-pattern.msg0005"><a href="../patterns/i18n/index.html">Open the working example</a> · <a href="../patterns/i18n/">Copyable files</a> · <a href="../docs/10-multilingual-access.html">Central requirement: MO-13</a></p>
+<p data-mo-key="guides-multilingual-pattern.msg0006">Keep three responsibilities separate: <strong>model values</strong>, <strong>translated messages</strong>, and <strong>rendering</strong>. Language changes re-render the current values. They never replace the model with a language-specific copy.</p>
+<h2 data-mo-key="guides-multilingual-pattern.msg0007">1. One source catalogue per module</h2>
+<p data-mo-key="guides-multilingual-pattern.msg0008">The sampling model uses 13 message keys; each local catalogue also covers the surrounding page. Its source language is English; an existing lab may instead choose German. A catalogue is data wrapped in a classic script, allowing direct-file loading as well as static hosting without a JSON fetch or a build step.</p>
+<p data-mo-key="guides-multilingual-pattern.msg0009">The relevant part of <code translate="no" lang="en">locales/en.js</code> is:</p>
+<pre translate="no" lang="en"><code class="language-js" translate="no" lang="en">messages: {
+  title: "Sampling plan",
+  samples: {
+    plural: "count",
+    forms: { one: "{count} sample", other: "{count} samples" }
+  }
+}
+</code></pre>
+<p data-mo-key="guides-multilingual-pattern.msg0010">Polish supplies its own forms under the same key:</p>
+<pre translate="no" lang="en"><code class="language-js" translate="no" lang="en">samples: {
+  plural: "count",
+  forms: {
+    one: "{count} próbka",
+    few: "{count} próbki",
+    many: "{count} próbek",
+    other: "{count} próbki"
+  }
+}
+</code></pre>
+<p data-mo-key="guides-multilingual-pattern.msg0011">Stable keys describe meaning, not current wording or a DOM position. Keep model constants, answer IDs and scientific datasets outside catalogues. Split a large lab into shared controls plus individual module catalogues; namespace keys before combining them, check both source revisions and load only those needed by the current page. The supplied example is intentionally one small module, not a general catalogue framework.</p>
+<h2 data-mo-key="guides-multilingual-pattern.msg0012">2. Bind presentation explicitly</h2>
+<pre translate="no" lang="en"><code class="language-html" translate="no" lang="en">&lt;h2 data-i18n="title"&gt;Sampling plan&lt;/h2&gt;
+&lt;p id="summary"&gt;6 samples&lt;/p&gt;
+</code></pre>
+<pre translate="no" lang="en"><code class="language-js" translate="no" lang="en">const state = { count: 6, interval: 0.25 };
+const i18n = MOI18n.create({
+  languages: MOLanguages,
+  sourceLocale: "en",
+  catalogues: MOCatalogues
+});
+
+// After loading a local catalogue:
+const result = i18n.select("pl");
+i18n.apply(document.querySelector("#localized-demo"));
+document.querySelector("#summary").textContent =
+  i18n.text("samples", { count: state.count });
+
+// Computation stays numeric; formatting belongs to the display.
+const duration = state.count * state.interval;
+const display = i18n.number(duration, { minimumFractionDigits: 2 });
+</code></pre>
+<p data-mo-key="guides-multilingual-pattern.msg0013"><code translate="no" lang="en">apply(root)</code> translates explicitly marked text leaves and the supported <code translate="no" lang="en">aria-label</code>, <code translate="no" lang="en">title</code> and <code translate="no" lang="en">placeholder</code> bindings. It sets the scope's language. For a complete page, the scope can be <code translate="no" lang="en">document.documentElement</code>, with a bound <code translate="no" lang="en">&lt;title&gt;</code>; update metadata explicitly. A module may use a narrower scope, but its containing page still needs complete translated content under MO-13. Numeric feedback and the SVG description are rendered explicitly using the same helper.</p>
+<p data-mo-key="guides-multilingual-pattern.msg0014">Messages are inserted with <code translate="no" lang="en">textContent</code> or named attributes. The helper does not interpret translated HTML. Use semantic DOM slots for rich paragraphs, links and emphasis when adding them; preserve reorderable full messages instead of assembling sentences from fragments. Do not mark containers containing live controls as replaceable text.</p>
+<h2 data-mo-key="guides-multilingual-pattern.msg0015">3. Load locally, switch atomically</h2>
+<p data-mo-key="guides-multilingual-pattern.msg0016"><code translate="no" lang="en">app.js</code> only accepts exact tags from <code translate="no" lang="en">languages.js</code>, loads the selected local script once, and checks the catalogue before selecting it. An incomplete, stale or draft catalogue causes a whole-module source fallback with a visible notice. Unknown tags cannot become arbitrary script paths. Late responses from an earlier selection cannot override the latest choice; a failed request can be retried.</p>
+<p data-mo-key="guides-multilingual-pattern.msg0017">The URL uses <code translate="no" lang="en">?lang=pl</code>. Explicit switches preserve other query parameters and hashes, and browser back/forward restores the language. A share link exposes the active language. No browser-language redirect, account, cookie or preference storage is involved. Existing language-less links remain valid. Other projects can choose their own URL convention if the same navigation contract is preserved.</p>
+<p data-mo-key="guides-multilingual-pattern.msg0018">The example's source pack is loaded first, so its readable English HTML remains the baseline. If JavaScript is disabled, initial source values are shown and interactive controls are disabled. For downloaded copies, classic scripts avoid the local-file restrictions associated with fetching JSON. Some browsers restrict History changes on <code translate="no" lang="en">file://</code>; the share link still carries the language.</p>
+<h2 data-mo-key="guides-multilingual-pattern.msg0019">4. Detect stale work before release</h2>
+<p data-mo-key="guides-multilingual-pattern.msg0020">Each pack records <code translate="no" lang="en">status</code>, <code translate="no" lang="en">sourceRevision</code> and <code translate="no" lang="en">review</code>. In the example, status is <code translate="no" lang="en">example</code>; a production module uses <code translate="no" lang="en">available</code> only after the appropriate content and interaction checks. Planned/draft editions must not be listed as completed choices in a production selector.</p>
+<pre translate="no" lang="en"><code class="language-sh" translate="no" lang="en">node patterns/i18n/check.cjs
+node --test patterns/i18n/test.cjs
+</code></pre>
+<p data-mo-key="guides-multilingual-pattern.msg0021">The check hashes the canonical source messages and compares every pack against that fingerprint. It checks keys, placeholders and all plural categories for the chosen locale. Editing source text makes unreconciled translations fail. To print the new fingerprint without changing any files:</p>
+<pre translate="no" lang="en"><code class="language-sh" translate="no" lang="en">node patterns/i18n/check.cjs --source-revision
+</code></pre>
+<p data-mo-key="guides-multilingual-pattern.msg0022">Review the source diff, update the affected translated messages, then record that fingerprint in each reconciled pack. Update the source pack's fingerprint too. Do not recopy or retranslate unchanged messages. This module-level approach intentionally favors a small, inspectable mechanism; per-key revision metadata can be introduced if a larger editorial workload justifies it.</p>
+<p data-mo-key="guides-multilingual-pattern.msg0023">Apply the same maintenance rule to the complete published guide. English Markdown is the authoring source for the HTML handbook pages. After a source edit, reconcile affected translated prose, headings, tables and link labels, regenerate the published pages and check all 24 language editions. Keep code and API identifiers stable while translating their explanations. Navigation between the guide, handbook and examples must retain the selected language. These mechanical checks are separate from independent linguistic review, which remains pending for the AI-assisted translations.</p>
+<p data-mo-key="guides-multilingual-pattern.msg0024">The browser check covers all 24 choices at several widths, state preservation, plural output, accessible SVG text, URL navigation, failed loads, source fallback, rapid selection and direct-file use. Run it with a development-only Playwright installation as documented in the <a href="../patterns/i18n/README.html">pattern README</a>. Neither Node nor Playwright is shipped as a runtime dependency.</p>
+<h2 data-mo-key="guides-multilingual-pattern.msg0025">Boundaries</h2>
+<p data-mo-key="guides-multilingual-pattern.msg0026">The helper covers plain messages, cardinal plurals, named parameters and number formatting. It is not an ICU MessageFormat engine, automatic translator, rich-text CMS, localized search engine or lesson renderer. Long-form lessons, localized search indexes and Canvas/Three.js labels need explicit integration using the same keys and shared-state contract. It provides no independent guarantee of translation quality, scientific correctness or accessibility compliance.</p>
+<p data-mo-key="guides-multilingual-pattern.msg0027">If richer grammar or nested messages warrant an established formatter later, vendor and document it locally. Preserve the language-access contract rather than treating this small implementation as mandatory for every application.</p>
+</article><footer class="mo-handbook-footer" data-mo-key="guides-multilingual-pattern.msg0028"><a href="../README.html">Handbook contents</a><a href="https://github.com/philippklinz/modern-objectivity-style/blob/main/guides/multilingual-pattern.md">English authoring source</a><span>GPL-2.0-only</span></footer></main></body></html>

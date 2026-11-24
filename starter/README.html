@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" data-mo-page="starter-readme"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title data-mo-key="starter-readme.msg0001">Modern Objectivity — Copyable Lab Starter / Modern Objectivity</title>
+<script src="i18n/core.js" data-mo-generated="runtime"></script><script src="i18n/pages/starter-readme/source.js" data-mo-generated="runtime"></script><script src="i18n/runtime.js" data-mo-generated="runtime"></script><link rel="stylesheet" href="modern-objectivity.css"><link rel="stylesheet" href="i18n/site.css" data-mo-generated="style"></head>
+<body><main class="mo-handbook"><header class="mo-handbook-nav"><a href="../index.html" data-mo-key="starter-readme.msg0002">Modern Objectivity / Style kit</a><a href="../README.html" data-mo-key="starter-readme.msg0003">Handbook contents</a></header>
+<article><h1 data-mo-key="starter-readme.msg0004">Modern Objectivity — Copyable Lab Starter</h1>
+<p data-mo-key="starter-readme.msg0005">This folder is a <strong>complete static HTML lab starter</strong>.</p>
+<p data-mo-key="starter-readme.msg0006"><a href="../docs/10-multilingual-access.html">MO-13</a> requires complete journeys in all 24 official EU languages, including this dashboard and its published instructions. Preserve that coverage when adapting the starter. The <a href="../patterns/i18n/">copyable multilingual pattern</a> and its <a href="../guides/multilingual-pattern.html">programming guide</a> explain source messages, formatting and state-preserving switches. Translations are AI-assisted and await independent language review.</p>
+<h2 data-mo-key="starter-readme.msg0007">Files</h2>
+<ul>
+<li data-mo-key="starter-readme.msg0008"><code translate="no" lang="en">index.html</code> — a usable laboratory dashboard with navigation, controls, synthetic data, table, search, empty state and CSV export.</li>
+<li data-mo-key="starter-readme.msg0009"><code translate="no" lang="en">modern-objectivity.css</code> — the full practical style system, included locally so this folder works on its own.</li>
+<li data-mo-key="starter-readme.msg0010"><code translate="no" lang="en">demo.js</code> — optional helper for the light/dark theme and sample notifications.</li>
+</ul>
+<h2 data-mo-key="starter-readme.msg0011">Use in a new project</h2>
+<p data-mo-key="starter-readme.msg0012">Copy this <strong>entire folder</strong> to your own laboratory project, then rename it and change its contents. No package manager or build system is required.</p>
+<pre translate="no" lang="en"><code class="language-sh" translate="no" lang="en">cp -r starter ../my-science-lab
+cd ../my-science-lab
+python3 -m http.server 8000
+</code></pre>
+<p data-mo-key="starter-readme.msg0013">Open <code translate="no" lang="en">http://localhost:8000/</code>. You can also open <code translate="no" lang="en">index.html</code> directly in a browser.</p>
+<h2 data-mo-key="starter-readme.msg0014">First changes</h2>
+<ol>
+<li data-mo-key="starter-readme.msg0015">Replace "Laboratory zero", the descriptions and the sample table columns with your actual lab subject.</li>
+<li data-mo-key="starter-readme.msg0016">Replace <code translate="no" lang="en">simulateObservation(index)</code> with your real data source. The current numbers are <strong>demonstrations, not measurements</strong>.</li>
+<li data-mo-key="starter-readme.msg0017">Update stage-specific CSS tokens inside <code translate="no" lang="en">:root</code> and <code translate="no" lang="en">[data-theme="dark"]</code>.</li>
+<li data-mo-key="starter-readme.msg0018">Preserve sensible focus behavior, data provenance, semantic states, keyboard interaction and accessible labels.</li>
+<li data-mo-key="starter-readme.msg0019">Add loading, failed requests, permissions and other states when integrating a backend.</li>
+<li data-mo-key="starter-readme.msg0020">Reconcile all 24 language editions after changing source text, including navigation, documentation, dynamic feedback and accessible descriptions. Verify coverage and source freshness separately from linguistic review.</li>
+</ol>
+<h2 data-mo-key="starter-readme.msg0021">CSS components available</h2>
+<p><code translate="no" lang="en">mo-shell</code>, <code translate="no" lang="en">mo-sidebar</code>, <code translate="no" lang="en">mo-main</code>, <code translate="no" lang="en">mo-topbar</code>, <code translate="no" lang="en">mo-content</code>, <code translate="no" lang="en">mo-section</code>, <code translate="no" lang="en">mo-grid</code>, <code translate="no" lang="en">mo-card</code>, <code translate="no" lang="en">mo-panel</code>, <code translate="no" lang="en">mo-stat</code>, <code translate="no" lang="en">mo-btn</code>, <code translate="no" lang="en">mo-input</code>, <code translate="no" lang="en">mo-select</code>, <code translate="no" lang="en">mo-table</code>, <code translate="no" lang="en">mo-badge</code>, <code translate="no" lang="en">mo-note</code>, <code translate="no" lang="en">mo-progress</code>, <code translate="no" lang="en">mo-tabs</code>, <code translate="no" lang="en">mo-chart</code>, <code translate="no" lang="en">mo-range</code>, <code translate="no" lang="en">mo-code</code>.</p>
+<p data-mo-key="starter-readme.msg0022">Reference: <a href="../guides/visual-style-spec.html">Visual style specification</a>.</p>
+<h2 data-mo-key="starter-readme.msg0023">License</h2>
+<p data-mo-key="starter-readme.msg0024">GNU General Public License version 2 only, <a href="../LICENSE">GPL-2.0-only</a>. Check the license conditions when copying or distributing this starter.</p>
+</article><footer class="mo-handbook-footer" data-mo-key="starter-readme.msg0025"><a href="../README.html">Handbook contents</a><a href="https://github.com/philippklinz/modern-objectivity-style/blob/main/starter/README.md">English authoring source</a><span>GPL-2.0-only</span></footer></main></body></html>

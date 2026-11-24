@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en" data-mo-page="patterns-i18n-readme"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title data-mo-key="patterns-i18n-readme.msg0001">Copyable multilingual pattern / Modern Objectivity</title>
+<script src="site/core.js" data-mo-generated="runtime"></script><script src="site/pages/patterns-i18n-readme/source.js" data-mo-generated="runtime"></script><script src="site/runtime.js" data-mo-generated="runtime"></script><link rel="stylesheet" href="modern-objectivity.css"><link rel="stylesheet" href="site/site.css" data-mo-generated="style"></head>
+<body><main class="mo-handbook"><header class="mo-handbook-nav"><a href="../../index.html" data-mo-key="patterns-i18n-readme.msg0002">Modern Objectivity / Style kit</a><a href="../../README.html" data-mo-key="patterns-i18n-readme.msg0003">Handbook contents</a></header>
+<article><h1 data-mo-key="patterns-i18n-readme.msg0004">Copyable multilingual pattern</h1>
+<p data-mo-key="patterns-i18n-readme.msg0005"><a href="index.html">Open the example</a> · <a href="../../guides/multilingual-pattern.html">Programming guide</a> · <a href="../../docs/10-multilingual-access.html">MO-13 requirement</a></p>
+<p data-mo-key="patterns-i18n-readme.msg0006">Copy this entire folder into an independent project. Open <code translate="no" lang="en">index.html</code> directly, or serve it from any static server. All functional assets are local, including a verbatim copy of the reference CSS. Links to the parent style-kit documentation are optional and may be replaced in your copy. No package manager, account or build step is required to use the page.</p>
+<table>
+<thead>
+<tr>
+<th data-mo-key="patterns-i18n-readme.msg0007">File</th>
+<th data-mo-key="patterns-i18n-readme.msg0008">Responsibility</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code translate="no" lang="en">languages.js</code></td>
+<td data-mo-key="patterns-i18n-readme.msg0009">24 language tags, native names and explicit format locales</td>
+</tr>
+<tr>
+<td><code translate="no" lang="en">locales/en.js</code></td>
+<td data-mo-key="patterns-i18n-readme.msg0010">Source messages and source fingerprint</td>
+</tr>
+<tr>
+<td><code translate="no" lang="en">locales/&lt;tag&gt;.js</code></td>
+<td data-mo-key="patterns-i18n-readme.msg0011">Translated messages, matching source fingerprint and review disclosure</td>
+</tr>
+<tr>
+<td><code translate="no" lang="en">i18n.js</code></td>
+<td data-mo-key="patterns-i18n-readme.msg0012">Validation, text/number formatting, explicit DOM bindings</td>
+</tr>
+<tr>
+<td><code translate="no" lang="en">app.js</code></td>
+<td data-mo-key="patterns-i18n-readme.msg0013">Local pack loading, URL handling and rendering from unchanged model state</td>
+</tr>
+<tr>
+<td><code translate="no" lang="en">index.html</code>, <code translate="no" lang="en">demo.css</code></td>
+<td data-mo-key="patterns-i18n-readme.msg0014">Accessible sample panel and its local layout</td>
+</tr>
+<tr>
+<td><code translate="no" lang="en">modern-objectivity.css</code></td>
+<td data-mo-key="patterns-i18n-readme.msg0015">Unmodified reference stylesheet copied from <code translate="no" lang="en">styles/modern-objectivity.css</code></td>
+</tr>
+<tr>
+<td><code translate="no" lang="en">check.cjs</code>, <code translate="no" lang="en">test.cjs</code></td>
+<td data-mo-key="patterns-i18n-readme.msg0016">Author-side coverage/freshness and behavior checks using Node built-ins</td>
+</tr>
+<tr>
+<td><code translate="no" lang="en">browser-check.cjs</code></td>
+<td data-mo-key="patterns-i18n-readme.msg0017">Development-only Chromium regression checks with Playwright</td>
+</tr>
+</tbody></table>
+<p data-mo-key="patterns-i18n-readme.msg0018">The sampling module uses <strong>13 message keys</strong> in each of 24 local catalogues. The surrounding page, handbook and other style-kit examples also belong to the complete 24-language publication scope; the panel's catalogue alone cannot establish site-wide coverage. Translations are AI-assisted and await independent language review. The arithmetic is an illustrative time budget, not a measurement or a physically validated simulation.</p>
+<h2 data-mo-key="patterns-i18n-readme.msg0019">Use and verify</h2>
+<pre translate="no" lang="en"><code class="language-sh" translate="no" lang="en">cp -r patterns/i18n ../my-multilingual-lab
+cd ../my-multilingual-lab
+node check.cjs
+node --test test.cjs
+python3 -m http.server 8000
+</code></pre>
+<p data-mo-key="patterns-i18n-readme.msg0020">Node and Python are convenient authoring/checking tools, not requirements of the published site. For optional browser checks, install the test runner in your development checkout:</p>
+<pre translate="no" lang="en"><code class="language-sh" translate="no" lang="en">npm install --no-save playwright@1.56.1
+npx playwright install chromium
+node browser-check.cjs
+</code></pre>
+<p data-mo-key="patterns-i18n-readme.msg0021">The browser check starts and stops its own local server. <code translate="no" lang="en">MO_BROWSER_EXECUTABLE</code> can select an installed Chromium binary. Set <code translate="no" lang="en">MO_I18N_SCREENSHOT_DIR</code> to save representative screenshots. The repository CI runs the same checks. No dependency files need to be deployed with the static page.</p>
+<h2 data-mo-key="patterns-i18n-readme.msg0022">Adapting the pattern</h2>
+<p data-mo-key="patterns-i18n-readme.msg0023">Choose the module's source language, replace the sample messages and model, and update the HTML source fallback. Add translated leaf text and accessible attributes with stable keys. Translate dynamic feedback explicitly with <code translate="no" lang="en">i18n.text()</code> and re-render graphics from existing state. Cover the complete enclosing page, including its title, metadata, navigation and documentation, and update the document language to match.</p>
+<p data-mo-key="patterns-i18n-readme.msg0024">When source messages change, <code translate="no" lang="en">node check.cjs</code> identifies stale packs. Read the source diff, revise only affected messages, check their meaning, then set the new source fingerprint in each reconciled catalogue. <code translate="no" lang="en">node check.cjs --source-revision</code> only prints the new fingerprint; it never silently marks translations as current. Keep coverage separate from independent review.</p>
+<p data-mo-key="patterns-i18n-readme.msg0025">The first pattern has no rich-text renderer, localized search index, runtime translation service or localized no-JavaScript HTML. Add those only for an actual use case, using the same central requirement. Unsupported exact language tags fall back explicitly; this sample does not infer <code translate="no" lang="en">de</code> from <code translate="no" lang="en">de-AT</code> automatically.</p>
+<p data-mo-key="patterns-i18n-readme.msg0026">License: GPL-2.0-only, as in the included <a href="LICENSE">LICENSE</a>. Keep that license with redistributed copies.</p>
+</article><footer class="mo-handbook-footer" data-mo-key="patterns-i18n-readme.msg0027"><a href="../../README.html">Handbook contents</a><a href="https://github.com/philippklinz/modern-objectivity-style/blob/main/patterns/i18n/README.md">English authoring source</a><span>GPL-2.0-only</span></footer></main></body></html>

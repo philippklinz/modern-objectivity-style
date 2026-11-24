@@ -16,7 +16,7 @@ Copy this entire folder into an independent project. Open `index.html` directly,
 | `check.cjs`, `test.cjs` | Author-side coverage/freshness and behavior checks using Node built-ins |
 | `browser-check.cjs` | Development-only Chromium regression checks with Playwright |
 
-The 24 catalogues cover this panel's **13 message keys**, not the whole style kit or a complete learning lab. Translations are AI-assisted examples; independent language review is pending. The enclosing guide stays English; only the panel's `lang` changes. The arithmetic is an illustrative time budget, not a measurement or a physically validated simulation.
+The sampling module uses **13 message keys** in each of 24 local catalogues. The surrounding page, handbook and other style-kit examples also belong to the complete 24-language publication scope; the panel's catalogue alone cannot establish site-wide coverage. Translations are AI-assisted and await independent language review. The arithmetic is an illustrative time budget, not a measurement or a physically validated simulation.
 
 ## Use and verify
 
@@ -40,7 +40,7 @@ The browser check starts and stops its own local server. `MO_BROWSER_EXECUTABLE`
 
 ## Adapting the pattern
 
-Choose the module's source language, replace the sample messages and model, and update the HTML source fallback. Add translated leaf text and accessible attributes with stable keys. Translate dynamic feedback explicitly with `i18n.text()` and re-render graphics from existing state. For a complete page, update its title, metadata and document language too.
+Choose the module's source language, replace the sample messages and model, and update the HTML source fallback. Add translated leaf text and accessible attributes with stable keys. Translate dynamic feedback explicitly with `i18n.text()` and re-render graphics from existing state. Cover the complete enclosing page, including its title, metadata, navigation and documentation, and update the document language to match.
 
 When source messages change, `node check.cjs` identifies stale packs. Read the source diff, revise only affected messages, check their meaning, then set the new source fingerprint in each reconciled catalogue. `node check.cjs --source-revision` only prints the new fingerprint; it never silently marks translations as current. Keep coverage separate from independent review.
 

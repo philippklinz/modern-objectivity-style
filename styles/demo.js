@@ -12,7 +12,7 @@ The CSS is independent of this script. This file only makes demonstrations inter
   const updateThemeButtons = () => document.querySelectorAll("[data-theme-toggle]").forEach(btn => {
     const dark = root.getAttribute("data-theme") === "dark";
     btn.setAttribute("aria-pressed", String(dark));
-    btn.textContent = dark ? "☀ Light mode" : "◐ Dark mode";
+    btn.textContent = window.MOSite.t(dark ? "theme.light" : "theme.dark");
   });
   document.addEventListener("click", e => {
     const btn = e.target.closest("[data-theme-toggle]");
@@ -26,8 +26,12 @@ The CSS is independent of this script. This file only makes demonstrations inter
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", updateThemeButtons);
   else updateThemeButtons();
 
-  let toastTimer;
-  function toast(message) {
+  let toastTimer, currentToast = null;
+  function renderToast() {
+    const node = document.querySelector("#mo-global-toast");
+    if (node && currentToast) node.textContent = window.MOSite.t(currentToast.key, currentToast.params);
+  }
+  function toast(key, params = {}) {
     let node = document.querySelector("#mo-global-toast");
     if (!node) {
       node = document.createElement("div");
@@ -37,7 +41,8 @@ The CSS is independent of this script. This file only makes demonstrations inter
       node.setAttribute("aria-live", "polite");
       document.body.append(node);
     }
-    node.textContent = String(message);
+    currentToast = {key, params: {...params}, timestamp: new Date()};
+    renderToast();
     node.hidden = false;
     clearTimeout(toastTimer);
     toastTimer = setTimeout(() => { node.hidden = true; }, 3500);
@@ -46,6 +51,10 @@ The CSS is independent of this script. This file only makes demonstrations inter
   document.addEventListener("click", e => {
     const el = e.target.closest("[data-toast]");
     if (el) toast(el.getAttribute("data-toast"));
+  });
+  window.addEventListener("mo:language", () => {
+    updateThemeButtons();
+    renderToast();
   });
 
   document.querySelectorAll("[role=tablist]").forEach(tabs => {

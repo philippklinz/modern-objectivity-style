@@ -87,7 +87,7 @@ Check contrast, focus visibility and status differentiation again after any pale
 - [Lab console](../examples/lab-console.html): local synthetic data generation, status classification, filtering, detail inspection, chart updates and CSV export.
 - [Live experiment](../examples/experiment.html): mathematically defined wave, changing parameters, pause, play, step, reset and inspectable probe values.
 - [Standalone starter](../starter/index.html): working application shell, local synthetic observations, search, filtering, CSV export and clear empty state.
-- [Multilingual pattern](../patterns/i18n/index.html): a 24-language sample panel with local catalogues, number/plural formatting, state-preserving switches and source checks. This is the reference for [MO-13](../docs/10-multilingual-access.md); earlier examples still have incomplete language coverage.
+- [Multilingual pattern](../patterns/i18n/index.html): a 24-language sample panel with local catalogues, number/plural formatting, state-preserving switches and source checks. [MO-13](../docs/10-multilingual-access.md) applies to the entire published style kit, all examples and handbook content.
 
 **Data integrity:** Every generated value is explicitly labeled synthetic. No example implies a real instrument has been connected or a user study has been completed.
 

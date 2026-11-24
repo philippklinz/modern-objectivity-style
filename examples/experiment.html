@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-mo-page="examples-experiment">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="A functioning oscillation experiment demonstrating Modern Objectivity: point, line, space and time.">
-<title>Live Experiment / Modern Objectivity</title>
+<meta name="description" content="A functioning oscillation experiment demonstrating Modern Objectivity: point, line, space and time." data-mo-attr-content="examples-experiment.msg0001">
+<script src="../i18n/core.js" data-mo-generated="runtime"></script><script src="../i18n/pages/examples-experiment/source.js" data-mo-generated="runtime"></script><script src="../i18n/runtime.js" data-mo-generated="runtime"></script><title data-mo-key="examples-experiment.msg0002">Live Experiment / Modern Objectivity</title>
 <link rel="stylesheet" href="../styles/modern-objectivity.css">
 <style>
  .wave-display{background:var(--mo-surface);border-radius:9px;border:1px solid var(--mo-border);overflow:hidden}
@@ -25,82 +25,82 @@
 </style>
 <script>try{const t=localStorage.getItem("mo-theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t;}catch(_){}</script>
 <script defer src="../styles/demo.js"></script>
-</head>
+<link rel="stylesheet" href="../i18n/site.css" data-mo-generated="style"></head>
 <body>
 <div class="mo-shell">
  <aside class="mo-sidebar">
-  <a class="mo-brand" href="../index.html"><span class="mo-brand-mark" aria-hidden="true">M·</span><span>MODERN<br>OBJECTIVITY<small>Example / Experiment</small></span></a>
-  <nav aria-label="Example navigation">
-   <div class="mo-nav-group"><div class="mo-nav-title">Wave laboratory</div><div class="mo-nav"><a href="#visualization" aria-current="page">Oscillation model</a><a href="#parameters">Parameters</a><a href="#observations">Observations</a></div></div>
-   <div class="mo-nav-group"><div class="mo-nav-title">Explore</div><div class="mo-nav"><a href="../index.html">Style kit ↗</a><a href="lab-console.html">Lab console ↗</a><a href="../starter/index.html">Starter ↗</a></div></div>
+  <a class="mo-brand" href="../index.html" data-mo-key="examples-experiment.msg0003"><span class="mo-brand-mark" aria-hidden="true">M·</span><span>MODERN<br>OBJECTIVITY<small>Example / Experiment</small></span></a>
+  <nav aria-label="Example navigation" data-mo-attr-aria-label="examples-experiment.msg0004">
+   <div class="mo-nav-group"><div class="mo-nav-title" data-mo-key="examples-experiment.msg0005">Wave laboratory</div><div class="mo-nav" data-mo-key="examples-experiment.msg0006"><a href="#visualization" aria-current="page">Oscillation model</a><a href="#parameters">Parameters</a><a href="#observations">Observations</a></div></div>
+   <div class="mo-nav-group"><div class="mo-nav-title" data-mo-key="examples-experiment.msg0007">Explore</div><div class="mo-nav" data-mo-key="examples-experiment.msg0008"><a href="../index.html">Style kit ↗</a><a href="lab-console.html">Lab console ↗</a><a href="../starter/index.html">Starter ↗</a></div></div>
   </nav>
-  <div class="mo-sidebar-foot">MODEL / MATHEMATICAL<br>DATA / GENERATED<br>GPL-2.0-only</div>
+  <div class="mo-sidebar-foot" data-mo-key="examples-experiment.msg0009">MODEL / MATHEMATICAL<br>DATA / GENERATED<br>GPL-2.0-only</div>
  </aside>
  <main class="mo-main" id="visualization">
-  <header class="mo-topbar"><div class="mo-topbar-path">EXAMPLES / <strong>INTERACTIVE EXPERIMENT</strong></div><div class="mo-topbar-actions"><span class="mo-badge mo-badge-info">Mathematical model</span><button class="mo-btn mo-btn-sm" data-theme-toggle aria-pressed="false">◐ Dark mode</button></div></header>
+  <header class="mo-topbar"><div class="mo-topbar-path" data-mo-key="examples-experiment.msg0010">EXAMPLES / <strong>INTERACTIVE EXPERIMENT</strong></div><div class="mo-topbar-actions"><span class="mo-badge mo-badge-info" data-mo-key="examples-experiment.msg0011">Mathematical model</span><button class="mo-btn mo-btn-sm" data-theme-toggle aria-pressed="false">◐ Dark mode</button></div></header>
   <div class="mo-content">
    <section style="margin-bottom:26px">
-     <span class="mo-kicker">Laboratory / 002 — point · line · time</span>
-     <h1 style="font-size:clamp(2.2rem,4vw,3.8rem);margin-bottom:12px">A live, testable model<span class="mo-mark">.</span></h1>
-     <p class="mo-lead">Change amplitude, frequency and phase. The line responds immediately; a movable point lets you inspect its computed value. Time advances only while the model is running.</p>
+     <span class="mo-kicker" data-mo-key="examples-experiment.msg0012">Laboratory / 002 — point · line · time</span>
+     <h1 style="font-size:clamp(2.2rem,4vw,3.8rem);margin-bottom:12px" data-mo-key="examples-experiment.msg0013">A live, testable model<span class="mo-mark">.</span></h1>
+     <p class="mo-lead" data-mo-key="examples-experiment.msg0014">Change amplitude, frequency and phase. The line responds immediately; a movable point lets you inspect its computed value. Time advances only while the model is running.</p>
    </section>
-   <div class="mo-note" style="margin-bottom:20px"><span aria-hidden="true">ⓘ</span><span><strong>Demonstration, not a physical instrument.</strong> Values are derived from a sinusoidal function. No sensor, network, or experiment dataset is connected.</span></div>
-   <section class="mo-card" aria-label="Interactive wave plot">
+   <div class="mo-note" style="margin-bottom:20px" data-mo-key="examples-experiment.msg0015"><span aria-hidden="true">ⓘ</span><span><strong>Demonstration, not a physical instrument.</strong> Values are derived from a sinusoidal function. No sensor, network, or experiment dataset is connected.</span></div>
+   <section class="mo-card" aria-label="Interactive wave plot" data-mo-attr-aria-label="examples-experiment.msg0016">
      <div class="mo-card-head">
-       <div class="mo-flex"><h3 style="margin:0">Displacement / normalized space</h3><span id="run-state" class="mo-badge mo-badge-info">Paused</span></div>
-       <div class="mo-flex mo-wrap"><button class="mo-btn mo-btn-primary mo-btn-sm" id="toggle-play" aria-pressed="false">▶ Play</button><button class="mo-btn mo-btn-sm" id="single-step">Step +0.2s</button><button class="mo-btn mo-btn-sm" id="reset">Reset</button></div>
+       <div class="mo-flex"><h3 style="margin:0" data-mo-key="examples-experiment.msg0017">Displacement / normalized space</h3><span id="run-state" class="mo-badge mo-badge-info">Paused</span></div>
+       <div class="mo-flex mo-wrap"><button class="mo-btn mo-btn-primary mo-btn-sm" id="toggle-play" aria-pressed="false">▶ Play</button><button class="mo-btn mo-btn-sm" id="single-step">Step +0.2s</button><button class="mo-btn mo-btn-sm" id="reset" data-mo-key="examples-experiment.msg0018">Reset</button></div>
      </div>
      <div class="wave-display">
-      <svg id="plot" viewBox="0 0 760 310" role="img" aria-label="Interactive model of a sinusoidal wave across normalized position. The exact probe displacement is displayed directly below.">
-        <g class="wave-grid"><path d="M48 45H727M48 95H727M48 145H727M48 195H727M48 245H727"/><path d="M48 45V245M161 45V245M274 45V245M387 45V245M500 45V245M613 45V245M727 45V245"/></g>
-        <line class="wave-axis" x1="48" y1="145" x2="727" y2="145"/>
-        <path class="wave-path" id="wave" d=""/>
-        <line class="wave-probe" id="probe-line" x1="387" x2="387" y1="45" y2="245"/>
-        <circle class="wave-probe-dot" id="probe-dot" cx="387" cy="145" r="6"/>
-        <g class="wave-label"><text x="13" y="49">+100</text><text x="24" y="149">0</text><text x="18" y="249">−100</text><text x="48" y="275">0.0</text><text x="387" y="275" text-anchor="middle">x/L = 0.5</text><text x="727" y="275" text-anchor="end">1.0</text><text x="387" y="299" text-anchor="middle">NORMALIZED POSITION x/L →</text></g>
+      <svg id="plot" viewbox="0 0 760 310" role="img" aria-label="Interactive model of a sinusoidal wave across normalized position. The exact probe displacement is displayed directly below." data-mo-attr-aria-label="examples-experiment.msg0019">
+        <g class="wave-grid"><path d="M48 45H727M48 95H727M48 145H727M48 195H727M48 245H727"></path><path d="M48 45V245M161 45V245M274 45V245M387 45V245M500 45V245M613 45V245M727 45V245"></path></g>
+        <line class="wave-axis" x1="48" y1="145" x2="727" y2="145"></line>
+        <path class="wave-path" id="wave" d=""></path>
+        <line class="wave-probe" id="probe-line" x1="387" x2="387" y1="45" y2="245"></line>
+        <circle class="wave-probe-dot" id="probe-dot" cx="387" cy="145" r="6"></circle>
+        <g class="wave-label"><text x="13" y="49">+100</text><text x="24" y="149">0</text><text x="18" y="249">−100</text><text x="48" y="275">0.0</text><text x="387" y="275" text-anchor="middle">x/L = 0.5</text><text x="727" y="275" text-anchor="end">1.0</text><text x="387" y="299" text-anchor="middle" data-mo-key="examples-experiment.msg0020">NORMALIZED POSITION x/L →</text></g>
       </svg>
      </div>
      <div class="wave-values" style="margin-top:14px">
-       <div><span>TIME / t</span><strong id="time-value">0.00 s</strong></div>
-       <div><span>PROBE / x/L</span><strong id="position-value">0.50</strong></div>
-       <div><span>MODEL VALUE / y</span><strong id="y-value">—</strong></div>
-       <div><span>STATUS</span><strong id="state-value">Paused</strong></div>
+       <div><span data-mo-key="examples-experiment.msg0021">TIME / t</span><strong id="time-value">0.00 s</strong></div>
+       <div><span data-mo-key="examples-experiment.msg0022">PROBE / x/L</span><strong id="position-value">0.50</strong></div>
+       <div><span data-mo-key="examples-experiment.msg0023">MODEL VALUE / y</span><strong id="y-value">—</strong></div>
+       <div><span data-mo-key="examples-experiment.msg0024">STATUS</span><strong id="state-value">Paused</strong></div>
      </div>
    </section>
    <section class="mo-section" id="parameters">
-    <div class="mo-section-head"><div><span class="mo-kicker">Configuration / 01</span><h2>Change the system.</h2><p>Every slider changes a real function parameter. The plot and readouts share the same model.</p></div></div>
+    <div class="mo-section-head"><div><span class="mo-kicker" data-mo-key="examples-experiment.msg0025">Configuration / 01</span><h2 data-mo-key="examples-experiment.msg0026">Change the system.</h2><p data-mo-key="examples-experiment.msg0027">Every slider changes a real function parameter. The plot and readouts share the same model.</p></div></div>
     <div class="mo-grid mo-grid-2">
       <div class="mo-card">
-        <div class="mo-card-head"><h3>Model parameters</h3><span class="mo-tag">LIVE CONTROLS</span></div>
+        <div class="mo-card-head"><h3 data-mo-key="examples-experiment.msg0028">Model parameters</h3><span class="mo-tag" data-mo-key="examples-experiment.msg0029">LIVE CONTROLS</span></div>
         <div class="wave-controls">
-         <label class="mo-field"><span class="mo-between"><span class="mo-field-label">Amplitude</span><strong class="mo-mono mo-small" id="amp-value">45</strong></span><input class="mo-range" type="range" id="amplitude" min="5" max="90" step="1" value="45"></label>
-         <label class="mo-field"><span class="mo-between"><span class="mo-field-label">Spatial cycles</span><strong class="mo-mono mo-small" id="freq-value">2.0</strong></span><input class="mo-range" type="range" id="frequency" min="0.5" max="5" step="0.1" value="2"></label>
-         <label class="mo-field"><span class="mo-between"><span class="mo-field-label">Phase angle</span><strong class="mo-mono mo-small" id="phase-value">0°</strong></span><input class="mo-range" type="range" id="phase" min="0" max="360" step="5" value="0"></label>
-         <label class="mo-field"><span class="mo-between"><span class="mo-field-label">Temporal speed</span><strong class="mo-mono mo-small" id="speed-value">1.0×</strong></span><input class="mo-range" type="range" id="speed" min="0.2" max="3" step="0.1" value="1"></label>
-         <label class="mo-field" style="grid-column:1/-1"><span class="mo-between"><span class="mo-field-label">Probe position</span><strong class="mo-mono mo-small" id="probe-value">0.50</strong></span><input class="mo-range" type="range" id="position" min="0" max="1" step="0.01" value="0.5"></label>
+         <label class="mo-field"><span class="mo-between"><span class="mo-field-label" data-mo-key="examples-experiment.msg0030">Amplitude</span><strong class="mo-mono mo-small" id="amp-value">45</strong></span><input class="mo-range" type="range" id="amplitude" min="5" max="90" step="1" value="45"></label>
+         <label class="mo-field"><span class="mo-between"><span class="mo-field-label" data-mo-key="examples-experiment.msg0031">Spatial cycles</span><strong class="mo-mono mo-small" id="freq-value">2.0</strong></span><input class="mo-range" type="range" id="frequency" min="0.5" max="5" step="0.1" value="2"></label>
+         <label class="mo-field"><span class="mo-between"><span class="mo-field-label" data-mo-key="examples-experiment.msg0032">Phase angle</span><strong class="mo-mono mo-small" id="phase-value">0°</strong></span><input class="mo-range" type="range" id="phase" min="0" max="360" step="5" value="0"></label>
+         <label class="mo-field"><span class="mo-between"><span class="mo-field-label" data-mo-key="examples-experiment.msg0033">Temporal speed</span><strong class="mo-mono mo-small" id="speed-value">1.0×</strong></span><input class="mo-range" type="range" id="speed" min="0.2" max="3" step="0.1" value="1"></label>
+         <label class="mo-field" style="grid-column:1/-1"><span class="mo-between"><span class="mo-field-label" data-mo-key="examples-experiment.msg0034">Probe position</span><strong class="mo-mono mo-small" id="probe-value">0.50</strong></span><input class="mo-range" type="range" id="position" min="0" max="1" step="0.01" value="0.5"></label>
         </div>
       </div>
       <div class="mo-card">
-        <div class="mo-card-head"><h3>Model definition</h3><span class="mo-tag">EXPLICIT ASSUMPTIONS</span></div>
-        <div class="wave-equation">y(x,t) = A sin(2π f x + φ − 2π · 0.2 · v · t)</div>
+        <div class="mo-card-head"><h3 data-mo-key="examples-experiment.msg0035">Model definition</h3><span class="mo-tag" data-mo-key="examples-experiment.msg0036">EXPLICIT ASSUMPTIONS</span></div>
+        <div class="wave-equation" data-mo-key="examples-experiment.msg0037">y(x,t) = A sin(2π f x + φ − 2π · 0.2 · v · t)</div>
         <dl style="font-size:13px;line-height:1.7;margin:16px 0 0">
-          <dt class="mo-strong">A — amplitude</dt><dd style="margin:0 0 10px;color:var(--mo-muted)">Output magnitude in abstract model units (not physical displacement).</dd>
-          <dt class="mo-strong">f — spatial cycles</dt><dd style="margin:0 0 10px;color:var(--mo-muted)">Number of cycles across x ∈ [0, 1].</dd>
-          <dt class="mo-strong">φ — phase</dt><dd style="margin:0 0 10px;color:var(--mo-muted)">Starting phase in radians, entered as degrees.</dd>
-          <dt class="mo-strong">v — speed</dt><dd style="margin:0;color:var(--mo-muted)">A visualization rate multiplier; no physical wave speed is inferred.</dd>
+          <dt class="mo-strong" data-mo-key="examples-experiment.msg0038">A — amplitude</dt><dd style="margin:0 0 10px;color:var(--mo-muted)" data-mo-key="examples-experiment.msg0039">Output magnitude in abstract model units (not physical displacement).</dd>
+          <dt class="mo-strong" data-mo-key="examples-experiment.msg0040">f — spatial cycles</dt><dd style="margin:0 0 10px;color:var(--mo-muted)" data-mo-key="examples-experiment.msg0041">Number of cycles across x ∈ [0, 1].</dd>
+          <dt class="mo-strong" data-mo-key="examples-experiment.msg0042">φ — phase</dt><dd style="margin:0 0 10px;color:var(--mo-muted)" data-mo-key="examples-experiment.msg0043">Starting phase in radians, entered as degrees.</dd>
+          <dt class="mo-strong" data-mo-key="examples-experiment.msg0044">v — speed</dt><dd style="margin:0;color:var(--mo-muted)" data-mo-key="examples-experiment.msg0045">A visualization rate multiplier; no physical wave speed is inferred.</dd>
         </dl>
       </div>
     </div>
    </section>
    <section class="mo-section" id="observations">
-    <div class="mo-section-head"><div><span class="mo-kicker">Interpretation / 02</span><h2>See the relation.</h2><p>Point identifies the probe; line visualizes relations across space; time changes the model. The stage keeps controls and interpretation separate.</p></div></div>
+    <div class="mo-section-head"><div><span class="mo-kicker" data-mo-key="examples-experiment.msg0046">Interpretation / 02</span><h2 data-mo-key="examples-experiment.msg0047">See the relation.</h2><p data-mo-key="examples-experiment.msg0048">Point identifies the probe; line visualizes relations across space; time changes the model. The stage keeps controls and interpretation separate.</p></div></div>
     <div class="mo-grid mo-grid-3">
-      <div class="mo-card"><span class="mo-eyebrow">POINT</span><h3 style="margin:15px 0 7px">Position</h3><p class="mo-muted">The highlighted point exposes a single computed value at the selected normalized position.</p></div>
-      <div class="mo-card"><span class="mo-eyebrow">LINE + SPACE</span><h3 style="margin:15px 0 7px">Relationship</h3><p class="mo-muted">A continuous line shows the model across space, with axes and a centerline for orientation.</p></div>
-      <div class="mo-card"><span class="mo-eyebrow">TIME</span><h3 style="margin:15px 0 7px">Change</h3><p class="mo-muted">Playback evolves the display. Pause, single-step and reset make the state controllable.</p></div>
+      <div class="mo-card"><span class="mo-eyebrow" data-mo-key="examples-experiment.msg0049">POINT</span><h3 style="margin:15px 0 7px" data-mo-key="examples-experiment.msg0050">Position</h3><p class="mo-muted" data-mo-key="examples-experiment.msg0051">The highlighted point exposes a single computed value at the selected normalized position.</p></div>
+      <div class="mo-card"><span class="mo-eyebrow" data-mo-key="examples-experiment.msg0052">LINE + SPACE</span><h3 style="margin:15px 0 7px" data-mo-key="examples-experiment.msg0053">Relationship</h3><p class="mo-muted" data-mo-key="examples-experiment.msg0054">A continuous line shows the model across space, with axes and a centerline for orientation.</p></div>
+      <div class="mo-card"><span class="mo-eyebrow" data-mo-key="examples-experiment.msg0055">TIME</span><h3 style="margin:15px 0 7px" data-mo-key="examples-experiment.msg0056">Change</h3><p class="mo-muted" data-mo-key="examples-experiment.msg0057">Playback evolves the display. Pause, single-step and reset make the state controllable.</p></div>
     </div>
    </section>
-   <footer class="mo-between mo-wrap"><a href="lab-console.html">← Lab console</a><a href="../starter/index.html">Use the starter template →</a></footer>
+   <footer class="mo-between mo-wrap" data-mo-key="examples-experiment.msg0058"><a href="lab-console.html">← Lab console</a><a href="../starter/index.html">Use the starter template →</a></footer>
   </div>
  </main>
 </div>
@@ -109,7 +109,7 @@
 "use strict";
 const $=id=>document.getElementById(id), reduced=window.matchMedia("(prefers-reduced-motion: reduce)");
 let playing=!reduced.matches,modelTime=0,lastFrame=null,frame=null;
-if(reduced.matches){$("run-state").className="mo-badge mo-badge-warning";$("run-state").textContent="Paused · reduced motion";}
+const fixed=(value,digits)=>window.MOSite.number(value,{minimumFractionDigits:digits,maximumFractionDigits:digits});
 function param(id){return Number($(id).value);}
 function waveAt(x,t){
  const a=param("amplitude"), f=param("frequency"),p=param("phase")*Math.PI/180,s=param("speed");
@@ -122,18 +122,19 @@ function redraw(){
  const x=param("position"),value=waveAt(x,modelTime),px=48+679*x,py=145-value;
  $("probe-line").setAttribute("x1",px);$("probe-line").setAttribute("x2",px);
  $("probe-dot").setAttribute("cx",px);$("probe-dot").setAttribute("cy",py);
- $("time-value").textContent=modelTime.toFixed(2)+" s";
- $("position-value").textContent=x.toFixed(2);
- $("probe-value").textContent=x.toFixed(2);
- $("y-value").textContent=value.toFixed(2);
- $("amp-value").textContent=String(param("amplitude"));
- $("freq-value").textContent=param("frequency").toFixed(1);
- $("phase-value").textContent=param("phase")+"°";
- $("speed-value").textContent=param("speed").toFixed(1)+"×";
- $("state-value").textContent=playing?"Running":"Paused";
- $("run-state").className="mo-badge "+(playing?"mo-badge-success":"mo-badge-info");
- $("run-state").textContent=playing?"Running":"Paused";
- $("toggle-play").textContent=playing?"Ⅱ Pause":"▶ Play";
+ $("time-value").textContent=window.MOSite.t("experiment.timeValue",{value:fixed(modelTime,2)});
+ $("position-value").textContent=fixed(x,2);
+ $("probe-value").textContent=fixed(x,2);
+ $("y-value").textContent=fixed(value,2);
+ $("amp-value").textContent=window.MOSite.number(param("amplitude"));
+ $("freq-value").textContent=fixed(param("frequency"),1);
+ $("phase-value").textContent=window.MOSite.t("experiment.phaseValue",{value:window.MOSite.number(param("phase"))});
+ $("speed-value").textContent=window.MOSite.t("experiment.speedValue",{value:fixed(param("speed"),1)});
+ $("state-value").textContent=window.MOSite.t(playing?"experiment.state.running":"experiment.state.paused");
+ $("run-state").className="mo-badge "+(playing?"mo-badge-success":reduced.matches?"mo-badge-warning":"mo-badge-info");
+ $("run-state").textContent=window.MOSite.t(playing?"experiment.state.running":reduced.matches?"experiment.state.pausedReducedMotion":"experiment.state.paused");
+ $("toggle-play").textContent=window.MOSite.t(playing?"experiment.pause":"experiment.play");
+ $("single-step").textContent=window.MOSite.t("experiment.step",{value:fixed(0.2,1)});
  $("toggle-play").setAttribute("aria-pressed",String(playing));
 }
 function tick(timestamp){
@@ -152,8 +153,9 @@ $("toggle-play").addEventListener("click",()=>setPlay(!playing));
 $("single-step").addEventListener("click",()=>{setPlay(false);modelTime+=0.2;redraw();});
 $("reset").addEventListener("click",()=>{setPlay(false);modelTime=0;redraw();});
 for(const id of ["amplitude","frequency","phase","speed","position"])$(id).addEventListener("input",redraw);
-reduced.addEventListener?.("change",e=>{if(e.matches)setPlay(false);});
+reduced.addEventListener?.("change",e=>{if(e.matches)setPlay(false);redraw();});
 document.addEventListener("visibilitychange",()=>{if(document.hidden)setPlay(false);});
+window.addEventListener("mo:language",redraw);
 redraw();if(playing)frame=requestAnimationFrame(tick);
 })();
 </script>

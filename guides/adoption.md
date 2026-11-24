@@ -18,7 +18,7 @@ Modern Objectivity is a design language, not a prebuilt UI theme. Adoption start
 - [ ] Loading, empty, no-results, and failure states are addressed.
 - [ ] Data presentations are accurate and explainable.
 - [ ] Core tasks are accessible by supported input methods.
-- [ ] The 24-language baseline covers content, interactions and accessible feedback; partial coverage is identified, with a migration path.
+- [ ] The 24-language baseline covers the complete published guidance, handbook, examples, interactions and accessible feedback; partial coverage is identified, with a migration path.
 - [ ] Message catalogues, source freshness and language review follow the [programming pattern](multilingual-pattern.md) or an equivalent documented implementation.
 - [ ] Emotional Intent, where relevant, is stated without promising a guaranteed effect.
 - [ ] Critical claims are accompanied by observations or a declared test plan.

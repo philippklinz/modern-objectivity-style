@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en" data-mo-page="docs-05-time-interaction"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title data-mo-key="docs-05-time-interaction.msg0001">05 — Time &amp; Interaction / Modern Objectivity</title>
+<script src="../i18n/core.js" data-mo-generated="runtime"></script><script src="../i18n/pages/docs-05-time-interaction/source.js" data-mo-generated="runtime"></script><script src="../i18n/runtime.js" data-mo-generated="runtime"></script><link rel="stylesheet" href="../styles/modern-objectivity.css"><link rel="stylesheet" href="../i18n/site.css" data-mo-generated="style"></head>
+<body><main class="mo-handbook"><header class="mo-handbook-nav"><a href="../index.html" data-mo-key="docs-05-time-interaction.msg0002">Modern Objectivity / Style kit</a><a href="../README.html" data-mo-key="docs-05-time-interaction.msg0003">Handbook contents</a></header>
+<article><h1 data-mo-key="docs-05-time-interaction.msg0004">05 — Time &amp; Interaction</h1>
+<h2 data-mo-key="docs-05-time-interaction.msg0005">Interactions change state</h2>
+<p data-mo-key="docs-05-time-interaction.msg0006">A meaningful action requires <strong>preconditions → input → acknowledgment → processing → outcome or failure → recovery</strong>. A click animation is not enough.</p>
+<h2 data-mo-key="docs-05-time-interaction.msg0007">State vocabulary</h2>
+<table>
+<thead>
+<tr>
+<th data-mo-key="docs-05-time-interaction.msg0008">State</th>
+<th data-mo-key="docs-05-time-interaction.msg0009">Meaning</th>
+<th data-mo-key="docs-05-time-interaction.msg0010">Design requirement</th>
+</tr>
+</thead>
+<tbody><tr>
+<td data-mo-key="docs-05-time-interaction.msg0011">Initial</td>
+<td data-mo-key="docs-05-time-interaction.msg0012">Data not requested</td>
+<td data-mo-key="docs-05-time-interaction.msg0013">Do not confuse with empty</td>
+</tr>
+<tr>
+<td data-mo-key="docs-05-time-interaction.msg0014">Loading</td>
+<td data-mo-key="docs-05-time-interaction.msg0015">Work in progress</td>
+<td data-mo-key="docs-05-time-interaction.msg0016">Explain activity, prevent harmful duplication</td>
+</tr>
+<tr>
+<td data-mo-key="docs-05-time-interaction.msg0017">Ready</td>
+<td data-mo-key="docs-05-time-interaction.msg0018">Content usable</td>
+<td data-mo-key="docs-05-time-interaction.msg0019">Make next actions discoverable</td>
+</tr>
+<tr>
+<td data-mo-key="docs-05-time-interaction.msg0020">Empty</td>
+<td data-mo-key="docs-05-time-interaction.msg0021">No records exist</td>
+<td data-mo-key="docs-05-time-interaction.msg0022">Explain how to proceed</td>
+</tr>
+<tr>
+<td data-mo-key="docs-05-time-interaction.msg0023">No results</td>
+<td data-mo-key="docs-05-time-interaction.msg0024">Filters match nothing</td>
+<td data-mo-key="docs-05-time-interaction.msg0025">Provide a way to revise filters</td>
+</tr>
+<tr>
+<td data-mo-key="docs-05-time-interaction.msg0026">Partial</td>
+<td data-mo-key="docs-05-time-interaction.msg0027">Some content unavailable</td>
+<td data-mo-key="docs-05-time-interaction.msg0028">Make limits visible</td>
+</tr>
+<tr>
+<td data-mo-key="docs-05-time-interaction.msg0029">Stale</td>
+<td data-mo-key="docs-05-time-interaction.msg0030">Data may be outdated</td>
+<td data-mo-key="docs-05-time-interaction.msg0031">Show freshness or refresh path</td>
+</tr>
+<tr>
+<td data-mo-key="docs-05-time-interaction.msg0032">Error</td>
+<td data-mo-key="docs-05-time-interaction.msg0033">Operation failed</td>
+<td data-mo-key="docs-05-time-interaction.msg0034">Explain and enable recovery</td>
+</tr>
+<tr>
+<td data-mo-key="docs-05-time-interaction.msg0035">Forbidden</td>
+<td data-mo-key="docs-05-time-interaction.msg0036">Access denied</td>
+<td data-mo-key="docs-05-time-interaction.msg0037">Do not disguise as missing records</td>
+</tr>
+<tr>
+<td data-mo-key="docs-05-time-interaction.msg0038">Disabled</td>
+<td data-mo-key="docs-05-time-interaction.msg0039">Action unavailable</td>
+<td data-mo-key="docs-05-time-interaction.msg0040">Explain why where relevant</td>
+</tr>
+</tbody></table>
+<p data-mo-key="docs-05-time-interaction.msg0041">Not every control needs every state. Specify the applicable subset explicitly.</p>
+<h2 data-mo-key="docs-05-time-interaction.msg0042">Feedback, reversibility, and focus</h2>
+<p data-mo-key="docs-05-time-interaction.msg0043">Report whether work has succeeded, failed, or has an unknown outcome. Never fabricate progress percentages. Support undo or recovery for high-impact actions where feasible. Dialogs should manage keyboard focus reliably.</p>
+<p data-mo-key="docs-05-time-interaction.msg0044">Within a system, keep selection, hover, keyboard focus, and active navigation distinguishable. Preserve the user's search/filter context when returning from a detail page if appropriate.</p>
+<h2 data-mo-key="docs-05-time-interaction.msg0045">Motion</h2>
+<p data-mo-key="docs-05-time-interaction.msg0046">Distinguish <strong>functional motion</strong> that clarifies transitions, <strong>data-driven motion</strong> that depicts changing values, and <strong>atmospheric motion</strong> that creates an experience. Each requires different evaluation. Provide reduced-motion alternatives and never hide critical meaning in brief animation.</p>
+<h2 data-mo-key="docs-05-time-interaction.msg0047">Time as content</h2>
+<p data-mo-key="docs-05-time-interaction.msg0048">Time ranges, timestamps, update cadence, and freshness affect meaning. Mark live, cached, historical, simulated, and predicted data when applicable. Avoid automatic content reordering that disrupts reading.</p>
+<h2 data-mo-key="docs-05-time-interaction.msg0049">Emotional dramaturgy</h2>
+<p data-mo-key="docs-05-time-interaction.msg0050">Emotional Intent may evolve across a task: curiosity at entry, concentration during work, appropriate concern at real risks, and satisfaction after confirmed success. This is a planned hypothesis, not an emotional guarantee.</p>
+</article><footer class="mo-handbook-footer" data-mo-key="docs-05-time-interaction.msg0051"><a href="../README.html">Handbook contents</a><a href="https://github.com/philippklinz/modern-objectivity-style/blob/main/docs/05-time-interaction.md">English authoring source</a><span>GPL-2.0-only</span></footer></main></body></html>

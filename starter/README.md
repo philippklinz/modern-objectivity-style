@@ -2,7 +2,7 @@
 
 This folder is a **complete static HTML lab starter**.
 
-This dashboard scaffold currently uses English. [MO-13](../docs/10-multilingual-access.md) requires complete 24-language journeys for adopting applications. Start language integration with the [copyable multilingual pattern](../patterns/i18n/) and its [programming guide](../guides/multilingual-pattern.md); this dashboard is not yet a complete multilingual edition.
+[MO-13](../docs/10-multilingual-access.md) requires complete journeys in all 24 official EU languages, including this dashboard and its published instructions. Preserve that coverage when adapting the starter. The [copyable multilingual pattern](../patterns/i18n/) and its [programming guide](../guides/multilingual-pattern.md) explain source messages, formatting and state-preserving switches. Translations are AI-assisted and await independent language review.
 
 ## Files
 
@@ -29,6 +29,7 @@ Open `http://localhost:8000/`. You can also open `index.html` directly in a brow
 3. Update stage-specific CSS tokens inside `:root` and `[data-theme="dark"]`.
 4. Preserve sensible focus behavior, data provenance, semantic states, keyboard interaction and accessible labels.
 5. Add loading, failed requests, permissions and other states when integrating a backend.
+6. Reconcile all 24 language editions after changing source text, including navigation, documentation, dynamic feedback and accessible descriptions. Verify coverage and source freshness separately from linguistic review.
 
 ## CSS components available
 

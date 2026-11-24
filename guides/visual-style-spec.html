@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en" data-mo-page="guides-visual-style-spec"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title data-mo-key="guides-visual-style-spec.msg0001">Visual Style Specification — Reference Lab Theme v0.1 / Modern Objectivity</title>
+<script src="../i18n/core.js" data-mo-generated="runtime"></script><script src="../i18n/pages/guides-visual-style-spec/source.js" data-mo-generated="runtime"></script><script src="../i18n/runtime.js" data-mo-generated="runtime"></script><link rel="stylesheet" href="../styles/modern-objectivity.css"><link rel="stylesheet" href="../i18n/site.css" data-mo-generated="style"></head>
+<body><main class="mo-handbook"><header class="mo-handbook-nav"><a href="../index.html" data-mo-key="guides-visual-style-spec.msg0002">Modern Objectivity / Style kit</a><a href="../README.html" data-mo-key="guides-visual-style-spec.msg0003">Handbook contents</a></header>
+<article><h1 data-mo-key="guides-visual-style-spec.msg0004">Visual Style Specification — Reference Lab Theme v0.1</h1>
+<p data-mo-key="guides-visual-style-spec.msg0005">This page documents the <strong>actual CSS implementation</strong>, not theoretical recommendations. The <a href="../index.html">style showcase</a> and working laboratories use <a href="../styles/modern-objectivity.css">the same source stylesheet</a>. The <a href="../starter/">starter</a> and <a href="../patterns/i18n/">multilingual pattern</a> include standalone copies.</p>
+<h2 data-mo-key="guides-visual-style-spec.msg0006">1. Concrete visual direction</h2>
+<ul>
+<li data-mo-key="guides-visual-style-spec.msg0007"><strong>Character:</strong> structured laboratory instrument / editorial technical interface.</li>
+<li data-mo-key="guides-visual-style-spec.msg0008"><strong>Composition:</strong> deep graphite navigation rail, precise typography, restrained low-relief cards, thin lines, high information density with generous reading space.</li>
+<li data-mo-key="guides-visual-style-spec.msg0009"><strong>Default:</strong> light canvas with teal action accent; dark mode supported through semantic tokens.</li>
+<li data-mo-key="guides-visual-style-spec.msg0010"><strong>Type:</strong> Liberation Sans for UI and reading, Liberation Mono for technical labels and figures, Liberation Serif for deliberate editorial accents; local system fallbacks included.</li>
+<li data-mo-key="guides-visual-style-spec.msg0011"><strong>Layout:</strong> 4 px base rhythm, 9 px default panel radius, 5 px control radius, clear type hierarchy.</li>
+<li data-mo-key="guides-visual-style-spec.msg0012"><strong>Interaction:</strong> visible focus, semantic status distinctions, filterable data, explicit handling of empty/error states.</li>
+</ul>
+<p data-mo-key="guides-visual-style-spec.msg0013">This is the first <strong>practical example skin</strong>, not a restriction that every adopting project must use the same colors.</p>
+<h2 data-mo-key="guides-visual-style-spec.msg0014">2. Primary tokens</h2>
+<table>
+<thead>
+<tr>
+<th data-mo-key="guides-visual-style-spec.msg0015">Token</th>
+<th data-mo-key="guides-visual-style-spec.msg0016">Light reference</th>
+<th data-mo-key="guides-visual-style-spec.msg0017">Dark reference</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code translate="no" lang="en">--mo-bg</code></td>
+<td><code translate="no" lang="en">#F3F7F7</code></td>
+<td><code translate="no" lang="en">#08191E</code></td>
+</tr>
+<tr>
+<td><code translate="no" lang="en">--mo-surface</code></td>
+<td><code translate="no" lang="en">#FFFFFF</code></td>
+<td><code translate="no" lang="en">#10272D</code></td>
+</tr>
+<tr>
+<td><code translate="no" lang="en">--mo-text</code></td>
+<td><code translate="no" lang="en">#132C32</code></td>
+<td><code translate="no" lang="en">#D7E8E9</code></td>
+</tr>
+<tr>
+<td><code translate="no" lang="en">--mo-muted</code></td>
+<td><code translate="no" lang="en">#506970</code></td>
+<td><code translate="no" lang="en">#A2BAC0</code></td>
+</tr>
+<tr>
+<td><code translate="no" lang="en">--mo-border</code></td>
+<td><code translate="no" lang="en">#CFDDDE</code></td>
+<td><code translate="no" lang="en">#2A4A52</code></td>
+</tr>
+<tr>
+<td><code translate="no" lang="en">--mo-accent</code></td>
+<td><code translate="no" lang="en">#007E77</code></td>
+<td><code translate="no" lang="en">#49D9C6</code></td>
+</tr>
+<tr>
+<td><code translate="no" lang="en">--mo-accent-active</code></td>
+<td><code translate="no" lang="en">#00625F</code></td>
+<td><code translate="no" lang="en">#82EEE0</code></td>
+</tr>
+<tr>
+<td><code translate="no" lang="en">--mo-focus</code></td>
+<td><code translate="no" lang="en">#0B9FBE</code></td>
+<td><code translate="no" lang="en">#81D8FF</code></td>
+</tr>
+</tbody></table>
+<p data-mo-key="guides-visual-style-spec.msg0018">For all values, including status colors, consult the CSS. Recheck contrast before changing tokens.</p>
+<h2 data-mo-key="guides-visual-style-spec.msg0019">3. Responsive layout</h2>
+<p data-mo-key="guides-visual-style-spec.msg0020">The full shell uses a 254 px navigation rail and fluid content area. At 900 px width or narrower, navigation becomes a horizontal, scrollable section. At 640 px or narrower, content grids become single-column. Data tables maintain readable columns and scroll horizontally rather than compressing values beyond recognition.</p>
+<h2 data-mo-key="guides-visual-style-spec.msg0021">4. Core components</h2>
+<table>
+<thead>
+<tr>
+<th data-mo-key="guides-visual-style-spec.msg0022">Component</th>
+<th data-mo-key="guides-visual-style-spec.msg0023">CSS classes</th>
+<th data-mo-key="guides-visual-style-spec.msg0024">Functional usage</th>
+</tr>
+</thead>
+<tbody><tr>
+<td data-mo-key="guides-visual-style-spec.msg0025">App shell</td>
+<td><code translate="no" lang="en">mo-shell</code>, <code translate="no" lang="en">mo-sidebar</code>, <code translate="no" lang="en">mo-main</code>, <code translate="no" lang="en">mo-topbar</code></td>
+<td data-mo-key="guides-visual-style-spec.msg0026">Navigation + content</td>
+</tr>
+<tr>
+<td data-mo-key="guides-visual-style-spec.msg0027">Cards and panels</td>
+<td><code translate="no" lang="en">mo-card</code>, <code translate="no" lang="en">mo-panel</code>, <code translate="no" lang="en">mo-grid-2/3/4</code></td>
+<td data-mo-key="guides-visual-style-spec.msg0028">Group relevant information</td>
+</tr>
+<tr>
+<td data-mo-key="guides-visual-style-spec.msg0029">Actions</td>
+<td><code translate="no" lang="en">mo-btn</code>, <code translate="no" lang="en">mo-btn-primary</code>, <code translate="no" lang="en">mo-btn-danger</code></td>
+<td data-mo-key="guides-visual-style-spec.msg0030">Distinct hierarchy and risk</td>
+</tr>
+<tr>
+<td data-mo-key="guides-visual-style-spec.msg0031">Fields</td>
+<td><code translate="no" lang="en">mo-field</code>, <code translate="no" lang="en">mo-input</code>, <code translate="no" lang="en">mo-select</code>, <code translate="no" lang="en">mo-range</code></td>
+<td data-mo-key="guides-visual-style-spec.msg0032">Accessible label + input</td>
+</tr>
+<tr>
+<td data-mo-key="guides-visual-style-spec.msg0033">Status</td>
+<td><code translate="no" lang="en">mo-badge-*</code>, <code translate="no" lang="en">mo-note-*</code></td>
+<td data-mo-key="guides-visual-style-spec.msg0034">Success, warning, error, info</td>
+</tr>
+<tr>
+<td data-mo-key="guides-visual-style-spec.msg0035">Tables</td>
+<td><code translate="no" lang="en">mo-table-wrap</code>, <code translate="no" lang="en">mo-table</code>, <code translate="no" lang="en">mo-num</code></td>
+<td data-mo-key="guides-visual-style-spec.msg0036">Numeric alignment + overflow</td>
+</tr>
+<tr>
+<td data-mo-key="guides-visual-style-spec.msg0037">Charts</td>
+<td><code translate="no" lang="en">mo-chart</code>, <code translate="no" lang="en">mo-chart-line</code>, <code translate="no" lang="en">mo-chart-grid</code></td>
+<td data-mo-key="guides-visual-style-spec.msg0038">Visual layer, SVG content</td>
+</tr>
+<tr>
+<td data-mo-key="guides-visual-style-spec.msg0039">Tabs</td>
+<td><code translate="no" lang="en">mo-tabs</code>, <code translate="no" lang="en">mo-tab</code></td>
+<td data-mo-key="guides-visual-style-spec.msg0040">Use ARIA tab and panel semantics</td>
+</tr>
+<tr>
+<td data-mo-key="guides-visual-style-spec.msg0041">Progress</td>
+<td><code translate="no" lang="en">mo-progress</code>, <code translate="no" lang="en">mo-meter</code></td>
+<td data-mo-key="guides-visual-style-spec.msg0042">Actual or <strong>clearly labeled simulated</strong> progress</td>
+</tr>
+</tbody></table>
+<h2 data-mo-key="guides-visual-style-spec.msg0043">5. A real HTML component</h2>
+<pre translate="no" lang="en"><code class="language-html" translate="no" lang="en">&lt;article class="mo-card"&gt;
+  &lt;div class="mo-card-head"&gt;
+    &lt;h3&gt;Experiment 04&lt;/h3&gt;
+    &lt;span class="mo-badge mo-badge-success"&gt;Ready&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;p class="mo-muted"&gt;12 recorded samples&lt;/p&gt;
+  &lt;button type="button" class="mo-btn mo-btn-primary"&gt;Inspect results&lt;/button&gt;
+&lt;/article&gt;
+</code></pre>
+<p data-mo-key="guides-visual-style-spec.msg0044">A lab should implement a meaningful handler for its actions. Styling alone does not create behavior.</p>
+<h2 data-mo-key="guides-visual-style-spec.msg0045">6. Change the style for your own lab</h2>
+<p data-mo-key="guides-visual-style-spec.msg0046">Override semantic roles rather than replacing each component selector:</p>
+<pre translate="no" lang="en"><code class="language-css" translate="no" lang="en">/* Place after the reference stylesheet. */
+:root {
+  --mo-accent: #6854aa;
+  --mo-accent-active: #503d87;
+  --mo-accent-light: #eee9fb;
+}
+[data-theme="dark"] {
+  --mo-accent: #b4a0ff;
+  --mo-accent-active: #d0c5ff;
+  --mo-accent-light: #342d49;
+}
+</code></pre>
+<p data-mo-key="guides-visual-style-spec.msg0047">Check contrast, focus visibility and status differentiation again after any palette changes.</p>
+<h2 data-mo-key="guides-visual-style-spec.msg0048">7. What works in the examples</h2>
+<ul>
+<li data-mo-key="guides-visual-style-spec.msg0049"><a href="../index.html">Style showcase</a>: theme switching, active tabs, input controls, filterable table, simulated progress and toast feedback.</li>
+<li data-mo-key="guides-visual-style-spec.msg0050"><a href="../examples/lab-console.html">Lab console</a>: local synthetic data generation, status classification, filtering, detail inspection, chart updates and CSV export.</li>
+<li data-mo-key="guides-visual-style-spec.msg0051"><a href="../examples/experiment.html">Live experiment</a>: mathematically defined wave, changing parameters, pause, play, step, reset and inspectable probe values.</li>
+<li data-mo-key="guides-visual-style-spec.msg0052"><a href="../starter/index.html">Standalone starter</a>: working application shell, local synthetic observations, search, filtering, CSV export and clear empty state.</li>
+<li data-mo-key="guides-visual-style-spec.msg0053"><a href="../patterns/i18n/index.html">Multilingual pattern</a>: a 24-language sample panel with local catalogues, number/plural formatting, state-preserving switches and source checks. <a href="../docs/10-multilingual-access.html">MO-13</a> applies to the entire published style kit, all examples and handbook content.</li>
+</ul>
+<p data-mo-key="guides-visual-style-spec.msg0054"><strong>Data integrity:</strong> Every generated value is explicitly labeled synthetic. No example implies a real instrument has been connected or a user study has been completed.</p>
+<h2 data-mo-key="guides-visual-style-spec.msg0055">8. Implementation limits</h2>
+<p data-mo-key="guides-visual-style-spec.msg0056">The stylesheet is a concrete starting point; it does not certify WCAG compliance or universal usability. Verify it on target browsers, devices and assistive technologies before deploying a production laboratory. No backend, authentication, storage or external instrumentation is provided.</p>
+</article><footer class="mo-handbook-footer" data-mo-key="guides-visual-style-spec.msg0057"><a href="../README.html">Handbook contents</a><a href="https://github.com/philippklinz/modern-objectivity-style/blob/main/guides/visual-style-spec.md">English authoring source</a><span>GPL-2.0-only</span></footer></main></body></html>

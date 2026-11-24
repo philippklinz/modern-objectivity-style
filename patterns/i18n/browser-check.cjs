@@ -50,7 +50,7 @@ async function main() {
         assert.equal(await page.locator('#interval').inputValue(), '0.75');
         assert.equal(await page.locator('#duration').getAttribute('data-value'), '9.75');
         assert.equal(await page.locator('#demo-title').textContent(), catalogues[code].messages.title);
-        assert.equal(await page.locator('html').getAttribute('lang'), 'en', 'The guide remains English');
+        assert.equal(await page.locator('html').getAttribute('lang'), code, 'The complete page follows the selected language');
         assert.equal(await page.locator('#diagram-bars rect').count(), 13);
         assert.ok((await page.locator('#diagram-title').textContent()).includes('13'));
         assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1), `${code} overflow at ${width}px`);

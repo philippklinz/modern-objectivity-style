@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-mo-page="starter-index">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="A ready-to-copy laboratory app shell using the Modern Objectivity practical CSS style.">
-<title>New Laboratory / Modern Objectivity Starter</title>
+<meta name="description" content="A ready-to-copy laboratory app shell using the Modern Objectivity practical CSS style." data-mo-attr-content="starter-index.msg0001">
+<script src="i18n/core.js" data-mo-generated="runtime"></script><script src="i18n/pages/starter-index/source.js" data-mo-generated="runtime"></script><script src="i18n/runtime.js" data-mo-generated="runtime"></script><title data-mo-key="starter-index.msg0002">New Laboratory / Modern Objectivity Starter</title>
 <link rel="stylesheet" href="modern-objectivity.css">
 <style>
   .starter-figure {height:190px;position:relative;background:var(--mo-surface-2);overflow:hidden;border:1px solid var(--mo-border);border-radius:8px}
@@ -13,84 +13,84 @@
 </style>
 <script>try{const t=localStorage.getItem("mo-theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t;}catch(_){}</script>
 <script defer src="demo.js"></script>
-</head>
+<link rel="stylesheet" href="i18n/site.css" data-mo-generated="style"></head>
 <body>
 <div class="mo-shell">
  <aside class="mo-sidebar">
-   <a class="mo-brand" href="#home"><span class="mo-brand-mark" aria-hidden="true">L·</span><span>LABORATORY<br>ZERO<small>Starter / v0.1</small></span></a>
-   <nav aria-label="Laboratory navigation">
-     <div class="mo-nav-group"><div class="mo-nav-title">Workspace</div><div class="mo-nav"><a href="#home" aria-current="page">Overview</a><a href="#observations">Observations</a><a href="#configuration">Configuration</a></div></div>
-     <div class="mo-nav-group"><div class="mo-nav-title">About this starter</div><div class="mo-nav"><a href="#notes">Implementation notes</a></div></div>
+   <a class="mo-brand" href="#home" data-mo-key="starter-index.msg0003"><span class="mo-brand-mark" aria-hidden="true">L·</span><span>LABORATORY<br>ZERO<small>Starter / v0.1</small></span></a>
+   <nav aria-label="Laboratory navigation" data-mo-attr-aria-label="starter-index.msg0004">
+     <div class="mo-nav-group"><div class="mo-nav-title" data-mo-key="starter-index.msg0005">Workspace</div><div class="mo-nav" data-mo-key="starter-index.msg0006"><a href="#home" aria-current="page">Overview</a><a href="#observations">Observations</a><a href="#configuration">Configuration</a></div></div>
+     <div class="mo-nav-group"><div class="mo-nav-title" data-mo-key="starter-index.msg0007">About this starter</div><div class="mo-nav" data-mo-key="starter-index.msg0008"><a href="#notes">Implementation notes</a></div></div>
    </nav>
-   <div class="mo-sidebar-foot">A REUSABLE APP SHELL.<br>NO BACKEND REQUIRED.<br><br>GPL-2.0-only</div>
+   <div class="mo-sidebar-foot" data-mo-key="starter-index.msg0009">A REUSABLE APP SHELL.<br>NO BACKEND REQUIRED.<br><br>GPL-2.0-only</div>
  </aside>
  <main class="mo-main" id="home">
    <header class="mo-topbar">
-     <div class="mo-topbar-path">LABS / <strong>LABORATORY ZERO</strong> / OBSERVATIONS</div>
-     <div class="mo-topbar-actions"><span id="global-state" class="mo-badge mo-badge-success">Ready</span><button class="mo-btn mo-btn-sm" data-theme-toggle aria-pressed="false">◐ Dark mode</button></div>
+     <div class="mo-topbar-path" data-mo-key="starter-index.msg0010">LABS / <strong>LABORATORY ZERO</strong> / OBSERVATIONS</div>
+     <div class="mo-topbar-actions"><span id="global-state" class="mo-badge mo-badge-success" data-mo-key="starter-index.msg0011">Ready</span><button class="mo-btn mo-btn-sm" data-theme-toggle aria-pressed="false">◐ Dark mode</button></div>
    </header>
    <div class="mo-content">
      <section style="margin-bottom:30px">
-       <span class="mo-kicker">Project / 00 — Replace with your lab title</span>
+       <span class="mo-kicker" data-mo-key="starter-index.msg0012">Project / 00 — Replace with your lab title</span>
        <div class="mo-between mo-wrap" style="align-items:end">
-         <div><h1 style="font-size:clamp(2.2rem,4vw,3.8rem);margin-bottom:10px">Laboratory zero<span class="mo-mark">.</span></h1><p class="mo-lead" style="margin-bottom:0">A minimal scientific workspace to adapt for your own experiment. Its controls, states, data and layout are real HTML.</p></div>
-         <button class="mo-btn mo-btn-primary mo-btn-lg" id="record">+ Generate observation</button>
+         <div><h1 style="font-size:clamp(2.2rem,4vw,3.8rem);margin-bottom:10px" data-mo-key="starter-index.msg0013">Laboratory zero<span class="mo-mark">.</span></h1><p class="mo-lead" style="margin-bottom:0" data-mo-key="starter-index.msg0014">A minimal scientific workspace to adapt for your own experiment. Its controls, states, data and layout are real HTML.</p></div>
+         <button class="mo-btn mo-btn-primary mo-btn-lg" id="record" data-mo-key="starter-index.msg0015">+ Generate observation</button>
        </div>
      </section>
-     <div class="mo-note" style="margin-bottom:17px"><span aria-hidden="true">ⓘ</span><span><strong>Demo mode.</strong> Observations below are synthetic, generated in the browser. Replace <code>simulateObservation()</code> with your actual data pipeline when integrating a lab.</span></div>
-     <div class="mo-grid mo-grid-3" aria-label="Laboratory summary">
-       <div class="mo-card mo-stat"><span class="mo-stat-label">Observations</span><strong class="mo-stat-value" id="stat-count">0</strong><span class="mo-stat-foot">THIS SESSION</span></div>
-       <div class="mo-card mo-stat"><span class="mo-stat-label">Latest value</span><strong class="mo-stat-value" id="stat-latest">—</strong><span class="mo-stat-foot">SIMULATED / UNIT</span></div>
-       <div class="mo-card mo-stat"><span class="mo-stat-label">Collection state</span><strong class="mo-stat-value" style="font-size:26px" id="stat-state">Idle</strong><span class="mo-stat-foot">NO REMOTE STORAGE</span></div>
+     <div class="mo-note" style="margin-bottom:17px" data-mo-key="starter-index.msg0016"><span aria-hidden="true">ⓘ</span><span><strong>Demo mode.</strong> Observations below are synthetic, generated in the browser. Replace <code translate="no" lang="en">simulateObservation()</code> with your actual data pipeline when integrating a lab.</span></div>
+     <div class="mo-grid mo-grid-3" aria-label="Laboratory summary" data-mo-attr-aria-label="starter-index.msg0017">
+       <div class="mo-card mo-stat" data-mo-key="starter-index.msg0018"><span class="mo-stat-label">Observations</span><strong class="mo-stat-value" id="stat-count">0</strong><span class="mo-stat-foot">THIS SESSION</span></div>
+       <div class="mo-card mo-stat" data-mo-key="starter-index.msg0019"><span class="mo-stat-label">Latest value</span><strong class="mo-stat-value" id="stat-latest">—</strong><span class="mo-stat-foot">SIMULATED / UNIT</span></div>
+       <div class="mo-card mo-stat" data-mo-key="starter-index.msg0020"><span class="mo-stat-label">Collection state</span><strong class="mo-stat-value" style="font-size:26px" id="stat-state">Idle</strong><span class="mo-stat-foot">NO REMOTE STORAGE</span></div>
      </div>
 
      <section class="mo-section" id="observations">
-       <div class="mo-section-head"><div><span class="mo-kicker">Dataset / 01</span><h2>Observations</h2><p>A search-ready table with an honest empty state, real values and accessible controls.</p></div><button class="mo-btn mo-btn-sm" id="export">↓ Export CSV</button></div>
+       <div class="mo-section-head"><div><span class="mo-kicker" data-mo-key="starter-index.msg0021">Dataset / 01</span><h2 data-mo-key="starter-index.msg0022">Observations</h2><p data-mo-key="starter-index.msg0023">A search-ready table with an honest empty state, real values and accessible controls.</p></div><button class="mo-btn mo-btn-sm" id="export" data-mo-key="starter-index.msg0024">↓ Export CSV</button></div>
        <div class="mo-grid mo-grid-2" style="margin-bottom:15px">
-         <label class="mo-field"><span class="mo-field-label">Find observation</span><input class="mo-input" id="search" placeholder="OBS-001" aria-controls="table"></label>
-         <label class="mo-field"><span class="mo-field-label">Display mode</span><select class="mo-select" id="mode"><option value="all">All observations</option><option value="high">Values ≥ 50</option><option value="low">Values below 50</option></select></label>
+         <label class="mo-field"><span class="mo-field-label" data-mo-key="starter-index.msg0025">Find observation</span><input class="mo-input" id="search" placeholder="OBS-001" aria-controls="table" data-mo-attr-placeholder="starter-index.msg0026"></label>
+         <label class="mo-field"><span class="mo-field-label" data-mo-key="starter-index.msg0027">Display mode</span><select class="mo-select" id="mode"><option value="all" data-mo-key="starter-index.msg0028">All observations</option><option value="high" data-mo-key="starter-index.msg0029">Values ≥ 50</option><option value="low" data-mo-key="starter-index.msg0030">Values below 50</option></select></label>
        </div>
        <div class="mo-table-wrap">
          <table id="table" class="mo-table starter-sample-list">
-           <thead><tr><th>Observation</th><th>Source</th><th class="mo-num">Value</th><th>State</th></tr></thead>
+           <thead><tr><th data-mo-key="starter-index.msg0031">Observation</th><th data-mo-key="starter-index.msg0032">Source</th><th class="mo-num" data-mo-key="starter-index.msg0033">Value</th><th data-mo-key="starter-index.msg0034">State</th></tr></thead>
            <tbody id="rows"></tbody>
          </table>
          <div class="starter-empty" id="empty">There are no observations yet. Select “Generate observation” to create synthetic data.</div>
        </div>
-       <p class="mo-small mo-muted" id="results" aria-live="polite" style="margin-top:12px">0 observations</p>
+       <p class="mo-small mo-muted" id="results" aria-live="polite" style="margin-top:12px" data-mo-key="starter-index.msg0035">0 observations</p>
      </section>
 
      <section class="mo-section" id="configuration">
-       <div class="mo-section-head"><div><span class="mo-kicker">Settings / 02</span><h2>Experiment configuration</h2><p>The configuration can be edited without breaking the shared app-shell structure.</p></div></div>
+       <div class="mo-section-head"><div><span class="mo-kicker" data-mo-key="starter-index.msg0036">Settings / 02</span><h2 data-mo-key="starter-index.msg0037">Experiment configuration</h2><p data-mo-key="starter-index.msg0038">The configuration can be edited without breaking the shared app-shell structure.</p></div></div>
        <div class="mo-grid mo-grid-2">
          <div class="mo-card mo-stack">
-           <label class="mo-field"><span class="mo-field-label">Experiment name</span><input class="mo-input" id="name" value="Untitled laboratory experiment"></label>
-           <label class="mo-field"><span class="mo-field-label">Local data source</span><select class="mo-select"><option>Demonstration function</option><option disabled>Physical instrumentation (not connected)</option></select><span class="mo-field-help">No real instruments are available in the starter.</span></label>
-           <label class="mo-check"><input type="checkbox" id="include-meta" checked> Include provenance in CSV export</label>
-           <div class="mo-between mo-wrap"><button class="mo-btn mo-btn-primary" id="save-settings">Save configuration</button><button class="mo-btn mo-btn-danger" id="clear">Clear observations</button></div>
+           <label class="mo-field"><span class="mo-field-label" data-mo-key="starter-index.msg0039">Experiment name</span><input class="mo-input" id="name" value="Untitled laboratory experiment" data-mo-attr-value="starter-index.msg0064"></label>
+           <label class="mo-field"><span class="mo-field-label" data-mo-key="starter-index.msg0040">Local data source</span><select class="mo-select"><option data-mo-key="starter-index.msg0041">Demonstration function</option><option disabled data-mo-key="starter-index.msg0042">Physical instrumentation (not connected)</option></select><span class="mo-field-help" data-mo-key="starter-index.msg0043">No real instruments are available in the starter.</span></label>
+           <label class="mo-check"><input type="checkbox" id="include-meta" checked><span data-mo-key="starter-index.msg0044"> Include provenance in CSV export</span></label>
+           <div class="mo-between mo-wrap"><button class="mo-btn mo-btn-primary" id="save-settings" data-mo-key="starter-index.msg0045">Save configuration</button><button class="mo-btn mo-btn-danger" id="clear" data-mo-key="starter-index.msg0046">Clear observations</button></div>
          </div>
          <div class="mo-card">
-          <div class="mo-card-head"><h3>Readout specimen</h3><span class="mo-tag">VISUAL COMPONENT</span></div>
+          <div class="mo-card-head"><h3 data-mo-key="starter-index.msg0047">Readout specimen</h3><span class="mo-tag" data-mo-key="starter-index.msg0048">VISUAL COMPONENT</span></div>
           <div class="starter-figure">
-           <svg viewBox="0 0 500 190" role="img" aria-label="Decorative line illustration representing a test laboratory, not actual measured data">
-             <g stroke="var(--mo-border-strong)" opacity=".5"><path d="M0 45H500M0 95H500M0 145H500"/><path d="M45 0V190M145 0V190M245 0V190M345 0V190M445 0V190"/></g>
-             <path d="M0 130L90 130L120 55L154 160L195 82L240 96L290 72L355 120L400 59L455 100L500 85" fill="none" stroke="var(--mo-accent)" stroke-width="3"/>
-             <circle cx="400" cy="59" r="6" fill="var(--mo-accent-glow)" stroke="var(--mo-text-strong)" stroke-width="2"/>
+           <svg viewbox="0 0 500 190" role="img" aria-label="Decorative line illustration representing a test laboratory, not actual measured data" data-mo-attr-aria-label="starter-index.msg0049">
+             <g stroke="var(--mo-border-strong)" opacity=".5"><path d="M0 45H500M0 95H500M0 145H500"></path><path d="M45 0V190M145 0V190M245 0V190M345 0V190M445 0V190"></path></g>
+             <path d="M0 130L90 130L120 55L154 160L195 82L240 96L290 72L355 120L400 59L455 100L500 85" fill="none" stroke="var(--mo-accent)" stroke-width="3"></path>
+             <circle cx="400" cy="59" r="6" fill="var(--mo-accent-glow)" stroke="var(--mo-text-strong)" stroke-width="2"></circle>
            </svg>
           </div>
-          <p class="mo-small mo-muted" style="margin:12px 0 0">Illustration only — not generated from the observation table. Replace this panel with your own scientifically truthful visualization.</p>
+          <p class="mo-small mo-muted" style="margin:12px 0 0" data-mo-key="starter-index.msg0050">Illustration only — not generated from the observation table. Replace this panel with your own scientifically truthful visualization.</p>
          </div>
        </div>
      </section>
      <section class="mo-section" id="notes">
-       <div class="mo-section-head"><div><span class="mo-kicker">Development / 03</span><h2>Where to begin</h2><p>This is a starting point, not a framework you must adopt.</p></div></div>
+       <div class="mo-section-head"><div><span class="mo-kicker" data-mo-key="starter-index.msg0051">Development / 03</span><h2 data-mo-key="starter-index.msg0052">Where to begin</h2><p data-mo-key="starter-index.msg0053">This is a starting point, not a framework you must adopt.</p></div></div>
        <div class="mo-grid mo-grid-3">
-         <div class="mo-panel"><span class="mo-eyebrow">01 / Content</span><h3 style="margin:13px 0">Change the lab</h3><p class="mo-muted">Update the header, entities, table columns and the labels that describe the actual experiment.</p></div>
-         <div class="mo-panel"><span class="mo-eyebrow">02 / Tokens</span><h3 style="margin:13px 0">Style the stage</h3><p class="mo-muted">Override the semantic CSS variables in <code>modern-objectivity.css</code> to create a distinctive visual identity.</p></div>
-         <div class="mo-panel"><span class="mo-eyebrow">03 / Behavior</span><h3 style="margin:13px 0">Connect your data</h3><p class="mo-muted">Replace the local data generator, then test loading, errors, permissions and realistic operating conditions.</p></div>
+         <div class="mo-panel"><span class="mo-eyebrow" data-mo-key="starter-index.msg0054">01 / Content</span><h3 style="margin:13px 0" data-mo-key="starter-index.msg0055">Change the lab</h3><p class="mo-muted" data-mo-key="starter-index.msg0056">Update the header, entities, table columns and the labels that describe the actual experiment.</p></div>
+         <div class="mo-panel"><span class="mo-eyebrow" data-mo-key="starter-index.msg0057">02 / Tokens</span><h3 style="margin:13px 0" data-mo-key="starter-index.msg0058">Style the stage</h3><p class="mo-muted" data-mo-key="starter-index.msg0059">Override the semantic CSS variables in <code translate="no" lang="en">modern-objectivity.css</code> to create a distinctive visual identity.</p></div>
+         <div class="mo-panel"><span class="mo-eyebrow" data-mo-key="starter-index.msg0060">03 / Behavior</span><h3 style="margin:13px 0" data-mo-key="starter-index.msg0061">Connect your data</h3><p class="mo-muted" data-mo-key="starter-index.msg0062">Replace the local data generator, then test loading, errors, permissions and realistic operating conditions.</p></div>
        </div>
      </section>
-     <footer class="mo-between mo-wrap"><span class="mo-small mo-muted mo-mono">LAB / STARTER V0.1 · MODERN OBJECTIVITY</span><a href="README.md">Setup notes</a></footer>
+     <footer class="mo-between mo-wrap" data-mo-key="starter-index.msg0063"><span class="mo-small mo-muted mo-mono">LAB / STARTER V0.1 · MODERN OBJECTIVITY</span><a href="README.html">Setup notes</a></footer>
    </div>
  </main>
 </div>
@@ -98,44 +98,53 @@
 (() => {
  "use strict";
  const $=id=>document.getElementById(id), samples=[];
+ let customExperimentName=null;
+ const fixed=(value,digits)=>window.MOSite.number(value,{minimumFractionDigits:digits,maximumFractionDigits:digits});
  function simulateObservation(index){return 50 + 20*Math.sin(index*.69)+8*Math.cos(index*1.37);}
  function addSample(){
    const i=samples.length+1;
    samples.push({id:"OBS-"+String(i).padStart(3,"0"),value:simulateObservation(i),source:"local simulation"});
-   render(); window.MODemo?.toast("Synthetic observation created.");
+   render(); window.MODemo?.toast("starter.toast.created");
  }
  function render(){
-   $("stat-count").textContent=String(samples.length);
-   $("stat-latest").textContent=samples.length?samples.at(-1).value.toFixed(1):"—";
-   $("stat-state").textContent=samples.length?"Ready":"Idle";
+   $("stat-count").textContent=window.MOSite.number(samples.length);
+   $("stat-latest").textContent=samples.length?fixed(samples.at(-1).value,1):window.MOSite.t("common.noValue");
+   $("stat-state").textContent=window.MOSite.t(samples.length?"starter.state.ready":"starter.state.idle");
    const q=$("search").value.trim().toLowerCase(),mode=$("mode").value;
    const visible=samples.filter(s=>s.id.toLowerCase().includes(q)&&(mode==="all"||(mode==="high"?s.value>=50:s.value<50)));
    const tbody=$("rows");tbody.replaceChildren();
    for(const s of visible){
      const tr=document.createElement("tr");
      const name=document.createElement("td");name.textContent=s.id;
-     const src=document.createElement("td");src.textContent=s.source;
-     const val=document.createElement("td");val.className="mo-num";val.textContent=s.value.toFixed(2);
+     const src=document.createElement("td");src.textContent=window.MOSite.t("starter.source");
+     const val=document.createElement("td");val.className="mo-num";val.textContent=fixed(s.value,2);
      const status=document.createElement("td");
-     const b=document.createElement("span");b.className="mo-badge mo-badge-success";b.textContent="Generated";status.append(b);
+     const b=document.createElement("span");b.className="mo-badge mo-badge-success";b.textContent=window.MOSite.t("starter.state.generated");status.append(b);
      tr.append(name,src,val,status);tbody.append(tr);
    }
    $("empty").hidden=visible.length!==0;
-   $("empty").textContent=!samples.length?"There are no observations yet. Select “Generate observation” to create synthetic data.":"No observations match this filter. Change your search or display mode.";
-   $("results").textContent=visible.length+" of "+samples.length+" observations shown";
+   $("empty").textContent=window.MOSite.t(samples.length?"starter.empty.noMatch":"starter.empty.noObservations");
+   $("results").textContent=window.MOSite.t("starter.observations.summary",{shown:window.MOSite.number(visible.length),total:window.MOSite.number(samples.length)});
+ }
+ function renderCustomName(){
+   if(customExperimentName===null)return;
+   document.querySelector(".mo-content h1").firstChild.nodeValue=customExperimentName;
+   document.querySelector(".mo-topbar-path strong").textContent=customExperimentName.toLocaleUpperCase(document.documentElement.lang);
+   document.title=window.MOSite.t("starter.title",{name:customExperimentName});
  }
  $("record").addEventListener("click",addSample);
  $("search").addEventListener("input",render);
  $("mode").addEventListener("change",render);
- $("clear").addEventListener("click",()=>{if(!samples.length)return;if(!confirm("Remove all synthetic observations from this session?"))return;samples.length=0;render();window.MODemo?.toast("Observations cleared.");});
- $("save-settings").addEventListener("click",()=>{const name=$("name").value.trim(); if(!name){$("name").setAttribute("aria-invalid","true"); $("name").focus(); return;} $("name").removeAttribute("aria-invalid"); document.querySelector(".mo-content h1").firstChild.nodeValue=name; document.querySelector(".mo-topbar-path strong").textContent=name.toUpperCase(); document.title=name+" / Modern Objectivity Starter";window.MODemo?.toast("Experiment name updated for this page session.");});
+ $("clear").addEventListener("click",()=>{if(!samples.length)return;if(!confirm(window.MOSite.t("starter.confirm.clear")))return;samples.length=0;render();window.MODemo?.toast("starter.toast.cleared");});
+ $("save-settings").addEventListener("click",()=>{const name=$("name").value.trim(); if(!name){$("name").setAttribute("aria-invalid","true"); $("name").focus();window.MODemo?.toast("starter.toast.nameRequired");return;} $("name").removeAttribute("aria-invalid");customExperimentName=name;renderCustomName();window.MODemo?.toast("starter.toast.nameUpdated",{name});});
  $("export").addEventListener("click",()=>{
    const meta=$("include-meta").checked;
    const csv=(meta?"id,value,source\n":"id,value\n")+samples.map(s=>s.id+","+s.value.toFixed(3)+(meta?","+s.source:"")).join("\n")+"\n";
    const url=URL.createObjectURL(new Blob([csv],{type:"text/csv;charset=utf-8"}));
    const a=document.createElement("a");a.href=url;a.download="lab-observations.csv";a.click();setTimeout(()=>URL.revokeObjectURL(url),1200);
-   window.MODemo?.toast("CSV export ready.");
+   window.MODemo?.toast("starter.toast.exportReady");
  });
+ window.addEventListener("mo:language",()=>{render();renderCustomName();});
  render();
 })();
 </script>

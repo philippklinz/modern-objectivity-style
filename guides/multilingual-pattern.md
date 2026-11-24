@@ -6,7 +6,7 @@ Keep three responsibilities separate: **model values**, **translated messages**,
 
 ## 1. One source catalogue per module
 
-The example has 13 message keys in each of 24 local files. Its source language is English; an existing lab may instead choose German. A catalogue is data wrapped in a classic script, allowing direct-file loading as well as static hosting without a JSON fetch or a build step.
+The sampling model uses 13 message keys; each local catalogue also covers the surrounding page. Its source language is English; an existing lab may instead choose German. A catalogue is data wrapped in a classic script, allowing direct-file loading as well as static hosting without a JSON fetch or a build step.
 
 The relevant part of `locales/en.js` is:
 
@@ -62,7 +62,7 @@ const duration = state.count * state.interval;
 const display = i18n.number(duration, { minimumFractionDigits: 2 });
 ```
 
-`apply(root)` translates explicitly marked text leaves and the supported `aria-label`, `title` and `placeholder` bindings. It sets the scope's language. For a fully translated page, the scope can be `document.documentElement`, with a bound `<title>`; update metadata explicitly. For an English guide containing a translated panel, use the panel as the scope. Numeric feedback and the SVG description are rendered explicitly using the same helper.
+`apply(root)` translates explicitly marked text leaves and the supported `aria-label`, `title` and `placeholder` bindings. It sets the scope's language. For a complete page, the scope can be `document.documentElement`, with a bound `<title>`; update metadata explicitly. A module may use a narrower scope, but its containing page still needs complete translated content under MO-13. Numeric feedback and the SVG description are rendered explicitly using the same helper.
 
 Messages are inserted with `textContent` or named attributes. The helper does not interpret translated HTML. Use semantic DOM slots for rich paragraphs, links and emphasis when adding them; preserve reorderable full messages instead of assembling sentences from fragments. Do not mark containers containing live controls as replaceable text.
 
@@ -90,6 +90,8 @@ node patterns/i18n/check.cjs --source-revision
 ```
 
 Review the source diff, update the affected translated messages, then record that fingerprint in each reconciled pack. Update the source pack's fingerprint too. Do not recopy or retranslate unchanged messages. This module-level approach intentionally favors a small, inspectable mechanism; per-key revision metadata can be introduced if a larger editorial workload justifies it.
+
+Apply the same maintenance rule to the complete published guide. English Markdown is the authoring source for the HTML handbook pages. After a source edit, reconcile affected translated prose, headings, tables and link labels, regenerate the published pages and check all 24 language editions. Keep code and API identifiers stable while translating their explanations. Navigation between the guide, handbook and examples must retain the selected language. These mechanical checks are separate from independent linguistic review, which remains pending for the AI-assisted translations.
 
 The browser check covers all 24 choices at several widths, state preservation, plural output, accessible SVG text, URL navigation, failed loads, source fallback, rapid selection and direct-file use. Run it with a development-only Playwright installation as documented in the [pattern README](../patterns/i18n/README.md). Neither Node nor Playwright is shipped as a runtime dependency.
 

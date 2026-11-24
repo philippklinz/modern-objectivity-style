@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en" data-mo-page="docs-08-validation"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title data-mo-key="docs-08-validation.msg0001">08 — Applications &amp; Validation / Modern Objectivity</title>
+<script src="../i18n/core.js" data-mo-generated="runtime"></script><script src="../i18n/pages/docs-08-validation/source.js" data-mo-generated="runtime"></script><script src="../i18n/runtime.js" data-mo-generated="runtime"></script><link rel="stylesheet" href="../styles/modern-objectivity.css"><link rel="stylesheet" href="../i18n/site.css" data-mo-generated="style"></head>
+<body><main class="mo-handbook"><header class="mo-handbook-nav"><a href="../index.html" data-mo-key="docs-08-validation.msg0002">Modern Objectivity / Style kit</a><a href="../README.html" data-mo-key="docs-08-validation.msg0003">Handbook contents</a></header>
+<article><h1 data-mo-key="docs-08-validation.msg0004">08 — Applications &amp; Validation</h1>
+<h2 data-mo-key="docs-08-validation.msg0005">Validation by Design</h2>
+<p data-mo-key="docs-08-validation.msg0006">Design is a hypothesis about function, interpretation, or experience. Use an iterative process:</p>
+<ol>
+<li data-mo-key="docs-08-validation.msg0007">Describe the problem and context.</li>
+<li data-mo-key="docs-08-validation.msg0008">Set functional and, when relevant, emotional goals.</li>
+<li data-mo-key="docs-08-validation.msg0009">Identify a falsifiable or otherwise examinable assumption.</li>
+<li data-mo-key="docs-08-validation.msg0010">Build a representative working prototype.</li>
+<li data-mo-key="docs-08-validation.msg0011">Select success criteria before collecting results.</li>
+<li data-mo-key="docs-08-validation.msg0012">Observe behavior, system properties, and subjective reports.</li>
+<li data-mo-key="docs-08-validation.msg0013">Record limitations and contradictory evidence.</li>
+<li data-mo-key="docs-08-validation.msg0014">Adopt, narrow, change, or reject the design; repeat as needed.</li>
+</ol>
+<h2 data-mo-key="docs-08-validation.msg0015">Dimensions</h2>
+<table>
+<thead>
+<tr>
+<th data-mo-key="docs-08-validation.msg0016">Dimension</th>
+<th data-mo-key="docs-08-validation.msg0017">Typical evidence</th>
+</tr>
+</thead>
+<tbody><tr>
+<td data-mo-key="docs-08-validation.msg0018">Domain correctness</td>
+<td data-mo-key="docs-08-validation.msg0019">Reference data and expert review</td>
+</tr>
+<tr>
+<td data-mo-key="docs-08-validation.msg0020">Task completion</td>
+<td data-mo-key="docs-08-validation.msg0021">Realistic task tests, error analysis</td>
+</tr>
+<tr>
+<td data-mo-key="docs-08-validation.msg0022">Interpretability</td>
+<td data-mo-key="docs-08-validation.msg0023">Explanation questions</td>
+</tr>
+<tr>
+<td data-mo-key="docs-08-validation.msg0024">Feasibility</td>
+<td data-mo-key="docs-08-validation.msg0025">Working implementation</td>
+</tr>
+<tr>
+<td data-mo-key="docs-08-validation.msg0026">Accessibility</td>
+<td data-mo-key="docs-08-validation.msg0027">Keyboard, zoom, screenreader tests</td>
+</tr>
+<tr>
+<td data-mo-key="docs-08-validation.msg0028">Language access</td>
+<td data-mo-key="docs-08-validation.msg0029">Complete journey coverage, source freshness, language-specific plurals/formatting, translated graphics and state-preserving switches</td>
+</tr>
+<tr>
+<td data-mo-key="docs-08-validation.msg0030">Robustness</td>
+<td data-mo-key="docs-08-validation.msg0031">Failure and edge-case tests</td>
+</tr>
+<tr>
+<td data-mo-key="docs-08-validation.msg0032">Performance</td>
+<td data-mo-key="docs-08-validation.msg0033">Instrumented measurements</td>
+</tr>
+<tr>
+<td data-mo-key="docs-08-validation.msg0034">Emotional experience</td>
+<td data-mo-key="docs-08-validation.msg0035">Subjective feedback and behavioral observation</td>
+</tr>
+<tr>
+<td data-mo-key="docs-08-validation.msg0036">Aesthetic intention</td>
+<td data-mo-key="docs-08-validation.msg0037">Contextual design critique</td>
+</tr>
+<tr>
+<td data-mo-key="docs-08-validation.msg0038">Maintainability</td>
+<td data-mo-key="docs-08-validation.msg0039">Component and integration review</td>
+</tr>
+</tbody></table>
+<h2 data-mo-key="docs-08-validation.msg0040">Evidence levels (proposed)</h2>
+<ul>
+<li data-mo-key="docs-08-validation.msg0041"><strong>E0:</strong> untested idea.</li>
+<li data-mo-key="docs-08-validation.msg0042"><strong>E1:</strong> static representation.</li>
+<li data-mo-key="docs-08-validation.msg0043"><strong>E2:</strong> functional prototype under limited conditions.</li>
+<li data-mo-key="docs-08-validation.msg0044"><strong>E3:</strong> evaluated implementation with documented criteria.</li>
+<li data-mo-key="docs-08-validation.msg0045"><strong>E4:</strong> behavior observed in real use and assumptions revisited.</li>
+</ul>
+<p data-mo-key="docs-08-validation.msg0046">These classify <strong>evidence type</strong>, not universal quality. Do not call an E1 mockup “tested”.</p>
+<h2 data-mo-key="docs-08-validation.msg0047">Component baseline</h2>
+<p data-mo-key="docs-08-validation.msg0048">For reusable components, test normal content; empty versus no results; errors and permission denial; long and large datasets; keyboard/focus; relevant locales; loading and retries; integration with the host.</p>
+<p data-mo-key="docs-08-validation.msg0049">Document exceptions if a scenario is not applicable.</p>
+<p data-mo-key="docs-08-validation.msg0050">For <a href="10-multilingual-access.html">MO-13</a>, inventory every published page, handbook chapter and example, then check each language for complete content, missing keys, stale source revisions, placeholder changes and plural forms. Check prose, tables, navigation, metadata and link destinations alongside controls, feedback, graphics and accessible descriptions. Test fallback, deep links, back/forward, long text and Greek/Cyrillic text. Automatic coverage checks do not establish linguistic or scientific correctness. Record translation review separately; keep unimplemented coverage visible.</p>
+<h2 data-mo-key="docs-08-validation.msg0051">Emotional Intent validation</h2>
+<p data-mo-key="docs-08-validation.msg0052">Define the desired experience, possible mechanism, adverse effects, and suitable investigation. Distinguish <strong>measured system properties</strong>, <strong>observed user behavior</strong>, and <strong>subjective reports</strong>. A quick task may still be stressful, and a compelling simulation may not teach the underlying principle.</p>
+<h2 data-mo-key="docs-08-validation.msg0053">Illustrative test scenarios</h2>
+<p data-mo-key="docs-08-validation.msg0054"><strong>Research console:</strong> Can participants transfer search and detail navigation knowledge between independently authored modules?</p>
+<p data-mo-key="docs-08-validation.msg0055"><strong>Learning simulation:</strong> Does visible cause-and-effect support exploration and correct conceptual understanding? Do reported feelings match the intended curiosity?</p>
+<p data-mo-key="docs-08-validation.msg0056"><strong>Sensor dashboard:</strong> Can participants identify freshness, missing values, units, and uncertainty?</p>
+<p data-mo-key="docs-08-validation.msg0057">These are test designs, <strong>not completed studies</strong>.</p>
+<p data-mo-key="docs-08-validation.msg0058">Use the <a href="../templates/validation-plan.html">Validation Plan</a> and <a href="../templates/design-decision-record.html">Design Decision Record</a>.</p>
+</article><footer class="mo-handbook-footer" data-mo-key="docs-08-validation.msg0059"><a href="../README.html">Handbook contents</a><a href="https://github.com/philippklinz/modern-objectivity-style/blob/main/docs/08-validation.md">English authoring source</a><span>GPL-2.0-only</span></footer></main></body></html>

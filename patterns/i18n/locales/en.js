@@ -1,28 +1,3 @@
-/* Modern Objectivity sample messages. GPL-2.0-only. */
+/* Generated local catalogue. GPL-2.0-only. */
 globalThis.MOCatalogues ??= Object.create(null);
-globalThis.MOCatalogues.en = {
-  "status": "example",
-  "sourceRevision": "7cc2555e9f06e397a352ea474267f98b3a2e9c3fa3c43508a89928228efc24ca",
-  "review": "Source example",
-  "messages": {
-    "title": "Sampling plan",
-    "intro": "Change the count or interval. Switching language keeps your values.",
-    "language": "Language",
-    "countLabel": "Number of samples",
-    "intervalLabel": "Interval (s)",
-    "reset": "Reset",
-    "durationLabel": "Time budget",
-    "samples": {
-      "plural": "count",
-      "forms": {
-        "one": "{count} sample",
-        "other": "{count} samples"
-      }
-    },
-    "diagram": "Timing plan. Sample count: {count}. Total: {duration} s.",
-    "modelNote": "Illustrative timing model: total = count × interval. Bars represent samples; height represents the interval. No measurements are taken.",
-    "share": "Link to this language",
-    "selected": "Language: {language}. Your settings are unchanged.",
-    "unavailable": "This translation is unavailable. Showing {language}; your settings are unchanged."
-  }
-};
+globalThis.MOCatalogues.en = {"status":"available","sourceRevision":"44e0328b658e520a9b01016b5038fb1bee1b46f0b13383bb6a2553d34e428b8a","review":"English authoring source","messages":{"title":"Sampling plan","intro":"Change the count or interval. Switching language keeps your values.","language":"Language","countLabel":"Number of samples","intervalLabel":"Interval (s)","reset":"Reset","durationLabel":"Time budget","samples":{"plural":"count","forms":{"one":"{count} sample","other":"{count} samples"}},"diagram":"Timing plan. Sample count: {count}. Total: {duration} s.","modelNote":"Illustrative timing model: total = count × interval. Bars represent samples; height represents the interval. No measurements are taken.","share":"Link to this language","selected":"Language: {language}. Your settings are unchanged.","unavailable":"This translation is unavailable. Showing {language}; your settings are unchanged.","chrome.text001":"Multilingual access / Modern Objectivity","chrome.text002":"MODERN OBJECTIVITY / STYLE KIT","chrome.text003":"PATTERN / 01","chrome.text004":"MO-13 / Multilingual access","chrome.text005":"One model. Twenty-four languages.","chrome.text006":"Language access is part of the design. This working example keeps the calculation and your settings together while the words, number formats and plural forms change.","chrome.text007":"Timing plan. Sample count: 6. Total: 1.50 s.","chrome.text008":"The interactive example needs JavaScript. Its English description and initial values remain visible.","chrome.text009":"Complete page coverage","chrome.text010":"The complete reference site, handbook and examples have local language editions. These translations are AI-assisted and await independent language review.","chrome.text011":"Local and independent","chrome.text012":"Language packs ship with the page. The selected language is in the URL. No accounts, cookies, preference storage or translation service.","chrome.text013":"Copy the working pattern","chrome.text014":"Reuse the language catalogue, helper and checks. Keep your own scientific model and translate complete modules.","chrome.text015":"Code and integration guide →","chrome.text016":"Central requirement","chrome.text017":"Programming pattern","chrome.text018":"Source code","chrome.description":"A copyable Modern Objectivity pattern: local language packs, 24 EU languages, shared model state and checked translations."}};

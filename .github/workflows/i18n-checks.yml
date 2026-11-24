@@ -1,36 +1,32 @@
-name: Multilingual pattern checks
+name: Complete multilingual site checks
 on:
   push:
-    paths: ['patterns/i18n/**', '.github/workflows/i18n-checks.yml']
   pull_request:
-    paths: ['patterns/i18n/**', '.github/workflows/i18n-checks.yml']
   workflow_dispatch:
 permissions:
   contents: read
 jobs:
-  pattern:
+  site:
     runs-on: ubuntu-24.04
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
-      - name: Check catalogues and behavior
-        run: |
-          node patterns/i18n/check.cjs
-          node --test patterns/i18n/test.cjs
+      - name: Check source integration
+        run: node tools/check-site-i18n.cjs --source-only
       - name: Install browser test tools
         run: |
           npm install --no-save playwright@1.56.1
           npx playwright install --with-deps chromium
-      - name: Exercise all locales in Chromium
+      - name: Exercise complete English source site
         env:
-          MO_I18N_SCREENSHOT_DIR: test-results/i18n
-        run: node patterns/i18n/browser-check.cjs
+          MO_I18N_SCREENSHOT_DIR: test-results/site
+        run: node tools/site-browser-check.cjs --source-only
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: multilingual-pattern-screenshots
-          path: test-results/i18n
+          name: complete-site-screenshots
+          path: test-results/site
           if-no-files-found: ignore

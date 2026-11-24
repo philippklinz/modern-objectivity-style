@@ -1,6 +1,6 @@
 # 10 — Multilingual Access
 
-**MO-13: language is part of access.** Applications adopting Modern Objectivity must provide complete user-facing journeys in all **24 official EU languages**. This is a design-language requirement, not a preference belonging to an individual lab. Additional languages are welcome.
+**MO-13: language is part of access.** Applications adopting Modern Objectivity must provide complete user-facing journeys in all **24 official EU languages**. The same requirement applies to the entire published Modern Objectivity style guide, handbook, technical guidance and every example. Additional languages are welcome.
 
 Implementations may expand coverage incrementally, but must report partial coverage honestly. A language selector, translated navigation or a list of planned languages does not establish a translated application.
 
@@ -41,11 +41,11 @@ The [copyable language registry](../patterns/i18n/languages.js) implements these
 
 ## What must be translated
 
-Complete journeys include navigation, teaching content, controls, input help, validation, loading/empty/error states, exercise questions and answers, feedback, search vocabulary, glossary definitions and recovery paths. Include text inside charts, SVG, Canvas and 3D views, and accessible equivalents such as labels, descriptions and announcements. Localize document titles and metadata when the document itself is translated.
+Complete journeys include navigation, teaching content, controls, input help, validation, loading/empty/error states, exercise questions and answers, feedback, search vocabulary, glossary definitions and recovery paths. Include text inside charts, SVG, Canvas and 3D views, and accessible equivalents such as labels, descriptions and announcements. Translate headings, paragraphs, tables, link labels, image descriptions, document titles and metadata throughout the published guide and handbook.
 
-Preserve scientific meaning: evidence, uncertainty, dates, signs, units, model limitations and answer correctness. Equations, identifiers, sequences, raw data and taxonomic names are shared; translate their explanations. Source titles and quotations may remain in their original language with an appropriate language indication. External source documents need not be translated. Personal notes remain as authored.
+Preserve scientific meaning: evidence, uncertainty, dates, signs, units, model limitations and answer correctness. Equations, executable source code, API identifiers, sequences, raw data and taxonomic names are shared; translate their explanations and all user-facing text rendered by examples. Original bibliographic titles and attributed quotations may remain in their original language with an appropriate language indication. Preserve the authoritative GPL license text; translate surrounding licensing guidance without presenting it as a replacement legal text. External source documents need not be translated. Personal notes remain as authored.
 
-Developer documentation may retain its explicitly declared editorial language. This repository's handbook is maintained in English. An embedded multilingual component must mark its own language rather than mislabel the surrounding English document.
+English Markdown remains this repository's authoring source. Its published handbook editions must carry the complete content in all 24 languages, including contributor and implementation guidance. Technical subject matter and an embedded translated component do not exempt the surrounding page from coverage. Set the page language to the language actually displayed, and identify preserved foreign-language passages separately.
 
 ## Interaction and visual requirements
 
@@ -60,7 +60,7 @@ Developer documentation may retain its explicitly declared editorial language. T
 
 Maintain one application/model implementation with separate, local message catalogues. Use stable semantic keys, an explicit source language per module, a terminology glossary and source-version information. Reuse the coding convention without creating a mandatory cross-repository runtime. Local copies should record their upstream revision and can evolve independently.
 
-The source language is an editorial choice: an existing German lab can retain German, while a new English example can use English. Translate against that source and its shared data; avoid untracked chains of translation through other languages.
+The source language is an editorial choice: an existing German lab can retain German, while this guide uses English. Translate against that source and its shared data; avoid untracked chains of translation through other languages. Source-language authoring does not narrow the published language baseline.
 
 Treat each lesson/module and its shared controls as a publication unit. Keep coverage (`planned`, `draft`, `available`) separate from source freshness and review provenance. The runtime must not advertise a draft, incomplete or stale pack as a complete language edition. A full lab is available in a language only when its entry page, every included module and shared controls are available and current.
 
@@ -68,19 +68,19 @@ For a missing or invalid pack, keep a usable source-language module and clearly 
 
 ## Efficient translation maintenance
 
-1. Author or revise a message in the module's source catalogue. Keep context and terminology close to the text; do not duplicate model data in translated files.
+1. Author or revise a message in the module's source catalogue, or edit the English Markdown for handbook content. Keep context and terminology close to the text; do not duplicate model data in translated files.
 2. Use version-control diffs to translate only affected messages. A module-level source fingerprint identifies stale packs; large modules can later use per-key fingerprints without changing the user-facing contract.
-3. Check key coverage, placeholders, plural forms and source freshness automatically. Review semantic equivalence and rendering separately. A complete key count cannot establish linguistic or scientific accuracy.
+3. Check the complete published page inventory, key coverage, placeholders, plural forms and source freshness automatically across all 24 languages. Include handbook content, navigation, dynamic feedback and accessible text. Review semantic equivalence and rendering separately. A complete key count cannot establish linguistic or scientific accuracy.
 4. Update a translation's source revision only after reconciling the changed text. Do not mass-update revision fields to silence a failed check. Changes to model assumptions also require checking associated explanations.
 5. Record AI assistance and independent review accurately. AI-assisted publication is possible; do not imply professional, native-speaker or specialist verification that has not occurred. No paid translation service is required.
 
 ## Reference status and adoption
 
-The [working sample](../patterns/i18n/index.html) implements 24 small message catalogues, local loading, plurals, formatting, source fallback and state-preserving language changes. The sample translations are AI-assisted and await independent language review. They are marked `example`, not certified translations of a complete learning lab.
+The [working sample](../patterns/i18n/index.html) demonstrates local message catalogues, plurals, formatting, source fallback and state-preserving language changes. Its small sampling module remains a copyable programming example; the containing page, the rest of the style kit and the complete handbook follow the same 24-language publication requirement.
 
-The earlier showcase, console, experiment and dashboard starter remain English examples. They demonstrate other aspects of the style and are not claimed to meet the 24-language coverage requirement yet. For new work, start with the multilingual pattern; for existing work, record the gap and migrate complete journeys progressively. This requirement applies to their eventual language coverage as well.
+The showcase, console, experiment, dashboard starter, multilingual pattern and handbook belong to one publication scope. Coverage must be checked across all of them before claiming a complete edition. Translations are AI-assisted and await independent language review; mechanical checks establish coverage and source consistency, not professional linguistic verification or scientific validation.
 
-The first pattern uses JavaScript enhancement with readable English source HTML. It does not supply localized no-JavaScript documents or independently indexed static HTML for each language. If a project needs those, generate checked-in language pages from the same catalogues; state that delivery choice explicitly. Runtime dependencies and any pre-existing offline limitations must remain visible.
+State each delivery choice explicitly: a page may use local JavaScript catalogues or generated static language editions. A source-language fallback must be labeled as such and must not be counted as a translated edition. If a project requires localized no-JavaScript documents or independently indexed language pages, generate those from the same maintained content. Runtime dependencies and offline limitations must remain visible.
 
 ## References
 
