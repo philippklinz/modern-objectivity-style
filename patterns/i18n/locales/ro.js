@@ -1,29 +1,3 @@
-/* Modern Objectivity sample messages. GPL-2.0-only. */
+/* Generated local catalogue. GPL-2.0-only. */
 globalThis.MOCatalogues ??= Object.create(null);
-globalThis.MOCatalogues.ro = {
-  "status": "example",
-  "sourceRevision": "7cc2555e9f06e397a352ea474267f98b3a2e9c3fa3c43508a89928228efc24ca",
-  "review": "AI-assisted example; independent language review pending",
-  "messages": {
-    "title": "Plan de prelevare a probelor",
-    "intro": "Schimbă numărul sau intervalul. Valorile se păstrează când schimbi limba.",
-    "language": "Limbă",
-    "countLabel": "Număr de probe",
-    "intervalLabel": "Interval (s)",
-    "reset": "Resetează",
-    "durationLabel": "Timp necesar",
-    "samples": {
-      "plural": "count",
-      "forms": {
-        "one": "{count} probă",
-        "few": "{count} probe",
-        "other": "{count} de probe"
-      }
-    },
-    "diagram": "Plan temporal. Număr de probe: {count}. Timp total: {duration} s.",
-    "modelNote": "Model temporal ilustrativ: timp total = număr × interval. Barele reprezintă probele, iar înălțimea lor reprezintă intervalul. Nu se efectuează măsurători.",
-    "share": "Link către această versiune lingvistică",
-    "selected": "Limbă: {language}. Setările tale se păstrează.",
-    "unavailable": "Această traducere nu este disponibilă. Limba afișată: {language}; setările tale se păstrează."
-  }
-};
+globalThis.MOCatalogues.ro = {"status":"available","sourceRevision":"44e0328b658e520a9b01016b5038fb1bee1b46f0b13383bb6a2553d34e428b8a","review":"AI-assisted translation; independent language review pending","messages":{"title":"Plan de prelevare a probelor","intro":"Modificați numărul sau intervalul. Valorile sunt păstrate la schimbarea limbii.","language":"Limbă","countLabel":"Număr de probe","intervalLabel":"Interval (s)","reset":"Resetează","durationLabel":"Timp necesar","samples":{"plural":"count","forms":{"one":"{count} probă","few":"{count} probe","other":"{count} de probe"}},"diagram":"Plan temporal. Număr de probe: {count}. Timp total: {duration} s.","modelNote":"Model temporal ilustrativ: timp total = număr × interval. Barele reprezintă probele, iar înălțimea lor reprezintă intervalul. Nu se efectuează măsurători.","share":"Legătură către această versiune lingvistică","selected":"Limbă: {language}. Setările dvs. sunt păstrate.","unavailable":"Această traducere nu este disponibilă. Se afișează {language}; setările dvs. sunt păstrate.","chrome.text001":"Acces multilingv / Modern Objectivity","chrome.text002":"MODERN OBJECTIVITY / KIT DE STIL","chrome.text003":"MODEL / 01","chrome.text004":"MO-13 / Acces multilingv","chrome.text005":"Un model. Douăzeci și patru de limbi.","chrome.text006":"Accesul lingvistic face parte din design. Acest exemplu funcțional păstrează împreună calculul și setările, în timp ce cuvintele, formatele numerice și formele de plural se schimbă.","chrome.text007":"Plan temporal. Număr de probe: 6. Total: 1.50 s.","chrome.text008":"Exemplul interactiv necesită JavaScript. Descrierea în engleză și valorile inițiale rămân vizibile.","chrome.text009":"Acoperire completă a paginii","chrome.text010":"Întregul site de referință, manualul și exemplele au ediții lingvistice locale. Aceste traduceri sunt asistate de IA și așteaptă verificare lingvistică independentă.","chrome.text011":"Local și independent","chrome.text012":"Pachetele lingvistice sunt livrate cu pagina. Limba selectată este în URL. Fără conturi, cookie-uri, stocare de preferințe sau serviciu de traducere.","chrome.text013":"Copiați modelul funcțional","chrome.text014":"Reutilizați catalogul de limbi, modulul ajutător și verificările. Păstrați propriul model științific și traduceți module complete.","chrome.text015":"Ghid de cod și integrare →","chrome.text016":"Cerință centrală","chrome.text017":"Model de programare","chrome.text018":"Cod sursă","chrome.description":"Un model Modern Objectivity de copiat: pachete lingvistice locale, 24 de limbi UE, stare comună a modelului și traduceri verificate."}};

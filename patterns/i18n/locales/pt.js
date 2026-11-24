@@ -1,29 +1,3 @@
-/* Modern Objectivity sample messages. GPL-2.0-only. */
+/* Generated local catalogue. GPL-2.0-only. */
 globalThis.MOCatalogues ??= Object.create(null);
-globalThis.MOCatalogues.pt = {
-  "status": "example",
-  "sourceRevision": "7cc2555e9f06e397a352ea474267f98b3a2e9c3fa3c43508a89928228efc24ca",
-  "review": "AI-assisted example; independent language review pending",
-  "messages": {
-    "title": "Plano de amostragem",
-    "intro": "Altere o número ou o intervalo. Os valores mantêm-se quando muda de língua.",
-    "language": "Língua",
-    "countLabel": "Número de amostras",
-    "intervalLabel": "Intervalo (s)",
-    "reset": "Repor",
-    "durationLabel": "Tempo necessário",
-    "samples": {
-      "plural": "count",
-      "forms": {
-        "one": "{count} amostra",
-        "many": "{count} amostras",
-        "other": "{count} amostras"
-      }
-    },
-    "diagram": "Plano temporal. Número de amostras: {count}. Tempo total: {duration} s.",
-    "modelNote": "Modelo temporal ilustrativo: tempo total = número × intervalo. As barras representam amostras; a altura representa o intervalo. Não são efetuadas medições.",
-    "share": "Ligação para esta versão linguística",
-    "selected": "Língua: {language}. As suas definições mantêm-se.",
-    "unavailable": "Esta tradução não está disponível. Língua apresentada: {language}; as suas definições mantêm-se."
-  }
-};
+globalThis.MOCatalogues.pt = {"status":"available","sourceRevision":"44e0328b658e520a9b01016b5038fb1bee1b46f0b13383bb6a2553d34e428b8a","review":"AI-assisted translation; independent language review pending","messages":{"title":"Plano de amostragem","intro":"Altere o número ou o intervalo. Os valores mantêm-se quando muda de língua.","language":"Língua","countLabel":"Número de amostras","intervalLabel":"Intervalo (s)","reset":"Repor","durationLabel":"Tempo previsto","samples":{"plural":"count","forms":{"one":"{count} amostra","many":"{count} amostras","other":"{count} amostras"}},"diagram":"Plano temporal. Número de amostras: {count}. Tempo total: {duration} s.","modelNote":"Modelo temporal ilustrativo: tempo total = número × intervalo. As barras representam amostras; a altura representa o intervalo. Não são efetuadas medições.","share":"Ligação para esta versão linguística","selected":"Língua: {language}. As suas definições mantêm-se.","unavailable":"Esta tradução não está disponível. Língua apresentada: {language}; as suas definições mantêm-se.","chrome.text001":"Acesso multilingue / Modern Objectivity","chrome.text002":"MODERN OBJECTIVITY / CONJUNTO DE ESTILO","chrome.text003":"PADRÃO / 01","chrome.text004":"MO-13 / Acesso multilingue","chrome.text005":"Um modelo. Vinte e quatro línguas.","chrome.text006":"O acesso linguístico faz parte do design. Este exemplo funcional mantém o cálculo e as suas definições enquanto mudam palavras, formatos numéricos e plurais.","chrome.text007":"Plano temporal. Número de amostras: 6. Total: 1.50 s.","chrome.text008":"O exemplo interativo precisa de JavaScript. A descrição inglesa e os valores iniciais continuam visíveis.","chrome.text009":"Cobertura completa da página","chrome.text010":"Todo o sítio de referência, o manual e os exemplos têm edições linguísticas locais. Estas traduções são assistidas por IA e aguardam revisão linguística independente.","chrome.text011":"Local e independente","chrome.text012":"Os pacotes linguísticos são distribuídos com a página. A língua escolhida está no URL. Sem contas, cookies, armazenamento de preferências nem serviço de tradução.","chrome.text013":"Copiar o padrão funcional","chrome.text014":"Reutilize catálogo linguístico, utilitário e verificações. Mantenha o seu modelo científico e traduza módulos completos.","chrome.text015":"Código e guia de integração →","chrome.text016":"Requisito central","chrome.text017":"Padrão de programação","chrome.text018":"Código-fonte","chrome.description":"Um padrão Modern Objectivity copiável: pacotes linguísticos locais, 24 línguas da UE, estado do modelo partilhado e traduções verificadas."}};
