@@ -93,6 +93,15 @@ def prepare(tree, page):
     for index, heading in enumerate(content.xpath('.//h2'), 1):
         if not heading.get('id'):
             heading.set('id', 'section-' + str(index))
+    for index, region in enumerate(content.xpath('.//*[contains(concat(" ",normalize-space(@class)," ")," mo-table-wrap ")]'), 1):
+        region.set('tabindex', '0')
+        headings = region.xpath('preceding::h3[1]|preceding::h2[1]')
+        if headings:
+            heading = headings[-1]
+            if not heading.get('id'):
+                heading.set('id', 'table-heading-' + str(index))
+            region.set('role', 'region')
+            region.set('aria-labelledby', heading.get('id'))
     return shell, main, content
 
 def decorate(tree, page):

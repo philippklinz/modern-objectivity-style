@@ -1,0 +1,54 @@
+Modern Objectivity — accessibility review
+Date: 2026-11-27
+Scope: the 36 published style-guide pages, including the accessibility lab.
+Reference target: WCAG 2.2 A/AA. This is an engineering review, not a declaration of conformance.
+
+AUTOMATED RESULTS
+- axe-core 4.11.0 in Chromium 158.0.8127.0: 194 page/language/theme/state checks, no violations of the selected WCAG A/AA or axe best-practice rules.
+- All 36 pages checked in English and German, in light and dark themes; the accessibility lab additionally checked in every other supported EU language.
+- Invalid form, success status and open dialog checked separately in both themes.
+- 72 layout checks: all 36 pages at 320 CSS pixels, plus independent text enlargement and text-spacing overrides. No horizontal page overflow. Tables may retain their own scroll area.
+- Existing regression suite: 1,728 page/language/viewport combinations passed (36 pages, 24 languages, two widths), including state retention, navigation and offline copied templates.
+- Catalogue completeness, source extraction reproducibility, font integrity and colour-model tests passed.
+
+INTERACTION CHECKS
+Keyboard activation, focus entering and staying inside a modal dialog, Escape, native focus return, the next Tab destination, invalid-field focus, associated error descriptions, live status markup, retained input after language changes, checklist state, system motion preferences and forced-colour focus were exercised in Chromium.
+A programmatic accessibility tree and DOM semantics were inspected; actual screen-reader speech was not tested.
+
+ISSUES CORRECTED
+- Scrollable tables now have keyboard-focusable, named regions.
+- Ten generated handbook task checkboxes now have real labels and can be operated.
+- Skipped heading levels in the console and wave experiment were corrected.
+- The starter's named summary now has a region role.
+- Input, checkbox, switch and range boundaries have stronger contrast.
+- Focus colours have stronger contrast on light surfaces and dark navigation.
+- Decorative hero rings were subdued to preserve text contrast where they overlap.
+- System-colour styling was added for controls and focus indicators.
+- The dialog uses native focus restoration, avoiding a delayed second focus change.
+
+SUPPLEMENTARY COLOUR REVIEW
+axe reports some gradients, SVG labels and editable text as needing review. These were not counted as automatic passes.
+- Brand mark: 8.26:1 against the lighter gradient endpoint.
+- SVG label tokens against panel surfaces: 5.84:1 light, 7.64:1 dark.
+- Code/input text tokens against secondary surfaces: 5.20:1 light, 6.92:1 dark.
+- Hero paragraph text against a conservative composite of the strongest decoration: 4.96:1.
+- Essential control boundaries against secondary surfaces: 3.83:1 light, 4.44:1 dark.
+- Focus: 4.86:1 on the darker light surface; 10.87:1 on the navigation rail.
+Decorative icons hidden from assistive technology carry no unique information. The starter's empty table is an intentional empty state; its populated state is exercised by the existing browser suite.
+
+LIMITS AND FOLLOW-UP
+- No hands-on NVDA, JAWS, VoiceOver or Orca test; no evaluation with disabled participants.
+- 320 CSS pixels checks the reflow equivalent of 400% zoom at a 1280-pixel starting viewport. Actual browser zoom and operating-system magnification remain manual checks.
+- Automated overflow checks do not establish that every element is unclipped or that every reading order is useful. Desktop/mobile screenshots and representative keyboard journeys were reviewed.
+- Browser/device coverage here is Chromium; Safari, Firefox, mobile assistive technology and speech input still need real-device testing.
+- Translations are AI-assisted and await independent linguistic review.
+- User-selected low-contrast colours in the colour workbench are deliberate experiments, with visible contrast results. Their combinations are not certified.
+
+REPRODUCE
+npm ci --prefix tools --ignore-scripts
+npm install --no-save playwright@1.56.1
+npx playwright install chromium
+node tools/accessibility-check.cjs
+node tools/site-browser-check.cjs
+
+MO_A11Y_REPORT can specify a JSON output path with all checked states and items needing manual review. MO_BROWSER_EXECUTABLE optionally selects a locally installed Chromium. GitHub Actions runs the accessibility check on subsequent changes and retains its JSON report with the test artifacts.

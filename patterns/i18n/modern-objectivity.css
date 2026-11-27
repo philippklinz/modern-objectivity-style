@@ -23,7 +23,8 @@ Semantic tokens are intentionally overridable for each laboratory stage.
   --mo-accent-active: #00625f;
   --mo-accent-light: #d9f5ef;
   --mo-accent-glow: #13d4b8;
-  --mo-focus: #0b9fbe;
+  --mo-focus: #006f87;
+  --mo-control-border: #667e85;
   --mo-danger: #b83d42;
   --mo-danger-bg: #fff0f0;
   --mo-warning: #986213;
@@ -69,6 +70,7 @@ Semantic tokens are intentionally overridable for each laboratory stage.
   --mo-accent-light: #16443f;
   --mo-accent-glow: #5ef6dd;
   --mo-focus: #81d8ff;
+  --mo-control-border: #76969d;
   --mo-danger: #ff949b;
   --mo-danger-bg: #3c252a;
   --mo-warning: #f5ca75;
@@ -133,7 +135,7 @@ code { font-size: .89em; }
 .mo-section-head p { margin:0; color:var(--mo-muted); }
 .mo-hero { position:relative; isolation:isolate; overflow:hidden; background:#0b2229; border-radius:var(--mo-radius-sm); padding:clamp(30px,6vw,74px); color:#e5f6f4; min-height:385px; display:flex; flex-direction:column; justify-content:center; margin-bottom:12px; }
 .mo-hero::before { content:""; position:absolute; inset:0; z-index:-2; background-image:linear-gradient(rgba(111,199,192,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(111,199,192,.06) 1px,transparent 1px); background-size:32px 32px; mask-image:linear-gradient(to left,black,transparent 80%); }
-.mo-hero::after { content:""; position:absolute; right:-110px; top:-125px; width:490px; aspect-ratio:1; z-index:-1; background:radial-gradient(circle at 45% 45%,transparent 18%,rgba(48,235,199,.46) 18.3%,transparent 18.8%,transparent 31%,rgba(48,235,199,.24) 31.3%,transparent 31.8%,transparent 49%,rgba(48,235,199,.14) 49.3%,transparent 49.8%); transform:rotate(-18deg); }
+.mo-hero::after { content:""; position:absolute; right:-110px; top:-125px; width:490px; aspect-ratio:1; z-index:-1; background:radial-gradient(circle at 45% 45%,transparent 18%,rgba(48,235,199,.20) 18.3%,transparent 18.8%,transparent 31%,rgba(48,235,199,.16) 31.3%,transparent 31.8%,transparent 49%,rgba(48,235,199,.10) 49.3%,transparent 49.8%); transform:rotate(-18deg); }
 .mo-hero h1 { color:#fff; max-width:720px; margin:18px 0 18px; letter-spacing:-.055em; }
 .mo-hero p { color:#b1d3d5; font-size:18px; max-width:590px; }
 .mo-hero .mo-eyebrow { color:#64e8d1; }
@@ -298,4 +300,23 @@ code { font-size: .89em; }
 @media (prefers-reduced-motion:reduce) {
   html {scroll-behavior:auto}
   *,*::before,*::after { animation-duration:.01ms!important; animation-iteration-count:1!important; transition-duration:.01ms!important; }
+}
+
+/* Keyboard access, robust control boundaries and system colours. */
+.mo-panel-title {font-size:1.12rem;letter-spacing:-.015em;margin-bottom:0}
+.mo-input,.mo-select,.mo-textarea,.mo-check input[type="checkbox"],.mo-switch input {border-color:var(--mo-control-border)}
+.mo-range {height:24px;min-height:24px}
+.mo-range::-webkit-slider-runnable-track {background:var(--mo-control-border)}
+.mo-range::-moz-range-track {background:var(--mo-control-border)}
+.mo-check,.mo-switch {min-height:28px}
+.mo-site-sidebar,.mo-hero {--mo-focus:#81d8ff}
+.mo-task-check {display:flex;align-items:flex-start;gap:12px;min-height:32px;padding:4px 0;cursor:pointer}
+.mo-task-check input {width:20px;height:20px;flex:none;margin:2px 0;accent-color:var(--mo-accent)}
+.mo-table-wrap:focus-visible {outline-offset:3px}
+@media(forced-colors:active){
+ .mo-btn,.mo-input,.mo-select,.mo-textarea,.mo-check input[type="checkbox"],.mo-switch input {border-color:ButtonText}
+ .mo-check input[type="checkbox"] {color:CanvasText}
+ .mo-switch input::after {background:ButtonText}
+ :focus-visible {outline-color:Highlight!important}
+ .mo-range {appearance:auto}
 }

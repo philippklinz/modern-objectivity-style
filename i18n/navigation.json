@@ -57,7 +57,8 @@
     "nav.sequence": "Page navigation",
     "nav.guide": "Style guide",
     "nav.sitemap": "All pages",
-    "nav.colour": "Colour lab"
+    "nav.colour": "Colour lab",
+    "nav.accessibility": "Accessibility lab"
   },
   "home": {
     "href": "index.html",
@@ -80,6 +81,10 @@
         {
           "href": "examples/colour.html",
           "label": "nav.colour"
+        },
+        {
+          "href": "examples/accessibility.html",
+          "label": "nav.accessibility"
         },
         {
           "href": "index.html#language-access",

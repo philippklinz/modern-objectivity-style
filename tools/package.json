@@ -1,7 +1,16 @@
 {
   "private": true,
   "description": "Author-side generation only; the published guide has no package runtime.",
-  "engines": {"node": ">=24"},
-  "devDependencies": {"marked": "17.0.5"},
-  "scripts": {"extract": "python3 build-site-i18n.py extract", "build": "python3 build-site-i18n.py build", "check": "node check-site-i18n.cjs"}
+  "engines": {
+    "node": ">=24"
+  },
+  "devDependencies": {
+    "axe-core": "4.11.0",
+    "marked": "17.0.5"
+  },
+  "scripts": {
+    "extract": "python3 build-site-i18n.py extract",
+    "build": "python3 build-site-i18n.py build",
+    "check": "node check-site-i18n.cjs"
+  }
 }

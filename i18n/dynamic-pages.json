@@ -40,5 +40,13 @@
     "colour.copyFailed": "Copy unavailable. Select and copy the value manually.",
     "colour.invalid": "Enter a colour such as #007E77.",
     "colour.pass": "Pass"
+  },
+  "examples-accessibility": {
+    "a11y.error": "Enter at least two characters.",
+    "a11y.success": "Sample checked. Nothing was sent.",
+    "a11y.reduced": "System preference: reduced motion.",
+    "a11y.standard": "System preference: no motion reduction requested.",
+    "a11y.position": "Position {position} of 3",
+    "a11y.progress": "{count} of {total} checked"
   }
 }

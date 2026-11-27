@@ -116,6 +116,7 @@
       "nav.guide",
       "nav.sitemap",
       "nav.colour",
+      "nav.accessibility",
       "site.language",
       "site.loading",
       "site.selected",
@@ -156,6 +157,9 @@
       "index.msg0042",
       "index.msg0043",
       "index.msg0044",
+      "index.msg0168",
+      "index.msg0169",
+      "index.msg0170",
       "index.msg0045",
       "index.msg0046",
       "index.msg0047",
@@ -488,6 +492,15 @@
         "slots": []
       },
       "index.msg0044": {
+        "slots": []
+      },
+      "index.msg0168": {
+        "slots": []
+      },
+      "index.msg0169": {
+        "slots": []
+      },
+      "index.msg0170": {
         "slots": []
       },
       "index.msg0045": {
@@ -1217,6 +1230,7 @@
       "nav.guide",
       "nav.sitemap",
       "nav.colour",
+      "nav.accessibility",
       "site.language",
       "site.loading",
       "site.selected",
@@ -1344,6 +1358,7 @@
       "nav.guide",
       "nav.sitemap",
       "nav.colour",
+      "nav.accessibility",
       "site.language",
       "site.loading",
       "site.selected",
@@ -1741,6 +1756,7 @@
       "nav.guide",
       "nav.sitemap",
       "nav.colour",
+      "nav.accessibility",
       "site.language",
       "site.loading",
       "site.selected",
@@ -2083,6 +2099,7 @@
       "nav.guide",
       "nav.sitemap",
       "nav.colour",
+      "nav.accessibility",
       "site.language",
       "site.loading",
       "site.selected",
@@ -2160,7 +2177,8 @@
       "examples-typography.msg0065",
       "examples-typography.msg0066",
       "examples-typography.msg0067",
-      "examples-typography.msg0068"
+      "examples-typography.msg0068",
+      "examples-typography.msg0070"
     ],
     "bindings": {
       "examples-typography.msg0001": {
@@ -2430,6 +2448,17 @@
             }
           }
         ]
+      },
+      "examples-typography.msg0070": {
+        "slots": [
+          {
+            "tag": "a",
+            "attrs": {
+              "class": "mo-btn",
+              "href": "accessibility.html"
+            }
+          }
+        ]
       }
     }
   },
@@ -2550,6 +2579,7 @@
       "nav.guide",
       "nav.sitemap",
       "nav.colour",
+      "nav.accessibility",
       "site.language",
       "site.loading",
       "site.selected",
@@ -2639,7 +2669,8 @@
       "examples-colour.msg0054",
       "examples-colour.msg0055",
       "examples-colour.msg0056",
-      "examples-colour.msg0057"
+      "examples-colour.msg0057",
+      "examples-colour.msg0058"
     ],
     "bindings": {
       "examples-colour.msg0001": {
@@ -2999,6 +3030,417 @@
       },
       "examples-colour.msg0057": {
         "slots": []
+      },
+      "examples-colour.msg0058": {
+        "slots": [
+          {
+            "tag": "a",
+            "attrs": {
+              "class": "mo-btn",
+              "href": "accessibility.html"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "examples-accessibility": {
+    "page": "examples/accessibility.html",
+    "assetdir": "i18n/pages/examples-accessibility",
+    "keys": [
+      "theme.light",
+      "theme.dark",
+      "toast.measurementSaved",
+      "toast.settingsOpened",
+      "toast.moreOptions",
+      "toast.deleteDisabled",
+      "common.noValue",
+      "kit.samplesSummary",
+      "kit.progress.completed",
+      "kit.progress.notStarted",
+      "kit.progress.inProgress",
+      "lab.generate",
+      "lab.log.generated",
+      "lab.log.inspected",
+      "lab.log.cleared",
+      "lab.log.exported",
+      "lab.status.aboveThreshold",
+      "lab.status.withinRange",
+      "lab.inspect",
+      "lab.details.sample",
+      "lab.details.temperature",
+      "lab.details.threshold",
+      "lab.details.status",
+      "lab.details.source",
+      "lab.details.simulation",
+      "lab.details.noSelection",
+      "lab.records.empty",
+      "lab.records.noMatch",
+      "lab.records.summary",
+      "lab.confirm.clear",
+      "lab.toast.readingsAdded",
+      "lab.toast.csvExported",
+      "experiment.state.running",
+      "experiment.state.paused",
+      "experiment.state.pausedReducedMotion",
+      "experiment.pause",
+      "experiment.play",
+      "experiment.step",
+      "experiment.timeValue",
+      "experiment.phaseValue",
+      "experiment.speedValue",
+      "starter.toast.created",
+      "starter.toast.cleared",
+      "starter.toast.exportReady",
+      "starter.toast.nameUpdated",
+      "starter.toast.nameRequired",
+      "starter.state.ready",
+      "starter.state.idle",
+      "starter.state.generated",
+      "starter.source",
+      "starter.empty.noObservations",
+      "starter.empty.noMatch",
+      "starter.observations.summary",
+      "starter.confirm.clear",
+      "starter.title",
+      "nav.page.contributing",
+      "nav.page.license-notice",
+      "nav.page.readme",
+      "nav.page.docs-01-introduction",
+      "nav.page.docs-02-philosophy",
+      "nav.page.docs-03-principles",
+      "nav.page.docs-04-visual-language",
+      "nav.page.docs-05-time-interaction",
+      "nav.page.docs-06-stage-identity",
+      "nav.page.docs-07-technical-principles",
+      "nav.page.docs-08-validation",
+      "nav.page.docs-09-references",
+      "nav.page.docs-10-multilingual-access",
+      "nav.page.examples-interactive-learning",
+      "nav.page.examples-modular-research-console",
+      "nav.page.guides-adoption",
+      "nav.page.guides-components",
+      "nav.page.guides-data-visualization",
+      "nav.page.guides-emotional-intent",
+      "nav.page.guides-multilingual-pattern",
+      "nav.page.guides-visual-style-spec",
+      "nav.page.patterns-i18n-readme",
+      "nav.page.starter-readme",
+      "nav.page.templates-component-contract",
+      "nav.page.templates-design-decision-record",
+      "nav.page.templates-stage-profile",
+      "nav.page.templates-validation-plan",
+      "nav.overview",
+      "nav.foundations",
+      "nav.interface",
+      "nav.examples",
+      "nav.build",
+      "nav.handbook",
+      "nav.visual",
+      "nav.typography",
+      "nav.language",
+      "nav.components",
+      "nav.data",
+      "nav.interaction",
+      "nav.console",
+      "nav.experiment",
+      "nav.pattern",
+      "nav.starter",
+      "nav.implementation",
+      "nav.menu",
+      "nav.site",
+      "nav.breadcrumb",
+      "nav.onThisPage",
+      "nav.previous",
+      "nav.next",
+      "nav.back",
+      "nav.external",
+      "nav.source",
+      "nav.skip",
+      "nav.sequence",
+      "nav.guide",
+      "nav.sitemap",
+      "nav.colour",
+      "nav.accessibility",
+      "site.language",
+      "site.loading",
+      "site.selected",
+      "site.fallback",
+      "site.sourceNotice",
+      "site.review",
+      "site.english",
+      "a11y.error",
+      "a11y.success",
+      "a11y.reduced",
+      "a11y.standard",
+      "a11y.position",
+      "a11y.progress",
+      "examples-accessibility.msg0001",
+      "examples-accessibility.msg0002",
+      "examples-accessibility.msg0003",
+      "examples-accessibility.msg0004",
+      "examples-accessibility.msg0005",
+      "examples-accessibility.msg0006",
+      "examples-accessibility.msg0007",
+      "examples-accessibility.msg0008",
+      "examples-accessibility.msg0009",
+      "examples-accessibility.msg0010",
+      "examples-accessibility.msg0011",
+      "examples-accessibility.msg0012",
+      "examples-accessibility.msg0013",
+      "examples-accessibility.msg0014",
+      "examples-accessibility.msg0015",
+      "examples-accessibility.msg0016",
+      "examples-accessibility.msg0017",
+      "examples-accessibility.msg0018",
+      "examples-accessibility.msg0019",
+      "examples-accessibility.msg0020",
+      "examples-accessibility.msg0021",
+      "examples-accessibility.msg0022",
+      "examples-accessibility.msg0023",
+      "examples-accessibility.msg0024",
+      "examples-accessibility.msg0025",
+      "examples-accessibility.msg0026",
+      "examples-accessibility.msg0027",
+      "examples-accessibility.msg0028",
+      "examples-accessibility.msg0029",
+      "examples-accessibility.msg0030",
+      "examples-accessibility.msg0031",
+      "examples-accessibility.msg0032",
+      "examples-accessibility.msg0033",
+      "examples-accessibility.msg0034",
+      "examples-accessibility.msg0035",
+      "examples-accessibility.msg0036",
+      "examples-accessibility.msg0037",
+      "examples-accessibility.msg0038",
+      "examples-accessibility.msg0039",
+      "examples-accessibility.msg0040",
+      "examples-accessibility.msg0041",
+      "examples-accessibility.msg0042",
+      "examples-accessibility.msg0043",
+      "examples-accessibility.msg0044",
+      "examples-accessibility.msg0045",
+      "examples-accessibility.msg0046",
+      "examples-accessibility.msg0047",
+      "examples-accessibility.msg0048",
+      "examples-accessibility.msg0049",
+      "examples-accessibility.msg0050",
+      "examples-accessibility.msg0051",
+      "examples-accessibility.msg0052",
+      "examples-accessibility.msg0053",
+      "examples-accessibility.msg0054"
+    ],
+    "bindings": {
+      "examples-accessibility.msg0001": {
+        "slots": []
+      },
+      "examples-accessibility.msg0002": {
+        "slots": []
+      },
+      "examples-accessibility.msg0003": {
+        "slots": []
+      },
+      "examples-accessibility.msg0004": {
+        "slots": []
+      },
+      "examples-accessibility.msg0005": {
+        "slots": []
+      },
+      "examples-accessibility.msg0006": {
+        "slots": [
+          {
+            "tag": "span",
+            "attrs": {}
+          },
+          {
+            "tag": "span",
+            "attrs": {}
+          },
+          {
+            "tag": "span",
+            "attrs": {}
+          },
+          {
+            "tag": "span",
+            "attrs": {}
+          }
+        ]
+      },
+      "examples-accessibility.msg0007": {
+        "slots": []
+      },
+      "examples-accessibility.msg0008": {
+        "slots": []
+      },
+      "examples-accessibility.msg0009": {
+        "slots": []
+      },
+      "examples-accessibility.msg0010": {
+        "slots": []
+      },
+      "examples-accessibility.msg0011": {
+        "slots": []
+      },
+      "examples-accessibility.msg0012": {
+        "slots": []
+      },
+      "examples-accessibility.msg0013": {
+        "slots": []
+      },
+      "examples-accessibility.msg0014": {
+        "slots": []
+      },
+      "examples-accessibility.msg0015": {
+        "slots": []
+      },
+      "examples-accessibility.msg0016": {
+        "slots": []
+      },
+      "examples-accessibility.msg0017": {
+        "slots": []
+      },
+      "examples-accessibility.msg0018": {
+        "slots": []
+      },
+      "examples-accessibility.msg0019": {
+        "slots": []
+      },
+      "examples-accessibility.msg0020": {
+        "slots": [
+          {
+            "tag": "span",
+            "attrs": {
+              "class": "mo-field-label"
+            }
+          }
+        ]
+      },
+      "examples-accessibility.msg0021": {
+        "slots": []
+      },
+      "examples-accessibility.msg0022": {
+        "slots": []
+      },
+      "examples-accessibility.msg0023": {
+        "slots": []
+      },
+      "examples-accessibility.msg0024": {
+        "slots": []
+      },
+      "examples-accessibility.msg0025": {
+        "slots": []
+      },
+      "examples-accessibility.msg0026": {
+        "slots": []
+      },
+      "examples-accessibility.msg0027": {
+        "slots": []
+      },
+      "examples-accessibility.msg0028": {
+        "slots": []
+      },
+      "examples-accessibility.msg0029": {
+        "slots": []
+      },
+      "examples-accessibility.msg0030": {
+        "slots": []
+      },
+      "examples-accessibility.msg0031": {
+        "slots": []
+      },
+      "examples-accessibility.msg0032": {
+        "slots": []
+      },
+      "examples-accessibility.msg0033": {
+        "slots": []
+      },
+      "examples-accessibility.msg0034": {
+        "slots": []
+      },
+      "examples-accessibility.msg0035": {
+        "slots": []
+      },
+      "examples-accessibility.msg0036": {
+        "slots": []
+      },
+      "examples-accessibility.msg0037": {
+        "slots": []
+      },
+      "examples-accessibility.msg0038": {
+        "slots": []
+      },
+      "examples-accessibility.msg0039": {
+        "slots": []
+      },
+      "examples-accessibility.msg0040": {
+        "slots": []
+      },
+      "examples-accessibility.msg0041": {
+        "slots": []
+      },
+      "examples-accessibility.msg0042": {
+        "slots": []
+      },
+      "examples-accessibility.msg0043": {
+        "slots": []
+      },
+      "examples-accessibility.msg0044": {
+        "slots": []
+      },
+      "examples-accessibility.msg0045": {
+        "slots": []
+      },
+      "examples-accessibility.msg0046": {
+        "slots": []
+      },
+      "examples-accessibility.msg0047": {
+        "slots": []
+      },
+      "examples-accessibility.msg0048": {
+        "slots": []
+      },
+      "examples-accessibility.msg0049": {
+        "slots": []
+      },
+      "examples-accessibility.msg0050": {
+        "slots": []
+      },
+      "examples-accessibility.msg0051": {
+        "slots": []
+      },
+      "examples-accessibility.msg0052": {
+        "slots": []
+      },
+      "examples-accessibility.msg0053": {
+        "slots": [
+          {
+            "tag": "a",
+            "attrs": {
+              "class": "mo-btn",
+              "href": "colour.html"
+            }
+          },
+          {
+            "tag": "a",
+            "attrs": {
+              "class": "mo-btn",
+              "href": "https://www.w3.org/WAI/WCAG22/quickref/",
+              "translate": "no"
+            },
+            "literal": "W3C · WCAG 2.2"
+          },
+          {
+            "tag": "a",
+            "attrs": {
+              "href": "https://www.w3.org/WAI/test-evaluate/preliminary/",
+              "translate": "no"
+            },
+            "literal": "WAI · Easy Checks"
+          }
+        ]
+      },
+      "examples-accessibility.msg0054": {
+        "slots": []
       }
     }
   },
@@ -3119,6 +3561,7 @@
       "nav.guide",
       "nav.sitemap",
       "nav.colour",
+      "nav.accessibility",
       "site.language",
       "site.loading",
       "site.selected",
@@ -3563,6 +4006,7 @@
       "nav.guide",
       "nav.sitemap",
       "nav.colour",
+      "nav.accessibility",
       "site.language",
       "site.loading",
       "site.selected",
@@ -3795,6 +4239,7 @@
       "nav.guide",
       "nav.sitemap",
       "nav.colour",
+      "nav.accessibility",
       "site.language",
       "site.loading",
       "site.selected",
@@ -3976,6 +4421,7 @@
       "nav.guide",
       "nav.sitemap",
       "nav.colour",
+      "nav.accessibility",
       "site.language",
       "site.loading",
       "site.selected",
@@ -4562,6 +5008,7 @@
       "nav.guide",
       "nav.sitemap",
       "nav.colour",
+      "nav.accessibility",
       "site.language",
       "site.loading",
       "site.selected",
@@ -4806,6 +5253,7 @@
       "nav.guide",
       "nav.sitemap",
       "nav.colour",
+      "nav.accessibility",
       "site.language",
       "site.loading",
       "site.selected",
@@ -5056,6 +5504,7 @@
       "nav.guide",
       "nav.sitemap",
       "nav.colour",
+      "nav.accessibility",
       "site.language",
       "site.loading",
       "site.selected",
@@ -5572,6 +6021,7 @@
       "nav.guide",
       "nav.sitemap",
       "nav.colour",
+      "nav.accessibility",
       "site.language",
       "site.loading",
       "site.selected",
@@ -5858,6 +6308,7 @@
       "nav.guide",
       "nav.sitemap",
       "nav.colour",
+      "nav.accessibility",
       "site.language",
       "site.loading",
       "site.selected",
@@ -6196,6 +6647,7 @@
       "nav.guide",
       "nav.sitemap",
       "nav.colour",
+      "nav.accessibility",
       "site.language",
       "site.loading",
       "site.selected",
@@ -6457,6 +6909,7 @@
       "nav.guide",
       "nav.sitemap",
       "nav.colour",
+      "nav.accessibility",
       "site.language",
       "site.loading",
       "site.selected",
@@ -6702,6 +7155,7 @@
       "nav.guide",
       "nav.sitemap",
       "nav.colour",
+      "nav.accessibility",
       "site.language",
       "site.loading",
       "site.selected",
@@ -7137,6 +7591,7 @@
       "nav.guide",
       "nav.sitemap",
       "nav.colour",
+      "nav.accessibility",
       "site.language",
       "site.loading",
       "site.selected",
@@ -7353,6 +7808,7 @@
       "nav.guide",
       "nav.sitemap",
       "nav.colour",
+      "nav.accessibility",
       "site.language",
       "site.loading",
       "site.selected",
@@ -7867,6 +8323,7 @@
       "nav.guide",
       "nav.sitemap",
       "nav.colour",
+      "nav.accessibility",
       "site.language",
       "site.loading",
       "site.selected",
@@ -8070,6 +8527,7 @@
       "nav.guide",
       "nav.sitemap",
       "nav.colour",
+      "nav.accessibility",
       "site.language",
       "site.loading",
       "site.selected",
@@ -8273,6 +8731,7 @@
       "nav.guide",
       "nav.sitemap",
       "nav.colour",
+      "nav.accessibility",
       "site.language",
       "site.loading",
       "site.selected",
@@ -8552,6 +9011,7 @@
       "nav.guide",
       "nav.sitemap",
       "nav.colour",
+      "nav.accessibility",
       "site.language",
       "site.loading",
       "site.selected",
@@ -8788,6 +9248,7 @@
       "nav.guide",
       "nav.sitemap",
       "nav.colour",
+      "nav.accessibility",
       "site.language",
       "site.loading",
       "site.selected",
@@ -9047,6 +9508,7 @@
       "nav.guide",
       "nav.sitemap",
       "nav.colour",
+      "nav.accessibility",
       "site.language",
       "site.loading",
       "site.selected",
@@ -9279,6 +9741,7 @@
       "nav.guide",
       "nav.sitemap",
       "nav.colour",
+      "nav.accessibility",
       "site.language",
       "site.loading",
       "site.selected",
@@ -9689,6 +10152,7 @@
       "nav.guide",
       "nav.sitemap",
       "nav.colour",
+      "nav.accessibility",
       "site.language",
       "site.loading",
       "site.selected",
@@ -10159,6 +10623,7 @@
       "nav.guide",
       "nav.sitemap",
       "nav.colour",
+      "nav.accessibility",
       "site.language",
       "site.loading",
       "site.selected",
@@ -10492,6 +10957,7 @@
       "nav.guide",
       "nav.sitemap",
       "nav.colour",
+      "nav.accessibility",
       "site.language",
       "site.loading",
       "site.selected",
@@ -10846,6 +11312,7 @@
       "nav.guide",
       "nav.sitemap",
       "nav.colour",
+      "nav.accessibility",
       "site.language",
       "site.loading",
       "site.selected",
@@ -10986,6 +11453,7 @@
       "nav.guide",
       "nav.sitemap",
       "nav.colour",
+      "nav.accessibility",
       "site.language",
       "site.loading",
       "site.selected",
@@ -11130,6 +11598,7 @@
       "nav.guide",
       "nav.sitemap",
       "nav.colour",
+      "nav.accessibility",
       "site.language",
       "site.loading",
       "site.selected",
@@ -11270,6 +11739,7 @@
       "nav.guide",
       "nav.sitemap",
       "nav.colour",
+      "nav.accessibility",
       "site.language",
       "site.loading",
       "site.selected",
@@ -11430,6 +11900,7 @@
       "nav.guide",
       "nav.sitemap",
       "nav.colour",
+      "nav.accessibility",
       "theme.light",
       "theme.dark"
     ],

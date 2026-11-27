@@ -1,6 +1,6 @@
 {
   "index": {
-    "next": 168,
+    "next": 171,
     "entries": [
       {
         "locator": "html/head[0]/meta[3]@content",
@@ -199,6 +199,24 @@
         "source": "Section rhythm",
         "attribute": null,
         "key": "index.msg0044"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[1]/article[3]/h3[0]",
+        "source": "Accessibility lab",
+        "attribute": null,
+        "key": "index.msg0168"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[1]/article[3]/p[1]",
+        "source": "Make every action reachable, understandable and recoverable.",
+        "attribute": null,
+        "key": "index.msg0169"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[1]/article[3]/a[2]",
+        "source": "Accessibility lab",
+        "attribute": null,
+        "key": "index.msg0170"
       },
       {
         "locator": "html/body[1]/div[0]/main[0]/div[0]/section[2]/div[0]/div[0]/span[0]",
@@ -978,7 +996,7 @@
         "key": "examples-lab-console.msg0026"
       },
       {
-        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[3]/div[0]/div[0]/h3[0]",
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[3]/div[0]/div[0]/h2[0]",
         "source": "Temperature over sample index",
         "attribute": null,
         "key": "examples-lab-console.msg0027"
@@ -1008,7 +1026,7 @@
         "key": "examples-lab-console.msg0031"
       },
       {
-        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[3]/div[1]/div[0]/h3[0]",
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[3]/div[1]/div[0]/h2[0]",
         "source": "Run parameters",
         "attribute": null,
         "key": "examples-lab-console.msg0032"
@@ -1241,7 +1259,7 @@
         "key": "examples-experiment.msg0016"
       },
       {
-        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[2]/div[0]/div[0]/h3[0]",
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[2]/div[0]/div[0]/h2[0]",
         "source": "Displacement / normalized space",
         "attribute": null,
         "key": "examples-experiment.msg0017"
@@ -1489,7 +1507,7 @@
     ]
   },
   "examples-typography": {
-    "next": 70,
+    "next": 71,
     "entries": [
       {
         "locator": "html/head[0]/meta[2]@content",
@@ -1844,11 +1862,17 @@
         "source": "<s0>CSS Font Loading API</s0>",
         "attribute": null,
         "key": "examples-typography.msg0068"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/p[6]",
+        "source": "<s0>Accessibility lab</s0>",
+        "attribute": null,
+        "key": "examples-typography.msg0070"
       }
     ]
   },
   "examples-colour": {
-    "next": 58,
+    "next": 59,
     "entries": [
       {
         "locator": "html/head[0]/title[2]",
@@ -2191,6 +2215,341 @@
         "source": "Explore the typography lab",
         "attribute": null,
         "key": "examples-colour.msg0057"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/p[7]",
+        "source": "<s0>Accessibility lab</s0>",
+        "attribute": null,
+        "key": "examples-colour.msg0058"
+      }
+    ]
+  },
+  "examples-accessibility": {
+    "next": 55,
+    "entries": [
+      {
+        "locator": "html/head[0]/title[2]",
+        "source": "Accessibility lab",
+        "attribute": null,
+        "key": "examples-accessibility.msg0001"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[0]/span[0]",
+        "source": "Modern Objectivity / Access",
+        "attribute": null,
+        "key": "examples-accessibility.msg0002"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[0]/h1[1]",
+        "source": "Accessibility lab",
+        "attribute": null,
+        "key": "examples-accessibility.msg0003"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[0]/p[2]",
+        "source": "Make every action reachable, understandable and recoverable.",
+        "attribute": null,
+        "key": "examples-accessibility.msg0004"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[0]/p[3]",
+        "source": "WCAG 2.2 AA is the target. These examples and checks are a starting point, not a conformance certificate.",
+        "attribute": null,
+        "key": "examples-accessibility.msg0005"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[0]/div[4]",
+        "source": "<s0>Keyboard</s0><s1>Clear feedback</s1><s2>Equivalent information</s2><s3>Less movement</s3>",
+        "attribute": null,
+        "key": "examples-accessibility.msg0006"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[1]/div[0]/div[0]/h2[0]",
+        "source": "Follow the focus",
+        "attribute": null,
+        "key": "examples-accessibility.msg0007"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[1]/div[0]/div[0]/p[1]",
+        "source": "Use Tab and Shift + Tab to move, Enter or Space to activate buttons, and Escape to close the dialog.",
+        "attribute": null,
+        "key": "examples-accessibility.msg0008"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[1]/div[1]/div[0]/span[0]",
+        "source": "Try it",
+        "attribute": null,
+        "key": "examples-accessibility.msg0009"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[1]/div[1]/div[0]/p[1]",
+        "source": "Open the dialog with the keyboard. Focus enters it and returns to this button when you close it.",
+        "attribute": null,
+        "key": "examples-accessibility.msg0010"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[1]/div[1]/div[0]/button[2]",
+        "source": "Open dialog",
+        "attribute": null,
+        "key": "examples-accessibility.msg0011"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[1]/div[1]/div[0]/dialog[3]/h3[0]",
+        "source": "Sample details",
+        "attribute": null,
+        "key": "examples-accessibility.msg0012"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[1]/div[1]/div[0]/dialog[3]/p[1]",
+        "source": "The background is inactive while this dialog is open. Tab stays inside; Escape closes it.",
+        "attribute": null,
+        "key": "examples-accessibility.msg0013"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[1]/div[1]/div[0]/dialog[3]/label[2]/span[1]",
+        "source": "Keep sample",
+        "attribute": null,
+        "key": "examples-accessibility.msg0014"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[1]/div[1]/div[0]/dialog[3]/form[3]/button[0]",
+        "source": "Close dialog",
+        "attribute": null,
+        "key": "examples-accessibility.msg0015"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[1]/div[1]/div[1]/h3[0]",
+        "source": "Native controls first",
+        "attribute": null,
+        "key": "examples-accessibility.msg0016"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[1]/div[1]/div[1]/p[1]",
+        "source": "Buttons, links and form controls already have keyboard behaviour. Keep a visible focus indicator and a logical reading order.",
+        "attribute": null,
+        "key": "examples-accessibility.msg0017"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[2]/div[0]/div[0]/h2[0]",
+        "source": "Help people recover",
+        "attribute": null,
+        "key": "examples-accessibility.msg0018"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[2]/div[0]/div[0]/p[1]",
+        "source": "Submit the empty form, then correct it. The error names the problem; your input stays intact.",
+        "attribute": null,
+        "key": "examples-accessibility.msg0019"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[2]/div[1]/form[0]/label[0]",
+        "source": "<s0>Sample name (required)</s0>",
+        "attribute": null,
+        "key": "examples-accessibility.msg0020"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[2]/div[1]/form[0]/p[2]",
+        "source": "Use at least two characters. This form is a local exercise.",
+        "attribute": null,
+        "key": "examples-accessibility.msg0021"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[2]/div[1]/form[0]/button[4]",
+        "source": "Check sample",
+        "attribute": null,
+        "key": "examples-accessibility.msg0022"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[2]/div[1]/div[1]/h3[0]",
+        "source": "More than a red border",
+        "attribute": null,
+        "key": "examples-accessibility.msg0023"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[2]/div[1]/div[1]/p[1]",
+        "source": "A label, an associated error and an announced result make the form understandable without relying on colour.",
+        "attribute": null,
+        "key": "examples-accessibility.msg0024"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[3]/div[0]/div[0]/h2[0]",
+        "source": "Let movement be optional",
+        "attribute": null,
+        "key": "examples-accessibility.msg0025"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[3]/div[0]/div[0]/p[1]",
+        "source": "The system preference always wins. The checkbox can reduce movement further.",
+        "attribute": null,
+        "key": "examples-accessibility.msg0026"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[3]/div[1]/div[0]/label[0]/span[1]",
+        "source": "Reduce movement",
+        "attribute": null,
+        "key": "examples-accessibility.msg0027"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[3]/div[1]/div[2]/button[0]",
+        "source": "Move sample",
+        "attribute": null,
+        "key": "examples-accessibility.msg0028"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[4]/div[0]/div[0]/h2[0]",
+        "source": "Keep the meaning available",
+        "attribute": null,
+        "key": "examples-accessibility.msg0029"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[4]/div[0]/div[0]/p[1]",
+        "source": "People may read, listen, enlarge or navigate by headings. The same information must remain available.",
+        "attribute": null,
+        "key": "examples-accessibility.msg0030"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[4]/div[1]/article[0]/h3[0]",
+        "source": "Images and charts",
+        "attribute": null,
+        "key": "examples-accessibility.msg0031"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[4]/div[1]/article[0]/p[1]",
+        "source": "Describe an image’s purpose. Decorative images need empty alternative text; charts need a useful summary and accessible data.",
+        "attribute": null,
+        "key": "examples-accessibility.msg0032"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[4]/div[1]/article[0]/a[2]",
+        "source": "Data & tables",
+        "attribute": null,
+        "key": "examples-accessibility.msg0033"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[4]/div[1]/article[1]/h3[0]",
+        "source": "Audio and video",
+        "attribute": null,
+        "key": "examples-accessibility.msg0034"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[4]/div[1]/article[1]/p[1]",
+        "source": "Provide captions and transcripts. Describe meaningful visual information that is missing from the audio.",
+        "attribute": null,
+        "key": "examples-accessibility.msg0035"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[4]/div[1]/article[1]/a[2]",
+        "source": "W3C WAI · Audio & video",
+        "attribute": null,
+        "key": "examples-accessibility.msg0036"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[4]/div[1]/article[2]/h3[0]",
+        "source": "Structure and language",
+        "attribute": null,
+        "key": "examples-accessibility.msg0037"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[4]/div[1]/article[2]/p[1]",
+        "source": "Use headings, landmarks, table headers and explicit labels. Declare the page language and mark language changes.",
+        "attribute": null,
+        "key": "examples-accessibility.msg0038"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[4]/div[1]/article[2]/a[2]",
+        "source": "Explore the typography lab",
+        "attribute": null,
+        "key": "examples-accessibility.msg0039"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[5]/div[0]/div[0]/h2[0]",
+        "source": "Before a lab goes live",
+        "attribute": null,
+        "key": "examples-accessibility.msg0040"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[5]/div[0]/div[0]/p[1]",
+        "source": "Check complete tasks, including errors and dialogs. Test with assistive technology and involve people with disabilities.",
+        "attribute": null,
+        "key": "examples-accessibility.msg0041"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[5]/div[1]/fieldset[0]/legend[0]",
+        "source": "Release checklist",
+        "attribute": null,
+        "key": "examples-accessibility.msg0042"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[5]/div[1]/fieldset[0]/label[1]/span[1]",
+        "source": "Every action works by keyboard, with visible focus and no keyboard trap.",
+        "attribute": null,
+        "key": "examples-accessibility.msg0043"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[5]/div[1]/fieldset[0]/label[2]/span[1]",
+        "source": "Text and controls remain usable at 200% text size and at 400% zoom; check reflow at 320 CSS pixels.",
+        "attribute": null,
+        "key": "examples-accessibility.msg0044"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[5]/div[1]/fieldset[0]/label[3]/span[1]",
+        "source": "Normal text reaches 4.5:1 contrast; large text and essential control graphics reach 3:1. Colour is not the only cue.",
+        "attribute": null,
+        "key": "examples-accessibility.msg0045"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[5]/div[1]/fieldset[0]/label[4]/span[1]",
+        "source": "Labels, errors, names, roles and state changes are understandable with a screen reader.",
+        "attribute": null,
+        "key": "examples-accessibility.msg0046"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[5]/div[1]/fieldset[0]/label[5]/span[1]",
+        "source": "Pointer targets meet the 24 CSS pixel minimum or its exceptions. This kit aims for 44 pixel buttons.",
+        "attribute": null,
+        "key": "examples-accessibility.msg0047"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[5]/div[1]/fieldset[0]/label[6]/span[1]",
+        "source": "Images, charts and media have useful alternatives. Reading order and headings make sense.",
+        "attribute": null,
+        "key": "examples-accessibility.msg0048"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[5]/div[1]/fieldset[0]/label[7]/span[1]",
+        "source": "Reduced motion is respected. Ongoing movement can be paused; content does not flash.",
+        "attribute": null,
+        "key": "examples-accessibility.msg0049"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[5]/div[1]/fieldset[0]/label[8]/span[1]",
+        "source": "Test results record the pages, states, browsers and assistive technology used, plus remaining limitations.",
+        "attribute": null,
+        "key": "examples-accessibility.msg0050"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[5]/div[1]/div[1]/button[1]",
+        "source": "Reset checklist",
+        "attribute": null,
+        "key": "examples-accessibility.msg0051"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[5]/p[2]",
+        "source": "Automated checks find only some barriers. A clean scan does not establish WCAG conformance.",
+        "attribute": null,
+        "key": "examples-accessibility.msg0052"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[5]/div[3]",
+        "source": "<s0>Explore the colour lab</s0><s1></s1><s2></s2>",
+        "attribute": null,
+        "key": "examples-accessibility.msg0053"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[6]/h2[0]",
+        "source": "Sources and implementation",
+        "attribute": null,
+        "key": "examples-accessibility.msg0054"
       }
     ]
   },
@@ -5338,73 +5697,73 @@
         "key": "guides-adoption.msg0013"
       },
       {
-        "locator": "html/body[1]/div[0]/main[0]/div[0]/article[0]/ul[4]/li[0]/span[1]",
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/article[0]/ul[4]/li[0]/label[0]/span[1]",
         "source": "Problem, context, and intended tasks are documented.",
         "attribute": null,
         "key": "guides-adoption.msg0014"
       },
       {
-        "locator": "html/body[1]/div[0]/main[0]/div[0]/article[0]/ul[4]/li[1]/span[1]",
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/article[0]/ul[4]/li[1]/label[0]/span[1]",
         "source": "Stage-level navigation and semantics are explicit.",
         "attribute": null,
         "key": "guides-adoption.msg0015"
       },
       {
-        "locator": "html/body[1]/div[0]/main[0]/div[0]/article[0]/ul[4]/li[2]/span[1]",
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/article[0]/ul[4]/li[2]/label[0]/span[1]",
         "source": "The visual identity is locally specified, rather than inherited by default.",
         "attribute": null,
         "key": "guides-adoption.msg0016"
       },
       {
-        "locator": "html/body[1]/div[0]/main[0]/div[0]/article[0]/ul[4]/li[3]/span[1]",
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/article[0]/ul[4]/li[3]/label[0]/span[1]",
         "source": "Loading, empty, no-results, and failure states are addressed.",
         "attribute": null,
         "key": "guides-adoption.msg0017"
       },
       {
-        "locator": "html/body[1]/div[0]/main[0]/div[0]/article[0]/ul[4]/li[4]/span[1]",
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/article[0]/ul[4]/li[4]/label[0]/span[1]",
         "source": "Data presentations are accurate and explainable.",
         "attribute": null,
         "key": "guides-adoption.msg0018"
       },
       {
-        "locator": "html/body[1]/div[0]/main[0]/div[0]/article[0]/ul[4]/li[5]/span[1]",
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/article[0]/ul[4]/li[5]/label[0]/span[1]",
         "source": "Core tasks are accessible by supported input methods.",
         "attribute": null,
         "key": "guides-adoption.msg0019"
       },
       {
-        "locator": "html/body[1]/div[0]/main[0]/div[0]/article[0]/ul[4]/li[6]/span[1]",
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/article[0]/ul[4]/li[6]/label[0]/span[1]",
         "source": "The 24-language baseline covers the complete published guidance, handbook, examples, interactions and accessible feedback; partial coverage is identified, with a migration path.",
         "attribute": null,
         "key": "guides-adoption.msg0020"
       },
       {
-        "locator": "html/body[1]/div[0]/main[0]/div[0]/article[0]/ul[4]/li[7]/span[1]",
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/article[0]/ul[4]/li[7]/label[0]/span[1]",
         "source": "Message catalogues, source freshness and language review follow the",
         "attribute": null,
         "key": "guides-adoption.msg0021"
       },
       {
-        "locator": "html/body[1]/div[0]/main[0]/div[0]/article[0]/ul[4]/li[7]/a[2]",
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/article[0]/ul[4]/li[7]/label[0]/a[2]",
         "source": "programming pattern",
         "attribute": null,
         "key": "guides-adoption.msg0022"
       },
       {
-        "locator": "html/body[1]/div[0]/main[0]/div[0]/article[0]/ul[4]/li[7]/span[3]",
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/article[0]/ul[4]/li[7]/label[0]/span[3]",
         "source": "or an equivalent documented implementation.",
         "attribute": null,
         "key": "guides-adoption.msg0023"
       },
       {
-        "locator": "html/body[1]/div[0]/main[0]/div[0]/article[0]/ul[4]/li[8]/span[1]",
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/article[0]/ul[4]/li[8]/label[0]/span[1]",
         "source": "Emotional Intent, where relevant, is stated without promising a guaranteed effect.",
         "attribute": null,
         "key": "guides-adoption.msg0024"
       },
       {
-        "locator": "html/body[1]/div[0]/main[0]/div[0]/article[0]/ul[4]/li[9]/span[1]",
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/article[0]/ul[4]/li[9]/label[0]/span[1]",
         "source": "Critical claims are accompanied by observations or a declared test plan.",
         "attribute": null,
         "key": "guides-adoption.msg0025"
