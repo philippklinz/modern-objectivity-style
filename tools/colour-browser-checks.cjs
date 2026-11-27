@@ -23,7 +23,7 @@ async function checkColourLab({page,base,ready,language}){
  const url=page.url();await page.reload();await ready(language==='de'?'en':'de');assert.equal(await page.locator('#colour-hex').inputValue(),light);assert.equal(page.url(),url);
  await page.locator('#colour-hex').fill('#BAD');assert.equal(await page.locator('#colour-hex').getAttribute('aria-invalid'),'true');
  await page.locator('#colour-reset').click();assert.equal(await page.locator('#colour-hex').getAttribute('aria-invalid'),null);
- await page.locator('#colour-foreground').fill('#000000');await page.locator('#colour-background').fill('#FFFFFF');
+ await page.locator('#colour-foreground').fill('#000000');await page.locator('#colour-background').fill('#ffffff');
  assert.ok((await page.locator('.colour-checker-ratio').textContent()).startsWith('21'));
  const downloadPromise=page.waitForEvent('download');await page.locator('#colour-download').click();const download=await downloadPromise;
  const fs=require('node:fs/promises');assert.equal(await fs.readFile(await download.path(),'utf8'),await page.locator('#colour-css').inputValue());
