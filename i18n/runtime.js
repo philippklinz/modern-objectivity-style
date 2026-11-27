@@ -78,6 +78,7 @@
     bar.querySelector('label span').textContent = i18n.text('site.language');
     selector.value = i18n.locale;
     localLinks();
+    window.MONavigation?.render({t:i18n.text, language:i18n.locale});
     window.dispatchEvent(new CustomEvent('mo:language',{detail:{locale:i18n.locale}}));
   }
   function load(code) {
@@ -106,6 +107,7 @@
     const language = MOLanguages.find(item => item.code === i18n.locale).name;
     status.textContent = i18n.text(result.fallback ? 'site.fallback' : i18n.locale === 'en' ? 'site.english' : 'site.review', {language});
     status.dataset.fallback=String(result.fallback);
+    (result.fallback ? bar : document.querySelector('.mo-footer-utilities') || bar).prepend(status);
     bar.setAttribute('aria-busy','false');
     if (updateURL) {
       const url=new URL(location.href);url.searchParams.set('lang',i18n.locale);

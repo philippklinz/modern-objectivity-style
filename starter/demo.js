@@ -4,27 +4,32 @@ The CSS is independent of this script. This file only makes demonstrations inter
 */
 (() => {
   "use strict";
-  const root = document.documentElement;
-  let stored = null;
-  try { stored = localStorage.getItem("mo-theme"); } catch (_) {}
-  const initial = stored === "dark" || stored === "light" ? stored : "light";
-  root.setAttribute("data-theme", initial);
-  const updateThemeButtons = () => document.querySelectorAll("[data-theme-toggle]").forEach(btn => {
-    const dark = root.getAttribute("data-theme") === "dark";
-    btn.setAttribute("aria-pressed", String(dark));
-    btn.textContent = window.MOSite.t(dark ? "theme.light" : "theme.dark");
-  });
-  document.addEventListener("click", e => {
-    const btn = e.target.closest("[data-theme-toggle]");
-    if (btn) {
-      const next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
-      root.setAttribute("data-theme", next);
-      try { localStorage.setItem("mo-theme", next); } catch (_) {}
-      updateThemeButtons();
-    }
-  });
-  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", updateThemeButtons);
-  else updateThemeButtons();
+  let updateThemeButtons = () => {};
+  // Copied components can still use this helper without the full guide shell.
+  if (!window.MONavigation) {
+    const root = document.documentElement;
+    let stored = null;
+    try { stored = localStorage.getItem("mo-theme"); } catch (_) {}
+    const initial = stored === "dark" || stored === "light" ? stored : "light";
+    root.setAttribute("data-theme", initial);
+    updateThemeButtons = () => document.querySelectorAll("[data-theme-toggle]").forEach(btn => {
+      const dark = root.getAttribute("data-theme") === "dark";
+      btn.setAttribute("aria-pressed", String(dark));
+      btn.textContent = window.MOSite.t(dark ? "theme.light" : "theme.dark");
+    });
+    document.addEventListener("click", e => {
+      const btn = e.target.closest("[data-theme-toggle]");
+      if (btn) {
+        const next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+        root.setAttribute("data-theme", next);
+        try { localStorage.setItem("mo-theme", next); } catch (_) {}
+        updateThemeButtons();
+      }
+    });
+    if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", updateThemeButtons);
+    else updateThemeButtons();
+
+  }
 
   let toastTimer, currentToast = null;
   function renderToast() {

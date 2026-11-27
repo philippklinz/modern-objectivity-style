@@ -58,6 +58,63 @@
       "starter.observations.summary",
       "starter.confirm.clear",
       "starter.title",
+      "nav.page.contributing",
+      "nav.page.license-notice",
+      "nav.page.readme",
+      "nav.page.docs-01-introduction",
+      "nav.page.docs-02-philosophy",
+      "nav.page.docs-03-principles",
+      "nav.page.docs-04-visual-language",
+      "nav.page.docs-05-time-interaction",
+      "nav.page.docs-06-stage-identity",
+      "nav.page.docs-07-technical-principles",
+      "nav.page.docs-08-validation",
+      "nav.page.docs-09-references",
+      "nav.page.docs-10-multilingual-access",
+      "nav.page.examples-interactive-learning",
+      "nav.page.examples-modular-research-console",
+      "nav.page.guides-adoption",
+      "nav.page.guides-components",
+      "nav.page.guides-data-visualization",
+      "nav.page.guides-emotional-intent",
+      "nav.page.guides-multilingual-pattern",
+      "nav.page.guides-visual-style-spec",
+      "nav.page.patterns-i18n-readme",
+      "nav.page.starter-readme",
+      "nav.page.templates-component-contract",
+      "nav.page.templates-design-decision-record",
+      "nav.page.templates-stage-profile",
+      "nav.page.templates-validation-plan",
+      "nav.overview",
+      "nav.foundations",
+      "nav.interface",
+      "nav.examples",
+      "nav.build",
+      "nav.handbook",
+      "nav.visual",
+      "nav.typography",
+      "nav.language",
+      "nav.components",
+      "nav.data",
+      "nav.interaction",
+      "nav.console",
+      "nav.experiment",
+      "nav.pattern",
+      "nav.starter",
+      "nav.implementation",
+      "nav.menu",
+      "nav.site",
+      "nav.breadcrumb",
+      "nav.onThisPage",
+      "nav.previous",
+      "nav.next",
+      "nav.back",
+      "nav.external",
+      "nav.source",
+      "nav.skip",
+      "nav.sequence",
+      "nav.guide",
+      "nav.sitemap",
       "site.language",
       "site.loading",
       "site.selected",
@@ -67,23 +124,10 @@
       "site.english",
       "index.msg0001",
       "index.msg0002",
-      "index.msg0003",
-      "index.msg0004",
-      "index.msg0005",
-      "index.msg0006",
-      "index.msg0007",
-      "index.msg0008",
-      "index.msg0009",
-      "index.msg0158",
-      "index.msg0010",
-      "index.msg0011",
-      "index.msg0012",
-      "index.msg0013",
-      "index.msg0015",
       "index.msg0016",
       "index.msg0017",
       "index.msg0018",
-      "index.msg0019",
+      "index.msg0161",
       "index.msg0020",
       "index.msg0021",
       "index.msg0022",
@@ -197,11 +241,11 @@
       "index.msg0128",
       "index.msg0129",
       "index.msg0130",
-      "index.msg0131",
+      "index.msg0162",
       "index.msg0132",
       "index.msg0133",
       "index.msg0134",
-      "index.msg0135",
+      "index.msg0163",
       "index.msg0136",
       "index.msg0137",
       "index.msg0138",
@@ -209,198 +253,24 @@
       "index.msg0140",
       "index.msg0141",
       "index.msg0142",
-      "index.msg0143",
+      "index.msg0164",
       "index.msg0144",
       "index.msg0145",
       "index.msg0146",
-      "index.msg0147",
+      "index.msg0165",
       "index.msg0148",
       "index.msg0149",
       "index.msg0150",
       "index.msg0151",
-      "index.msg0152",
+      "index.msg0166",
       "index.msg0153",
-      "index.msg0154",
-      "index.msg0155",
-      "index.msg0156"
+      "index.msg0154"
     ],
     "bindings": {
       "index.msg0001": {
         "slots": []
       },
       "index.msg0002": {
-        "slots": []
-      },
-      "index.msg0003": {
-        "slots": []
-      },
-      "index.msg0004": {
-        "slots": [
-          {
-            "tag": "span",
-            "attrs": {
-              "class": "mo-brand-mark",
-              "aria-hidden": "true"
-            }
-          },
-          {
-            "tag": "span",
-            "attrs": {}
-          },
-          {
-            "tag": "br",
-            "attrs": {}
-          },
-          {
-            "tag": "small",
-            "attrs": {}
-          }
-        ]
-      },
-      "index.msg0005": {
-        "slots": []
-      },
-      "index.msg0006": {
-        "slots": []
-      },
-      "index.msg0007": {
-        "slots": [
-          {
-            "tag": "a",
-            "attrs": {
-              "class": "is-active",
-              "href": "#overview"
-            }
-          },
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "#foundations"
-            }
-          },
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "#components"
-            }
-          },
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "#data"
-            }
-          },
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "#interaction"
-            }
-          },
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "#language-access"
-            }
-          }
-        ]
-      },
-      "index.msg0008": {
-        "slots": []
-      },
-      "index.msg0009": {
-        "slots": [
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "examples/lab-console.html"
-            }
-          },
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "examples/experiment.html"
-            }
-          },
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "patterns/i18n/index.html"
-            }
-          },
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "starter/index.html"
-            }
-          }
-        ]
-      },
-      "index.msg0158": {
-        "slots": [
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "examples/typography.html"
-            }
-          }
-        ]
-      },
-      "index.msg0010": {
-        "slots": []
-      },
-      "index.msg0011": {
-        "slots": [
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "#implementation"
-            }
-          },
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "docs/03-principles.html"
-            }
-          },
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "docs/08-validation.html"
-            }
-          }
-        ]
-      },
-      "index.msg0012": {
-        "slots": [
-          {
-            "tag": "br",
-            "attrs": {}
-          },
-          {
-            "tag": "br",
-            "attrs": {}
-          },
-          {
-            "tag": "br",
-            "attrs": {}
-          }
-        ]
-      },
-      "index.msg0013": {
-        "slots": [
-          {
-            "tag": "strong",
-            "attrs": {}
-          },
-          {
-            "tag": "span",
-            "attrs": {
-              "aria-hidden": "true"
-            }
-          }
-        ]
-      },
-      "index.msg0015": {
         "slots": []
       },
       "index.msg0016": {
@@ -423,7 +293,7 @@
       "index.msg0018": {
         "slots": []
       },
-      "index.msg0019": {
+      "index.msg0161": {
         "slots": [
           {
             "tag": "a",
@@ -1115,7 +985,7 @@
       "index.msg0130": {
         "slots": []
       },
-      "index.msg0131": {
+      "index.msg0162": {
         "slots": []
       },
       "index.msg0132": {
@@ -1127,7 +997,7 @@
       "index.msg0134": {
         "slots": []
       },
-      "index.msg0135": {
+      "index.msg0163": {
         "slots": []
       },
       "index.msg0136": {
@@ -1151,7 +1021,7 @@
       "index.msg0142": {
         "slots": []
       },
-      "index.msg0143": {
+      "index.msg0164": {
         "slots": []
       },
       "index.msg0144": {
@@ -1163,7 +1033,7 @@
       "index.msg0146": {
         "slots": []
       },
-      "index.msg0147": {
+      "index.msg0165": {
         "slots": []
       },
       "index.msg0148": {
@@ -1197,7 +1067,7 @@
       "index.msg0151": {
         "slots": []
       },
-      "index.msg0152": {
+      "index.msg0166": {
         "slots": []
       },
       "index.msg0153": {
@@ -1222,27 +1092,134 @@
             "literal": "starter/"
           }
         ]
-      },
-      "index.msg0155": {
-        "slots": []
-      },
-      "index.msg0156": {
-        "slots": [
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "docs/01-introduction.html"
-            }
-          },
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "https://github.com/philippklinz/modern-objectivity-style"
-            }
-          }
-        ]
       }
     }
+  },
+  "navigation": {
+    "page": "navigation.html",
+    "assetdir": "i18n/pages/navigation",
+    "keys": [
+      "theme.light",
+      "theme.dark",
+      "toast.measurementSaved",
+      "toast.settingsOpened",
+      "toast.moreOptions",
+      "toast.deleteDisabled",
+      "common.noValue",
+      "kit.samplesSummary",
+      "kit.progress.completed",
+      "kit.progress.notStarted",
+      "kit.progress.inProgress",
+      "lab.generate",
+      "lab.log.generated",
+      "lab.log.inspected",
+      "lab.log.cleared",
+      "lab.log.exported",
+      "lab.status.aboveThreshold",
+      "lab.status.withinRange",
+      "lab.inspect",
+      "lab.details.sample",
+      "lab.details.temperature",
+      "lab.details.threshold",
+      "lab.details.status",
+      "lab.details.source",
+      "lab.details.simulation",
+      "lab.details.noSelection",
+      "lab.records.empty",
+      "lab.records.noMatch",
+      "lab.records.summary",
+      "lab.confirm.clear",
+      "lab.toast.readingsAdded",
+      "lab.toast.csvExported",
+      "experiment.state.running",
+      "experiment.state.paused",
+      "experiment.state.pausedReducedMotion",
+      "experiment.pause",
+      "experiment.play",
+      "experiment.step",
+      "experiment.timeValue",
+      "experiment.phaseValue",
+      "experiment.speedValue",
+      "starter.toast.created",
+      "starter.toast.cleared",
+      "starter.toast.exportReady",
+      "starter.toast.nameUpdated",
+      "starter.toast.nameRequired",
+      "starter.state.ready",
+      "starter.state.idle",
+      "starter.state.generated",
+      "starter.source",
+      "starter.empty.noObservations",
+      "starter.empty.noMatch",
+      "starter.observations.summary",
+      "starter.confirm.clear",
+      "starter.title",
+      "nav.page.contributing",
+      "nav.page.license-notice",
+      "nav.page.readme",
+      "nav.page.docs-01-introduction",
+      "nav.page.docs-02-philosophy",
+      "nav.page.docs-03-principles",
+      "nav.page.docs-04-visual-language",
+      "nav.page.docs-05-time-interaction",
+      "nav.page.docs-06-stage-identity",
+      "nav.page.docs-07-technical-principles",
+      "nav.page.docs-08-validation",
+      "nav.page.docs-09-references",
+      "nav.page.docs-10-multilingual-access",
+      "nav.page.examples-interactive-learning",
+      "nav.page.examples-modular-research-console",
+      "nav.page.guides-adoption",
+      "nav.page.guides-components",
+      "nav.page.guides-data-visualization",
+      "nav.page.guides-emotional-intent",
+      "nav.page.guides-multilingual-pattern",
+      "nav.page.guides-visual-style-spec",
+      "nav.page.patterns-i18n-readme",
+      "nav.page.starter-readme",
+      "nav.page.templates-component-contract",
+      "nav.page.templates-design-decision-record",
+      "nav.page.templates-stage-profile",
+      "nav.page.templates-validation-plan",
+      "nav.overview",
+      "nav.foundations",
+      "nav.interface",
+      "nav.examples",
+      "nav.build",
+      "nav.handbook",
+      "nav.visual",
+      "nav.typography",
+      "nav.language",
+      "nav.components",
+      "nav.data",
+      "nav.interaction",
+      "nav.console",
+      "nav.experiment",
+      "nav.pattern",
+      "nav.starter",
+      "nav.implementation",
+      "nav.menu",
+      "nav.site",
+      "nav.breadcrumb",
+      "nav.onThisPage",
+      "nav.previous",
+      "nav.next",
+      "nav.back",
+      "nav.external",
+      "nav.source",
+      "nav.skip",
+      "nav.sequence",
+      "nav.guide",
+      "nav.sitemap",
+      "site.language",
+      "site.loading",
+      "site.selected",
+      "site.fallback",
+      "site.sourceNotice",
+      "site.review",
+      "site.english"
+    ],
+    "bindings": {}
   },
   "examples-lab-console": {
     "page": "examples/lab-console.html",
@@ -1303,6 +1280,63 @@
       "starter.observations.summary",
       "starter.confirm.clear",
       "starter.title",
+      "nav.page.contributing",
+      "nav.page.license-notice",
+      "nav.page.readme",
+      "nav.page.docs-01-introduction",
+      "nav.page.docs-02-philosophy",
+      "nav.page.docs-03-principles",
+      "nav.page.docs-04-visual-language",
+      "nav.page.docs-05-time-interaction",
+      "nav.page.docs-06-stage-identity",
+      "nav.page.docs-07-technical-principles",
+      "nav.page.docs-08-validation",
+      "nav.page.docs-09-references",
+      "nav.page.docs-10-multilingual-access",
+      "nav.page.examples-interactive-learning",
+      "nav.page.examples-modular-research-console",
+      "nav.page.guides-adoption",
+      "nav.page.guides-components",
+      "nav.page.guides-data-visualization",
+      "nav.page.guides-emotional-intent",
+      "nav.page.guides-multilingual-pattern",
+      "nav.page.guides-visual-style-spec",
+      "nav.page.patterns-i18n-readme",
+      "nav.page.starter-readme",
+      "nav.page.templates-component-contract",
+      "nav.page.templates-design-decision-record",
+      "nav.page.templates-stage-profile",
+      "nav.page.templates-validation-plan",
+      "nav.overview",
+      "nav.foundations",
+      "nav.interface",
+      "nav.examples",
+      "nav.build",
+      "nav.handbook",
+      "nav.visual",
+      "nav.typography",
+      "nav.language",
+      "nav.components",
+      "nav.data",
+      "nav.interaction",
+      "nav.console",
+      "nav.experiment",
+      "nav.pattern",
+      "nav.starter",
+      "nav.implementation",
+      "nav.menu",
+      "nav.site",
+      "nav.breadcrumb",
+      "nav.onThisPage",
+      "nav.previous",
+      "nav.next",
+      "nav.back",
+      "nav.external",
+      "nav.source",
+      "nav.skip",
+      "nav.sequence",
+      "nav.guide",
+      "nav.sitemap",
       "site.language",
       "site.loading",
       "site.selected",
@@ -1312,15 +1346,6 @@
       "site.english",
       "examples-lab-console.msg0001",
       "examples-lab-console.msg0002",
-      "examples-lab-console.msg0003",
-      "examples-lab-console.msg0004",
-      "examples-lab-console.msg0005",
-      "examples-lab-console.msg0006",
-      "examples-lab-console.msg0007",
-      "examples-lab-console.msg0008",
-      "examples-lab-console.msg0009",
-      "examples-lab-console.msg0010",
-      "examples-lab-console.msg0011",
       "examples-lab-console.msg0012",
       "examples-lab-console.msg0013",
       "examples-lab-console.msg0014",
@@ -1371,114 +1396,13 @@
       "examples-lab-console.msg0058",
       "examples-lab-console.msg0059",
       "examples-lab-console.msg0060",
-      "examples-lab-console.msg0061",
-      "examples-lab-console.msg0062"
+      "examples-lab-console.msg0061"
     ],
     "bindings": {
       "examples-lab-console.msg0001": {
         "slots": []
       },
       "examples-lab-console.msg0002": {
-        "slots": []
-      },
-      "examples-lab-console.msg0003": {
-        "slots": [
-          {
-            "tag": "span",
-            "attrs": {
-              "class": "mo-brand-mark",
-              "aria-hidden": "true"
-            }
-          },
-          {
-            "tag": "span",
-            "attrs": {}
-          },
-          {
-            "tag": "br",
-            "attrs": {}
-          },
-          {
-            "tag": "small",
-            "attrs": {}
-          }
-        ]
-      },
-      "examples-lab-console.msg0004": {
-        "slots": []
-      },
-      "examples-lab-console.msg0005": {
-        "slots": []
-      },
-      "examples-lab-console.msg0006": {
-        "slots": [
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "#dashboard",
-              "aria-current": "page"
-            }
-          },
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "#measurements"
-            }
-          },
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "#activity"
-            }
-          }
-        ]
-      },
-      "examples-lab-console.msg0007": {
-        "slots": []
-      },
-      "examples-lab-console.msg0008": {
-        "slots": [
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "../index.html"
-            }
-          },
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "experiment.html"
-            }
-          },
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "../starter/index.html"
-            }
-          }
-        ]
-      },
-      "examples-lab-console.msg0009": {
-        "slots": [
-          {
-            "tag": "br",
-            "attrs": {}
-          },
-          {
-            "tag": "br",
-            "attrs": {}
-          }
-        ]
-      },
-      "examples-lab-console.msg0010": {
-        "slots": [
-          {
-            "tag": "strong",
-            "attrs": {}
-          }
-        ]
-      },
-      "examples-lab-console.msg0011": {
         "slots": []
       },
       "examples-lab-console.msg0012": {
@@ -1690,22 +1614,6 @@
       },
       "examples-lab-console.msg0061": {
         "slots": []
-      },
-      "examples-lab-console.msg0062": {
-        "slots": [
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "../index.html"
-            }
-          },
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "experiment.html"
-            }
-          }
-        ]
       }
     }
   },
@@ -1768,6 +1676,63 @@
       "starter.observations.summary",
       "starter.confirm.clear",
       "starter.title",
+      "nav.page.contributing",
+      "nav.page.license-notice",
+      "nav.page.readme",
+      "nav.page.docs-01-introduction",
+      "nav.page.docs-02-philosophy",
+      "nav.page.docs-03-principles",
+      "nav.page.docs-04-visual-language",
+      "nav.page.docs-05-time-interaction",
+      "nav.page.docs-06-stage-identity",
+      "nav.page.docs-07-technical-principles",
+      "nav.page.docs-08-validation",
+      "nav.page.docs-09-references",
+      "nav.page.docs-10-multilingual-access",
+      "nav.page.examples-interactive-learning",
+      "nav.page.examples-modular-research-console",
+      "nav.page.guides-adoption",
+      "nav.page.guides-components",
+      "nav.page.guides-data-visualization",
+      "nav.page.guides-emotional-intent",
+      "nav.page.guides-multilingual-pattern",
+      "nav.page.guides-visual-style-spec",
+      "nav.page.patterns-i18n-readme",
+      "nav.page.starter-readme",
+      "nav.page.templates-component-contract",
+      "nav.page.templates-design-decision-record",
+      "nav.page.templates-stage-profile",
+      "nav.page.templates-validation-plan",
+      "nav.overview",
+      "nav.foundations",
+      "nav.interface",
+      "nav.examples",
+      "nav.build",
+      "nav.handbook",
+      "nav.visual",
+      "nav.typography",
+      "nav.language",
+      "nav.components",
+      "nav.data",
+      "nav.interaction",
+      "nav.console",
+      "nav.experiment",
+      "nav.pattern",
+      "nav.starter",
+      "nav.implementation",
+      "nav.menu",
+      "nav.site",
+      "nav.breadcrumb",
+      "nav.onThisPage",
+      "nav.previous",
+      "nav.next",
+      "nav.back",
+      "nav.external",
+      "nav.source",
+      "nav.skip",
+      "nav.sequence",
+      "nav.guide",
+      "nav.sitemap",
       "site.language",
       "site.loading",
       "site.selected",
@@ -1777,15 +1742,6 @@
       "site.english",
       "examples-experiment.msg0001",
       "examples-experiment.msg0002",
-      "examples-experiment.msg0003",
-      "examples-experiment.msg0004",
-      "examples-experiment.msg0005",
-      "examples-experiment.msg0006",
-      "examples-experiment.msg0007",
-      "examples-experiment.msg0008",
-      "examples-experiment.msg0009",
-      "examples-experiment.msg0010",
-      "examples-experiment.msg0011",
       "examples-experiment.msg0012",
       "examples-experiment.msg0013",
       "examples-experiment.msg0014",
@@ -1831,114 +1787,13 @@
       "examples-experiment.msg0054",
       "examples-experiment.msg0055",
       "examples-experiment.msg0056",
-      "examples-experiment.msg0057",
-      "examples-experiment.msg0058"
+      "examples-experiment.msg0057"
     ],
     "bindings": {
       "examples-experiment.msg0001": {
         "slots": []
       },
       "examples-experiment.msg0002": {
-        "slots": []
-      },
-      "examples-experiment.msg0003": {
-        "slots": [
-          {
-            "tag": "span",
-            "attrs": {
-              "class": "mo-brand-mark",
-              "aria-hidden": "true"
-            }
-          },
-          {
-            "tag": "span",
-            "attrs": {}
-          },
-          {
-            "tag": "br",
-            "attrs": {}
-          },
-          {
-            "tag": "small",
-            "attrs": {}
-          }
-        ]
-      },
-      "examples-experiment.msg0004": {
-        "slots": []
-      },
-      "examples-experiment.msg0005": {
-        "slots": []
-      },
-      "examples-experiment.msg0006": {
-        "slots": [
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "#visualization",
-              "aria-current": "page"
-            }
-          },
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "#parameters"
-            }
-          },
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "#observations"
-            }
-          }
-        ]
-      },
-      "examples-experiment.msg0007": {
-        "slots": []
-      },
-      "examples-experiment.msg0008": {
-        "slots": [
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "../index.html"
-            }
-          },
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "lab-console.html"
-            }
-          },
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "../starter/index.html"
-            }
-          }
-        ]
-      },
-      "examples-experiment.msg0009": {
-        "slots": [
-          {
-            "tag": "br",
-            "attrs": {}
-          },
-          {
-            "tag": "br",
-            "attrs": {}
-          }
-        ]
-      },
-      "examples-experiment.msg0010": {
-        "slots": [
-          {
-            "tag": "strong",
-            "attrs": {}
-          }
-        ]
-      },
-      "examples-experiment.msg0011": {
         "slots": []
       },
       "examples-experiment.msg0012": {
@@ -2100,22 +1955,6 @@
       },
       "examples-experiment.msg0057": {
         "slots": []
-      },
-      "examples-experiment.msg0058": {
-        "slots": [
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "lab-console.html"
-            }
-          },
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "../starter/index.html"
-            }
-          }
-        ]
       }
     }
   },
@@ -2178,6 +2017,63 @@
       "starter.observations.summary",
       "starter.confirm.clear",
       "starter.title",
+      "nav.page.contributing",
+      "nav.page.license-notice",
+      "nav.page.readme",
+      "nav.page.docs-01-introduction",
+      "nav.page.docs-02-philosophy",
+      "nav.page.docs-03-principles",
+      "nav.page.docs-04-visual-language",
+      "nav.page.docs-05-time-interaction",
+      "nav.page.docs-06-stage-identity",
+      "nav.page.docs-07-technical-principles",
+      "nav.page.docs-08-validation",
+      "nav.page.docs-09-references",
+      "nav.page.docs-10-multilingual-access",
+      "nav.page.examples-interactive-learning",
+      "nav.page.examples-modular-research-console",
+      "nav.page.guides-adoption",
+      "nav.page.guides-components",
+      "nav.page.guides-data-visualization",
+      "nav.page.guides-emotional-intent",
+      "nav.page.guides-multilingual-pattern",
+      "nav.page.guides-visual-style-spec",
+      "nav.page.patterns-i18n-readme",
+      "nav.page.starter-readme",
+      "nav.page.templates-component-contract",
+      "nav.page.templates-design-decision-record",
+      "nav.page.templates-stage-profile",
+      "nav.page.templates-validation-plan",
+      "nav.overview",
+      "nav.foundations",
+      "nav.interface",
+      "nav.examples",
+      "nav.build",
+      "nav.handbook",
+      "nav.visual",
+      "nav.typography",
+      "nav.language",
+      "nav.components",
+      "nav.data",
+      "nav.interaction",
+      "nav.console",
+      "nav.experiment",
+      "nav.pattern",
+      "nav.starter",
+      "nav.implementation",
+      "nav.menu",
+      "nav.site",
+      "nav.breadcrumb",
+      "nav.onThisPage",
+      "nav.previous",
+      "nav.next",
+      "nav.back",
+      "nav.external",
+      "nav.source",
+      "nav.skip",
+      "nav.sequence",
+      "nav.guide",
+      "nav.sitemap",
       "site.language",
       "site.loading",
       "site.selected",
@@ -2199,16 +2095,6 @@
       "fonts.empty",
       "examples-typography.msg0001",
       "examples-typography.msg0002",
-      "examples-typography.msg0003",
-      "examples-typography.msg0004",
-      "examples-typography.msg0005",
-      "examples-typography.msg0006",
-      "examples-typography.msg0007",
-      "examples-typography.msg0008",
-      "examples-typography.msg0009",
-      "examples-typography.msg0010",
-      "examples-typography.msg0011",
-      "examples-typography.msg0012",
       "examples-typography.msg0013",
       "examples-typography.msg0014",
       "examples-typography.msg0015",
@@ -2271,41 +2157,6 @@
         "slots": []
       },
       "examples-typography.msg0002": {
-        "slots": []
-      },
-      "examples-typography.msg0003": {
-        "slots": []
-      },
-      "examples-typography.msg0004": {
-        "slots": []
-      },
-      "examples-typography.msg0005": {
-        "slots": []
-      },
-      "examples-typography.msg0006": {
-        "slots": []
-      },
-      "examples-typography.msg0007": {
-        "slots": []
-      },
-      "examples-typography.msg0008": {
-        "slots": []
-      },
-      "examples-typography.msg0009": {
-        "slots": []
-      },
-      "examples-typography.msg0010": {
-        "slots": []
-      },
-      "examples-typography.msg0011": {
-        "slots": [
-          {
-            "tag": "strong",
-            "attrs": {}
-          }
-        ]
-      },
-      "examples-typography.msg0012": {
         "slots": []
       },
       "examples-typography.msg0013": {
@@ -2620,6 +2471,63 @@
       "starter.observations.summary",
       "starter.confirm.clear",
       "starter.title",
+      "nav.page.contributing",
+      "nav.page.license-notice",
+      "nav.page.readme",
+      "nav.page.docs-01-introduction",
+      "nav.page.docs-02-philosophy",
+      "nav.page.docs-03-principles",
+      "nav.page.docs-04-visual-language",
+      "nav.page.docs-05-time-interaction",
+      "nav.page.docs-06-stage-identity",
+      "nav.page.docs-07-technical-principles",
+      "nav.page.docs-08-validation",
+      "nav.page.docs-09-references",
+      "nav.page.docs-10-multilingual-access",
+      "nav.page.examples-interactive-learning",
+      "nav.page.examples-modular-research-console",
+      "nav.page.guides-adoption",
+      "nav.page.guides-components",
+      "nav.page.guides-data-visualization",
+      "nav.page.guides-emotional-intent",
+      "nav.page.guides-multilingual-pattern",
+      "nav.page.guides-visual-style-spec",
+      "nav.page.patterns-i18n-readme",
+      "nav.page.starter-readme",
+      "nav.page.templates-component-contract",
+      "nav.page.templates-design-decision-record",
+      "nav.page.templates-stage-profile",
+      "nav.page.templates-validation-plan",
+      "nav.overview",
+      "nav.foundations",
+      "nav.interface",
+      "nav.examples",
+      "nav.build",
+      "nav.handbook",
+      "nav.visual",
+      "nav.typography",
+      "nav.language",
+      "nav.components",
+      "nav.data",
+      "nav.interaction",
+      "nav.console",
+      "nav.experiment",
+      "nav.pattern",
+      "nav.starter",
+      "nav.implementation",
+      "nav.menu",
+      "nav.site",
+      "nav.breadcrumb",
+      "nav.onThisPage",
+      "nav.previous",
+      "nav.next",
+      "nav.back",
+      "nav.external",
+      "nav.source",
+      "nav.skip",
+      "nav.sequence",
+      "nav.guide",
+      "nav.sitemap",
       "site.language",
       "site.loading",
       "site.selected",
@@ -2629,15 +2537,6 @@
       "site.english",
       "starter-index.msg0001",
       "starter-index.msg0002",
-      "starter-index.msg0003",
-      "starter-index.msg0004",
-      "starter-index.msg0005",
-      "starter-index.msg0006",
-      "starter-index.msg0007",
-      "starter-index.msg0008",
-      "starter-index.msg0009",
-      "starter-index.msg0010",
-      "starter-index.msg0011",
       "starter-index.msg0012",
       "starter-index.msg0013",
       "starter-index.msg0014",
@@ -2689,106 +2588,13 @@
       "starter-index.msg0059",
       "starter-index.msg0060",
       "starter-index.msg0061",
-      "starter-index.msg0062",
-      "starter-index.msg0063"
+      "starter-index.msg0062"
     ],
     "bindings": {
       "starter-index.msg0001": {
         "slots": []
       },
       "starter-index.msg0002": {
-        "slots": []
-      },
-      "starter-index.msg0003": {
-        "slots": [
-          {
-            "tag": "span",
-            "attrs": {
-              "class": "mo-brand-mark",
-              "aria-hidden": "true"
-            }
-          },
-          {
-            "tag": "span",
-            "attrs": {}
-          },
-          {
-            "tag": "br",
-            "attrs": {}
-          },
-          {
-            "tag": "small",
-            "attrs": {}
-          }
-        ]
-      },
-      "starter-index.msg0004": {
-        "slots": []
-      },
-      "starter-index.msg0005": {
-        "slots": []
-      },
-      "starter-index.msg0006": {
-        "slots": [
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "#home",
-              "aria-current": "page"
-            }
-          },
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "#observations"
-            }
-          },
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "#configuration"
-            }
-          }
-        ]
-      },
-      "starter-index.msg0007": {
-        "slots": []
-      },
-      "starter-index.msg0008": {
-        "slots": [
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "#notes"
-            }
-          }
-        ]
-      },
-      "starter-index.msg0009": {
-        "slots": [
-          {
-            "tag": "br",
-            "attrs": {}
-          },
-          {
-            "tag": "br",
-            "attrs": {}
-          },
-          {
-            "tag": "br",
-            "attrs": {}
-          }
-        ]
-      },
-      "starter-index.msg0010": {
-        "slots": [
-          {
-            "tag": "strong",
-            "attrs": {}
-          }
-        ]
-      },
-      "starter-index.msg0011": {
         "slots": []
       },
       "starter-index.msg0012": {
@@ -3046,22 +2852,6 @@
       },
       "starter-index.msg0062": {
         "slots": []
-      },
-      "starter-index.msg0063": {
-        "slots": [
-          {
-            "tag": "span",
-            "attrs": {
-              "class": "mo-small mo-muted mo-mono"
-            }
-          },
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "README.html"
-            }
-          }
-        ]
       }
     }
   },
@@ -3124,6 +2914,63 @@
       "starter.observations.summary",
       "starter.confirm.clear",
       "starter.title",
+      "nav.page.contributing",
+      "nav.page.license-notice",
+      "nav.page.readme",
+      "nav.page.docs-01-introduction",
+      "nav.page.docs-02-philosophy",
+      "nav.page.docs-03-principles",
+      "nav.page.docs-04-visual-language",
+      "nav.page.docs-05-time-interaction",
+      "nav.page.docs-06-stage-identity",
+      "nav.page.docs-07-technical-principles",
+      "nav.page.docs-08-validation",
+      "nav.page.docs-09-references",
+      "nav.page.docs-10-multilingual-access",
+      "nav.page.examples-interactive-learning",
+      "nav.page.examples-modular-research-console",
+      "nav.page.guides-adoption",
+      "nav.page.guides-components",
+      "nav.page.guides-data-visualization",
+      "nav.page.guides-emotional-intent",
+      "nav.page.guides-multilingual-pattern",
+      "nav.page.guides-visual-style-spec",
+      "nav.page.patterns-i18n-readme",
+      "nav.page.starter-readme",
+      "nav.page.templates-component-contract",
+      "nav.page.templates-design-decision-record",
+      "nav.page.templates-stage-profile",
+      "nav.page.templates-validation-plan",
+      "nav.overview",
+      "nav.foundations",
+      "nav.interface",
+      "nav.examples",
+      "nav.build",
+      "nav.handbook",
+      "nav.visual",
+      "nav.typography",
+      "nav.language",
+      "nav.components",
+      "nav.data",
+      "nav.interaction",
+      "nav.console",
+      "nav.experiment",
+      "nav.pattern",
+      "nav.starter",
+      "nav.implementation",
+      "nav.menu",
+      "nav.site",
+      "nav.breadcrumb",
+      "nav.onThisPage",
+      "nav.previous",
+      "nav.next",
+      "nav.back",
+      "nav.external",
+      "nav.source",
+      "nav.skip",
+      "nav.sequence",
+      "nav.guide",
+      "nav.sitemap",
       "site.language",
       "site.loading",
       "site.selected",
@@ -3132,8 +2979,6 @@
       "site.review",
       "site.english",
       "contributing.msg0001",
-      "contributing.msg0002",
-      "contributing.msg0003",
       "contributing.msg0004",
       "contributing.msg0005",
       "contributing.msg0006",
@@ -3152,17 +2997,10 @@
       "contributing.msg0019",
       "contributing.msg0020",
       "contributing.msg0021",
-      "contributing.msg0022",
-      "contributing.msg0023"
+      "contributing.msg0022"
     ],
     "bindings": {
       "contributing.msg0001": {
-        "slots": []
-      },
-      "contributing.msg0002": {
-        "slots": []
-      },
-      "contributing.msg0003": {
         "slots": []
       },
       "contributing.msg0004": {
@@ -3245,26 +3083,6 @@
             }
           }
         ]
-      },
-      "contributing.msg0023": {
-        "slots": [
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "README.html"
-            }
-          },
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "https://github.com/philippklinz/modern-objectivity-style/blob/main/CONTRIBUTING.md"
-            }
-          },
-          {
-            "tag": "span",
-            "attrs": {}
-          }
-        ]
       }
     }
   },
@@ -3327,6 +3145,63 @@
       "starter.observations.summary",
       "starter.confirm.clear",
       "starter.title",
+      "nav.page.contributing",
+      "nav.page.license-notice",
+      "nav.page.readme",
+      "nav.page.docs-01-introduction",
+      "nav.page.docs-02-philosophy",
+      "nav.page.docs-03-principles",
+      "nav.page.docs-04-visual-language",
+      "nav.page.docs-05-time-interaction",
+      "nav.page.docs-06-stage-identity",
+      "nav.page.docs-07-technical-principles",
+      "nav.page.docs-08-validation",
+      "nav.page.docs-09-references",
+      "nav.page.docs-10-multilingual-access",
+      "nav.page.examples-interactive-learning",
+      "nav.page.examples-modular-research-console",
+      "nav.page.guides-adoption",
+      "nav.page.guides-components",
+      "nav.page.guides-data-visualization",
+      "nav.page.guides-emotional-intent",
+      "nav.page.guides-multilingual-pattern",
+      "nav.page.guides-visual-style-spec",
+      "nav.page.patterns-i18n-readme",
+      "nav.page.starter-readme",
+      "nav.page.templates-component-contract",
+      "nav.page.templates-design-decision-record",
+      "nav.page.templates-stage-profile",
+      "nav.page.templates-validation-plan",
+      "nav.overview",
+      "nav.foundations",
+      "nav.interface",
+      "nav.examples",
+      "nav.build",
+      "nav.handbook",
+      "nav.visual",
+      "nav.typography",
+      "nav.language",
+      "nav.components",
+      "nav.data",
+      "nav.interaction",
+      "nav.console",
+      "nav.experiment",
+      "nav.pattern",
+      "nav.starter",
+      "nav.implementation",
+      "nav.menu",
+      "nav.site",
+      "nav.breadcrumb",
+      "nav.onThisPage",
+      "nav.previous",
+      "nav.next",
+      "nav.back",
+      "nav.external",
+      "nav.source",
+      "nav.skip",
+      "nav.sequence",
+      "nav.guide",
+      "nav.sitemap",
       "site.language",
       "site.loading",
       "site.selected",
@@ -3335,25 +3210,16 @@
       "site.review",
       "site.english",
       "license-notice.msg0001",
-      "license-notice.msg0002",
-      "license-notice.msg0003",
       "license-notice.msg0004",
       "license-notice.msg0005",
       "license-notice.msg0006",
       "license-notice.msg0007",
       "license-notice.msg0008",
       "license-notice.msg0009",
-      "license-notice.msg0010",
-      "license-notice.msg0011"
+      "license-notice.msg0010"
     ],
     "bindings": {
       "license-notice.msg0001": {
-        "slots": []
-      },
-      "license-notice.msg0002": {
-        "slots": []
-      },
-      "license-notice.msg0003": {
         "slots": []
       },
       "license-notice.msg0004": {
@@ -3397,26 +3263,6 @@
       },
       "license-notice.msg0010": {
         "slots": []
-      },
-      "license-notice.msg0011": {
-        "slots": [
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "README.html"
-            }
-          },
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "https://github.com/philippklinz/modern-objectivity-style/blob/main/LICENSE-NOTICE.md"
-            }
-          },
-          {
-            "tag": "span",
-            "attrs": {}
-          }
-        ]
       }
     }
   },
@@ -3479,6 +3325,63 @@
       "starter.observations.summary",
       "starter.confirm.clear",
       "starter.title",
+      "nav.page.contributing",
+      "nav.page.license-notice",
+      "nav.page.readme",
+      "nav.page.docs-01-introduction",
+      "nav.page.docs-02-philosophy",
+      "nav.page.docs-03-principles",
+      "nav.page.docs-04-visual-language",
+      "nav.page.docs-05-time-interaction",
+      "nav.page.docs-06-stage-identity",
+      "nav.page.docs-07-technical-principles",
+      "nav.page.docs-08-validation",
+      "nav.page.docs-09-references",
+      "nav.page.docs-10-multilingual-access",
+      "nav.page.examples-interactive-learning",
+      "nav.page.examples-modular-research-console",
+      "nav.page.guides-adoption",
+      "nav.page.guides-components",
+      "nav.page.guides-data-visualization",
+      "nav.page.guides-emotional-intent",
+      "nav.page.guides-multilingual-pattern",
+      "nav.page.guides-visual-style-spec",
+      "nav.page.patterns-i18n-readme",
+      "nav.page.starter-readme",
+      "nav.page.templates-component-contract",
+      "nav.page.templates-design-decision-record",
+      "nav.page.templates-stage-profile",
+      "nav.page.templates-validation-plan",
+      "nav.overview",
+      "nav.foundations",
+      "nav.interface",
+      "nav.examples",
+      "nav.build",
+      "nav.handbook",
+      "nav.visual",
+      "nav.typography",
+      "nav.language",
+      "nav.components",
+      "nav.data",
+      "nav.interaction",
+      "nav.console",
+      "nav.experiment",
+      "nav.pattern",
+      "nav.starter",
+      "nav.implementation",
+      "nav.menu",
+      "nav.site",
+      "nav.breadcrumb",
+      "nav.onThisPage",
+      "nav.previous",
+      "nav.next",
+      "nav.back",
+      "nav.external",
+      "nav.source",
+      "nav.skip",
+      "nav.sequence",
+      "nav.guide",
+      "nav.sitemap",
       "site.language",
       "site.loading",
       "site.selected",
@@ -3487,11 +3390,9 @@
       "site.review",
       "site.english",
       "readme.msg0001",
-      "readme.msg0002",
-      "readme.msg0003",
       "readme.msg0004",
       "readme.msg0005",
-      "readme.msg0006",
+      "readme.msg0051",
       "readme.msg0007",
       "readme.msg0008",
       "readme.msg0009",
@@ -3534,17 +3435,10 @@
       "readme.msg0044",
       "readme.msg0045",
       "readme.msg0046",
-      "readme.msg0050",
-      "readme.msg0047"
+      "readme.msg0050"
     ],
     "bindings": {
       "readme.msg0001": {
-        "slots": []
-      },
-      "readme.msg0002": {
-        "slots": []
-      },
-      "readme.msg0003": {
         "slots": []
       },
       "readme.msg0004": {
@@ -3558,7 +3452,7 @@
           }
         ]
       },
-      "readme.msg0006": {
+      "readme.msg0051": {
         "slots": [
           {
             "tag": "a",
@@ -3954,26 +3848,6 @@
             "literal": "styles/fonts/liberation/"
           }
         ]
-      },
-      "readme.msg0047": {
-        "slots": [
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "README.html"
-            }
-          },
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "https://github.com/philippklinz/modern-objectivity-style/blob/main/README.md"
-            }
-          },
-          {
-            "tag": "span",
-            "attrs": {}
-          }
-        ]
       }
     }
   },
@@ -4036,6 +3910,63 @@
       "starter.observations.summary",
       "starter.confirm.clear",
       "starter.title",
+      "nav.page.contributing",
+      "nav.page.license-notice",
+      "nav.page.readme",
+      "nav.page.docs-01-introduction",
+      "nav.page.docs-02-philosophy",
+      "nav.page.docs-03-principles",
+      "nav.page.docs-04-visual-language",
+      "nav.page.docs-05-time-interaction",
+      "nav.page.docs-06-stage-identity",
+      "nav.page.docs-07-technical-principles",
+      "nav.page.docs-08-validation",
+      "nav.page.docs-09-references",
+      "nav.page.docs-10-multilingual-access",
+      "nav.page.examples-interactive-learning",
+      "nav.page.examples-modular-research-console",
+      "nav.page.guides-adoption",
+      "nav.page.guides-components",
+      "nav.page.guides-data-visualization",
+      "nav.page.guides-emotional-intent",
+      "nav.page.guides-multilingual-pattern",
+      "nav.page.guides-visual-style-spec",
+      "nav.page.patterns-i18n-readme",
+      "nav.page.starter-readme",
+      "nav.page.templates-component-contract",
+      "nav.page.templates-design-decision-record",
+      "nav.page.templates-stage-profile",
+      "nav.page.templates-validation-plan",
+      "nav.overview",
+      "nav.foundations",
+      "nav.interface",
+      "nav.examples",
+      "nav.build",
+      "nav.handbook",
+      "nav.visual",
+      "nav.typography",
+      "nav.language",
+      "nav.components",
+      "nav.data",
+      "nav.interaction",
+      "nav.console",
+      "nav.experiment",
+      "nav.pattern",
+      "nav.starter",
+      "nav.implementation",
+      "nav.menu",
+      "nav.site",
+      "nav.breadcrumb",
+      "nav.onThisPage",
+      "nav.previous",
+      "nav.next",
+      "nav.back",
+      "nav.external",
+      "nav.source",
+      "nav.skip",
+      "nav.sequence",
+      "nav.guide",
+      "nav.sitemap",
       "site.language",
       "site.loading",
       "site.selected",
@@ -4044,8 +3975,6 @@
       "site.review",
       "site.english",
       "docs-01-introduction.msg0001",
-      "docs-01-introduction.msg0002",
-      "docs-01-introduction.msg0003",
       "docs-01-introduction.msg0004",
       "docs-01-introduction.msg0005",
       "docs-01-introduction.msg0006",
@@ -4062,17 +3991,10 @@
       "docs-01-introduction.msg0017",
       "docs-01-introduction.msg0018",
       "docs-01-introduction.msg0019",
-      "docs-01-introduction.msg0020",
-      "docs-01-introduction.msg0021"
+      "docs-01-introduction.msg0020"
     ],
     "bindings": {
       "docs-01-introduction.msg0001": {
-        "slots": []
-      },
-      "docs-01-introduction.msg0002": {
-        "slots": []
-      },
-      "docs-01-introduction.msg0003": {
         "slots": []
       },
       "docs-01-introduction.msg0004": {
@@ -4169,26 +4091,6 @@
       },
       "docs-01-introduction.msg0020": {
         "slots": []
-      },
-      "docs-01-introduction.msg0021": {
-        "slots": [
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "../README.html"
-            }
-          },
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "https://github.com/philippklinz/modern-objectivity-style/blob/main/docs/01-introduction.md"
-            }
-          },
-          {
-            "tag": "span",
-            "attrs": {}
-          }
-        ]
       }
     }
   },
@@ -4251,6 +4153,63 @@
       "starter.observations.summary",
       "starter.confirm.clear",
       "starter.title",
+      "nav.page.contributing",
+      "nav.page.license-notice",
+      "nav.page.readme",
+      "nav.page.docs-01-introduction",
+      "nav.page.docs-02-philosophy",
+      "nav.page.docs-03-principles",
+      "nav.page.docs-04-visual-language",
+      "nav.page.docs-05-time-interaction",
+      "nav.page.docs-06-stage-identity",
+      "nav.page.docs-07-technical-principles",
+      "nav.page.docs-08-validation",
+      "nav.page.docs-09-references",
+      "nav.page.docs-10-multilingual-access",
+      "nav.page.examples-interactive-learning",
+      "nav.page.examples-modular-research-console",
+      "nav.page.guides-adoption",
+      "nav.page.guides-components",
+      "nav.page.guides-data-visualization",
+      "nav.page.guides-emotional-intent",
+      "nav.page.guides-multilingual-pattern",
+      "nav.page.guides-visual-style-spec",
+      "nav.page.patterns-i18n-readme",
+      "nav.page.starter-readme",
+      "nav.page.templates-component-contract",
+      "nav.page.templates-design-decision-record",
+      "nav.page.templates-stage-profile",
+      "nav.page.templates-validation-plan",
+      "nav.overview",
+      "nav.foundations",
+      "nav.interface",
+      "nav.examples",
+      "nav.build",
+      "nav.handbook",
+      "nav.visual",
+      "nav.typography",
+      "nav.language",
+      "nav.components",
+      "nav.data",
+      "nav.interaction",
+      "nav.console",
+      "nav.experiment",
+      "nav.pattern",
+      "nav.starter",
+      "nav.implementation",
+      "nav.menu",
+      "nav.site",
+      "nav.breadcrumb",
+      "nav.onThisPage",
+      "nav.previous",
+      "nav.next",
+      "nav.back",
+      "nav.external",
+      "nav.source",
+      "nav.skip",
+      "nav.sequence",
+      "nav.guide",
+      "nav.sitemap",
       "site.language",
       "site.loading",
       "site.selected",
@@ -4259,8 +4218,6 @@
       "site.review",
       "site.english",
       "docs-02-philosophy.msg0001",
-      "docs-02-philosophy.msg0002",
-      "docs-02-philosophy.msg0003",
       "docs-02-philosophy.msg0004",
       "docs-02-philosophy.msg0005",
       "docs-02-philosophy.msg0006",
@@ -4279,17 +4236,10 @@
       "docs-02-philosophy.msg0019",
       "docs-02-philosophy.msg0020",
       "docs-02-philosophy.msg0021",
-      "docs-02-philosophy.msg0022",
-      "docs-02-philosophy.msg0023"
+      "docs-02-philosophy.msg0022"
     ],
     "bindings": {
       "docs-02-philosophy.msg0001": {
-        "slots": []
-      },
-      "docs-02-philosophy.msg0002": {
-        "slots": []
-      },
-      "docs-02-philosophy.msg0003": {
         "slots": []
       },
       "docs-02-philosophy.msg0004": {
@@ -4390,26 +4340,6 @@
       },
       "docs-02-philosophy.msg0022": {
         "slots": []
-      },
-      "docs-02-philosophy.msg0023": {
-        "slots": [
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "../README.html"
-            }
-          },
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "https://github.com/philippklinz/modern-objectivity-style/blob/main/docs/02-philosophy.md"
-            }
-          },
-          {
-            "tag": "span",
-            "attrs": {}
-          }
-        ]
       }
     }
   },
@@ -4472,6 +4402,63 @@
       "starter.observations.summary",
       "starter.confirm.clear",
       "starter.title",
+      "nav.page.contributing",
+      "nav.page.license-notice",
+      "nav.page.readme",
+      "nav.page.docs-01-introduction",
+      "nav.page.docs-02-philosophy",
+      "nav.page.docs-03-principles",
+      "nav.page.docs-04-visual-language",
+      "nav.page.docs-05-time-interaction",
+      "nav.page.docs-06-stage-identity",
+      "nav.page.docs-07-technical-principles",
+      "nav.page.docs-08-validation",
+      "nav.page.docs-09-references",
+      "nav.page.docs-10-multilingual-access",
+      "nav.page.examples-interactive-learning",
+      "nav.page.examples-modular-research-console",
+      "nav.page.guides-adoption",
+      "nav.page.guides-components",
+      "nav.page.guides-data-visualization",
+      "nav.page.guides-emotional-intent",
+      "nav.page.guides-multilingual-pattern",
+      "nav.page.guides-visual-style-spec",
+      "nav.page.patterns-i18n-readme",
+      "nav.page.starter-readme",
+      "nav.page.templates-component-contract",
+      "nav.page.templates-design-decision-record",
+      "nav.page.templates-stage-profile",
+      "nav.page.templates-validation-plan",
+      "nav.overview",
+      "nav.foundations",
+      "nav.interface",
+      "nav.examples",
+      "nav.build",
+      "nav.handbook",
+      "nav.visual",
+      "nav.typography",
+      "nav.language",
+      "nav.components",
+      "nav.data",
+      "nav.interaction",
+      "nav.console",
+      "nav.experiment",
+      "nav.pattern",
+      "nav.starter",
+      "nav.implementation",
+      "nav.menu",
+      "nav.site",
+      "nav.breadcrumb",
+      "nav.onThisPage",
+      "nav.previous",
+      "nav.next",
+      "nav.back",
+      "nav.external",
+      "nav.source",
+      "nav.skip",
+      "nav.sequence",
+      "nav.guide",
+      "nav.sitemap",
       "site.language",
       "site.loading",
       "site.selected",
@@ -4480,8 +4467,6 @@
       "site.review",
       "site.english",
       "docs-03-principles.msg0001",
-      "docs-03-principles.msg0002",
-      "docs-03-principles.msg0003",
       "docs-03-principles.msg0004",
       "docs-03-principles.msg0005",
       "docs-03-principles.msg0006",
@@ -4534,17 +4519,10 @@
       "docs-03-principles.msg0053",
       "docs-03-principles.msg0054",
       "docs-03-principles.msg0055",
-      "docs-03-principles.msg0056",
-      "docs-03-principles.msg0057"
+      "docs-03-principles.msg0056"
     ],
     "bindings": {
       "docs-03-principles.msg0001": {
-        "slots": []
-      },
-      "docs-03-principles.msg0002": {
-        "slots": []
-      },
-      "docs-03-principles.msg0003": {
         "slots": []
       },
       "docs-03-principles.msg0004": {
@@ -4877,26 +4855,6 @@
       },
       "docs-03-principles.msg0056": {
         "slots": []
-      },
-      "docs-03-principles.msg0057": {
-        "slots": [
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "../README.html"
-            }
-          },
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "https://github.com/philippklinz/modern-objectivity-style/blob/main/docs/03-principles.md"
-            }
-          },
-          {
-            "tag": "span",
-            "attrs": {}
-          }
-        ]
       }
     }
   },
@@ -4959,6 +4917,63 @@
       "starter.observations.summary",
       "starter.confirm.clear",
       "starter.title",
+      "nav.page.contributing",
+      "nav.page.license-notice",
+      "nav.page.readme",
+      "nav.page.docs-01-introduction",
+      "nav.page.docs-02-philosophy",
+      "nav.page.docs-03-principles",
+      "nav.page.docs-04-visual-language",
+      "nav.page.docs-05-time-interaction",
+      "nav.page.docs-06-stage-identity",
+      "nav.page.docs-07-technical-principles",
+      "nav.page.docs-08-validation",
+      "nav.page.docs-09-references",
+      "nav.page.docs-10-multilingual-access",
+      "nav.page.examples-interactive-learning",
+      "nav.page.examples-modular-research-console",
+      "nav.page.guides-adoption",
+      "nav.page.guides-components",
+      "nav.page.guides-data-visualization",
+      "nav.page.guides-emotional-intent",
+      "nav.page.guides-multilingual-pattern",
+      "nav.page.guides-visual-style-spec",
+      "nav.page.patterns-i18n-readme",
+      "nav.page.starter-readme",
+      "nav.page.templates-component-contract",
+      "nav.page.templates-design-decision-record",
+      "nav.page.templates-stage-profile",
+      "nav.page.templates-validation-plan",
+      "nav.overview",
+      "nav.foundations",
+      "nav.interface",
+      "nav.examples",
+      "nav.build",
+      "nav.handbook",
+      "nav.visual",
+      "nav.typography",
+      "nav.language",
+      "nav.components",
+      "nav.data",
+      "nav.interaction",
+      "nav.console",
+      "nav.experiment",
+      "nav.pattern",
+      "nav.starter",
+      "nav.implementation",
+      "nav.menu",
+      "nav.site",
+      "nav.breadcrumb",
+      "nav.onThisPage",
+      "nav.previous",
+      "nav.next",
+      "nav.back",
+      "nav.external",
+      "nav.source",
+      "nav.skip",
+      "nav.sequence",
+      "nav.guide",
+      "nav.sitemap",
       "site.language",
       "site.loading",
       "site.selected",
@@ -4967,8 +4982,6 @@
       "site.review",
       "site.english",
       "docs-04-visual-language.msg0001",
-      "docs-04-visual-language.msg0002",
-      "docs-04-visual-language.msg0003",
       "docs-04-visual-language.msg0004",
       "docs-04-visual-language.msg0005",
       "docs-04-visual-language.msg0006",
@@ -4991,17 +5004,10 @@
       "docs-04-visual-language.msg0023",
       "docs-04-visual-language.msg0024",
       "docs-04-visual-language.msg0025",
-      "docs-04-visual-language.msg0026",
-      "docs-04-visual-language.msg0027"
+      "docs-04-visual-language.msg0026"
     ],
     "bindings": {
       "docs-04-visual-language.msg0001": {
-        "slots": []
-      },
-      "docs-04-visual-language.msg0002": {
-        "slots": []
-      },
-      "docs-04-visual-language.msg0003": {
         "slots": []
       },
       "docs-04-visual-language.msg0004": {
@@ -5134,26 +5140,6 @@
       },
       "docs-04-visual-language.msg0026": {
         "slots": []
-      },
-      "docs-04-visual-language.msg0027": {
-        "slots": [
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "../README.html"
-            }
-          },
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "https://github.com/philippklinz/modern-objectivity-style/blob/main/docs/04-visual-language.md"
-            }
-          },
-          {
-            "tag": "span",
-            "attrs": {}
-          }
-        ]
       }
     }
   },
@@ -5216,6 +5202,63 @@
       "starter.observations.summary",
       "starter.confirm.clear",
       "starter.title",
+      "nav.page.contributing",
+      "nav.page.license-notice",
+      "nav.page.readme",
+      "nav.page.docs-01-introduction",
+      "nav.page.docs-02-philosophy",
+      "nav.page.docs-03-principles",
+      "nav.page.docs-04-visual-language",
+      "nav.page.docs-05-time-interaction",
+      "nav.page.docs-06-stage-identity",
+      "nav.page.docs-07-technical-principles",
+      "nav.page.docs-08-validation",
+      "nav.page.docs-09-references",
+      "nav.page.docs-10-multilingual-access",
+      "nav.page.examples-interactive-learning",
+      "nav.page.examples-modular-research-console",
+      "nav.page.guides-adoption",
+      "nav.page.guides-components",
+      "nav.page.guides-data-visualization",
+      "nav.page.guides-emotional-intent",
+      "nav.page.guides-multilingual-pattern",
+      "nav.page.guides-visual-style-spec",
+      "nav.page.patterns-i18n-readme",
+      "nav.page.starter-readme",
+      "nav.page.templates-component-contract",
+      "nav.page.templates-design-decision-record",
+      "nav.page.templates-stage-profile",
+      "nav.page.templates-validation-plan",
+      "nav.overview",
+      "nav.foundations",
+      "nav.interface",
+      "nav.examples",
+      "nav.build",
+      "nav.handbook",
+      "nav.visual",
+      "nav.typography",
+      "nav.language",
+      "nav.components",
+      "nav.data",
+      "nav.interaction",
+      "nav.console",
+      "nav.experiment",
+      "nav.pattern",
+      "nav.starter",
+      "nav.implementation",
+      "nav.menu",
+      "nav.site",
+      "nav.breadcrumb",
+      "nav.onThisPage",
+      "nav.previous",
+      "nav.next",
+      "nav.back",
+      "nav.external",
+      "nav.source",
+      "nav.skip",
+      "nav.sequence",
+      "nav.guide",
+      "nav.sitemap",
       "site.language",
       "site.loading",
       "site.selected",
@@ -5224,8 +5267,6 @@
       "site.review",
       "site.english",
       "docs-05-time-interaction.msg0001",
-      "docs-05-time-interaction.msg0002",
-      "docs-05-time-interaction.msg0003",
       "docs-05-time-interaction.msg0004",
       "docs-05-time-interaction.msg0005",
       "docs-05-time-interaction.msg0006",
@@ -5272,17 +5313,10 @@
       "docs-05-time-interaction.msg0047",
       "docs-05-time-interaction.msg0048",
       "docs-05-time-interaction.msg0049",
-      "docs-05-time-interaction.msg0050",
-      "docs-05-time-interaction.msg0051"
+      "docs-05-time-interaction.msg0050"
     ],
     "bindings": {
       "docs-05-time-interaction.msg0001": {
-        "slots": []
-      },
-      "docs-05-time-interaction.msg0002": {
-        "slots": []
-      },
-      "docs-05-time-interaction.msg0003": {
         "slots": []
       },
       "docs-05-time-interaction.msg0004": {
@@ -5443,26 +5477,6 @@
       },
       "docs-05-time-interaction.msg0050": {
         "slots": []
-      },
-      "docs-05-time-interaction.msg0051": {
-        "slots": [
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "../README.html"
-            }
-          },
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "https://github.com/philippklinz/modern-objectivity-style/blob/main/docs/05-time-interaction.md"
-            }
-          },
-          {
-            "tag": "span",
-            "attrs": {}
-          }
-        ]
       }
     }
   },
@@ -5525,6 +5539,63 @@
       "starter.observations.summary",
       "starter.confirm.clear",
       "starter.title",
+      "nav.page.contributing",
+      "nav.page.license-notice",
+      "nav.page.readme",
+      "nav.page.docs-01-introduction",
+      "nav.page.docs-02-philosophy",
+      "nav.page.docs-03-principles",
+      "nav.page.docs-04-visual-language",
+      "nav.page.docs-05-time-interaction",
+      "nav.page.docs-06-stage-identity",
+      "nav.page.docs-07-technical-principles",
+      "nav.page.docs-08-validation",
+      "nav.page.docs-09-references",
+      "nav.page.docs-10-multilingual-access",
+      "nav.page.examples-interactive-learning",
+      "nav.page.examples-modular-research-console",
+      "nav.page.guides-adoption",
+      "nav.page.guides-components",
+      "nav.page.guides-data-visualization",
+      "nav.page.guides-emotional-intent",
+      "nav.page.guides-multilingual-pattern",
+      "nav.page.guides-visual-style-spec",
+      "nav.page.patterns-i18n-readme",
+      "nav.page.starter-readme",
+      "nav.page.templates-component-contract",
+      "nav.page.templates-design-decision-record",
+      "nav.page.templates-stage-profile",
+      "nav.page.templates-validation-plan",
+      "nav.overview",
+      "nav.foundations",
+      "nav.interface",
+      "nav.examples",
+      "nav.build",
+      "nav.handbook",
+      "nav.visual",
+      "nav.typography",
+      "nav.language",
+      "nav.components",
+      "nav.data",
+      "nav.interaction",
+      "nav.console",
+      "nav.experiment",
+      "nav.pattern",
+      "nav.starter",
+      "nav.implementation",
+      "nav.menu",
+      "nav.site",
+      "nav.breadcrumb",
+      "nav.onThisPage",
+      "nav.previous",
+      "nav.next",
+      "nav.back",
+      "nav.external",
+      "nav.source",
+      "nav.skip",
+      "nav.sequence",
+      "nav.guide",
+      "nav.sitemap",
       "site.language",
       "site.loading",
       "site.selected",
@@ -5533,8 +5604,6 @@
       "site.review",
       "site.english",
       "docs-06-stage-identity.msg0001",
-      "docs-06-stage-identity.msg0002",
-      "docs-06-stage-identity.msg0003",
       "docs-06-stage-identity.msg0004",
       "docs-06-stage-identity.msg0005",
       "docs-06-stage-identity.msg0006",
@@ -5561,17 +5630,10 @@
       "docs-06-stage-identity.msg0027",
       "docs-06-stage-identity.msg0028",
       "docs-06-stage-identity.msg0029",
-      "docs-06-stage-identity.msg0030",
-      "docs-06-stage-identity.msg0031"
+      "docs-06-stage-identity.msg0030"
     ],
     "bindings": {
       "docs-06-stage-identity.msg0001": {
-        "slots": []
-      },
-      "docs-06-stage-identity.msg0002": {
-        "slots": []
-      },
-      "docs-06-stage-identity.msg0003": {
         "slots": []
       },
       "docs-06-stage-identity.msg0004": {
@@ -5675,26 +5737,6 @@
             }
           }
         ]
-      },
-      "docs-06-stage-identity.msg0031": {
-        "slots": [
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "../README.html"
-            }
-          },
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "https://github.com/philippklinz/modern-objectivity-style/blob/main/docs/06-stage-identity.md"
-            }
-          },
-          {
-            "tag": "span",
-            "attrs": {}
-          }
-        ]
       }
     }
   },
@@ -5757,6 +5799,63 @@
       "starter.observations.summary",
       "starter.confirm.clear",
       "starter.title",
+      "nav.page.contributing",
+      "nav.page.license-notice",
+      "nav.page.readme",
+      "nav.page.docs-01-introduction",
+      "nav.page.docs-02-philosophy",
+      "nav.page.docs-03-principles",
+      "nav.page.docs-04-visual-language",
+      "nav.page.docs-05-time-interaction",
+      "nav.page.docs-06-stage-identity",
+      "nav.page.docs-07-technical-principles",
+      "nav.page.docs-08-validation",
+      "nav.page.docs-09-references",
+      "nav.page.docs-10-multilingual-access",
+      "nav.page.examples-interactive-learning",
+      "nav.page.examples-modular-research-console",
+      "nav.page.guides-adoption",
+      "nav.page.guides-components",
+      "nav.page.guides-data-visualization",
+      "nav.page.guides-emotional-intent",
+      "nav.page.guides-multilingual-pattern",
+      "nav.page.guides-visual-style-spec",
+      "nav.page.patterns-i18n-readme",
+      "nav.page.starter-readme",
+      "nav.page.templates-component-contract",
+      "nav.page.templates-design-decision-record",
+      "nav.page.templates-stage-profile",
+      "nav.page.templates-validation-plan",
+      "nav.overview",
+      "nav.foundations",
+      "nav.interface",
+      "nav.examples",
+      "nav.build",
+      "nav.handbook",
+      "nav.visual",
+      "nav.typography",
+      "nav.language",
+      "nav.components",
+      "nav.data",
+      "nav.interaction",
+      "nav.console",
+      "nav.experiment",
+      "nav.pattern",
+      "nav.starter",
+      "nav.implementation",
+      "nav.menu",
+      "nav.site",
+      "nav.breadcrumb",
+      "nav.onThisPage",
+      "nav.previous",
+      "nav.next",
+      "nav.back",
+      "nav.external",
+      "nav.source",
+      "nav.skip",
+      "nav.sequence",
+      "nav.guide",
+      "nav.sitemap",
       "site.language",
       "site.loading",
       "site.selected",
@@ -5765,8 +5864,6 @@
       "site.review",
       "site.english",
       "docs-07-technical-principles.msg0001",
-      "docs-07-technical-principles.msg0002",
-      "docs-07-technical-principles.msg0003",
       "docs-07-technical-principles.msg0004",
       "docs-07-technical-principles.msg0005",
       "docs-07-technical-principles.msg0006",
@@ -5786,17 +5883,10 @@
       "docs-07-technical-principles.msg0020",
       "docs-07-technical-principles.msg0021",
       "docs-07-technical-principles.msg0022",
-      "docs-07-technical-principles.msg0023",
-      "docs-07-technical-principles.msg0024"
+      "docs-07-technical-principles.msg0023"
     ],
     "bindings": {
       "docs-07-technical-principles.msg0001": {
-        "slots": []
-      },
-      "docs-07-technical-principles.msg0002": {
-        "slots": []
-      },
-      "docs-07-technical-principles.msg0003": {
         "slots": []
       },
       "docs-07-technical-principles.msg0004": {
@@ -5891,26 +5981,6 @@
       },
       "docs-07-technical-principles.msg0023": {
         "slots": []
-      },
-      "docs-07-technical-principles.msg0024": {
-        "slots": [
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "../README.html"
-            }
-          },
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "https://github.com/philippklinz/modern-objectivity-style/blob/main/docs/07-technical-principles.md"
-            }
-          },
-          {
-            "tag": "span",
-            "attrs": {}
-          }
-        ]
       }
     }
   },
@@ -5973,6 +6043,63 @@
       "starter.observations.summary",
       "starter.confirm.clear",
       "starter.title",
+      "nav.page.contributing",
+      "nav.page.license-notice",
+      "nav.page.readme",
+      "nav.page.docs-01-introduction",
+      "nav.page.docs-02-philosophy",
+      "nav.page.docs-03-principles",
+      "nav.page.docs-04-visual-language",
+      "nav.page.docs-05-time-interaction",
+      "nav.page.docs-06-stage-identity",
+      "nav.page.docs-07-technical-principles",
+      "nav.page.docs-08-validation",
+      "nav.page.docs-09-references",
+      "nav.page.docs-10-multilingual-access",
+      "nav.page.examples-interactive-learning",
+      "nav.page.examples-modular-research-console",
+      "nav.page.guides-adoption",
+      "nav.page.guides-components",
+      "nav.page.guides-data-visualization",
+      "nav.page.guides-emotional-intent",
+      "nav.page.guides-multilingual-pattern",
+      "nav.page.guides-visual-style-spec",
+      "nav.page.patterns-i18n-readme",
+      "nav.page.starter-readme",
+      "nav.page.templates-component-contract",
+      "nav.page.templates-design-decision-record",
+      "nav.page.templates-stage-profile",
+      "nav.page.templates-validation-plan",
+      "nav.overview",
+      "nav.foundations",
+      "nav.interface",
+      "nav.examples",
+      "nav.build",
+      "nav.handbook",
+      "nav.visual",
+      "nav.typography",
+      "nav.language",
+      "nav.components",
+      "nav.data",
+      "nav.interaction",
+      "nav.console",
+      "nav.experiment",
+      "nav.pattern",
+      "nav.starter",
+      "nav.implementation",
+      "nav.menu",
+      "nav.site",
+      "nav.breadcrumb",
+      "nav.onThisPage",
+      "nav.previous",
+      "nav.next",
+      "nav.back",
+      "nav.external",
+      "nav.source",
+      "nav.skip",
+      "nav.sequence",
+      "nav.guide",
+      "nav.sitemap",
       "site.language",
       "site.loading",
       "site.selected",
@@ -5981,8 +6108,6 @@
       "site.review",
       "site.english",
       "docs-08-validation.msg0001",
-      "docs-08-validation.msg0002",
-      "docs-08-validation.msg0003",
       "docs-08-validation.msg0004",
       "docs-08-validation.msg0005",
       "docs-08-validation.msg0006",
@@ -6037,17 +6162,10 @@
       "docs-08-validation.msg0055",
       "docs-08-validation.msg0056",
       "docs-08-validation.msg0057",
-      "docs-08-validation.msg0058",
-      "docs-08-validation.msg0059"
+      "docs-08-validation.msg0058"
     ],
     "bindings": {
       "docs-08-validation.msg0001": {
-        "slots": []
-      },
-      "docs-08-validation.msg0002": {
-        "slots": []
-      },
-      "docs-08-validation.msg0003": {
         "slots": []
       },
       "docs-08-validation.msg0004": {
@@ -6297,26 +6415,6 @@
             }
           }
         ]
-      },
-      "docs-08-validation.msg0059": {
-        "slots": [
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "../README.html"
-            }
-          },
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "https://github.com/philippklinz/modern-objectivity-style/blob/main/docs/08-validation.md"
-            }
-          },
-          {
-            "tag": "span",
-            "attrs": {}
-          }
-        ]
       }
     }
   },
@@ -6379,6 +6477,63 @@
       "starter.observations.summary",
       "starter.confirm.clear",
       "starter.title",
+      "nav.page.contributing",
+      "nav.page.license-notice",
+      "nav.page.readme",
+      "nav.page.docs-01-introduction",
+      "nav.page.docs-02-philosophy",
+      "nav.page.docs-03-principles",
+      "nav.page.docs-04-visual-language",
+      "nav.page.docs-05-time-interaction",
+      "nav.page.docs-06-stage-identity",
+      "nav.page.docs-07-technical-principles",
+      "nav.page.docs-08-validation",
+      "nav.page.docs-09-references",
+      "nav.page.docs-10-multilingual-access",
+      "nav.page.examples-interactive-learning",
+      "nav.page.examples-modular-research-console",
+      "nav.page.guides-adoption",
+      "nav.page.guides-components",
+      "nav.page.guides-data-visualization",
+      "nav.page.guides-emotional-intent",
+      "nav.page.guides-multilingual-pattern",
+      "nav.page.guides-visual-style-spec",
+      "nav.page.patterns-i18n-readme",
+      "nav.page.starter-readme",
+      "nav.page.templates-component-contract",
+      "nav.page.templates-design-decision-record",
+      "nav.page.templates-stage-profile",
+      "nav.page.templates-validation-plan",
+      "nav.overview",
+      "nav.foundations",
+      "nav.interface",
+      "nav.examples",
+      "nav.build",
+      "nav.handbook",
+      "nav.visual",
+      "nav.typography",
+      "nav.language",
+      "nav.components",
+      "nav.data",
+      "nav.interaction",
+      "nav.console",
+      "nav.experiment",
+      "nav.pattern",
+      "nav.starter",
+      "nav.implementation",
+      "nav.menu",
+      "nav.site",
+      "nav.breadcrumb",
+      "nav.onThisPage",
+      "nav.previous",
+      "nav.next",
+      "nav.back",
+      "nav.external",
+      "nav.source",
+      "nav.skip",
+      "nav.sequence",
+      "nav.guide",
+      "nav.sitemap",
       "site.language",
       "site.loading",
       "site.selected",
@@ -6387,8 +6542,6 @@
       "site.review",
       "site.english",
       "docs-09-references.msg0001",
-      "docs-09-references.msg0002",
-      "docs-09-references.msg0003",
       "docs-09-references.msg0004",
       "docs-09-references.msg0005",
       "docs-09-references.msg0006",
@@ -6402,17 +6555,10 @@
       "docs-09-references.msg0014",
       "docs-09-references.msg0015",
       "docs-09-references.msg0016",
-      "docs-09-references.msg0017",
-      "docs-09-references.msg0018"
+      "docs-09-references.msg0017"
     ],
     "bindings": {
       "docs-09-references.msg0001": {
-        "slots": []
-      },
-      "docs-09-references.msg0002": {
-        "slots": []
-      },
-      "docs-09-references.msg0003": {
         "slots": []
       },
       "docs-09-references.msg0004": {
@@ -6484,26 +6630,6 @@
       },
       "docs-09-references.msg0017": {
         "slots": []
-      },
-      "docs-09-references.msg0018": {
-        "slots": [
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "../README.html"
-            }
-          },
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "https://github.com/philippklinz/modern-objectivity-style/blob/main/docs/09-references.md"
-            }
-          },
-          {
-            "tag": "span",
-            "attrs": {}
-          }
-        ]
       }
     }
   },
@@ -6566,6 +6692,63 @@
       "starter.observations.summary",
       "starter.confirm.clear",
       "starter.title",
+      "nav.page.contributing",
+      "nav.page.license-notice",
+      "nav.page.readme",
+      "nav.page.docs-01-introduction",
+      "nav.page.docs-02-philosophy",
+      "nav.page.docs-03-principles",
+      "nav.page.docs-04-visual-language",
+      "nav.page.docs-05-time-interaction",
+      "nav.page.docs-06-stage-identity",
+      "nav.page.docs-07-technical-principles",
+      "nav.page.docs-08-validation",
+      "nav.page.docs-09-references",
+      "nav.page.docs-10-multilingual-access",
+      "nav.page.examples-interactive-learning",
+      "nav.page.examples-modular-research-console",
+      "nav.page.guides-adoption",
+      "nav.page.guides-components",
+      "nav.page.guides-data-visualization",
+      "nav.page.guides-emotional-intent",
+      "nav.page.guides-multilingual-pattern",
+      "nav.page.guides-visual-style-spec",
+      "nav.page.patterns-i18n-readme",
+      "nav.page.starter-readme",
+      "nav.page.templates-component-contract",
+      "nav.page.templates-design-decision-record",
+      "nav.page.templates-stage-profile",
+      "nav.page.templates-validation-plan",
+      "nav.overview",
+      "nav.foundations",
+      "nav.interface",
+      "nav.examples",
+      "nav.build",
+      "nav.handbook",
+      "nav.visual",
+      "nav.typography",
+      "nav.language",
+      "nav.components",
+      "nav.data",
+      "nav.interaction",
+      "nav.console",
+      "nav.experiment",
+      "nav.pattern",
+      "nav.starter",
+      "nav.implementation",
+      "nav.menu",
+      "nav.site",
+      "nav.breadcrumb",
+      "nav.onThisPage",
+      "nav.previous",
+      "nav.next",
+      "nav.back",
+      "nav.external",
+      "nav.source",
+      "nav.skip",
+      "nav.sequence",
+      "nav.guide",
+      "nav.sitemap",
       "site.language",
       "site.loading",
       "site.selected",
@@ -6574,8 +6757,6 @@
       "site.review",
       "site.english",
       "docs-10-multilingual-access.msg0001",
-      "docs-10-multilingual-access.msg0002",
-      "docs-10-multilingual-access.msg0003",
       "docs-10-multilingual-access.msg0004",
       "docs-10-multilingual-access.msg0005",
       "docs-10-multilingual-access.msg0006",
@@ -6640,17 +6821,10 @@
       "docs-10-multilingual-access.msg0087",
       "docs-10-multilingual-access.msg0088",
       "docs-10-multilingual-access.msg0089",
-      "docs-10-multilingual-access.msg0090",
-      "docs-10-multilingual-access.msg0091"
+      "docs-10-multilingual-access.msg0090"
     ],
     "bindings": {
       "docs-10-multilingual-access.msg0001": {
-        "slots": []
-      },
-      "docs-10-multilingual-access.msg0002": {
-        "slots": []
-      },
-      "docs-10-multilingual-access.msg0003": {
         "slots": []
       },
       "docs-10-multilingual-access.msg0004": {
@@ -6969,26 +7143,6 @@
       },
       "docs-10-multilingual-access.msg0090": {
         "slots": []
-      },
-      "docs-10-multilingual-access.msg0091": {
-        "slots": [
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "../README.html"
-            }
-          },
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "https://github.com/philippklinz/modern-objectivity-style/blob/main/docs/10-multilingual-access.md"
-            }
-          },
-          {
-            "tag": "span",
-            "attrs": {}
-          }
-        ]
       }
     }
   },
@@ -7051,6 +7205,63 @@
       "starter.observations.summary",
       "starter.confirm.clear",
       "starter.title",
+      "nav.page.contributing",
+      "nav.page.license-notice",
+      "nav.page.readme",
+      "nav.page.docs-01-introduction",
+      "nav.page.docs-02-philosophy",
+      "nav.page.docs-03-principles",
+      "nav.page.docs-04-visual-language",
+      "nav.page.docs-05-time-interaction",
+      "nav.page.docs-06-stage-identity",
+      "nav.page.docs-07-technical-principles",
+      "nav.page.docs-08-validation",
+      "nav.page.docs-09-references",
+      "nav.page.docs-10-multilingual-access",
+      "nav.page.examples-interactive-learning",
+      "nav.page.examples-modular-research-console",
+      "nav.page.guides-adoption",
+      "nav.page.guides-components",
+      "nav.page.guides-data-visualization",
+      "nav.page.guides-emotional-intent",
+      "nav.page.guides-multilingual-pattern",
+      "nav.page.guides-visual-style-spec",
+      "nav.page.patterns-i18n-readme",
+      "nav.page.starter-readme",
+      "nav.page.templates-component-contract",
+      "nav.page.templates-design-decision-record",
+      "nav.page.templates-stage-profile",
+      "nav.page.templates-validation-plan",
+      "nav.overview",
+      "nav.foundations",
+      "nav.interface",
+      "nav.examples",
+      "nav.build",
+      "nav.handbook",
+      "nav.visual",
+      "nav.typography",
+      "nav.language",
+      "nav.components",
+      "nav.data",
+      "nav.interaction",
+      "nav.console",
+      "nav.experiment",
+      "nav.pattern",
+      "nav.starter",
+      "nav.implementation",
+      "nav.menu",
+      "nav.site",
+      "nav.breadcrumb",
+      "nav.onThisPage",
+      "nav.previous",
+      "nav.next",
+      "nav.back",
+      "nav.external",
+      "nav.source",
+      "nav.skip",
+      "nav.sequence",
+      "nav.guide",
+      "nav.sitemap",
       "site.language",
       "site.loading",
       "site.selected",
@@ -7059,8 +7270,6 @@
       "site.review",
       "site.english",
       "examples-interactive-learning.msg0001",
-      "examples-interactive-learning.msg0002",
-      "examples-interactive-learning.msg0003",
       "examples-interactive-learning.msg0004",
       "examples-interactive-learning.msg0005",
       "examples-interactive-learning.msg0006",
@@ -7069,17 +7278,10 @@
       "examples-interactive-learning.msg0009",
       "examples-interactive-learning.msg0010",
       "examples-interactive-learning.msg0011",
-      "examples-interactive-learning.msg0012",
-      "examples-interactive-learning.msg0013"
+      "examples-interactive-learning.msg0012"
     ],
     "bindings": {
       "examples-interactive-learning.msg0001": {
-        "slots": []
-      },
-      "examples-interactive-learning.msg0002": {
-        "slots": []
-      },
-      "examples-interactive-learning.msg0003": {
         "slots": []
       },
       "examples-interactive-learning.msg0004": {
@@ -7140,26 +7342,6 @@
         "slots": [
           {
             "tag": "strong",
-            "attrs": {}
-          }
-        ]
-      },
-      "examples-interactive-learning.msg0013": {
-        "slots": [
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "../README.html"
-            }
-          },
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "https://github.com/philippklinz/modern-objectivity-style/blob/main/examples/interactive-learning.md"
-            }
-          },
-          {
-            "tag": "span",
             "attrs": {}
           }
         ]
@@ -7225,6 +7407,63 @@
       "starter.observations.summary",
       "starter.confirm.clear",
       "starter.title",
+      "nav.page.contributing",
+      "nav.page.license-notice",
+      "nav.page.readme",
+      "nav.page.docs-01-introduction",
+      "nav.page.docs-02-philosophy",
+      "nav.page.docs-03-principles",
+      "nav.page.docs-04-visual-language",
+      "nav.page.docs-05-time-interaction",
+      "nav.page.docs-06-stage-identity",
+      "nav.page.docs-07-technical-principles",
+      "nav.page.docs-08-validation",
+      "nav.page.docs-09-references",
+      "nav.page.docs-10-multilingual-access",
+      "nav.page.examples-interactive-learning",
+      "nav.page.examples-modular-research-console",
+      "nav.page.guides-adoption",
+      "nav.page.guides-components",
+      "nav.page.guides-data-visualization",
+      "nav.page.guides-emotional-intent",
+      "nav.page.guides-multilingual-pattern",
+      "nav.page.guides-visual-style-spec",
+      "nav.page.patterns-i18n-readme",
+      "nav.page.starter-readme",
+      "nav.page.templates-component-contract",
+      "nav.page.templates-design-decision-record",
+      "nav.page.templates-stage-profile",
+      "nav.page.templates-validation-plan",
+      "nav.overview",
+      "nav.foundations",
+      "nav.interface",
+      "nav.examples",
+      "nav.build",
+      "nav.handbook",
+      "nav.visual",
+      "nav.typography",
+      "nav.language",
+      "nav.components",
+      "nav.data",
+      "nav.interaction",
+      "nav.console",
+      "nav.experiment",
+      "nav.pattern",
+      "nav.starter",
+      "nav.implementation",
+      "nav.menu",
+      "nav.site",
+      "nav.breadcrumb",
+      "nav.onThisPage",
+      "nav.previous",
+      "nav.next",
+      "nav.back",
+      "nav.external",
+      "nav.source",
+      "nav.skip",
+      "nav.sequence",
+      "nav.guide",
+      "nav.sitemap",
       "site.language",
       "site.loading",
       "site.selected",
@@ -7233,8 +7472,6 @@
       "site.review",
       "site.english",
       "examples-modular-research-console.msg0001",
-      "examples-modular-research-console.msg0002",
-      "examples-modular-research-console.msg0003",
       "examples-modular-research-console.msg0004",
       "examples-modular-research-console.msg0005",
       "examples-modular-research-console.msg0006",
@@ -7243,17 +7480,10 @@
       "examples-modular-research-console.msg0009",
       "examples-modular-research-console.msg0010",
       "examples-modular-research-console.msg0011",
-      "examples-modular-research-console.msg0012",
-      "examples-modular-research-console.msg0013"
+      "examples-modular-research-console.msg0012"
     ],
     "bindings": {
       "examples-modular-research-console.msg0001": {
-        "slots": []
-      },
-      "examples-modular-research-console.msg0002": {
-        "slots": []
-      },
-      "examples-modular-research-console.msg0003": {
         "slots": []
       },
       "examples-modular-research-console.msg0004": {
@@ -7314,26 +7544,6 @@
         "slots": [
           {
             "tag": "strong",
-            "attrs": {}
-          }
-        ]
-      },
-      "examples-modular-research-console.msg0013": {
-        "slots": [
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "../README.html"
-            }
-          },
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "https://github.com/philippklinz/modern-objectivity-style/blob/main/examples/modular-research-console.md"
-            }
-          },
-          {
-            "tag": "span",
             "attrs": {}
           }
         ]
@@ -7399,6 +7609,63 @@
       "starter.observations.summary",
       "starter.confirm.clear",
       "starter.title",
+      "nav.page.contributing",
+      "nav.page.license-notice",
+      "nav.page.readme",
+      "nav.page.docs-01-introduction",
+      "nav.page.docs-02-philosophy",
+      "nav.page.docs-03-principles",
+      "nav.page.docs-04-visual-language",
+      "nav.page.docs-05-time-interaction",
+      "nav.page.docs-06-stage-identity",
+      "nav.page.docs-07-technical-principles",
+      "nav.page.docs-08-validation",
+      "nav.page.docs-09-references",
+      "nav.page.docs-10-multilingual-access",
+      "nav.page.examples-interactive-learning",
+      "nav.page.examples-modular-research-console",
+      "nav.page.guides-adoption",
+      "nav.page.guides-components",
+      "nav.page.guides-data-visualization",
+      "nav.page.guides-emotional-intent",
+      "nav.page.guides-multilingual-pattern",
+      "nav.page.guides-visual-style-spec",
+      "nav.page.patterns-i18n-readme",
+      "nav.page.starter-readme",
+      "nav.page.templates-component-contract",
+      "nav.page.templates-design-decision-record",
+      "nav.page.templates-stage-profile",
+      "nav.page.templates-validation-plan",
+      "nav.overview",
+      "nav.foundations",
+      "nav.interface",
+      "nav.examples",
+      "nav.build",
+      "nav.handbook",
+      "nav.visual",
+      "nav.typography",
+      "nav.language",
+      "nav.components",
+      "nav.data",
+      "nav.interaction",
+      "nav.console",
+      "nav.experiment",
+      "nav.pattern",
+      "nav.starter",
+      "nav.implementation",
+      "nav.menu",
+      "nav.site",
+      "nav.breadcrumb",
+      "nav.onThisPage",
+      "nav.previous",
+      "nav.next",
+      "nav.back",
+      "nav.external",
+      "nav.source",
+      "nav.skip",
+      "nav.sequence",
+      "nav.guide",
+      "nav.sitemap",
       "site.language",
       "site.loading",
       "site.selected",
@@ -7407,8 +7674,6 @@
       "site.review",
       "site.english",
       "guides-adoption.msg0001",
-      "guides-adoption.msg0002",
-      "guides-adoption.msg0003",
       "guides-adoption.msg0004",
       "guides-adoption.msg0005",
       "guides-adoption.msg0006",
@@ -7430,17 +7695,10 @@
       "guides-adoption.msg0022",
       "guides-adoption.msg0023",
       "guides-adoption.msg0024",
-      "guides-adoption.msg0025",
-      "guides-adoption.msg0026"
+      "guides-adoption.msg0025"
     ],
     "bindings": {
       "guides-adoption.msg0001": {
-        "slots": []
-      },
-      "guides-adoption.msg0002": {
-        "slots": []
-      },
-      "guides-adoption.msg0003": {
         "slots": []
       },
       "guides-adoption.msg0004": {
@@ -7567,26 +7825,6 @@
       },
       "guides-adoption.msg0025": {
         "slots": []
-      },
-      "guides-adoption.msg0026": {
-        "slots": [
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "../README.html"
-            }
-          },
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "https://github.com/philippklinz/modern-objectivity-style/blob/main/guides/adoption.md"
-            }
-          },
-          {
-            "tag": "span",
-            "attrs": {}
-          }
-        ]
       }
     }
   },
@@ -7649,6 +7887,63 @@
       "starter.observations.summary",
       "starter.confirm.clear",
       "starter.title",
+      "nav.page.contributing",
+      "nav.page.license-notice",
+      "nav.page.readme",
+      "nav.page.docs-01-introduction",
+      "nav.page.docs-02-philosophy",
+      "nav.page.docs-03-principles",
+      "nav.page.docs-04-visual-language",
+      "nav.page.docs-05-time-interaction",
+      "nav.page.docs-06-stage-identity",
+      "nav.page.docs-07-technical-principles",
+      "nav.page.docs-08-validation",
+      "nav.page.docs-09-references",
+      "nav.page.docs-10-multilingual-access",
+      "nav.page.examples-interactive-learning",
+      "nav.page.examples-modular-research-console",
+      "nav.page.guides-adoption",
+      "nav.page.guides-components",
+      "nav.page.guides-data-visualization",
+      "nav.page.guides-emotional-intent",
+      "nav.page.guides-multilingual-pattern",
+      "nav.page.guides-visual-style-spec",
+      "nav.page.patterns-i18n-readme",
+      "nav.page.starter-readme",
+      "nav.page.templates-component-contract",
+      "nav.page.templates-design-decision-record",
+      "nav.page.templates-stage-profile",
+      "nav.page.templates-validation-plan",
+      "nav.overview",
+      "nav.foundations",
+      "nav.interface",
+      "nav.examples",
+      "nav.build",
+      "nav.handbook",
+      "nav.visual",
+      "nav.typography",
+      "nav.language",
+      "nav.components",
+      "nav.data",
+      "nav.interaction",
+      "nav.console",
+      "nav.experiment",
+      "nav.pattern",
+      "nav.starter",
+      "nav.implementation",
+      "nav.menu",
+      "nav.site",
+      "nav.breadcrumb",
+      "nav.onThisPage",
+      "nav.previous",
+      "nav.next",
+      "nav.back",
+      "nav.external",
+      "nav.source",
+      "nav.skip",
+      "nav.sequence",
+      "nav.guide",
+      "nav.sitemap",
       "site.language",
       "site.loading",
       "site.selected",
@@ -7657,8 +7952,6 @@
       "site.review",
       "site.english",
       "guides-components.msg0001",
-      "guides-components.msg0002",
-      "guides-components.msg0003",
       "guides-components.msg0004",
       "guides-components.msg0005",
       "guides-components.msg0006",
@@ -7681,17 +7974,10 @@
       "guides-components.msg0023",
       "guides-components.msg0024",
       "guides-components.msg0025",
-      "guides-components.msg0026",
-      "guides-components.msg0027"
+      "guides-components.msg0026"
     ],
     "bindings": {
       "guides-components.msg0001": {
-        "slots": []
-      },
-      "guides-components.msg0002": {
-        "slots": []
-      },
-      "guides-components.msg0003": {
         "slots": []
       },
       "guides-components.msg0004": {
@@ -7774,26 +8060,6 @@
             }
           }
         ]
-      },
-      "guides-components.msg0027": {
-        "slots": [
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "../README.html"
-            }
-          },
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "https://github.com/philippklinz/modern-objectivity-style/blob/main/guides/components.md"
-            }
-          },
-          {
-            "tag": "span",
-            "attrs": {}
-          }
-        ]
       }
     }
   },
@@ -7856,6 +8122,63 @@
       "starter.observations.summary",
       "starter.confirm.clear",
       "starter.title",
+      "nav.page.contributing",
+      "nav.page.license-notice",
+      "nav.page.readme",
+      "nav.page.docs-01-introduction",
+      "nav.page.docs-02-philosophy",
+      "nav.page.docs-03-principles",
+      "nav.page.docs-04-visual-language",
+      "nav.page.docs-05-time-interaction",
+      "nav.page.docs-06-stage-identity",
+      "nav.page.docs-07-technical-principles",
+      "nav.page.docs-08-validation",
+      "nav.page.docs-09-references",
+      "nav.page.docs-10-multilingual-access",
+      "nav.page.examples-interactive-learning",
+      "nav.page.examples-modular-research-console",
+      "nav.page.guides-adoption",
+      "nav.page.guides-components",
+      "nav.page.guides-data-visualization",
+      "nav.page.guides-emotional-intent",
+      "nav.page.guides-multilingual-pattern",
+      "nav.page.guides-visual-style-spec",
+      "nav.page.patterns-i18n-readme",
+      "nav.page.starter-readme",
+      "nav.page.templates-component-contract",
+      "nav.page.templates-design-decision-record",
+      "nav.page.templates-stage-profile",
+      "nav.page.templates-validation-plan",
+      "nav.overview",
+      "nav.foundations",
+      "nav.interface",
+      "nav.examples",
+      "nav.build",
+      "nav.handbook",
+      "nav.visual",
+      "nav.typography",
+      "nav.language",
+      "nav.components",
+      "nav.data",
+      "nav.interaction",
+      "nav.console",
+      "nav.experiment",
+      "nav.pattern",
+      "nav.starter",
+      "nav.implementation",
+      "nav.menu",
+      "nav.site",
+      "nav.breadcrumb",
+      "nav.onThisPage",
+      "nav.previous",
+      "nav.next",
+      "nav.back",
+      "nav.external",
+      "nav.source",
+      "nav.skip",
+      "nav.sequence",
+      "nav.guide",
+      "nav.sitemap",
       "site.language",
       "site.loading",
       "site.selected",
@@ -7864,8 +8187,6 @@
       "site.review",
       "site.english",
       "guides-data-visualization.msg0001",
-      "guides-data-visualization.msg0002",
-      "guides-data-visualization.msg0003",
       "guides-data-visualization.msg0004",
       "guides-data-visualization.msg0005",
       "guides-data-visualization.msg0006",
@@ -7888,17 +8209,10 @@
       "guides-data-visualization.msg0023",
       "guides-data-visualization.msg0024",
       "guides-data-visualization.msg0025",
-      "guides-data-visualization.msg0026",
-      "guides-data-visualization.msg0027"
+      "guides-data-visualization.msg0026"
     ],
     "bindings": {
       "guides-data-visualization.msg0001": {
-        "slots": []
-      },
-      "guides-data-visualization.msg0002": {
-        "slots": []
-      },
-      "guides-data-visualization.msg0003": {
         "slots": []
       },
       "guides-data-visualization.msg0004": {
@@ -8004,26 +8318,6 @@
       },
       "guides-data-visualization.msg0026": {
         "slots": []
-      },
-      "guides-data-visualization.msg0027": {
-        "slots": [
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "../README.html"
-            }
-          },
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "https://github.com/philippklinz/modern-objectivity-style/blob/main/guides/data-visualization.md"
-            }
-          },
-          {
-            "tag": "span",
-            "attrs": {}
-          }
-        ]
       }
     }
   },
@@ -8086,6 +8380,63 @@
       "starter.observations.summary",
       "starter.confirm.clear",
       "starter.title",
+      "nav.page.contributing",
+      "nav.page.license-notice",
+      "nav.page.readme",
+      "nav.page.docs-01-introduction",
+      "nav.page.docs-02-philosophy",
+      "nav.page.docs-03-principles",
+      "nav.page.docs-04-visual-language",
+      "nav.page.docs-05-time-interaction",
+      "nav.page.docs-06-stage-identity",
+      "nav.page.docs-07-technical-principles",
+      "nav.page.docs-08-validation",
+      "nav.page.docs-09-references",
+      "nav.page.docs-10-multilingual-access",
+      "nav.page.examples-interactive-learning",
+      "nav.page.examples-modular-research-console",
+      "nav.page.guides-adoption",
+      "nav.page.guides-components",
+      "nav.page.guides-data-visualization",
+      "nav.page.guides-emotional-intent",
+      "nav.page.guides-multilingual-pattern",
+      "nav.page.guides-visual-style-spec",
+      "nav.page.patterns-i18n-readme",
+      "nav.page.starter-readme",
+      "nav.page.templates-component-contract",
+      "nav.page.templates-design-decision-record",
+      "nav.page.templates-stage-profile",
+      "nav.page.templates-validation-plan",
+      "nav.overview",
+      "nav.foundations",
+      "nav.interface",
+      "nav.examples",
+      "nav.build",
+      "nav.handbook",
+      "nav.visual",
+      "nav.typography",
+      "nav.language",
+      "nav.components",
+      "nav.data",
+      "nav.interaction",
+      "nav.console",
+      "nav.experiment",
+      "nav.pattern",
+      "nav.starter",
+      "nav.implementation",
+      "nav.menu",
+      "nav.site",
+      "nav.breadcrumb",
+      "nav.onThisPage",
+      "nav.previous",
+      "nav.next",
+      "nav.back",
+      "nav.external",
+      "nav.source",
+      "nav.skip",
+      "nav.sequence",
+      "nav.guide",
+      "nav.sitemap",
       "site.language",
       "site.loading",
       "site.selected",
@@ -8094,8 +8445,6 @@
       "site.review",
       "site.english",
       "guides-emotional-intent.msg0001",
-      "guides-emotional-intent.msg0002",
-      "guides-emotional-intent.msg0003",
       "guides-emotional-intent.msg0004",
       "guides-emotional-intent.msg0005",
       "guides-emotional-intent.msg0006",
@@ -8114,17 +8463,10 @@
       "guides-emotional-intent.msg0019",
       "guides-emotional-intent.msg0020",
       "guides-emotional-intent.msg0021",
-      "guides-emotional-intent.msg0022",
-      "guides-emotional-intent.msg0023"
+      "guides-emotional-intent.msg0022"
     ],
     "bindings": {
       "guides-emotional-intent.msg0001": {
-        "slots": []
-      },
-      "guides-emotional-intent.msg0002": {
-        "slots": []
-      },
-      "guides-emotional-intent.msg0003": {
         "slots": []
       },
       "guides-emotional-intent.msg0004": {
@@ -8207,26 +8549,6 @@
       },
       "guides-emotional-intent.msg0022": {
         "slots": []
-      },
-      "guides-emotional-intent.msg0023": {
-        "slots": [
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "../README.html"
-            }
-          },
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "https://github.com/philippklinz/modern-objectivity-style/blob/main/guides/emotional-intent.md"
-            }
-          },
-          {
-            "tag": "span",
-            "attrs": {}
-          }
-        ]
       }
     }
   },
@@ -8289,6 +8611,63 @@
       "starter.observations.summary",
       "starter.confirm.clear",
       "starter.title",
+      "nav.page.contributing",
+      "nav.page.license-notice",
+      "nav.page.readme",
+      "nav.page.docs-01-introduction",
+      "nav.page.docs-02-philosophy",
+      "nav.page.docs-03-principles",
+      "nav.page.docs-04-visual-language",
+      "nav.page.docs-05-time-interaction",
+      "nav.page.docs-06-stage-identity",
+      "nav.page.docs-07-technical-principles",
+      "nav.page.docs-08-validation",
+      "nav.page.docs-09-references",
+      "nav.page.docs-10-multilingual-access",
+      "nav.page.examples-interactive-learning",
+      "nav.page.examples-modular-research-console",
+      "nav.page.guides-adoption",
+      "nav.page.guides-components",
+      "nav.page.guides-data-visualization",
+      "nav.page.guides-emotional-intent",
+      "nav.page.guides-multilingual-pattern",
+      "nav.page.guides-visual-style-spec",
+      "nav.page.patterns-i18n-readme",
+      "nav.page.starter-readme",
+      "nav.page.templates-component-contract",
+      "nav.page.templates-design-decision-record",
+      "nav.page.templates-stage-profile",
+      "nav.page.templates-validation-plan",
+      "nav.overview",
+      "nav.foundations",
+      "nav.interface",
+      "nav.examples",
+      "nav.build",
+      "nav.handbook",
+      "nav.visual",
+      "nav.typography",
+      "nav.language",
+      "nav.components",
+      "nav.data",
+      "nav.interaction",
+      "nav.console",
+      "nav.experiment",
+      "nav.pattern",
+      "nav.starter",
+      "nav.implementation",
+      "nav.menu",
+      "nav.site",
+      "nav.breadcrumb",
+      "nav.onThisPage",
+      "nav.previous",
+      "nav.next",
+      "nav.back",
+      "nav.external",
+      "nav.source",
+      "nav.skip",
+      "nav.sequence",
+      "nav.guide",
+      "nav.sitemap",
       "site.language",
       "site.loading",
       "site.selected",
@@ -8297,8 +8676,6 @@
       "site.review",
       "site.english",
       "guides-multilingual-pattern.msg0001",
-      "guides-multilingual-pattern.msg0002",
-      "guides-multilingual-pattern.msg0003",
       "guides-multilingual-pattern.msg0004",
       "guides-multilingual-pattern.msg0005",
       "guides-multilingual-pattern.msg0006",
@@ -8322,17 +8699,10 @@
       "guides-multilingual-pattern.msg0024",
       "guides-multilingual-pattern.msg0025",
       "guides-multilingual-pattern.msg0026",
-      "guides-multilingual-pattern.msg0027",
-      "guides-multilingual-pattern.msg0028"
+      "guides-multilingual-pattern.msg0027"
     ],
     "bindings": {
       "guides-multilingual-pattern.msg0001": {
-        "slots": []
-      },
-      "guides-multilingual-pattern.msg0002": {
-        "slots": []
-      },
-      "guides-multilingual-pattern.msg0003": {
         "slots": []
       },
       "guides-multilingual-pattern.msg0004": {
@@ -8588,26 +8958,6 @@
       },
       "guides-multilingual-pattern.msg0027": {
         "slots": []
-      },
-      "guides-multilingual-pattern.msg0028": {
-        "slots": [
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "../README.html"
-            }
-          },
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "https://github.com/philippklinz/modern-objectivity-style/blob/main/guides/multilingual-pattern.md"
-            }
-          },
-          {
-            "tag": "span",
-            "attrs": {}
-          }
-        ]
       }
     }
   },
@@ -8670,6 +9020,63 @@
       "starter.observations.summary",
       "starter.confirm.clear",
       "starter.title",
+      "nav.page.contributing",
+      "nav.page.license-notice",
+      "nav.page.readme",
+      "nav.page.docs-01-introduction",
+      "nav.page.docs-02-philosophy",
+      "nav.page.docs-03-principles",
+      "nav.page.docs-04-visual-language",
+      "nav.page.docs-05-time-interaction",
+      "nav.page.docs-06-stage-identity",
+      "nav.page.docs-07-technical-principles",
+      "nav.page.docs-08-validation",
+      "nav.page.docs-09-references",
+      "nav.page.docs-10-multilingual-access",
+      "nav.page.examples-interactive-learning",
+      "nav.page.examples-modular-research-console",
+      "nav.page.guides-adoption",
+      "nav.page.guides-components",
+      "nav.page.guides-data-visualization",
+      "nav.page.guides-emotional-intent",
+      "nav.page.guides-multilingual-pattern",
+      "nav.page.guides-visual-style-spec",
+      "nav.page.patterns-i18n-readme",
+      "nav.page.starter-readme",
+      "nav.page.templates-component-contract",
+      "nav.page.templates-design-decision-record",
+      "nav.page.templates-stage-profile",
+      "nav.page.templates-validation-plan",
+      "nav.overview",
+      "nav.foundations",
+      "nav.interface",
+      "nav.examples",
+      "nav.build",
+      "nav.handbook",
+      "nav.visual",
+      "nav.typography",
+      "nav.language",
+      "nav.components",
+      "nav.data",
+      "nav.interaction",
+      "nav.console",
+      "nav.experiment",
+      "nav.pattern",
+      "nav.starter",
+      "nav.implementation",
+      "nav.menu",
+      "nav.site",
+      "nav.breadcrumb",
+      "nav.onThisPage",
+      "nav.previous",
+      "nav.next",
+      "nav.back",
+      "nav.external",
+      "nav.source",
+      "nav.skip",
+      "nav.sequence",
+      "nav.guide",
+      "nav.sitemap",
       "site.language",
       "site.loading",
       "site.selected",
@@ -8678,8 +9085,6 @@
       "site.review",
       "site.english",
       "guides-visual-style-spec.msg0001",
-      "guides-visual-style-spec.msg0002",
-      "guides-visual-style-spec.msg0003",
       "guides-visual-style-spec.msg0004",
       "guides-visual-style-spec.msg0005",
       "guides-visual-style-spec.msg0006",
@@ -8733,17 +9138,10 @@
       "guides-visual-style-spec.msg0053",
       "guides-visual-style-spec.msg0054",
       "guides-visual-style-spec.msg0055",
-      "guides-visual-style-spec.msg0056",
-      "guides-visual-style-spec.msg0057"
+      "guides-visual-style-spec.msg0056"
     ],
     "bindings": {
       "guides-visual-style-spec.msg0001": {
-        "slots": []
-      },
-      "guides-visual-style-spec.msg0002": {
-        "slots": []
-      },
-      "guides-visual-style-spec.msg0003": {
         "slots": []
       },
       "guides-visual-style-spec.msg0004": {
@@ -9029,26 +9427,6 @@
       },
       "guides-visual-style-spec.msg0056": {
         "slots": []
-      },
-      "guides-visual-style-spec.msg0057": {
-        "slots": [
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "../README.html"
-            }
-          },
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "https://github.com/philippklinz/modern-objectivity-style/blob/main/guides/visual-style-spec.md"
-            }
-          },
-          {
-            "tag": "span",
-            "attrs": {}
-          }
-        ]
       }
     }
   },
@@ -9111,6 +9489,63 @@
       "starter.observations.summary",
       "starter.confirm.clear",
       "starter.title",
+      "nav.page.contributing",
+      "nav.page.license-notice",
+      "nav.page.readme",
+      "nav.page.docs-01-introduction",
+      "nav.page.docs-02-philosophy",
+      "nav.page.docs-03-principles",
+      "nav.page.docs-04-visual-language",
+      "nav.page.docs-05-time-interaction",
+      "nav.page.docs-06-stage-identity",
+      "nav.page.docs-07-technical-principles",
+      "nav.page.docs-08-validation",
+      "nav.page.docs-09-references",
+      "nav.page.docs-10-multilingual-access",
+      "nav.page.examples-interactive-learning",
+      "nav.page.examples-modular-research-console",
+      "nav.page.guides-adoption",
+      "nav.page.guides-components",
+      "nav.page.guides-data-visualization",
+      "nav.page.guides-emotional-intent",
+      "nav.page.guides-multilingual-pattern",
+      "nav.page.guides-visual-style-spec",
+      "nav.page.patterns-i18n-readme",
+      "nav.page.starter-readme",
+      "nav.page.templates-component-contract",
+      "nav.page.templates-design-decision-record",
+      "nav.page.templates-stage-profile",
+      "nav.page.templates-validation-plan",
+      "nav.overview",
+      "nav.foundations",
+      "nav.interface",
+      "nav.examples",
+      "nav.build",
+      "nav.handbook",
+      "nav.visual",
+      "nav.typography",
+      "nav.language",
+      "nav.components",
+      "nav.data",
+      "nav.interaction",
+      "nav.console",
+      "nav.experiment",
+      "nav.pattern",
+      "nav.starter",
+      "nav.implementation",
+      "nav.menu",
+      "nav.site",
+      "nav.breadcrumb",
+      "nav.onThisPage",
+      "nav.previous",
+      "nav.next",
+      "nav.back",
+      "nav.external",
+      "nav.source",
+      "nav.skip",
+      "nav.sequence",
+      "nav.guide",
+      "nav.sitemap",
       "site.language",
       "site.loading",
       "site.selected",
@@ -9119,8 +9554,6 @@
       "site.review",
       "site.english",
       "patterns-i18n-readme.msg0001",
-      "patterns-i18n-readme.msg0002",
-      "patterns-i18n-readme.msg0003",
       "patterns-i18n-readme.msg0004",
       "patterns-i18n-readme.msg0005",
       "patterns-i18n-readme.msg0006",
@@ -9143,17 +9576,10 @@
       "patterns-i18n-readme.msg0023",
       "patterns-i18n-readme.msg0024",
       "patterns-i18n-readme.msg0025",
-      "patterns-i18n-readme.msg0026",
-      "patterns-i18n-readme.msg0027"
+      "patterns-i18n-readme.msg0026"
     ],
     "bindings": {
       "patterns-i18n-readme.msg0001": {
-        "slots": []
-      },
-      "patterns-i18n-readme.msg0002": {
-        "slots": []
-      },
-      "patterns-i18n-readme.msg0003": {
         "slots": []
       },
       "patterns-i18n-readme.msg0004": {
@@ -9333,26 +9759,6 @@
             }
           }
         ]
-      },
-      "patterns-i18n-readme.msg0027": {
-        "slots": [
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "../../README.html"
-            }
-          },
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "https://github.com/philippklinz/modern-objectivity-style/blob/main/patterns/i18n/README.md"
-            }
-          },
-          {
-            "tag": "span",
-            "attrs": {}
-          }
-        ]
       }
     }
   },
@@ -9415,6 +9821,63 @@
       "starter.observations.summary",
       "starter.confirm.clear",
       "starter.title",
+      "nav.page.contributing",
+      "nav.page.license-notice",
+      "nav.page.readme",
+      "nav.page.docs-01-introduction",
+      "nav.page.docs-02-philosophy",
+      "nav.page.docs-03-principles",
+      "nav.page.docs-04-visual-language",
+      "nav.page.docs-05-time-interaction",
+      "nav.page.docs-06-stage-identity",
+      "nav.page.docs-07-technical-principles",
+      "nav.page.docs-08-validation",
+      "nav.page.docs-09-references",
+      "nav.page.docs-10-multilingual-access",
+      "nav.page.examples-interactive-learning",
+      "nav.page.examples-modular-research-console",
+      "nav.page.guides-adoption",
+      "nav.page.guides-components",
+      "nav.page.guides-data-visualization",
+      "nav.page.guides-emotional-intent",
+      "nav.page.guides-multilingual-pattern",
+      "nav.page.guides-visual-style-spec",
+      "nav.page.patterns-i18n-readme",
+      "nav.page.starter-readme",
+      "nav.page.templates-component-contract",
+      "nav.page.templates-design-decision-record",
+      "nav.page.templates-stage-profile",
+      "nav.page.templates-validation-plan",
+      "nav.overview",
+      "nav.foundations",
+      "nav.interface",
+      "nav.examples",
+      "nav.build",
+      "nav.handbook",
+      "nav.visual",
+      "nav.typography",
+      "nav.language",
+      "nav.components",
+      "nav.data",
+      "nav.interaction",
+      "nav.console",
+      "nav.experiment",
+      "nav.pattern",
+      "nav.starter",
+      "nav.implementation",
+      "nav.menu",
+      "nav.site",
+      "nav.breadcrumb",
+      "nav.onThisPage",
+      "nav.previous",
+      "nav.next",
+      "nav.back",
+      "nav.external",
+      "nav.source",
+      "nav.skip",
+      "nav.sequence",
+      "nav.guide",
+      "nav.sitemap",
       "site.language",
       "site.loading",
       "site.selected",
@@ -9423,8 +9886,6 @@
       "site.review",
       "site.english",
       "starter-readme.msg0001",
-      "starter-readme.msg0002",
-      "starter-readme.msg0003",
       "starter-readme.msg0004",
       "starter-readme.msg0005",
       "starter-readme.msg0006",
@@ -9446,17 +9907,10 @@
       "starter-readme.msg0021",
       "starter-readme.msg0022",
       "starter-readme.msg0023",
-      "starter-readme.msg0024",
-      "starter-readme.msg0025"
+      "starter-readme.msg0024"
     ],
     "bindings": {
       "starter-readme.msg0001": {
-        "slots": []
-      },
-      "starter-readme.msg0002": {
-        "slots": []
-      },
-      "starter-readme.msg0003": {
         "slots": []
       },
       "starter-readme.msg0004": {
@@ -9658,26 +10112,6 @@
             "literal": "fonts/liberation/"
           }
         ]
-      },
-      "starter-readme.msg0025": {
-        "slots": [
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "../README.html"
-            }
-          },
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "https://github.com/philippklinz/modern-objectivity-style/blob/main/starter/README.md"
-            }
-          },
-          {
-            "tag": "span",
-            "attrs": {}
-          }
-        ]
       }
     }
   },
@@ -9740,6 +10174,63 @@
       "starter.observations.summary",
       "starter.confirm.clear",
       "starter.title",
+      "nav.page.contributing",
+      "nav.page.license-notice",
+      "nav.page.readme",
+      "nav.page.docs-01-introduction",
+      "nav.page.docs-02-philosophy",
+      "nav.page.docs-03-principles",
+      "nav.page.docs-04-visual-language",
+      "nav.page.docs-05-time-interaction",
+      "nav.page.docs-06-stage-identity",
+      "nav.page.docs-07-technical-principles",
+      "nav.page.docs-08-validation",
+      "nav.page.docs-09-references",
+      "nav.page.docs-10-multilingual-access",
+      "nav.page.examples-interactive-learning",
+      "nav.page.examples-modular-research-console",
+      "nav.page.guides-adoption",
+      "nav.page.guides-components",
+      "nav.page.guides-data-visualization",
+      "nav.page.guides-emotional-intent",
+      "nav.page.guides-multilingual-pattern",
+      "nav.page.guides-visual-style-spec",
+      "nav.page.patterns-i18n-readme",
+      "nav.page.starter-readme",
+      "nav.page.templates-component-contract",
+      "nav.page.templates-design-decision-record",
+      "nav.page.templates-stage-profile",
+      "nav.page.templates-validation-plan",
+      "nav.overview",
+      "nav.foundations",
+      "nav.interface",
+      "nav.examples",
+      "nav.build",
+      "nav.handbook",
+      "nav.visual",
+      "nav.typography",
+      "nav.language",
+      "nav.components",
+      "nav.data",
+      "nav.interaction",
+      "nav.console",
+      "nav.experiment",
+      "nav.pattern",
+      "nav.starter",
+      "nav.implementation",
+      "nav.menu",
+      "nav.site",
+      "nav.breadcrumb",
+      "nav.onThisPage",
+      "nav.previous",
+      "nav.next",
+      "nav.back",
+      "nav.external",
+      "nav.source",
+      "nav.skip",
+      "nav.sequence",
+      "nav.guide",
+      "nav.sitemap",
       "site.language",
       "site.loading",
       "site.selected",
@@ -9748,20 +10239,11 @@
       "site.review",
       "site.english",
       "templates-component-contract.msg0001",
-      "templates-component-contract.msg0002",
-      "templates-component-contract.msg0003",
       "templates-component-contract.msg0004",
-      "templates-component-contract.msg0005",
-      "templates-component-contract.msg0006"
+      "templates-component-contract.msg0005"
     ],
     "bindings": {
       "templates-component-contract.msg0001": {
-        "slots": []
-      },
-      "templates-component-contract.msg0002": {
-        "slots": []
-      },
-      "templates-component-contract.msg0003": {
         "slots": []
       },
       "templates-component-contract.msg0004": {
@@ -9769,26 +10251,6 @@
       },
       "templates-component-contract.msg0005": {
         "slots": []
-      },
-      "templates-component-contract.msg0006": {
-        "slots": [
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "../README.html"
-            }
-          },
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "https://github.com/philippklinz/modern-objectivity-style/blob/main/templates/component-contract.md"
-            }
-          },
-          {
-            "tag": "span",
-            "attrs": {}
-          }
-        ]
       }
     }
   },
@@ -9851,6 +10313,63 @@
       "starter.observations.summary",
       "starter.confirm.clear",
       "starter.title",
+      "nav.page.contributing",
+      "nav.page.license-notice",
+      "nav.page.readme",
+      "nav.page.docs-01-introduction",
+      "nav.page.docs-02-philosophy",
+      "nav.page.docs-03-principles",
+      "nav.page.docs-04-visual-language",
+      "nav.page.docs-05-time-interaction",
+      "nav.page.docs-06-stage-identity",
+      "nav.page.docs-07-technical-principles",
+      "nav.page.docs-08-validation",
+      "nav.page.docs-09-references",
+      "nav.page.docs-10-multilingual-access",
+      "nav.page.examples-interactive-learning",
+      "nav.page.examples-modular-research-console",
+      "nav.page.guides-adoption",
+      "nav.page.guides-components",
+      "nav.page.guides-data-visualization",
+      "nav.page.guides-emotional-intent",
+      "nav.page.guides-multilingual-pattern",
+      "nav.page.guides-visual-style-spec",
+      "nav.page.patterns-i18n-readme",
+      "nav.page.starter-readme",
+      "nav.page.templates-component-contract",
+      "nav.page.templates-design-decision-record",
+      "nav.page.templates-stage-profile",
+      "nav.page.templates-validation-plan",
+      "nav.overview",
+      "nav.foundations",
+      "nav.interface",
+      "nav.examples",
+      "nav.build",
+      "nav.handbook",
+      "nav.visual",
+      "nav.typography",
+      "nav.language",
+      "nav.components",
+      "nav.data",
+      "nav.interaction",
+      "nav.console",
+      "nav.experiment",
+      "nav.pattern",
+      "nav.starter",
+      "nav.implementation",
+      "nav.menu",
+      "nav.site",
+      "nav.breadcrumb",
+      "nav.onThisPage",
+      "nav.previous",
+      "nav.next",
+      "nav.back",
+      "nav.external",
+      "nav.source",
+      "nav.skip",
+      "nav.sequence",
+      "nav.guide",
+      "nav.sitemap",
       "site.language",
       "site.loading",
       "site.selected",
@@ -9859,21 +10378,12 @@
       "site.review",
       "site.english",
       "templates-design-decision-record.msg0001",
-      "templates-design-decision-record.msg0002",
-      "templates-design-decision-record.msg0003",
       "templates-design-decision-record.msg0004",
       "templates-design-decision-record.msg0005",
-      "templates-design-decision-record.msg0006",
-      "templates-design-decision-record.msg0007"
+      "templates-design-decision-record.msg0006"
     ],
     "bindings": {
       "templates-design-decision-record.msg0001": {
-        "slots": []
-      },
-      "templates-design-decision-record.msg0002": {
-        "slots": []
-      },
-      "templates-design-decision-record.msg0003": {
         "slots": []
       },
       "templates-design-decision-record.msg0004": {
@@ -9884,26 +10394,6 @@
       },
       "templates-design-decision-record.msg0006": {
         "slots": []
-      },
-      "templates-design-decision-record.msg0007": {
-        "slots": [
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "../README.html"
-            }
-          },
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "https://github.com/philippklinz/modern-objectivity-style/blob/main/templates/design-decision-record.md"
-            }
-          },
-          {
-            "tag": "span",
-            "attrs": {}
-          }
-        ]
       }
     }
   },
@@ -9966,6 +10456,63 @@
       "starter.observations.summary",
       "starter.confirm.clear",
       "starter.title",
+      "nav.page.contributing",
+      "nav.page.license-notice",
+      "nav.page.readme",
+      "nav.page.docs-01-introduction",
+      "nav.page.docs-02-philosophy",
+      "nav.page.docs-03-principles",
+      "nav.page.docs-04-visual-language",
+      "nav.page.docs-05-time-interaction",
+      "nav.page.docs-06-stage-identity",
+      "nav.page.docs-07-technical-principles",
+      "nav.page.docs-08-validation",
+      "nav.page.docs-09-references",
+      "nav.page.docs-10-multilingual-access",
+      "nav.page.examples-interactive-learning",
+      "nav.page.examples-modular-research-console",
+      "nav.page.guides-adoption",
+      "nav.page.guides-components",
+      "nav.page.guides-data-visualization",
+      "nav.page.guides-emotional-intent",
+      "nav.page.guides-multilingual-pattern",
+      "nav.page.guides-visual-style-spec",
+      "nav.page.patterns-i18n-readme",
+      "nav.page.starter-readme",
+      "nav.page.templates-component-contract",
+      "nav.page.templates-design-decision-record",
+      "nav.page.templates-stage-profile",
+      "nav.page.templates-validation-plan",
+      "nav.overview",
+      "nav.foundations",
+      "nav.interface",
+      "nav.examples",
+      "nav.build",
+      "nav.handbook",
+      "nav.visual",
+      "nav.typography",
+      "nav.language",
+      "nav.components",
+      "nav.data",
+      "nav.interaction",
+      "nav.console",
+      "nav.experiment",
+      "nav.pattern",
+      "nav.starter",
+      "nav.implementation",
+      "nav.menu",
+      "nav.site",
+      "nav.breadcrumb",
+      "nav.onThisPage",
+      "nav.previous",
+      "nav.next",
+      "nav.back",
+      "nav.external",
+      "nav.source",
+      "nav.skip",
+      "nav.sequence",
+      "nav.guide",
+      "nav.sitemap",
       "site.language",
       "site.loading",
       "site.selected",
@@ -9974,20 +10521,11 @@
       "site.review",
       "site.english",
       "templates-stage-profile.msg0001",
-      "templates-stage-profile.msg0002",
-      "templates-stage-profile.msg0003",
       "templates-stage-profile.msg0004",
-      "templates-stage-profile.msg0005",
-      "templates-stage-profile.msg0006"
+      "templates-stage-profile.msg0005"
     ],
     "bindings": {
       "templates-stage-profile.msg0001": {
-        "slots": []
-      },
-      "templates-stage-profile.msg0002": {
-        "slots": []
-      },
-      "templates-stage-profile.msg0003": {
         "slots": []
       },
       "templates-stage-profile.msg0004": {
@@ -9995,26 +10533,6 @@
       },
       "templates-stage-profile.msg0005": {
         "slots": []
-      },
-      "templates-stage-profile.msg0006": {
-        "slots": [
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "../README.html"
-            }
-          },
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "https://github.com/philippklinz/modern-objectivity-style/blob/main/templates/stage-profile.md"
-            }
-          },
-          {
-            "tag": "span",
-            "attrs": {}
-          }
-        ]
       }
     }
   },
@@ -10077,6 +10595,63 @@
       "starter.observations.summary",
       "starter.confirm.clear",
       "starter.title",
+      "nav.page.contributing",
+      "nav.page.license-notice",
+      "nav.page.readme",
+      "nav.page.docs-01-introduction",
+      "nav.page.docs-02-philosophy",
+      "nav.page.docs-03-principles",
+      "nav.page.docs-04-visual-language",
+      "nav.page.docs-05-time-interaction",
+      "nav.page.docs-06-stage-identity",
+      "nav.page.docs-07-technical-principles",
+      "nav.page.docs-08-validation",
+      "nav.page.docs-09-references",
+      "nav.page.docs-10-multilingual-access",
+      "nav.page.examples-interactive-learning",
+      "nav.page.examples-modular-research-console",
+      "nav.page.guides-adoption",
+      "nav.page.guides-components",
+      "nav.page.guides-data-visualization",
+      "nav.page.guides-emotional-intent",
+      "nav.page.guides-multilingual-pattern",
+      "nav.page.guides-visual-style-spec",
+      "nav.page.patterns-i18n-readme",
+      "nav.page.starter-readme",
+      "nav.page.templates-component-contract",
+      "nav.page.templates-design-decision-record",
+      "nav.page.templates-stage-profile",
+      "nav.page.templates-validation-plan",
+      "nav.overview",
+      "nav.foundations",
+      "nav.interface",
+      "nav.examples",
+      "nav.build",
+      "nav.handbook",
+      "nav.visual",
+      "nav.typography",
+      "nav.language",
+      "nav.components",
+      "nav.data",
+      "nav.interaction",
+      "nav.console",
+      "nav.experiment",
+      "nav.pattern",
+      "nav.starter",
+      "nav.implementation",
+      "nav.menu",
+      "nav.site",
+      "nav.breadcrumb",
+      "nav.onThisPage",
+      "nav.previous",
+      "nav.next",
+      "nav.back",
+      "nav.external",
+      "nav.source",
+      "nav.skip",
+      "nav.sequence",
+      "nav.guide",
+      "nav.sitemap",
       "site.language",
       "site.loading",
       "site.selected",
@@ -10085,8 +10660,6 @@
       "site.review",
       "site.english",
       "templates-validation-plan.msg0001",
-      "templates-validation-plan.msg0002",
-      "templates-validation-plan.msg0003",
       "templates-validation-plan.msg0004",
       "templates-validation-plan.msg0005",
       "templates-validation-plan.msg0006",
@@ -10094,17 +10667,10 @@
       "templates-validation-plan.msg0008",
       "templates-validation-plan.msg0009",
       "templates-validation-plan.msg0010",
-      "templates-validation-plan.msg0011",
-      "templates-validation-plan.msg0012"
+      "templates-validation-plan.msg0011"
     ],
     "bindings": {
       "templates-validation-plan.msg0001": {
-        "slots": []
-      },
-      "templates-validation-plan.msg0002": {
-        "slots": []
-      },
-      "templates-validation-plan.msg0003": {
         "slots": []
       },
       "templates-validation-plan.msg0004": {
@@ -10155,26 +10721,6 @@
       },
       "templates-validation-plan.msg0011": {
         "slots": []
-      },
-      "templates-validation-plan.msg0012": {
-        "slots": [
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "../README.html"
-            }
-          },
-          {
-            "tag": "a",
-            "attrs": {
-              "href": "https://github.com/philippklinz/modern-objectivity-style/blob/main/templates/validation-plan.md"
-            }
-          },
-          {
-            "tag": "span",
-            "attrs": {}
-          }
-        ]
       }
     }
   },
@@ -10195,8 +10741,6 @@
       "pattern.selected",
       "pattern.unavailable",
       "pattern.chrome.text001",
-      "pattern.chrome.text002",
-      "pattern.chrome.text003",
       "pattern.chrome.text004",
       "pattern.chrome.text005",
       "pattern.chrome.text006",
@@ -10209,10 +10753,66 @@
       "pattern.chrome.text013",
       "pattern.chrome.text014",
       "pattern.chrome.text015",
-      "pattern.chrome.text016",
-      "pattern.chrome.text017",
-      "pattern.chrome.text018",
-      "pattern.chrome.description"
+      "pattern.chrome.description",
+      "nav.page.contributing",
+      "nav.page.license-notice",
+      "nav.page.readme",
+      "nav.page.docs-01-introduction",
+      "nav.page.docs-02-philosophy",
+      "nav.page.docs-03-principles",
+      "nav.page.docs-04-visual-language",
+      "nav.page.docs-05-time-interaction",
+      "nav.page.docs-06-stage-identity",
+      "nav.page.docs-07-technical-principles",
+      "nav.page.docs-08-validation",
+      "nav.page.docs-09-references",
+      "nav.page.docs-10-multilingual-access",
+      "nav.page.examples-interactive-learning",
+      "nav.page.examples-modular-research-console",
+      "nav.page.guides-adoption",
+      "nav.page.guides-components",
+      "nav.page.guides-data-visualization",
+      "nav.page.guides-emotional-intent",
+      "nav.page.guides-multilingual-pattern",
+      "nav.page.guides-visual-style-spec",
+      "nav.page.patterns-i18n-readme",
+      "nav.page.starter-readme",
+      "nav.page.templates-component-contract",
+      "nav.page.templates-design-decision-record",
+      "nav.page.templates-stage-profile",
+      "nav.page.templates-validation-plan",
+      "nav.overview",
+      "nav.foundations",
+      "nav.interface",
+      "nav.examples",
+      "nav.build",
+      "nav.handbook",
+      "nav.visual",
+      "nav.typography",
+      "nav.language",
+      "nav.components",
+      "nav.data",
+      "nav.interaction",
+      "nav.console",
+      "nav.experiment",
+      "nav.pattern",
+      "nav.starter",
+      "nav.implementation",
+      "nav.menu",
+      "nav.site",
+      "nav.breadcrumb",
+      "nav.onThisPage",
+      "nav.previous",
+      "nav.next",
+      "nav.back",
+      "nav.external",
+      "nav.source",
+      "nav.skip",
+      "nav.sequence",
+      "nav.guide",
+      "nav.sitemap",
+      "theme.light",
+      "theme.dark"
     ],
     "bindings": {},
     "assetdir": "patterns/i18n/locales"

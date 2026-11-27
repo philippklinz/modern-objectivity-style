@@ -21,11 +21,12 @@ from urllib.parse import urlsplit, urlunsplit
 from copy import deepcopy
 import argparse, hashlib, html as escape, json, os, re, subprocess
 from lxml import html, etree
+from site_navigation import prepare as prepare_navigation, decorate as decorate_navigation, directory_page, LABELS as NAV_LABELS
 
 ROOT = Path(__file__).resolve().parents[1]
 I18N = ROOT / 'i18n'
 LANGS = ['bg','hr','cs','da','nl','en','et','fi','fr','de','el','hu','ga','it','lv','lt','mt','pl','pt','ro','sk','sl','es','sv']
-LIVE = ['index.html','examples/lab-console.html','examples/experiment.html','examples/typography.html','starter/index.html']
+LIVE = ['index.html','navigation.html','examples/lab-console.html','examples/experiment.html','examples/typography.html','starter/index.html']
 SKIP = {'script','style','pre','code','textarea','template','noscript'}
 INLINE = {'a','strong','em','span','small','b','i','u','s','sub','sup','kbd','abbr','br','code','mark'}
 BLOCKS = {'title','h1','h2','h3','h4','h5','h6','p','li','dt','dd','th','td','a','button','option','label','legend','summary','figcaption','text','span','small','strong','div','footer'}
@@ -89,11 +90,13 @@ def meaningful(text):
     return bool(re.search(r'[A-Za-z]{2}',text)) and text not in {'MODERN','OBJECTIVITY','GPL-2.0-only','CSV','HTML','CSS','JavaScript'}
 
 def extract():
+    directory_page()
     docs=markdown_pages()
     pages=LIVE+docs
     keyfile=I18N/'source/keys.json'
     old=json.loads(keyfile.read_text()) if keyfile.exists() else {}
     messages=json.loads((I18N/'dynamic-en.json').read_text())
+    messages.update(NAV_LABELS)
     page_dynamic=json.loads((I18N/'dynamic-pages.json').read_text()) if (I18N/'dynamic-pages.json').exists() else {}
     messages.update({
       'site.language':'Language',
@@ -121,6 +124,7 @@ def extract():
                 if attr.startswith('data-mo-key') or attr.startswith('data-mo-attr-'): del element.attrib[attr]
         for element in tree.xpath('//*[@data-mo-generated]'):
             element.getparent().remove(element)
+        prepare_navigation(tree, page)
         for anchor in tree.xpath('//a[@href]'):
             href=anchor.get('href'); url=urlsplit(href)
             if not url.scheme and not url.netloc and url.path.endswith('.md'):
@@ -190,30 +194,35 @@ def extract():
         for script in scripts: head.remove(script)
         for index,src in enumerate([core,assetdir+'/source.js',runtime]):
             script=html.Element('script',src=local_ref(page,src)); script.set('data-mo-generated','runtime'); head.insert(index+3,script)
+        decorate_navigation(tree, page)
         rendered='<!doctype html>\n'+html.tostring(tree,encoding='unicode',method='html')+'\n'
         (ROOT/page).write_text(rendered)
         manifests[module]={'page':page,'assetdir':assetdir,'keys':common+list(dynamic)+keys,'bindings':bindings}
     # The independent pattern retains its own helper, full-page catalogue and model.
     pattern=html.document_fromstring((ROOT/'patterns/i18n/index.html').read_text())
+    prepare_navigation(pattern, 'patterns/i18n/index.html')
     sourcepack=read_script_pack(ROOT/'patterns/i18n/locales/en.js')
-    sample={key:value for key,value in sourcepack['messages'].items() if not key.startswith('chrome.')}
+    sample={key:value for key,value in sourcepack['messages'].items() if not key.startswith(('chrome.','nav.','theme.'))}
     for key,value in sample.items(): messages['pattern.'+key]=value
     patternkeys=['pattern.'+key for key in sample]
-    for element in pattern.xpath('//*[@data-i18n]'):
-        key=element.get('data-i18n')
-        if key.startswith('chrome.'): element.attrib.pop('data-i18n')
     for anchor in pattern.xpath('//a[@href]'):
         href=anchor.get('href')
         if href.endswith('.md'): anchor.set('href',href[:-3]+'.html')
     # Outer source copy has no rich prose; preserve all controls inside the panel.
     title=pattern.xpath('//h1')[0]; title.text='One model. Twenty-four languages.'
     for child in list(title): title.remove(child)
-    targets=pattern.xpath('//header//a|//header//span|//main/span|//h1|//main/p|//div[contains(@class,"pattern-notes")]//h3|//div[contains(@class,"pattern-notes")]//p|//div[contains(@class,"pattern-notes")]//a|//footer/a|//title|//noscript/p')
+    targets=pattern.xpath('//div[contains(@class,"pattern-wrap")]/span|//h1|//div[contains(@class,"pattern-wrap")]/p|//div[contains(@class,"pattern-notes")]//h3|//div[contains(@class,"pattern-notes")]//p|//div[contains(@class,"pattern-notes")]//a|//title|//noscript/p')
+    next_chrome=max([int(key.rsplit('text',1)[1]) for key in sourcepack['messages'] if re.fullmatch(r'chrome.text\d+',key)]+[0])+1
     for index,element in enumerate(targets):
-        key=f'chrome.text{index+1:03d}'; element.set('data-i18n',key)
+        key=element.get('data-i18n')
+        if not key or not key.startswith('chrome.'):
+            key=f'chrome.text{next_chrome:03d}'; next_chrome+=1
+        element.set('data-i18n',key)
         messages['pattern.'+key]=''.join(element.itertext()).strip(); patternkeys.append('pattern.'+key)
     meta=pattern.xpath('//meta[@name="description"]')[0]
     messages['pattern.chrome.description']=meta.get('content'); patternkeys.append('pattern.chrome.description')
+    patternkeys += list(NAV_LABELS) + ['theme.light','theme.dark']
+    decorate_navigation(pattern, 'patterns/i18n/index.html')
     (ROOT/'patterns/i18n/index.html').write_text('<!doctype html>\n'+html.tostring(pattern,encoding='unicode',method='html')+'\n')
     manifests['pattern']={'page':'patterns/i18n/index.html','keys':patternkeys,'bindings':{},'assetdir':'patterns/i18n/locales'}
     write_json(I18N/'source/en.json',messages)
@@ -250,7 +259,7 @@ def build(locales=None):
                 (destination/'source.js').write_text(languages_script+'\n'+filename.read_text()+'\nglobalThis.MO_PAGE_DATA = '+json.dumps(data,ensure_ascii=False,separators=(',',':'))+';\n')
     (I18N/'core.js').write_bytes((ROOT/'patterns/i18n/i18n.js').read_bytes())
     for base in ['starter/i18n','patterns/i18n/site']:
-        for name in ['core.js','runtime.js','site.css']:
+        for name in ['core.js','runtime.js','site.css','navigation.js','navigation.css']:
             (ROOT/base).mkdir(parents=True,exist_ok=True)
             (ROOT/base/name).write_bytes((I18N/name).read_bytes())
     print(f'Built {len(pages)} pages × {len(locales or LANGS)} local catalogues; no runtime build required.')

@@ -41,6 +41,7 @@
   }
   function render() {
     i18n.apply(document.documentElement);
+    window.MONavigation?.render({t:i18n.text, language:i18n.locale});
     scope.lang = i18n.locale;
     document.querySelector('meta[name="description"]').content = i18n.text('chrome.description');
     $('count-value').textContent = i18n.number(state.count);
@@ -97,6 +98,7 @@
   select.addEventListener('change', () => choose(select.value, true));
   window.addEventListener('popstate', () => choose(new URL(location.href).searchParams.get('lang') || 'en'));
   scope.querySelectorAll('input, select, button').forEach(control => { control.disabled = false; });
+  select.disabled = false;
   render();
   choose(new URL(location.href).searchParams.get('lang') || 'en');
 })();

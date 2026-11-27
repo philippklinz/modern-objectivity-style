@@ -8,6 +8,7 @@ const os=require('node:os');
 const {pathToFileURL}=require('node:url');
 const {chromium}=require('playwright');
 const {pages,languages,root}=require('./check-site-i18n.cjs');
+const {checkPageNavigation,checkNavigationJourney}=require('./navigation-checks.cjs');
 const sourceOnly=process.argv.includes('--source-only');
 async function main(){
  const server=http.createServer(async(req,res)=>{
@@ -34,10 +35,11 @@ async function main(){
    document.querySelector('#mo-language-bar')?.getAttribute('aria-busy')==='false'||document.querySelector('#localized-demo')?.getAttribute('aria-busy')==='false'),code);
   const change=async code=>{await page.locator('#mo-language,#language').selectOption(code);await ready(code);};
   const selected=sourceOnly?languages.filter(item=>item.code==='en'):languages;
-  let combinations=0; const layoutIssues=[];
+  let combinations=0; const layoutIssues=[]; let navigationOrder;
   for(const [module,info] of Object.entries(pages)){
    await page.setViewportSize({width:1280,height:900});
    await page.goto(base+'/'+info.page+'?keep=1');await ready();
+   navigationOrder=await checkPageNavigation(page,info.page,navigationOrder);
    for(const {code} of selected){
     await change(code);
     for(const width of [390,1280]){
@@ -62,7 +64,7 @@ async function main(){
   const target=sourceOnly?'en':'de';
   await page.goto(base+'/index.html');await ready();
   const heights=await page.locator('.mo-topbar .mo-select,.mo-topbar .mo-btn').evaluateAll(nodes=>nodes.map(node=>node.getBoundingClientRect().height));
-  assert.ok(heights.length>=3&&Math.max(...heights)-Math.min(...heights)<1,'Header controls share one height');
+  assert.ok(heights.length>=2&&Math.max(...heights)-Math.min(...heights)<1,'Header controls share one height');
   await page.locator('#sample-filter').fill('S-003');await page.locator('#tab-method').click();
   await page.locator('#load-range').press('ArrowRight');await page.locator('#preview-live-toggle').uncheck();
   await page.locator('[data-theme-toggle]').click();
@@ -152,6 +154,8 @@ async function main(){
   await page.goto(base+'/docs/03-principles.html?lang='+target);await ready(target);
   const handbookLink=await page.locator('a').filter({hasText:/Modern Objectivity/}).first().getAttribute('href');
   assert.ok(handbookLink.includes('lang='+target),'Documentation navigation preserves locale');
+  await checkNavigationJourney({browser,page,base,ready,language:target});
+  await page.goto(base+'/docs/03-principles.html?lang='+target);await ready(target);
   if(!sourceOnly){
    await change('pl');await page.goBack();await ready(target);await page.goForward();await ready('pl');
    await page.route('**/i18n/pages/index/fr.js',route=>route.abort());

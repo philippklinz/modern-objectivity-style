@@ -1,0 +1,254 @@
+{
+  "labels": {
+    "nav.page.contributing": "Contributing to Modern Objectivity",
+    "nav.page.license-notice": "Licensing",
+    "nav.page.readme": "Handbook contents",
+    "nav.page.docs-01-introduction": "Introduction & Purpose",
+    "nav.page.docs-02-philosophy": "Philosophy & Model",
+    "nav.page.docs-03-principles": "Fundamental Principles",
+    "nav.page.docs-04-visual-language": "Visual Language",
+    "nav.page.docs-05-time-interaction": "Time & Interaction",
+    "nav.page.docs-06-stage-identity": "Stage & Identity",
+    "nav.page.docs-07-technical-principles": "Technical Principles",
+    "nav.page.docs-08-validation": "Applications & Validation",
+    "nav.page.docs-09-references": "References & Context",
+    "nav.page.docs-10-multilingual-access": "Multilingual Access",
+    "nav.page.examples-interactive-learning": "Example — Interactive Learning Laboratory",
+    "nav.page.examples-modular-research-console": "Example — Modular Research Console",
+    "nav.page.guides-adoption": "Adopting Modern Objectivity",
+    "nav.page.guides-components": "Component Patterns",
+    "nav.page.guides-data-visualization": "Data Visualization Guidelines",
+    "nav.page.guides-emotional-intent": "Emotional Intent",
+    "nav.page.guides-multilingual-pattern": "Programming Pattern — Local Catalogues, Shared State",
+    "nav.page.guides-visual-style-spec": "Visual Style Specification — Reference Lab Theme v0.1",
+    "nav.page.patterns-i18n-readme": "Copyable multilingual pattern",
+    "nav.page.starter-readme": "Modern Objectivity — Copyable Lab Starter",
+    "nav.page.templates-component-contract": "Component Contract",
+    "nav.page.templates-design-decision-record": "Design Decision Record",
+    "nav.page.templates-stage-profile": "Stage Profile",
+    "nav.page.templates-validation-plan": "Validation Plan",
+    "nav.overview": "Overview",
+    "nav.foundations": "Foundations",
+    "nav.interface": "Interface",
+    "nav.examples": "Examples",
+    "nav.build": "Build a lab",
+    "nav.handbook": "Handbook",
+    "nav.visual": "Visual foundations",
+    "nav.typography": "Typography",
+    "nav.language": "Language access",
+    "nav.components": "Components",
+    "nav.data": "Data & tables",
+    "nav.interaction": "Interaction",
+    "nav.console": "Lab console",
+    "nav.experiment": "Wave experiment",
+    "nav.pattern": "Multilingual interface",
+    "nav.starter": "Starter template",
+    "nav.implementation": "Implementation",
+    "nav.menu": "Menu",
+    "nav.site": "Site navigation",
+    "nav.breadcrumb": "Breadcrumb",
+    "nav.onThisPage": "On this page",
+    "nav.previous": "Previous",
+    "nav.next": "Next",
+    "nav.back": "Back to {section}",
+    "nav.external": "External",
+    "nav.source": "Source",
+    "nav.skip": "Skip to content",
+    "nav.sequence": "Page navigation",
+    "nav.guide": "Style guide",
+    "nav.sitemap": "All pages"
+  },
+  "home": {
+    "href": "index.html",
+    "label": "nav.overview"
+  },
+  "groups": [
+    {
+      "id": "foundations",
+      "label": "nav.foundations",
+      "href": "navigation.html#foundations",
+      "items": [
+        {
+          "href": "index.html#foundations",
+          "label": "nav.visual"
+        },
+        {
+          "href": "examples/typography.html",
+          "label": "nav.typography"
+        },
+        {
+          "href": "index.html#language-access",
+          "label": "nav.language"
+        }
+      ]
+    },
+    {
+      "id": "interface",
+      "label": "nav.interface",
+      "href": "navigation.html#interface",
+      "items": [
+        {
+          "href": "index.html#components",
+          "label": "nav.components"
+        },
+        {
+          "href": "index.html#data",
+          "label": "nav.data"
+        },
+        {
+          "href": "index.html#interaction",
+          "label": "nav.interaction"
+        },
+        {
+          "href": "guides/components.html",
+          "label": "nav.page.guides-components"
+        },
+        {
+          "href": "guides/data-visualization.html",
+          "label": "nav.page.guides-data-visualization"
+        }
+      ]
+    },
+    {
+      "id": "examples",
+      "label": "nav.examples",
+      "href": "navigation.html#examples",
+      "items": [
+        {
+          "href": "examples/lab-console.html",
+          "label": "nav.console"
+        },
+        {
+          "href": "examples/experiment.html",
+          "label": "nav.experiment"
+        },
+        {
+          "href": "patterns/i18n/index.html",
+          "label": "nav.pattern"
+        },
+        {
+          "href": "examples/interactive-learning.html",
+          "label": "nav.page.examples-interactive-learning"
+        },
+        {
+          "href": "examples/modular-research-console.html",
+          "label": "nav.page.examples-modular-research-console"
+        }
+      ]
+    },
+    {
+      "id": "build",
+      "label": "nav.build",
+      "href": "navigation.html#build",
+      "items": [
+        {
+          "href": "starter/index.html",
+          "label": "nav.starter"
+        },
+        {
+          "href": "starter/README.html",
+          "label": "nav.page.starter-readme"
+        },
+        {
+          "href": "guides/visual-style-spec.html",
+          "label": "nav.page.guides-visual-style-spec"
+        },
+        {
+          "href": "guides/adoption.html",
+          "label": "nav.page.guides-adoption"
+        },
+        {
+          "href": "guides/multilingual-pattern.html",
+          "label": "nav.page.guides-multilingual-pattern"
+        },
+        {
+          "href": "patterns/i18n/README.html",
+          "label": "nav.page.patterns-i18n-readme"
+        },
+        {
+          "href": "templates/stage-profile.html",
+          "label": "nav.page.templates-stage-profile"
+        },
+        {
+          "href": "templates/component-contract.html",
+          "label": "nav.page.templates-component-contract"
+        },
+        {
+          "href": "templates/design-decision-record.html",
+          "label": "nav.page.templates-design-decision-record"
+        },
+        {
+          "href": "templates/validation-plan.html",
+          "label": "nav.page.templates-validation-plan"
+        }
+      ]
+    },
+    {
+      "id": "handbook",
+      "label": "nav.handbook",
+      "href": "navigation.html#handbook",
+      "items": [
+        {
+          "href": "README.html",
+          "label": "nav.page.readme"
+        },
+        {
+          "href": "docs/01-introduction.html",
+          "label": "nav.page.docs-01-introduction"
+        },
+        {
+          "href": "docs/02-philosophy.html",
+          "label": "nav.page.docs-02-philosophy"
+        },
+        {
+          "href": "docs/03-principles.html",
+          "label": "nav.page.docs-03-principles"
+        },
+        {
+          "href": "docs/04-visual-language.html",
+          "label": "nav.page.docs-04-visual-language"
+        },
+        {
+          "href": "docs/05-time-interaction.html",
+          "label": "nav.page.docs-05-time-interaction"
+        },
+        {
+          "href": "docs/06-stage-identity.html",
+          "label": "nav.page.docs-06-stage-identity"
+        },
+        {
+          "href": "docs/07-technical-principles.html",
+          "label": "nav.page.docs-07-technical-principles"
+        },
+        {
+          "href": "docs/08-validation.html",
+          "label": "nav.page.docs-08-validation"
+        },
+        {
+          "href": "docs/09-references.html",
+          "label": "nav.page.docs-09-references"
+        },
+        {
+          "href": "docs/10-multilingual-access.html",
+          "label": "nav.page.docs-10-multilingual-access"
+        },
+        {
+          "href": "guides/emotional-intent.html",
+          "label": "nav.page.guides-emotional-intent"
+        },
+        {
+          "href": "CONTRIBUTING.html",
+          "label": "nav.page.contributing"
+        },
+        {
+          "href": "LICENSE-NOTICE.html",
+          "label": "nav.page.license-notice"
+        }
+      ]
+    }
+  ],
+  "directory": {
+    "href": "navigation.html",
+    "label": "nav.sitemap"
+  }
+}
