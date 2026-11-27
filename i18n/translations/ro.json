@@ -1052,7 +1052,7 @@
   "guides-visual-style-spec.msg0008": "<s0>Compoziție:</s0> bară de navigare grafit închis, tipografie precisă, carduri discrete în relief redus, linii subțiri, densitate informațională ridicată cu spațiu generos pentru lectură.",
   "guides-visual-style-spec.msg0009": "<s0>Implicit:</s0> pânză deschisă cu accent turcoaz pentru acțiuni; mod întunecat susținut prin tokenuri semantice.",
   "guides-visual-style-spec.msg0010": "<s0>Tipografie:</s0> Liberation Sans pentru interfață și lectură, Liberation Mono pentru etichete și cifre tehnice, Liberation Serif pentru accente editoriale deliberate; sunt incluse alternative locale de sistem.",
-  "guides-visual-style-spec.msg0011": "<s0>Aspect:</s0> ritm de bază de 4 px, rază implicită a panourilor de 9 px, rază a controalelor de 5 px, ierarhie tipografică clară.",
+  "guides-visual-style-spec.msg0011": "<s0>Aspect:</s0> ritm de bază de 4 px, colțuri drepte (rază de 0 px) pentru toate containerele și controalele interfeței, ierarhie tipografică clară.",
   "guides-visual-style-spec.msg0012": "<s0>Interacțiune:</s0> focalizare vizibilă, distincții semantice de stare, date filtrabile, tratare explicită a stărilor goale/de eroare.",
   "guides-visual-style-spec.msg0013": "Aceasta este prima <s0>temă demonstrativă practică</s0>, nu o restricție care impune tuturor proiectelor aceleași culori.",
   "guides-visual-style-spec.msg0014": "2. Tokenuri principale",

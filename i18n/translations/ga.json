@@ -1058,7 +1058,7 @@
   "guides-visual-style-spec.msg0008": "<s0>Comhdhéanamh:</s0> ráille nascleanúna domhainghraifíte, clóghrafaíocht bheacht, cártaí srianta ísealfhaoisimh, línte tanaí, ard-dlús faisnéise le spás léitheoireachta fairsing.",
   "guides-visual-style-spec.msg0009": "<s0>Réamhshocrú:</s0> canbhás geal le béim ghormghlas gníomhaíochta; tacaíocht do mhód dorcha trí chomharthaí séimeantacha.",
   "guides-visual-style-spec.msg0010": "<s0>Cló:</s0> Liberation Sans don chomhéadan agus don léitheoireacht, Liberation Mono do lipéid agus figiúirí teicniúla, Liberation Serif do bhéimeanna eagarthóireachta d’aon ghnó; tá clónna malartacha áitiúla córais san áireamh.",
-  "guides-visual-style-spec.msg0011": "<s0>Leagan amach:</s0> bunrithim 4 px, ga réamhshocraithe painéil 9 px, ga rialtáin 5 px, ordlathas soiléir cló.",
+  "guides-visual-style-spec.msg0011": "<s0>Leagan amach:</s0> bunrithim 4 px, coirnéil chearnacha (ga 0 px) ar gach coimeádán agus rialtán sa chomhéadan, ordlathas soiléir cló.",
   "guides-visual-style-spec.msg0012": "<s0>Idirghníomhaíocht:</s0> fócas infheicthe, idirdhealuithe séimeantacha stádais, sonraí inscagtha, láimhseáil fhollasach staideanna folmha/earráide.",
   "guides-visual-style-spec.msg0013": "Is é seo an chéad <s0>chuma shamplach phraiticiúil</s0>, ní srian a éilíonn ar gach tionscadal a ghlacann leis na dathanna céanna a úsáid.",
   "guides-visual-style-spec.msg0014": "2. Príomhchomharthaí",

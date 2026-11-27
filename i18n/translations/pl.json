@@ -1055,7 +1055,7 @@
   "guides-visual-style-spec.msg0008": "<s0>Kompozycja:</s0> ciemny grafitowy pasek nawigacji, precyzyjna typografia, powściągliwe karty o niewielkiej wypukłości, cienkie linie, duża gęstość informacji z obszerną przestrzenią do czytania.",
   "guides-visual-style-spec.msg0009": "<s0>Domyślnie:</s0> jasne tło z turkusowym akcentem działań; tryb ciemny wspierany przez tokeny semantyczne.",
   "guides-visual-style-spec.msg0010": "<s0>Pismo:</s0> Liberation Sans do interfejsu i czytania, Liberation Mono do etykiet technicznych i liczb, Liberation Serif do świadomych akcentów redakcyjnych; dołączone lokalne systemowe fonty zastępcze.",
-  "guides-visual-style-spec.msg0011": "<s0>Układ:</s0> podstawowy rytm 4 px, domyślny promień panelu 9 px, promień elementu sterującego 5 px, jasna hierarchia pisma.",
+  "guides-visual-style-spec.msg0011": "<s0>Układ:</s0> podstawowy rytm 4 px, proste narożniki (promień 0 px) wszystkich kontenerów i elementów sterujących interfejsu, jasna hierarchia pisma.",
   "guides-visual-style-spec.msg0012": "<s0>Interakcja:</s0> widoczny fokus, semantyczne rozróżnienie statusów, filtrowalne dane, jawna obsługa stanów pustych i błędów.",
   "guides-visual-style-spec.msg0013": "To pierwszy <s0>praktyczny przykładowy wygląd</s0>, nie ograniczenie wymagające tych samych kolorów od każdego projektu.",
   "guides-visual-style-spec.msg0014": "2. Główne tokeny",

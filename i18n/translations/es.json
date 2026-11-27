@@ -1052,7 +1052,7 @@
   "guides-visual-style-spec.msg0008": "<s0>Composición:</s0> barra de navegación grafito intenso, tipografía precisa, tarjetas sobrias de poco relieve, líneas finas, alta densidad informativa con amplio espacio de lectura.",
   "guides-visual-style-spec.msg0009": "<s0>Predeterminado:</s0> fondo claro con acento verde azulado para acciones; modo oscuro mediante variables semánticas.",
   "guides-visual-style-spec.msg0010": "<s0>Tipografía:</s0> Liberation Sans para interfaz y lectura, Liberation Mono para etiquetas técnicas y cifras, Liberation Serif para acentos editoriales deliberados; incluye alternativas locales del sistema.",
-  "guides-visual-style-spec.msg0011": "<s0>Distribución:</s0> ritmo base de 4 px, radio de panel predeterminado de 9 px, radio de controles de 5 px, jerarquía tipográfica clara.",
+  "guides-visual-style-spec.msg0011": "<s0>Distribución:</s0> ritmo base de 4 px, esquinas rectas (radio de 0 px) en todos los contenedores y controles de la interfaz, jerarquía tipográfica clara.",
   "guides-visual-style-spec.msg0012": "<s0>Interacción:</s0> foco visible, distinciones semánticas de estados, datos filtrables, gestión explícita de estados vacíos/de error.",
   "guides-visual-style-spec.msg0013": "Esta es la primera <s0>apariencia de ejemplo práctica</s0>, no una obligación de usar los mismos colores en cada proyecto.",
   "guides-visual-style-spec.msg0014": "2. Variables principales",

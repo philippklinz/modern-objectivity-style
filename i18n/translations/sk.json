@@ -1055,7 +1055,7 @@
   "guides-visual-style-spec.msg0008": "<s0>Kompozícia:</s0> tmavá grafitová navigačná lišta, presná typografia, striedme karty s nízkym reliéfom, tenké čiary, vysoká hustota informácií s veľkorysým priestorom na čítanie.",
   "guides-visual-style-spec.msg0009": "<s0>Predvolené:</s0> svetlé plátno s tyrkysovým akcentom akcií; tmavý režim podporovaný sémantickými tokenmi.",
   "guides-visual-style-spec.msg0010": "<s0>Písmo:</s0> Liberation Sans pre rozhranie a čítanie, Liberation Mono pre technické popisy a čísla, Liberation Serif pre zámerné redakčné akcenty; zahrnuté lokálne systémové náhradné písma.",
-  "guides-visual-style-spec.msg0011": "<s0>Rozloženie:</s0> základný rytmus 4 px, predvolený polomer panelu 9 px, polomer ovládania 5 px, jasná hierarchia písma.",
+  "guides-visual-style-spec.msg0011": "<s0>Rozloženie:</s0> základný rytmus 4 px, pravouhlé rohy (polomer 0 px) všetkých kontajnerov a ovládacích prvkov rozhrania, jasná hierarchia písma.",
   "guides-visual-style-spec.msg0012": "<s0>Interakcia:</s0> viditeľné zameranie, sémantické rozlíšenie stavov, filtrovateľné údaje, výslovná obsluha prázdnych a chybových stavov.",
   "guides-visual-style-spec.msg0013": "Toto je prvý <s0>praktický ukážkový vzhľad</s0>, nie obmedzenie vyžadujúce rovnaké farby v každom projekte.",
   "guides-visual-style-spec.msg0014": "2. Hlavné tokeny",

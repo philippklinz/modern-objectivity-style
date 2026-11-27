@@ -1055,7 +1055,7 @@
   "guides-visual-style-spec.msg0008": "<s0>Kompozicija:</s0> sodri grafito naršymo juosta, tiksli tipografija, santūrios žemo reljefo kortelės, plonos linijos, didelis informacijos tankis ir erdvi skaitymo sritis.",
   "guides-visual-style-spec.msg0009": "<s0>Numatyta:</s0> šviesus pagrindas su melsvai žaliu veiksmo akcentu; tamsusis režimas per semantinius žymiklius.",
   "guides-visual-style-spec.msg0010": "<s0>Šriftai:</s0> Liberation Sans sąsajai ir skaitymui, Liberation Mono techninėms žymoms ir skaičiams, Liberation Serif apgalvotiems redakciniams akcentams; įtraukti vietiniai sistemos atsarginiai šriftai.",
-  "guides-visual-style-spec.msg0011": "<s0>Išdėstymas:</s0> 4 px pagrindinis ritmas, 9 px numatytasis skydelio spindulys, 5 px valdiklio spindulys, aiški šriftų hierarchija.",
+  "guides-visual-style-spec.msg0011": "<s0>Išdėstymas:</s0> 4 px pagrindinis ritmas, statūs kampai (0 px spindulys) visuose sąsajos konteineriuose ir valdikliuose, aiški šriftų hierarchija.",
   "guides-visual-style-spec.msg0012": "<s0>Sąveika:</s0> matomas fokusas, semantiniai būsenų skirtumai, filtruojami duomenys, aiškus tuščių / klaidų būsenų valdymas.",
   "guides-visual-style-spec.msg0013": "Tai pirmoji <s0>praktinė pavyzdinė išvaizda</s0>, o ne apribojimas, reikalaujantis visiems projektams naudoti tas pačias spalvas.",
   "guides-visual-style-spec.msg0014": "2. Pagrindiniai žymikliai",

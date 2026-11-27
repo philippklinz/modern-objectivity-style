@@ -1049,7 +1049,7 @@
   "guides-visual-style-spec.msg0008": "<s0>Compositie:</s0> diep grafietkleurige navigatiebalk, precieze typografie, ingetogen vlakke kaarten, dunne lijnen, hoge informatiedichtheid met ruime leesruimte.",
   "guides-visual-style-spec.msg0009": "<s0>Standaard:</s0> licht werkvlak met blauwgroen actieaccent; donkere modus ondersteund via semantische tokens.",
   "guides-visual-style-spec.msg0010": "<s0>Lettertypen:</s0> Liberation Sans voor UI en lezen, Liberation Mono voor technische labels en cijfers, Liberation Serif voor bewuste redactionele accenten; lokale systeemalternatieven inbegrepen.",
-  "guides-visual-style-spec.msg0011": "<s0>Opmaak:</s0> 4 px basisritme, 9 px standaardpaneelradius, 5 px bedieningsradius, duidelijke typografische hiërarchie.",
+  "guides-visual-style-spec.msg0011": "<s0>Opmaak:</s0> 4 px basisritme, rechte hoeken (straal van 0 px) voor alle containers en bedieningselementen van de interface, duidelijke typografische hiërarchie.",
   "guides-visual-style-spec.msg0012": "<s0>Interactie:</s0> zichtbare focus, semantisch onderscheiden statussen, filterbare gegevens, expliciete afhandeling van lege/fouttoestanden.",
   "guides-visual-style-spec.msg0013": "Dit is het eerste <s0>praktische voorbeeldthema</s0>, geen verplichting dat elk toepassend project dezelfde kleuren gebruikt.",
   "guides-visual-style-spec.msg0014": "2. Primaire tokens",

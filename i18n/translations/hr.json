@@ -1052,7 +1052,7 @@
   "guides-visual-style-spec.msg0008": "<s0>Kompozicija:</s0> tamna grafitna navigacijska traka, precizna tipografija, suzdržane kartice plitkog reljefa, tanke linije, visoka gustoća informacija uz izdašan prostor za čitanje.",
   "guides-visual-style-spec.msg0009": "<s0>Zadano:</s0> svijetlo platno s plavozelenim naglaskom radnji; tamni način podržan semantičkim tokenima.",
   "guides-visual-style-spec.msg0010": "<s0>Tipografija:</s0> Liberation Sans za sučelje i čitanje, Liberation Mono za tehničke oznake i brojke, Liberation Serif za namjerne uredničke naglaske; uključeni su lokalni sistemski zamjenski fontovi.",
-  "guides-visual-style-spec.msg0011": "<s0>Raspored:</s0> osnovni ritam 4 px, zadani polumjer panela 9 px, polumjer kontrola 5 px, jasna tipografska hijerarhija.",
+  "guides-visual-style-spec.msg0011": "<s0>Raspored:</s0> osnovni ritam 4 px, pravokutni kutovi (polumjer 0 px) na svim spremnicima i kontrolama sučelja, jasna tipografska hijerarhija.",
   "guides-visual-style-spec.msg0012": "<s0>Interakcija:</s0> vidljiv fokus, semantičko razlikovanje stanja, podaci s filtriranjem, izričita obrada praznih stanja i pogrešaka.",
   "guides-visual-style-spec.msg0013": "Ovo je prva <s0>praktična ogledna tema</s0>, a ne ograničenje prema kojem svaki projekt mora koristiti iste boje.",
   "guides-visual-style-spec.msg0014": "2. Primarni tokeni",

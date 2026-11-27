@@ -1055,7 +1055,7 @@
   "guides-visual-style-spec.msg0008": "<s0>Kompozicija:</s0> temno grafitni navigacijski pas, natančna tipografija, zadržane kartice z nizkim reliefom, tanke črte, visoka gostota informacij z obilnim prostorom za branje.",
   "guides-visual-style-spec.msg0009": "<s0>Privzeto:</s0> svetlo platno s turkiznim poudarkom dejanj; temni način podprt s semantičnimi žetoni.",
   "guides-visual-style-spec.msg0010": "<s0>Pisava:</s0> Liberation Sans za vmesnik in branje, Liberation Mono za tehnične oznake in številke, Liberation Serif za namerne uredniške poudarke; vključene lokalne sistemske nadomestne pisave.",
-  "guides-visual-style-spec.msg0011": "<s0>Postavitev:</s0> osnovni ritem 4 px, privzeti polmer panela 9 px, polmer kontrolnika 5 px, jasna tipografska hierarhija.",
+  "guides-visual-style-spec.msg0011": "<s0>Postavitev:</s0> osnovni ritem 4 px, pravokotni vogali (polmer 0 px) vseh vsebnikov in kontrolnikov vmesnika, jasna tipografska hierarhija.",
   "guides-visual-style-spec.msg0012": "<s0>Interakcija:</s0> viden fokus, semantično razlikovanje stanj, podatki s filtriranjem, izrecna obravnava praznih stanj in napak.",
   "guides-visual-style-spec.msg0013": "To je prva <s0>praktična vzorčna podoba</s0>, ne omejitev, ki bi od vsakega projekta zahtevala iste barve.",
   "guides-visual-style-spec.msg0014": "2. Glavni žetoni",

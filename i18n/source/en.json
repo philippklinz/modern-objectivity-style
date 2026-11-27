@@ -1049,7 +1049,7 @@
   "guides-visual-style-spec.msg0008": "<s0>Composition:</s0> deep graphite navigation rail, precise typography, restrained low-relief cards, thin lines, high information density with generous reading space.",
   "guides-visual-style-spec.msg0009": "<s0>Default:</s0> light canvas with teal action accent; dark mode supported through semantic tokens.",
   "guides-visual-style-spec.msg0010": "<s0>Type:</s0> Liberation Sans for UI and reading, Liberation Mono for technical labels and figures, Liberation Serif for deliberate editorial accents; local system fallbacks included.",
-  "guides-visual-style-spec.msg0011": "<s0>Layout:</s0> 4 px base rhythm, 9 px default panel radius, 5 px control radius, clear type hierarchy.",
+  "guides-visual-style-spec.msg0011": "<s0>Layout:</s0> 4 px base rhythm, square corners (0 px radius) on all UI containers and controls, clear type hierarchy.",
   "guides-visual-style-spec.msg0012": "<s0>Interaction:</s0> visible focus, semantic status distinctions, filterable data, explicit handling of empty/error states.",
   "guides-visual-style-spec.msg0013": "This is the first <s0>practical example skin</s0>, not a restriction that every adopting project must use the same colors.",
   "guides-visual-style-spec.msg0014": "2. Primary tokens",

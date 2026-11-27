@@ -1049,7 +1049,7 @@
   "guides-visual-style-spec.msg0008": "<s0>Komposition:</s0> djup grafitfärgad navigeringslist, exakt typografi, återhållsamma kort med låg relief, tunna linjer, hög informationstäthet med generöst läsutrymme.",
   "guides-visual-style-spec.msg0009": "<s0>Standard:</s0> ljus arbetsyta med blågrön åtgärdsaccent; mörkt läge stöds genom semantiska tokens.",
   "guides-visual-style-spec.msg0010": "<s0>Typografi:</s0> Liberation Sans för UI och läsning, Liberation Mono för tekniska etiketter och siffror, Liberation Serif för medvetna redaktionella accenter; lokala systemalternativ ingår.",
-  "guides-visual-style-spec.msg0011": "<s0>Layout:</s0> 4 px grundrytm, 9 px standardpanelradie, 5 px kontrollradie, tydlig typografisk hierarki.",
+  "guides-visual-style-spec.msg0011": "<s0>Layout:</s0> 4 px grundrytm, räta hörn (radie 0 px) på alla behållare och kontroller i gränssnittet, tydlig typografisk hierarki.",
   "guides-visual-style-spec.msg0012": "<s0>Interaktion:</s0> synligt fokus, semantiska statusskillnader, filtrerbara data, uttrycklig hantering av tomma tillstånd och fel.",
   "guides-visual-style-spec.msg0013": "Detta är det första <s0>praktiska exempelutseendet</s0>, inte ett krav på att varje projekt måste använda samma färger.",
   "guides-visual-style-spec.msg0014": "2. Primära tokens",

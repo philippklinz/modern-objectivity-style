@@ -1052,7 +1052,7 @@
   "guides-visual-style-spec.msg0008": "<s0>Composizione:</s0> barra di navigazione grafite profonda, tipografia precisa, schede sobrie a basso rilievo, linee sottili, alta densità informativa con ampio spazio di lettura.",
   "guides-visual-style-spec.msg0009": "<s0>Predefinito:</s0> sfondo chiaro con accento verde acqua per le azioni; tema scuro tramite token semantici.",
   "guides-visual-style-spec.msg0010": "<s0>Caratteri:</s0> Liberation Sans per interfaccia e lettura, Liberation Mono per etichette tecniche e cifre, Liberation Serif per accenti editoriali intenzionali; inclusi caratteri locali di sistema alternativi.",
-  "guides-visual-style-spec.msg0011": "<s0>Impaginazione:</s0> ritmo base di 4 px, raggio dei pannelli predefinito di 9 px, raggio dei controlli di 5 px, chiara gerarchia tipografica.",
+  "guides-visual-style-spec.msg0011": "<s0>Impaginazione:</s0> ritmo base di 4 px, angoli retti (raggio di 0 px) per tutti i contenitori e i controlli dell’interfaccia, chiara gerarchia tipografica.",
   "guides-visual-style-spec.msg0012": "<s0>Interazione:</s0> focus visibile, distinzioni semantiche degli stati, dati filtrabili, gestione esplicita di stati vuoti/errore.",
   "guides-visual-style-spec.msg0013": "Questo è il primo <s0>aspetto di esempio pratico</s0>, non un obbligo di usare gli stessi colori in ogni progetto.",
   "guides-visual-style-spec.msg0014": "2. Token principali",

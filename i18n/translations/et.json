@@ -1049,7 +1049,7 @@
   "guides-visual-style-spec.msg0008": "<s0>Kompositsioon:</s0> sügav grafiittooni navigeerimisriba, täpne tüpograafia, vaoshoitud madala reljeefiga kaardid, õhukesed jooned, suur teabetihedus ja avar lugemisruum.",
   "guides-visual-style-spec.msg0009": "<s0>Vaikimisi:</s0> hele aluspind sinakasrohelise tegevusrõhuga; tume režiim semantiliste tunnuste abil.",
   "guides-visual-style-spec.msg0010": "<s0>Kiri:</s0> Liberation Sans liidesele ja lugemiseks, Liberation Mono tehnilistele siltidele ja arvudele, Liberation Serif teadlike toimetuslike rõhkude jaoks; kohalikud süsteemi varukirjad kaasas.",
-  "guides-visual-style-spec.msg0011": "<s0>Paigutus:</s0> 4 px põhirütm, paneeli vaikeraadius 9 px, juhtnupu raadius 5 px, selge kirjahierarhia.",
+  "guides-visual-style-spec.msg0011": "<s0>Paigutus:</s0> 4 px põhirütm, täisnurksed nurgad (raadius 0 px) kõigil kasutajaliidese konteineritel ja juhtelementidel, selge kirjahierarhia.",
   "guides-visual-style-spec.msg0012": "<s0>Interaktsioon:</s0> nähtav fookus, semantilised olekueristused, filtreeritavad andmed, tühi-/veaolekute selge käsitlus.",
   "guides-visual-style-spec.msg0013": "See on esimene <s0>praktiline näidiskujundus</s0>, mitte nõue, et iga kasutav projekt tarvitaks samu värve.",
   "guides-visual-style-spec.msg0014": "2. Peamised tunnused",

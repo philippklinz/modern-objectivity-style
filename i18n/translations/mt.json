@@ -1058,7 +1058,7 @@
   "guides-visual-style-spec.msg0008": "<s0>Kompożizzjoni:</s0> strixxa tan-navigazzjoni grafit skur, tipografija preċiża, kards diskreti b’rilev baxx, linji rqaq, densità għolja ta’ informazzjoni bi spazju ġeneruż għall-qari.",
   "guides-visual-style-spec.msg0009": "<s0>Predefinit:</s0> kanvas ċar b’aċċent ħadrani-blu għall-azzjonijiet; il-modalità skura hija appoġġata permezz ta’ tokens semantiċi.",
   "guides-visual-style-spec.msg0010": "<s0>Tipi:</s0> Liberation Sans għall-interface u l-qari, Liberation Mono għal tikketti tekniċi u ċifri, Liberation Serif għal aċċenti editorjali intenzjonati; inklużi alternattivi lokali tas-sistema.",
-  "guides-visual-style-spec.msg0011": "<s0>Tqassim:</s0> ritmu bażiku ta’ 4 px, raġġ predefinit tal-pannell ta’ 9 px, raġġ tal-kontroll ta’ 5 px, ġerarkija ċara tat-tipi.",
+  "guides-visual-style-spec.msg0011": "<s0>Tqassim:</s0> ritmu bażiku ta’ 4 px, kantunieri kwadri (raġġ ta’ 0 px) fuq il-kontenituri u l-kontrolli kollha tal-interfaċċa, ġerarkija ċara tat-tipi.",
   "guides-visual-style-spec.msg0012": "<s0>Interazzjoni:</s0> fokus viżibbli, distinzjonijiet semantiċi tal-istat, data li tista’ tiġi ffiltrata, immaniġġjar espliċitu ta’ stati vojta/tal-iżball.",
   "guides-visual-style-spec.msg0013": "Din hija l-ewwel <s0>dehra prattika ta’ eżempju</s0>, mhux restrizzjoni li kull proġett li jadottaha għandu juża l-istess kuluri.",
   "guides-visual-style-spec.msg0014": "2. Tokens primarji",

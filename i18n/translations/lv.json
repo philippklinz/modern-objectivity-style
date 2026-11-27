@@ -1052,7 +1052,7 @@
   "guides-visual-style-spec.msg0008": "<s0>Kompozīcija:</s0> tumša grafīta navigācijas josla, precīza tipogrāfija, atturīgas zema reljefa kartītes, plānas līnijas, augsts informācijas blīvums ar plašu lasīšanas telpu.",
   "guides-visual-style-spec.msg0009": "<s0>Noklusējums:</s0> gaiša pamatne ar zilzaļu darbību akcentu; tumšais režīms ar semantiskiem marķieriem.",
   "guides-visual-style-spec.msg0010": "<s0>Burti:</s0> Liberation Sans saskarnei un lasīšanai, Liberation Mono tehniskām etiķetēm un skaitļiem, Liberation Serif apzinātiem redakcionāliem akcentiem; iekļauti lokāli sistēmas rezerves fonti.",
-  "guides-visual-style-spec.msg0011": "<s0>Izkārtojums:</s0> 4 px pamata ritms, 9 px noklusējuma paneļa rādiuss, 5 px vadīklas rādiuss, skaidra burtu hierarhija.",
+  "guides-visual-style-spec.msg0011": "<s0>Izkārtojums:</s0> 4 px pamata ritms, taisni stūri (0 px rādiuss) visiem saskarnes konteineriem un vadīklām, skaidra burtu hierarhija.",
   "guides-visual-style-spec.msg0012": "<s0>Mijiedarbība:</s0> redzams fokuss, semantiskas statusu atšķirības, filtrējami dati, skaidra tukšo/kļūdu stāvokļu apstrāde.",
   "guides-visual-style-spec.msg0013": "Šis ir pirmais <s0>praktiskais noformējuma paraugs</s0>, nevis ierobežojums, kas liek katram projektam izmantot vienādas krāsas.",
   "guides-visual-style-spec.msg0014": "2. Galvenie marķieri",

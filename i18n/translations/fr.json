@@ -1052,7 +1052,7 @@
   "guides-visual-style-spec.msg0008": "<s0>Composition :</s0> volet de navigation graphite profond, typographie précise, cartes sobres à faible relief, lignes fines, forte densité d’information avec espace de lecture généreux.",
   "guides-visual-style-spec.msg0009": "<s0>Par défaut :</s0> fond clair avec accent d’action bleu-vert ; mode sombre pris en charge par les variables sémantiques.",
   "guides-visual-style-spec.msg0010": "<s0>Polices :</s0> Liberation Sans pour l’interface et la lecture, Liberation Mono pour libellés techniques et chiffres, Liberation Serif pour accents éditoriaux délibérés ; polices système locales de repli incluses.",
-  "guides-visual-style-spec.msg0011": "<s0>Mise en page :</s0> rythme de base 4 px, rayon de panneau par défaut 9 px, rayon de commande 5 px, hiérarchie typographique claire.",
+  "guides-visual-style-spec.msg0011": "<s0>Mise en page :</s0> rythme de base 4 px, coins droits (rayon de 0 px) pour tous les conteneurs et commandes de l’interface, hiérarchie typographique claire.",
   "guides-visual-style-spec.msg0012": "<s0>Interaction :</s0> focus visible, distinctions sémantiques des états, données filtrables, gestion explicite des états vides/d’erreur.",
   "guides-visual-style-spec.msg0013": "C’est le premier <s0>habillage d’exemple pratique</s0>, pas une obligation pour chaque projet d’utiliser les mêmes couleurs.",
   "guides-visual-style-spec.msg0014": "2. Variables principales",

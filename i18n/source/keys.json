@@ -5944,7 +5944,7 @@
       },
       {
         "locator": "html/body[1]/main[0]/article[1]/ul[3]/li[4]",
-        "source": "<s0>Layout:</s0> 4 px base rhythm, 9 px default panel radius, 5 px control radius, clear type hierarchy.",
+        "source": "<s0>Layout:</s0> 4 px base rhythm, square corners (0 px radius) on all UI containers and controls, clear type hierarchy.",
         "attribute": null,
         "key": "guides-visual-style-spec.msg0011"
       },

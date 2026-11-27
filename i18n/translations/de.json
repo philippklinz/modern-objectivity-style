@@ -1049,7 +1049,7 @@
   "guides-visual-style-spec.msg0008": "<s0>Komposition:</s0> tiefgraphitfarbene Navigationsleiste, präzise Typografie, zurückhaltende flache Karten, feine Linien, hohe Informationsdichte mit großzügigem Leseraum.",
   "guides-visual-style-spec.msg0009": "<s0>Standard:</s0> helle Arbeitsfläche mit blaugrünem Aktionsakzent; dunkler Modus durch semantische Tokens unterstützt.",
   "guides-visual-style-spec.msg0010": "<s0>Schrift:</s0> Liberation Sans für Oberfläche und Lesetexte, Liberation Mono für technische Beschriftungen und Zahlen, Liberation Serif für bewusste redaktionelle Akzente; lokale System-Ersatzschriften enthalten.",
-  "guides-visual-style-spec.msg0011": "<s0>Layout:</s0> 4 px Grundrhythmus, 9 px Standardradius für Felder, 5 px Radius für Bedienelemente, klare Schrifthierarchie.",
+  "guides-visual-style-spec.msg0011": "<s0>Layout:</s0> 4 px Grundrhythmus, rechtwinklige Ecken (0 px Radius) an allen Oberflächencontainern und Bedienelementen, klare Schrifthierarchie.",
   "guides-visual-style-spec.msg0012": "<s0>Interaktion:</s0> sichtbarer Fokus, semantisch unterschiedliche Status, filterbare Daten, ausdrückliche Behandlung von Leer-/Fehlerzuständen.",
   "guides-visual-style-spec.msg0013": "Dies ist das erste <s0>praktische Beispieldesign</s0>, keine Vorschrift, dass jedes übernehmende Projekt dieselben Farben verwenden muss.",
   "guides-visual-style-spec.msg0014": "2. Primäre Tokens",

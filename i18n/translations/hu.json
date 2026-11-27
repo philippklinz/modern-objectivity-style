@@ -1049,7 +1049,7 @@
   "guides-visual-style-spec.msg0008": "<s0>Kompozíció:</s0> mély grafitszínű navigációs sáv, pontos tipográfia, visszafogott, enyhén kiemelkedő kártyák, vékony vonalak, nagy információsűrűség bőséges olvasási térrel.",
   "guides-visual-style-spec.msg0009": "<s0>Alapértelmezés:</s0> világos háttér kékeszöld műveleti kiemeléssel; sötét mód szemantikus tokenekkel.",
   "guides-visual-style-spec.msg0010": "<s0>Betűtípus:</s0> Liberation Sans a felülethez és olvasáshoz, Liberation Mono műszaki címkékhez és számokhoz, Liberation Serif tudatos szerkesztői kiemeléshez; helyi rendszerbetűs helyettesítéssel.",
-  "guides-visual-style-spec.msg0011": "<s0>Elrendezés:</s0> 4 px alapritmus, 9 px alapértelmezett panelsugár, 5 px vezérlősugár, világos tipográfiai hierarchia.",
+  "guides-visual-style-spec.msg0011": "<s0>Elrendezés:</s0> 4 px alapritmus, derékszögű sarkok (0 px sugár) a felület minden tárolóelemén és vezérlőjén, világos tipográfiai hierarchia.",
   "guides-visual-style-spec.msg0012": "<s0>Interakció:</s0> látható fókusz, szemantikus állapotkülönbségek, szűrhető adatok, üres/hibaállapotok kifejezett kezelése.",
   "guides-visual-style-spec.msg0013": "Ez az első <s0>gyakorlati példamegjelenés</s0>, nem olyan megkötés, amely minden átvevő projektet ugyanazon színekre kötelez.",
   "guides-visual-style-spec.msg0014": "2. Fő tokenek",

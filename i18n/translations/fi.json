@@ -1049,7 +1049,7 @@
   "guides-visual-style-spec.msg0008": "<s0>Sommittelu:</s0> syvän grafiitin värinen navigointipalkki, täsmällinen typografia, hillityt matalareliefiset kortit, ohuet viivat, suuri tietotiheys ja väljä lukutila.",
   "guides-visual-style-spec.msg0009": "<s0>Oletus:</s0> vaalea pohja ja sinivihreä toimintokorostus; tumma tila semanttisten tunnusten kautta.",
   "guides-visual-style-spec.msg0010": "<s0>Kirjasimet:</s0> Liberation Sans käyttöliittymään ja lukemiseen, Liberation Mono teknisiin nimiöihin ja lukuihin, Liberation Serif harkittuihin toimituksellisiin korostuksiin; paikalliset järjestelmävarafontit mukana.",
-  "guides-visual-style-spec.msg0011": "<s0>Asettelu:</s0> 4 px perusrytmi, paneelin oletussäde 9 px, ohjaimen säde 5 px, selkeä tekstihierarkia.",
+  "guides-visual-style-spec.msg0011": "<s0>Asettelu:</s0> 4 px perusrytmi, suorakulmaiset kulmat (säde 0 px) kaikissa käyttöliittymän säiliöissä ja ohjaimissa, selkeä tekstihierarkia.",
   "guides-visual-style-spec.msg0012": "<s0>Vuorovaikutus:</s0> näkyvä kohdistus, semanttiset tilaerot, suodatettavat tiedot, tyhjien ja virhetilojen selkeä käsittely.",
   "guides-visual-style-spec.msg0013": "Tämä on ensimmäinen <s0>käytännön esimerkkiulkoasu</s0>, ei rajoitus, joka pakottaa kaikki projektit samoihin väreihin.",
   "guides-visual-style-spec.msg0014": "2. Päätunnukset",
