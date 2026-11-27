@@ -17,6 +17,7 @@ jobs:
       - name: Check every catalogue and fallback behavior
         run: |
           node tools/check-font-assets.cjs
+          node --test tools/colour-model.test.cjs
           node tools/check-site-i18n.cjs
           node patterns/i18n/check.cjs
           node --test patterns/i18n/test.cjs

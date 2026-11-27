@@ -12,5 +12,33 @@
     "fonts.fallback": "Characters outside these subsets use fallback fonts: {characters}",
     "fonts.noApi": "This browser cannot report font loading. The sample uses the regular font stack.",
     "fonts.empty": "Enter some text to explore its character coverage."
+  },
+  "examples-colour": {
+    "colour.signal": "Signal",
+    "colour.cobalt": "Cobalt",
+    "colour.violet": "Violet",
+    "colour.copper": "Copper",
+    "colour.carmine": "Carmine",
+    "colour.olive": "Olive",
+    "colour.custom": "Custom",
+    "colour.accent": "Accent",
+    "colour.hover": "Hover",
+    "colour.soft": "Soft surface",
+    "colour.ink": "On accent",
+    "colour.focus": "Focus",
+    "colour.accentSurface": "Accent / surface",
+    "colour.accentCanvas": "Accent / canvas",
+    "colour.buttonText": "Button text",
+    "colour.hoverText": "Hover text",
+    "colour.focusSurface": "Focus / surface",
+    "colour.focusCanvas": "Focus / canvas",
+    "colour.fail": "Fail",
+    "colour.normal": "Normal text",
+    "colour.large": "Large text",
+    "colour.ui": "Interface graphics",
+    "colour.copied": "Copied.",
+    "colour.copyFailed": "Copy unavailable. Select and copy the value manually.",
+    "colour.invalid": "Enter a colour such as #007E77.",
+    "colour.pass": "Pass"
   }
 }

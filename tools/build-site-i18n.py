@@ -26,7 +26,7 @@ from site_navigation import prepare as prepare_navigation, decorate as decorate_
 ROOT = Path(__file__).resolve().parents[1]
 I18N = ROOT / 'i18n'
 LANGS = ['bg','hr','cs','da','nl','en','et','fi','fr','de','el','hu','ga','it','lv','lt','mt','pl','pt','ro','sk','sl','es','sv']
-LIVE = ['index.html','navigation.html','examples/lab-console.html','examples/experiment.html','examples/typography.html','starter/index.html']
+LIVE = ['index.html','navigation.html','examples/lab-console.html','examples/experiment.html','examples/typography.html','examples/colour.html','starter/index.html']
 SKIP = {'script','style','pre','code','textarea','template','noscript'}
 INLINE = {'a','strong','em','span','small','b','i','u','s','sub','sup','kbd','abbr','br','code','mark'}
 BLOCKS = {'title','h1','h2','h3','h4','h5','h6','p','li','dt','dd','th','td','a','button','option','label','legend','summary','figcaption','text','span','small','strong','div','footer'}

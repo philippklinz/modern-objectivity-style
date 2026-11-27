@@ -87,7 +87,7 @@ button { cursor: pointer; }
 a { color: var(--mo-accent); text-underline-offset: 3px; }
 a:hover { color: var(--mo-accent-active); }
 :focus-visible { outline: 3px solid var(--mo-focus) !important; outline-offset: 3px; }
-::selection { background: var(--mo-accent); color: #fff; }
+::selection { background: var(--mo-accent); color: var(--mo-on-accent,#fff); }
 h1,h2,h3,h4,p,figure { margin-top: 0; }
 h1,h2,h3,h4 { color: var(--mo-text-strong); line-height: 1.18; letter-spacing: -.028em; }
 h1 { font-size: clamp(2.4rem, 5vw, 4.8rem); font-weight: 650; }
@@ -163,8 +163,8 @@ code { font-size: .89em; }
 .mo-btn:hover { background:var(--mo-surface-2); color:var(--mo-text-strong); border-color:var(--mo-accent); }
 .mo-btn:active { transform:translateY(1px); }
 .mo-btn:disabled { opacity:.48; cursor:not-allowed; transform:none; }
-.mo-btn-primary { color:#fff; background:#007e77; border-color:#007e77; }
-.mo-btn-primary:hover { color:#fff; background:#00635e; border-color:#00635e; }
+.mo-btn-primary { color:var(--mo-on-accent,#fff); background:var(--mo-button-bg,#007e77); border-color:var(--mo-button-bg,#007e77); }
+.mo-btn-primary:hover { color:var(--mo-on-accent-hover,#fff); background:var(--mo-button-hover,#00635e); border-color:var(--mo-button-hover,#00635e); }
 .mo-btn-quiet { background:transparent; border-color:transparent; }
 .mo-btn-quiet:hover { background:var(--mo-surface-2); }
 .mo-btn-danger { color:var(--mo-danger); border-color:var(--mo-danger); }

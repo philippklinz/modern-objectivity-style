@@ -56,7 +56,8 @@
     "nav.skip": "Skip to content",
     "nav.sequence": "Page navigation",
     "nav.guide": "Style guide",
-    "nav.sitemap": "All pages"
+    "nav.sitemap": "All pages",
+    "nav.colour": "Colour lab"
   },
   "home": {
     "href": "index.html",
@@ -75,6 +76,10 @@
         {
           "href": "examples/typography.html",
           "label": "nav.typography"
+        },
+        {
+          "href": "examples/colour.html",
+          "label": "nav.colour"
         },
         {
           "href": "index.html#language-access",

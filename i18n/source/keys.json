@@ -1,6 +1,6 @@
 {
   "index": {
-    "next": 167,
+    "next": 168,
     "entries": [
       {
         "locator": "html/head[0]/meta[3]@content",
@@ -103,6 +103,12 @@
         "source": "Tokens change with the theme switch. These colors are an example lab skin, not a universal brand palette.",
         "attribute": null,
         "key": "index.msg0030"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[1]/div[1]/div[0]/a[3]",
+        "source": "Explore the colour lab",
+        "attribute": null,
+        "key": "index.msg0167"
       },
       {
         "locator": "html/body[1]/div[0]/main[0]/div[0]/section[1]/div[1]/div[1]/div[0]/h3[0]",
@@ -1483,7 +1489,7 @@
     ]
   },
   "examples-typography": {
-    "next": 69,
+    "next": 70,
     "entries": [
       {
         "locator": "html/head[0]/meta[2]@content",
@@ -1516,25 +1522,31 @@
         "key": "examples-typography.msg0015"
       },
       {
-        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[0]/div[3]/div[0]",
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[0]/p[3]",
+        "source": "<s0>Explore the colour lab</s0>",
+        "attribute": null,
+        "key": "examples-typography.msg0069"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[0]/div[4]/div[0]",
         "source": "<s0>4</s0><s1>Font families</s1>",
         "attribute": null,
         "key": "examples-typography.msg0016"
       },
       {
-        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[0]/div[3]/div[1]",
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[0]/div[4]/div[1]",
         "source": "<s0>4</s0><s1>Faces per family</s1>",
         "attribute": null,
         "key": "examples-typography.msg0017"
       },
       {
-        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[0]/div[3]/div[2]",
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[0]/div[4]/div[2]",
         "source": "<s0>5</s0><s1>Character subsets</s1>",
         "attribute": null,
         "key": "examples-typography.msg0018"
       },
       {
-        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[0]/div[3]/div[3]",
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[0]/div[4]/div[3]",
         "source": "<s0>24</s0><s1>EU language samples</s1>",
         "attribute": null,
         "key": "examples-typography.msg0019"
@@ -1832,6 +1844,353 @@
         "source": "<s0>CSS Font Loading API</s0>",
         "attribute": null,
         "key": "examples-typography.msg0068"
+      }
+    ]
+  },
+  "examples-colour": {
+    "next": 58,
+    "entries": [
+      {
+        "locator": "html/head[0]/title[2]",
+        "source": "Colour lab",
+        "attribute": null,
+        "key": "examples-colour.msg0001"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[0]/span[0]",
+        "source": "Modern Objectivity / Colour",
+        "attribute": null,
+        "key": "examples-colour.msg0002"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[0]/h1[1]",
+        "source": "Colour lab",
+        "attribute": null,
+        "key": "examples-colour.msg0003"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[0]/p[2]",
+        "source": "Choose an accent. See what it changes.",
+        "attribute": null,
+        "key": "examples-colour.msg0004"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[0]/p[3]",
+        "source": "Six accent families, paired for light and dark surfaces. The structure stays consistent.",
+        "attribute": null,
+        "key": "examples-colour.msg0005"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[0]/div[4]@aria-label",
+        "source": "Accent palettes",
+        "attribute": "aria-label",
+        "key": "examples-colour.msg0006"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[0]/div[4]/button[0]",
+        "source": "<s0><s1></s1><s2></s2></s0><s3>Signal</s3>",
+        "attribute": null,
+        "key": "examples-colour.msg0007"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[0]/div[4]/button[1]",
+        "source": "<s0><s1></s1><s2></s2></s0><s3>Cobalt</s3>",
+        "attribute": null,
+        "key": "examples-colour.msg0008"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[0]/div[4]/button[2]",
+        "source": "<s0><s1></s1><s2></s2></s0><s3>Violet</s3>",
+        "attribute": null,
+        "key": "examples-colour.msg0009"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[0]/div[4]/button[3]",
+        "source": "<s0><s1></s1><s2></s2></s0><s3>Copper</s3>",
+        "attribute": null,
+        "key": "examples-colour.msg0010"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[0]/div[4]/button[4]",
+        "source": "<s0><s1></s1><s2></s2></s0><s3>Carmine</s3>",
+        "attribute": null,
+        "key": "examples-colour.msg0011"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[0]/div[4]/button[5]",
+        "source": "<s0><s1></s1><s2></s2></s0><s3>Olive</s3>",
+        "attribute": null,
+        "key": "examples-colour.msg0012"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[1]/div[0]/div[0]/h2[0]",
+        "source": "Workbench",
+        "attribute": null,
+        "key": "examples-colour.msg0013"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[1]/div[0]/div[0]/p[1]",
+        "source": "Change the colour, then try the interface.",
+        "attribute": null,
+        "key": "examples-colour.msg0014"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[1]/div[1]/div[0]/div[0]/label[0]",
+        "source": "Preview theme",
+        "attribute": null,
+        "key": "examples-colour.msg0015"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[1]/div[1]/div[0]/div[0]/select[1]/option[0]",
+        "source": "Light",
+        "attribute": null,
+        "key": "examples-colour.msg0016"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[1]/div[1]/div[0]/div[0]/select[1]/option[1]",
+        "source": "Dark",
+        "attribute": null,
+        "key": "examples-colour.msg0017"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[1]/div[1]/div[0]/div[1]/label[0]",
+        "source": "Accent",
+        "attribute": null,
+        "key": "examples-colour.msg0018"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[1]/div[1]/div[0]/div[1]/div[1]/input[0]@aria-label",
+        "source": "Choose an accent colour",
+        "attribute": "aria-label",
+        "key": "examples-colour.msg0019"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[1]/div[1]/div[0]/div[1]/span[2]",
+        "source": "Use six hexadecimal digits after #.",
+        "attribute": null,
+        "key": "examples-colour.msg0020"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[1]/div[1]/div[0]/div[2]/div[0]/label[0]",
+        "source": "Hue",
+        "attribute": null,
+        "key": "examples-colour.msg0021"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[1]/div[1]/div[0]/div[3]/div[0]/label[0]",
+        "source": "Saturation",
+        "attribute": null,
+        "key": "examples-colour.msg0022"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[1]/div[1]/div[0]/div[4]/div[0]/label[0]",
+        "source": "Lightness",
+        "attribute": null,
+        "key": "examples-colour.msg0023"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[1]/div[1]/div[0]/div[5]/button[0]",
+        "source": "Adjust to 4.5:1",
+        "attribute": null,
+        "key": "examples-colour.msg0024"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[1]/div[1]/div[0]/div[5]/button[1]",
+        "source": "Reset palette",
+        "attribute": null,
+        "key": "examples-colour.msg0025"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[1]/div[1]/div[1]/div[0]",
+        "source": "<s0>Interface preview</s0><s1>Ready</s1>",
+        "attribute": null,
+        "key": "examples-colour.msg0026"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[1]/div[1]/div[1]/div[1]/h3[0]",
+        "source": "Observation",
+        "attribute": null,
+        "key": "examples-colour.msg0027"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[1]/div[1]/div[1]/div[1]/p[1]",
+        "source": "Colour gives direction. Labels carry meaning.",
+        "attribute": null,
+        "key": "examples-colour.msg0028"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[1]/div[1]/div[1]/div[1]/div[3]",
+        "source": "<s0>Demo data</s0><s1></s1>",
+        "attribute": null,
+        "key": "examples-colour.msg0029"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[1]/div[1]/div[1]/div[1]/div[4]/button[0]",
+        "source": "Next sample",
+        "attribute": null,
+        "key": "examples-colour.msg0030"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[1]/div[1]/div[1]/div[1]/div[4]/a[1]",
+        "source": "View samples",
+        "attribute": null,
+        "key": "examples-colour.msg0031"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[1]/div[1]/div[1]/div[1]/table[5]/thead[0]/tr[0]/th[0]",
+        "source": "Sample",
+        "attribute": null,
+        "key": "examples-colour.msg0032"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[1]/div[1]/div[1]/div[1]/table[5]/thead[0]/tr[0]/th[1]",
+        "source": "Value",
+        "attribute": null,
+        "key": "examples-colour.msg0033"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[1]/p[2]",
+        "source": "Equal HSL lightness does not mean equal perceived brightness.",
+        "attribute": null,
+        "key": "examples-colour.msg0034"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[2]/h2[0]",
+        "source": "One accent, distinct roles",
+        "attribute": null,
+        "key": "examples-colour.msg0035"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[2]/p[1]",
+        "source": "Click a swatch to copy its value.",
+        "attribute": null,
+        "key": "examples-colour.msg0036"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[2]/p[3]",
+        "source": "Accent colours express identity. Success, warning and error keep their own tokens and visible labels.",
+        "attribute": null,
+        "key": "examples-colour.msg0037"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[2]/div[4]",
+        "source": "<s0>✓ Ready</s0><s1>! Attention</s1><s2>× Error</s2>",
+        "attribute": null,
+        "key": "examples-colour.msg0038"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[3]/h2[0]",
+        "source": "Measure the relationship",
+        "attribute": null,
+        "key": "examples-colour.msg0039"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[3]/p[1]",
+        "source": "Contrast belongs to a pair of colours.",
+        "attribute": null,
+        "key": "examples-colour.msg0040"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[3]/table[2]/thead[0]/tr[0]/th[0]",
+        "source": "Colour pair",
+        "attribute": null,
+        "key": "examples-colour.msg0041"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[3]/table[2]/thead[0]/tr[0]/th[1]",
+        "source": "Ratio",
+        "attribute": null,
+        "key": "examples-colour.msg0042"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[3]/table[2]/thead[0]/tr[0]/th[2]",
+        "source": "Result",
+        "attribute": null,
+        "key": "examples-colour.msg0043"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[3]/div[3]/div[0]/label[0]/span[0]",
+        "source": "Foreground",
+        "attribute": null,
+        "key": "examples-colour.msg0044"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[3]/div[3]/div[0]/label[1]/span[0]",
+        "source": "Background",
+        "attribute": null,
+        "key": "examples-colour.msg0045"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[3]/div[3]/div[0]/button[2]",
+        "source": "Swap",
+        "attribute": null,
+        "key": "examples-colour.msg0046"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[3]/div[3]/div[0]/button[3]",
+        "source": "Use current accent",
+        "attribute": null,
+        "key": "examples-colour.msg0047"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[3]/div[3]/div[1]",
+        "source": "<s0></s0><s1>Observation</s1>",
+        "attribute": null,
+        "key": "examples-colour.msg0048"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[3]/p[4]",
+        "source": "WCAG 2.2: normal text 4.5:1; large text and essential interface graphics 3:1. Large text starts at 24 px, or 18.67 px bold. Results use unrounded ratios.",
+        "attribute": null,
+        "key": "examples-colour.msg0049"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[3]/p[5]",
+        "source": "These checks cover the displayed colour pairs, not the accessibility of an entire interface.",
+        "attribute": null,
+        "key": "examples-colour.msg0050"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[4]/h2[0]",
+        "source": "Take the palette with you",
+        "attribute": null,
+        "key": "examples-colour.msg0051"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[4]/p[1]",
+        "source": "Both themes are included. Load this CSS after modern-objectivity.css.",
+        "attribute": null,
+        "key": "examples-colour.msg0052"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[4]/label[2]",
+        "source": "CSS tokens",
+        "attribute": null,
+        "key": "examples-colour.msg0053"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[4]/div[4]/button[0]",
+        "source": "Copy CSS",
+        "attribute": null,
+        "key": "examples-colour.msg0054"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[4]/div[4]/button[1]",
+        "source": "Download CSS",
+        "attribute": null,
+        "key": "examples-colour.msg0055"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[4]/div[4]/button[2]",
+        "source": "Copy link",
+        "attribute": null,
+        "key": "examples-colour.msg0056"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[0]/div[0]/section[4]/div[4]/a[3]",
+        "source": "Explore the typography lab",
+        "attribute": null,
+        "key": "examples-colour.msg0057"
       }
     ]
   },

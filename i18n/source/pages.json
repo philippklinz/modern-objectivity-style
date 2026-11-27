@@ -115,6 +115,7 @@
       "nav.sequence",
       "nav.guide",
       "nav.sitemap",
+      "nav.colour",
       "site.language",
       "site.loading",
       "site.selected",
@@ -139,6 +140,7 @@
       "index.msg0028",
       "index.msg0029",
       "index.msg0030",
+      "index.msg0167",
       "index.msg0031",
       "index.msg0033",
       "index.msg0034",
@@ -394,6 +396,9 @@
         ]
       },
       "index.msg0030": {
+        "slots": []
+      },
+      "index.msg0167": {
         "slots": []
       },
       "index.msg0031": {
@@ -1211,6 +1216,7 @@
       "nav.sequence",
       "nav.guide",
       "nav.sitemap",
+      "nav.colour",
       "site.language",
       "site.loading",
       "site.selected",
@@ -1337,6 +1343,7 @@
       "nav.sequence",
       "nav.guide",
       "nav.sitemap",
+      "nav.colour",
       "site.language",
       "site.loading",
       "site.selected",
@@ -1733,6 +1740,7 @@
       "nav.sequence",
       "nav.guide",
       "nav.sitemap",
+      "nav.colour",
       "site.language",
       "site.loading",
       "site.selected",
@@ -2074,6 +2082,7 @@
       "nav.sequence",
       "nav.guide",
       "nav.sitemap",
+      "nav.colour",
       "site.language",
       "site.loading",
       "site.selected",
@@ -2098,6 +2107,7 @@
       "examples-typography.msg0013",
       "examples-typography.msg0014",
       "examples-typography.msg0015",
+      "examples-typography.msg0069",
       "examples-typography.msg0016",
       "examples-typography.msg0017",
       "examples-typography.msg0018",
@@ -2172,6 +2182,17 @@
       },
       "examples-typography.msg0015": {
         "slots": []
+      },
+      "examples-typography.msg0069": {
+        "slots": [
+          {
+            "tag": "a",
+            "attrs": {
+              "class": "mo-btn",
+              "href": "colour.html"
+            }
+          }
+        ]
       },
       "examples-typography.msg0016": {
         "slots": [
@@ -2412,6 +2433,575 @@
       }
     }
   },
+  "examples-colour": {
+    "page": "examples/colour.html",
+    "assetdir": "i18n/pages/examples-colour",
+    "keys": [
+      "theme.light",
+      "theme.dark",
+      "toast.measurementSaved",
+      "toast.settingsOpened",
+      "toast.moreOptions",
+      "toast.deleteDisabled",
+      "common.noValue",
+      "kit.samplesSummary",
+      "kit.progress.completed",
+      "kit.progress.notStarted",
+      "kit.progress.inProgress",
+      "lab.generate",
+      "lab.log.generated",
+      "lab.log.inspected",
+      "lab.log.cleared",
+      "lab.log.exported",
+      "lab.status.aboveThreshold",
+      "lab.status.withinRange",
+      "lab.inspect",
+      "lab.details.sample",
+      "lab.details.temperature",
+      "lab.details.threshold",
+      "lab.details.status",
+      "lab.details.source",
+      "lab.details.simulation",
+      "lab.details.noSelection",
+      "lab.records.empty",
+      "lab.records.noMatch",
+      "lab.records.summary",
+      "lab.confirm.clear",
+      "lab.toast.readingsAdded",
+      "lab.toast.csvExported",
+      "experiment.state.running",
+      "experiment.state.paused",
+      "experiment.state.pausedReducedMotion",
+      "experiment.pause",
+      "experiment.play",
+      "experiment.step",
+      "experiment.timeValue",
+      "experiment.phaseValue",
+      "experiment.speedValue",
+      "starter.toast.created",
+      "starter.toast.cleared",
+      "starter.toast.exportReady",
+      "starter.toast.nameUpdated",
+      "starter.toast.nameRequired",
+      "starter.state.ready",
+      "starter.state.idle",
+      "starter.state.generated",
+      "starter.source",
+      "starter.empty.noObservations",
+      "starter.empty.noMatch",
+      "starter.observations.summary",
+      "starter.confirm.clear",
+      "starter.title",
+      "nav.page.contributing",
+      "nav.page.license-notice",
+      "nav.page.readme",
+      "nav.page.docs-01-introduction",
+      "nav.page.docs-02-philosophy",
+      "nav.page.docs-03-principles",
+      "nav.page.docs-04-visual-language",
+      "nav.page.docs-05-time-interaction",
+      "nav.page.docs-06-stage-identity",
+      "nav.page.docs-07-technical-principles",
+      "nav.page.docs-08-validation",
+      "nav.page.docs-09-references",
+      "nav.page.docs-10-multilingual-access",
+      "nav.page.examples-interactive-learning",
+      "nav.page.examples-modular-research-console",
+      "nav.page.guides-adoption",
+      "nav.page.guides-components",
+      "nav.page.guides-data-visualization",
+      "nav.page.guides-emotional-intent",
+      "nav.page.guides-multilingual-pattern",
+      "nav.page.guides-visual-style-spec",
+      "nav.page.patterns-i18n-readme",
+      "nav.page.starter-readme",
+      "nav.page.templates-component-contract",
+      "nav.page.templates-design-decision-record",
+      "nav.page.templates-stage-profile",
+      "nav.page.templates-validation-plan",
+      "nav.overview",
+      "nav.foundations",
+      "nav.interface",
+      "nav.examples",
+      "nav.build",
+      "nav.handbook",
+      "nav.visual",
+      "nav.typography",
+      "nav.language",
+      "nav.components",
+      "nav.data",
+      "nav.interaction",
+      "nav.console",
+      "nav.experiment",
+      "nav.pattern",
+      "nav.starter",
+      "nav.implementation",
+      "nav.menu",
+      "nav.site",
+      "nav.breadcrumb",
+      "nav.onThisPage",
+      "nav.previous",
+      "nav.next",
+      "nav.back",
+      "nav.external",
+      "nav.source",
+      "nav.skip",
+      "nav.sequence",
+      "nav.guide",
+      "nav.sitemap",
+      "nav.colour",
+      "site.language",
+      "site.loading",
+      "site.selected",
+      "site.fallback",
+      "site.sourceNotice",
+      "site.review",
+      "site.english",
+      "colour.signal",
+      "colour.cobalt",
+      "colour.violet",
+      "colour.copper",
+      "colour.carmine",
+      "colour.olive",
+      "colour.custom",
+      "colour.accent",
+      "colour.hover",
+      "colour.soft",
+      "colour.ink",
+      "colour.focus",
+      "colour.accentSurface",
+      "colour.accentCanvas",
+      "colour.buttonText",
+      "colour.hoverText",
+      "colour.focusSurface",
+      "colour.focusCanvas",
+      "colour.fail",
+      "colour.normal",
+      "colour.large",
+      "colour.ui",
+      "colour.copied",
+      "colour.copyFailed",
+      "colour.invalid",
+      "colour.pass",
+      "examples-colour.msg0001",
+      "examples-colour.msg0002",
+      "examples-colour.msg0003",
+      "examples-colour.msg0004",
+      "examples-colour.msg0005",
+      "examples-colour.msg0006",
+      "examples-colour.msg0007",
+      "examples-colour.msg0008",
+      "examples-colour.msg0009",
+      "examples-colour.msg0010",
+      "examples-colour.msg0011",
+      "examples-colour.msg0012",
+      "examples-colour.msg0013",
+      "examples-colour.msg0014",
+      "examples-colour.msg0015",
+      "examples-colour.msg0016",
+      "examples-colour.msg0017",
+      "examples-colour.msg0018",
+      "examples-colour.msg0019",
+      "examples-colour.msg0020",
+      "examples-colour.msg0021",
+      "examples-colour.msg0022",
+      "examples-colour.msg0023",
+      "examples-colour.msg0024",
+      "examples-colour.msg0025",
+      "examples-colour.msg0026",
+      "examples-colour.msg0027",
+      "examples-colour.msg0028",
+      "examples-colour.msg0029",
+      "examples-colour.msg0030",
+      "examples-colour.msg0031",
+      "examples-colour.msg0032",
+      "examples-colour.msg0033",
+      "examples-colour.msg0034",
+      "examples-colour.msg0035",
+      "examples-colour.msg0036",
+      "examples-colour.msg0037",
+      "examples-colour.msg0038",
+      "examples-colour.msg0039",
+      "examples-colour.msg0040",
+      "examples-colour.msg0041",
+      "examples-colour.msg0042",
+      "examples-colour.msg0043",
+      "examples-colour.msg0044",
+      "examples-colour.msg0045",
+      "examples-colour.msg0046",
+      "examples-colour.msg0047",
+      "examples-colour.msg0048",
+      "examples-colour.msg0049",
+      "examples-colour.msg0050",
+      "examples-colour.msg0051",
+      "examples-colour.msg0052",
+      "examples-colour.msg0053",
+      "examples-colour.msg0054",
+      "examples-colour.msg0055",
+      "examples-colour.msg0056",
+      "examples-colour.msg0057"
+    ],
+    "bindings": {
+      "examples-colour.msg0001": {
+        "slots": []
+      },
+      "examples-colour.msg0002": {
+        "slots": []
+      },
+      "examples-colour.msg0003": {
+        "slots": []
+      },
+      "examples-colour.msg0004": {
+        "slots": []
+      },
+      "examples-colour.msg0005": {
+        "slots": []
+      },
+      "examples-colour.msg0006": {
+        "slots": []
+      },
+      "examples-colour.msg0007": {
+        "slots": [
+          {
+            "tag": "span",
+            "attrs": {
+              "class": "colour-palette-chips",
+              "aria-hidden": "true"
+            }
+          },
+          {
+            "tag": "i",
+            "attrs": {}
+          },
+          {
+            "tag": "i",
+            "attrs": {}
+          },
+          {
+            "tag": "span",
+            "attrs": {
+              "class": "colour-palette-label"
+            }
+          }
+        ]
+      },
+      "examples-colour.msg0008": {
+        "slots": [
+          {
+            "tag": "span",
+            "attrs": {
+              "class": "colour-palette-chips",
+              "aria-hidden": "true"
+            }
+          },
+          {
+            "tag": "i",
+            "attrs": {}
+          },
+          {
+            "tag": "i",
+            "attrs": {}
+          },
+          {
+            "tag": "span",
+            "attrs": {
+              "class": "colour-palette-label"
+            }
+          }
+        ]
+      },
+      "examples-colour.msg0009": {
+        "slots": [
+          {
+            "tag": "span",
+            "attrs": {
+              "class": "colour-palette-chips",
+              "aria-hidden": "true"
+            }
+          },
+          {
+            "tag": "i",
+            "attrs": {}
+          },
+          {
+            "tag": "i",
+            "attrs": {}
+          },
+          {
+            "tag": "span",
+            "attrs": {
+              "class": "colour-palette-label"
+            }
+          }
+        ]
+      },
+      "examples-colour.msg0010": {
+        "slots": [
+          {
+            "tag": "span",
+            "attrs": {
+              "class": "colour-palette-chips",
+              "aria-hidden": "true"
+            }
+          },
+          {
+            "tag": "i",
+            "attrs": {}
+          },
+          {
+            "tag": "i",
+            "attrs": {}
+          },
+          {
+            "tag": "span",
+            "attrs": {
+              "class": "colour-palette-label"
+            }
+          }
+        ]
+      },
+      "examples-colour.msg0011": {
+        "slots": [
+          {
+            "tag": "span",
+            "attrs": {
+              "class": "colour-palette-chips",
+              "aria-hidden": "true"
+            }
+          },
+          {
+            "tag": "i",
+            "attrs": {}
+          },
+          {
+            "tag": "i",
+            "attrs": {}
+          },
+          {
+            "tag": "span",
+            "attrs": {
+              "class": "colour-palette-label"
+            }
+          }
+        ]
+      },
+      "examples-colour.msg0012": {
+        "slots": [
+          {
+            "tag": "span",
+            "attrs": {
+              "class": "colour-palette-chips",
+              "aria-hidden": "true"
+            }
+          },
+          {
+            "tag": "i",
+            "attrs": {}
+          },
+          {
+            "tag": "i",
+            "attrs": {}
+          },
+          {
+            "tag": "span",
+            "attrs": {
+              "class": "colour-palette-label"
+            }
+          }
+        ]
+      },
+      "examples-colour.msg0013": {
+        "slots": []
+      },
+      "examples-colour.msg0014": {
+        "slots": []
+      },
+      "examples-colour.msg0015": {
+        "slots": []
+      },
+      "examples-colour.msg0016": {
+        "slots": []
+      },
+      "examples-colour.msg0017": {
+        "slots": []
+      },
+      "examples-colour.msg0018": {
+        "slots": []
+      },
+      "examples-colour.msg0019": {
+        "slots": []
+      },
+      "examples-colour.msg0020": {
+        "slots": []
+      },
+      "examples-colour.msg0021": {
+        "slots": []
+      },
+      "examples-colour.msg0022": {
+        "slots": []
+      },
+      "examples-colour.msg0023": {
+        "slots": []
+      },
+      "examples-colour.msg0024": {
+        "slots": []
+      },
+      "examples-colour.msg0025": {
+        "slots": []
+      },
+      "examples-colour.msg0026": {
+        "slots": [
+          {
+            "tag": "span",
+            "attrs": {}
+          },
+          {
+            "tag": "span",
+            "attrs": {
+              "class": "mo-badge"
+            }
+          }
+        ]
+      },
+      "examples-colour.msg0027": {
+        "slots": []
+      },
+      "examples-colour.msg0028": {
+        "slots": []
+      },
+      "examples-colour.msg0029": {
+        "slots": [
+          {
+            "tag": "span",
+            "attrs": {}
+          },
+          {
+            "tag": "span",
+            "attrs": {
+              "translate": "no",
+              "id": "colour-sample-number"
+            },
+            "literal": "01 / 06"
+          }
+        ]
+      },
+      "examples-colour.msg0030": {
+        "slots": []
+      },
+      "examples-colour.msg0031": {
+        "slots": []
+      },
+      "examples-colour.msg0032": {
+        "slots": []
+      },
+      "examples-colour.msg0033": {
+        "slots": []
+      },
+      "examples-colour.msg0034": {
+        "slots": []
+      },
+      "examples-colour.msg0035": {
+        "slots": []
+      },
+      "examples-colour.msg0036": {
+        "slots": []
+      },
+      "examples-colour.msg0037": {
+        "slots": []
+      },
+      "examples-colour.msg0038": {
+        "slots": [
+          {
+            "tag": "span",
+            "attrs": {
+              "class": "mo-badge mo-badge-success"
+            }
+          },
+          {
+            "tag": "span",
+            "attrs": {
+              "class": "mo-badge mo-badge-warning"
+            }
+          },
+          {
+            "tag": "span",
+            "attrs": {
+              "class": "mo-badge mo-badge-danger"
+            }
+          }
+        ]
+      },
+      "examples-colour.msg0039": {
+        "slots": []
+      },
+      "examples-colour.msg0040": {
+        "slots": []
+      },
+      "examples-colour.msg0041": {
+        "slots": []
+      },
+      "examples-colour.msg0042": {
+        "slots": []
+      },
+      "examples-colour.msg0043": {
+        "slots": []
+      },
+      "examples-colour.msg0044": {
+        "slots": []
+      },
+      "examples-colour.msg0045": {
+        "slots": []
+      },
+      "examples-colour.msg0046": {
+        "slots": []
+      },
+      "examples-colour.msg0047": {
+        "slots": []
+      },
+      "examples-colour.msg0048": {
+        "slots": [
+          {
+            "tag": "strong",
+            "attrs": {
+              "translate": "no"
+            },
+            "literal": "Aa"
+          },
+          {
+            "tag": "span",
+            "attrs": {}
+          }
+        ]
+      },
+      "examples-colour.msg0049": {
+        "slots": []
+      },
+      "examples-colour.msg0050": {
+        "slots": []
+      },
+      "examples-colour.msg0051": {
+        "slots": []
+      },
+      "examples-colour.msg0052": {
+        "slots": []
+      },
+      "examples-colour.msg0053": {
+        "slots": []
+      },
+      "examples-colour.msg0054": {
+        "slots": []
+      },
+      "examples-colour.msg0055": {
+        "slots": []
+      },
+      "examples-colour.msg0056": {
+        "slots": []
+      },
+      "examples-colour.msg0057": {
+        "slots": []
+      }
+    }
+  },
   "starter-index": {
     "page": "starter/index.html",
     "assetdir": "starter/i18n/pages/starter-index",
@@ -2528,6 +3118,7 @@
       "nav.sequence",
       "nav.guide",
       "nav.sitemap",
+      "nav.colour",
       "site.language",
       "site.loading",
       "site.selected",
@@ -2971,6 +3562,7 @@
       "nav.sequence",
       "nav.guide",
       "nav.sitemap",
+      "nav.colour",
       "site.language",
       "site.loading",
       "site.selected",
@@ -3202,6 +3794,7 @@
       "nav.sequence",
       "nav.guide",
       "nav.sitemap",
+      "nav.colour",
       "site.language",
       "site.loading",
       "site.selected",
@@ -3382,6 +3975,7 @@
       "nav.sequence",
       "nav.guide",
       "nav.sitemap",
+      "nav.colour",
       "site.language",
       "site.loading",
       "site.selected",
@@ -3967,6 +4561,7 @@
       "nav.sequence",
       "nav.guide",
       "nav.sitemap",
+      "nav.colour",
       "site.language",
       "site.loading",
       "site.selected",
@@ -4210,6 +4805,7 @@
       "nav.sequence",
       "nav.guide",
       "nav.sitemap",
+      "nav.colour",
       "site.language",
       "site.loading",
       "site.selected",
@@ -4459,6 +5055,7 @@
       "nav.sequence",
       "nav.guide",
       "nav.sitemap",
+      "nav.colour",
       "site.language",
       "site.loading",
       "site.selected",
@@ -4974,6 +5571,7 @@
       "nav.sequence",
       "nav.guide",
       "nav.sitemap",
+      "nav.colour",
       "site.language",
       "site.loading",
       "site.selected",
@@ -5259,6 +5857,7 @@
       "nav.sequence",
       "nav.guide",
       "nav.sitemap",
+      "nav.colour",
       "site.language",
       "site.loading",
       "site.selected",
@@ -5596,6 +6195,7 @@
       "nav.sequence",
       "nav.guide",
       "nav.sitemap",
+      "nav.colour",
       "site.language",
       "site.loading",
       "site.selected",
@@ -5856,6 +6456,7 @@
       "nav.sequence",
       "nav.guide",
       "nav.sitemap",
+      "nav.colour",
       "site.language",
       "site.loading",
       "site.selected",
@@ -6100,6 +6701,7 @@
       "nav.sequence",
       "nav.guide",
       "nav.sitemap",
+      "nav.colour",
       "site.language",
       "site.loading",
       "site.selected",
@@ -6534,6 +7136,7 @@
       "nav.sequence",
       "nav.guide",
       "nav.sitemap",
+      "nav.colour",
       "site.language",
       "site.loading",
       "site.selected",
@@ -6749,6 +7352,7 @@
       "nav.sequence",
       "nav.guide",
       "nav.sitemap",
+      "nav.colour",
       "site.language",
       "site.loading",
       "site.selected",
@@ -7262,6 +7866,7 @@
       "nav.sequence",
       "nav.guide",
       "nav.sitemap",
+      "nav.colour",
       "site.language",
       "site.loading",
       "site.selected",
@@ -7464,6 +8069,7 @@
       "nav.sequence",
       "nav.guide",
       "nav.sitemap",
+      "nav.colour",
       "site.language",
       "site.loading",
       "site.selected",
@@ -7666,6 +8272,7 @@
       "nav.sequence",
       "nav.guide",
       "nav.sitemap",
+      "nav.colour",
       "site.language",
       "site.loading",
       "site.selected",
@@ -7944,6 +8551,7 @@
       "nav.sequence",
       "nav.guide",
       "nav.sitemap",
+      "nav.colour",
       "site.language",
       "site.loading",
       "site.selected",
@@ -8179,6 +8787,7 @@
       "nav.sequence",
       "nav.guide",
       "nav.sitemap",
+      "nav.colour",
       "site.language",
       "site.loading",
       "site.selected",
@@ -8437,6 +9046,7 @@
       "nav.sequence",
       "nav.guide",
       "nav.sitemap",
+      "nav.colour",
       "site.language",
       "site.loading",
       "site.selected",
@@ -8668,6 +9278,7 @@
       "nav.sequence",
       "nav.guide",
       "nav.sitemap",
+      "nav.colour",
       "site.language",
       "site.loading",
       "site.selected",
@@ -9077,6 +9688,7 @@
       "nav.sequence",
       "nav.guide",
       "nav.sitemap",
+      "nav.colour",
       "site.language",
       "site.loading",
       "site.selected",
@@ -9546,6 +10158,7 @@
       "nav.sequence",
       "nav.guide",
       "nav.sitemap",
+      "nav.colour",
       "site.language",
       "site.loading",
       "site.selected",
@@ -9878,6 +10491,7 @@
       "nav.sequence",
       "nav.guide",
       "nav.sitemap",
+      "nav.colour",
       "site.language",
       "site.loading",
       "site.selected",
@@ -10231,6 +10845,7 @@
       "nav.sequence",
       "nav.guide",
       "nav.sitemap",
+      "nav.colour",
       "site.language",
       "site.loading",
       "site.selected",
@@ -10370,6 +10985,7 @@
       "nav.sequence",
       "nav.guide",
       "nav.sitemap",
+      "nav.colour",
       "site.language",
       "site.loading",
       "site.selected",
@@ -10513,6 +11129,7 @@
       "nav.sequence",
       "nav.guide",
       "nav.sitemap",
+      "nav.colour",
       "site.language",
       "site.loading",
       "site.selected",
@@ -10652,6 +11269,7 @@
       "nav.sequence",
       "nav.guide",
       "nav.sitemap",
+      "nav.colour",
       "site.language",
       "site.loading",
       "site.selected",
@@ -10811,6 +11429,7 @@
       "nav.sequence",
       "nav.guide",
       "nav.sitemap",
+      "nav.colour",
       "theme.light",
       "theme.dark"
     ],

@@ -9,6 +9,7 @@ const {pathToFileURL}=require('node:url');
 const {chromium}=require('playwright');
 const {pages,languages,root}=require('./check-site-i18n.cjs');
 const {checkPageNavigation,checkNavigationJourney}=require('./navigation-checks.cjs');
+const {checkColourLab}=require('./colour-browser-checks.cjs');
 const sourceOnly=process.argv.includes('--source-only');
 async function main(){
  const server=http.createServer(async(req,res)=>{
@@ -155,6 +156,7 @@ async function main(){
   const handbookLink=await page.locator('a').filter({hasText:/Modern Objectivity/}).first().getAttribute('href');
   assert.ok(handbookLink.includes('lang='+target),'Documentation navigation preserves locale');
   await checkNavigationJourney({browser,page,base,ready,language:target});
+  await checkColourLab({page,base,ready,language:target});
   await page.goto(base+'/docs/03-principles.html?lang='+target);await ready(target);
   if(!sourceOnly){
    await change('pl');await page.goBack();await ready(target);await page.goForward();await ready('pl');
