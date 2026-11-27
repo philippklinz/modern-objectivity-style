@@ -58,7 +58,8 @@ async function checkNavigationJourney({browser,page,base,ready,language}){
  assert.equal(new URL(page.url()).hash,'#'+id,'On this page moves to the requested section');
  await page.locator('.mo-skip-link').focus();await page.keyboard.press('Enter');
  assert.equal(await page.evaluate(()=>document.activeElement.id),'main-content','Skip link reaches the content');
- const context=await browser.newContext({javaScriptEnabled:false}),plain=await context.newPage();
+ // Keep the no-script journey deterministic while fragment links scroll the page.
+ const context=await browser.newContext({javaScriptEnabled:false,reducedMotion:'reduce'}),plain=await context.newPage();
  try{
   await plain.goto(base+'/examples/typography.html');
   await plain.locator('.mo-back-link').click();
