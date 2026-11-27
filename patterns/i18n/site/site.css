@@ -4,6 +4,12 @@
 .mo-language-bar select{max-width:min(250px,100%);min-width:150px}
 .mo-language-status{color:var(--mo-muted);font-size:11px;max-width:650px}.mo-language-status:empty{display:none}
 .mo-language-status[data-fallback=true]{color:var(--mo-warning)}
+/* Language and page actions share the existing header. */
+.mo-topbar{flex-wrap:wrap;gap:12px 24px}
+.mo-topbar-path{flex:1 1 14rem}
+.mo-topbar-actions{min-width:0;justify-content:flex-end}
+.mo-topbar .mo-language-bar{padding:0;border:0;background:transparent;gap:6px 12px;justify-content:flex-start}
+.mo-topbar .mo-language-status{max-width:22ch}
 .mo-handbook{max-width:1080px;margin:auto;padding:clamp(20px,5vw,64px);min-width:0}
 .mo-handbook-nav,.mo-handbook-footer{display:flex;gap:18px;justify-content:space-between;flex-wrap:wrap;font:12px var(--mo-mono);margin-block:0 42px}
 .mo-handbook-footer{border-top:1px solid var(--mo-border);padding-top:24px;margin-block:48px 0}
@@ -18,6 +24,7 @@
 [data-mo-key]{overflow-wrap:anywhere}.mo-topbar-actions,.mo-card-head{flex-wrap:wrap}.mo-card-head>*{min-width:0}
 .mo-btn{white-space:normal;height:auto}.mo-sidebar-foot{overflow-wrap:anywhere}.mo-nav a{max-width:100%}
 @media(max-width:640px){.mo-language-bar{justify-content:flex-start}.mo-language-bar label{width:100%}.mo-language-bar select{flex:1}.mo-handbook{padding:20px}.mo-handbook table{font-size:12px}}
+@media(max-width:640px){.mo-topbar-actions{width:100%;justify-content:flex-start}.mo-topbar .mo-language-bar{flex-basis:100%}.mo-topbar .mo-language-status{max-width:100%}}
 
 /* Long language editions must not expand an automatic grid minimum. */
 .mo-grid>*{min-width:0}.mo-input,.mo-select,.mo-textarea{min-width:0;max-width:100%}

@@ -130,7 +130,8 @@
     status=document.createElement('span');status.className='mo-language-status';status.setAttribute('role','status');status.setAttribute('aria-live','polite');
     bar.append(label,status);
     const stage=document.querySelector('.mo-main,.mo-handbook') || document.body;
-    stage.prepend(bar);
+    const actions=stage.querySelector(':scope > .mo-topbar > .mo-topbar-actions');
+    (actions || stage).prepend(bar);
     for (const input of document.querySelectorAll('input[data-mo-attr-value]')) input.addEventListener('input',()=>dirtyInputs.add(input));
     selector.addEventListener('change',()=>choose(selector.value,true));
     window.addEventListener('popstate',()=>choose(new URL(location.href).searchParams.get('lang') || 'en'));
