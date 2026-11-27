@@ -9,6 +9,7 @@ This folder is a **complete static HTML lab starter**.
 - `index.html` — a usable laboratory dashboard with navigation, controls, synthetic data, table, search, empty state and CSV export.
 - `modern-objectivity.css` — the full practical style system, included locally so this folder works on its own.
 - `demo.js` — optional helper for the light/dark theme and sample notifications.
+- `fonts/liberation/` — local WOFF2 subsets from LiberationFontsWeb, with source hashes, credits and font licenses. Keep this folder beside the stylesheet.
 
 ## Use in a new project
 
@@ -39,4 +40,4 @@ Reference: [Visual style specification](../guides/visual-style-spec.md).
 
 ## License
 
-GNU General Public License version 2 only, [GPL-2.0-only](../LICENSE). Check the license conditions when copying or distributing this starter.
+The starter code uses [GPL-2.0-only](../LICENSE). The bundled fonts retain their own notices in `fonts/liberation/`: SIL OFL 1.1 for Sans, Serif and Mono; the upstream GPL license with its font exception for Sans Narrow. Preserve these notices when copying the folder.

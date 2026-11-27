@@ -74,11 +74,11 @@
       "index.msg0007",
       "index.msg0008",
       "index.msg0009",
+      "index.msg0158",
       "index.msg0010",
       "index.msg0011",
       "index.msg0012",
       "index.msg0013",
-      "index.msg0014",
       "index.msg0015",
       "index.msg0016",
       "index.msg0017",
@@ -96,11 +96,12 @@
       "index.msg0029",
       "index.msg0030",
       "index.msg0031",
-      "index.msg0032",
       "index.msg0033",
       "index.msg0034",
       "index.msg0035",
       "index.msg0036",
+      "index.msg0159",
+      "index.msg0160",
       "index.msg0037",
       "index.msg0038",
       "index.msg0039",
@@ -334,6 +335,16 @@
           }
         ]
       },
+      "index.msg0158": {
+        "slots": [
+          {
+            "tag": "a",
+            "attrs": {
+              "href": "examples/typography.html"
+            }
+          }
+        ]
+      },
       "index.msg0010": {
         "slots": []
       },
@@ -388,9 +399,6 @@
             }
           }
         ]
-      },
-      "index.msg0014": {
-        "slots": []
       },
       "index.msg0015": {
         "slots": []
@@ -521,9 +529,6 @@
       "index.msg0031": {
         "slots": []
       },
-      "index.msg0032": {
-        "slots": []
-      },
       "index.msg0033": {
         "slots": [
           {
@@ -579,6 +584,12 @@
             }
           }
         ]
+      },
+      "index.msg0159": {
+        "slots": []
+      },
+      "index.msg0160": {
+        "slots": []
       },
       "index.msg0037": {
         "slots": []
@@ -2108,6 +2119,448 @@
       }
     }
   },
+  "examples-typography": {
+    "page": "examples/typography.html",
+    "assetdir": "i18n/pages/examples-typography",
+    "keys": [
+      "theme.light",
+      "theme.dark",
+      "toast.measurementSaved",
+      "toast.settingsOpened",
+      "toast.moreOptions",
+      "toast.deleteDisabled",
+      "common.noValue",
+      "kit.samplesSummary",
+      "kit.progress.completed",
+      "kit.progress.notStarted",
+      "kit.progress.inProgress",
+      "lab.generate",
+      "lab.log.generated",
+      "lab.log.inspected",
+      "lab.log.cleared",
+      "lab.log.exported",
+      "lab.status.aboveThreshold",
+      "lab.status.withinRange",
+      "lab.inspect",
+      "lab.details.sample",
+      "lab.details.temperature",
+      "lab.details.threshold",
+      "lab.details.status",
+      "lab.details.source",
+      "lab.details.simulation",
+      "lab.details.noSelection",
+      "lab.records.empty",
+      "lab.records.noMatch",
+      "lab.records.summary",
+      "lab.confirm.clear",
+      "lab.toast.readingsAdded",
+      "lab.toast.csvExported",
+      "experiment.state.running",
+      "experiment.state.paused",
+      "experiment.state.pausedReducedMotion",
+      "experiment.pause",
+      "experiment.play",
+      "experiment.step",
+      "experiment.timeValue",
+      "experiment.phaseValue",
+      "experiment.speedValue",
+      "starter.toast.created",
+      "starter.toast.cleared",
+      "starter.toast.exportReady",
+      "starter.toast.nameUpdated",
+      "starter.toast.nameRequired",
+      "starter.state.ready",
+      "starter.state.idle",
+      "starter.state.generated",
+      "starter.source",
+      "starter.empty.noObservations",
+      "starter.empty.noMatch",
+      "starter.observations.summary",
+      "starter.confirm.clear",
+      "starter.title",
+      "site.language",
+      "site.loading",
+      "site.selected",
+      "site.fallback",
+      "site.sourceNotice",
+      "site.review",
+      "site.english",
+      "fonts.math",
+      "fonts.used",
+      "fonts.unused",
+      "fonts.unloaded",
+      "fonts.loading",
+      "fonts.loaded",
+      "fonts.error",
+      "fonts.summary",
+      "fonts.covered",
+      "fonts.fallback",
+      "fonts.noApi",
+      "fonts.empty",
+      "examples-typography.msg0001",
+      "examples-typography.msg0002",
+      "examples-typography.msg0003",
+      "examples-typography.msg0004",
+      "examples-typography.msg0005",
+      "examples-typography.msg0006",
+      "examples-typography.msg0007",
+      "examples-typography.msg0008",
+      "examples-typography.msg0009",
+      "examples-typography.msg0010",
+      "examples-typography.msg0011",
+      "examples-typography.msg0012",
+      "examples-typography.msg0013",
+      "examples-typography.msg0014",
+      "examples-typography.msg0015",
+      "examples-typography.msg0016",
+      "examples-typography.msg0017",
+      "examples-typography.msg0018",
+      "examples-typography.msg0019",
+      "examples-typography.msg0020",
+      "examples-typography.msg0021",
+      "examples-typography.msg0022",
+      "examples-typography.msg0023",
+      "examples-typography.msg0024",
+      "examples-typography.msg0025",
+      "examples-typography.msg0026",
+      "examples-typography.msg0027",
+      "examples-typography.msg0028",
+      "examples-typography.msg0029",
+      "examples-typography.msg0030",
+      "examples-typography.msg0031",
+      "examples-typography.msg0032",
+      "examples-typography.msg0033",
+      "examples-typography.msg0034",
+      "examples-typography.msg0035",
+      "examples-typography.msg0036",
+      "examples-typography.msg0037",
+      "examples-typography.msg0038",
+      "examples-typography.msg0039",
+      "examples-typography.msg0040",
+      "examples-typography.msg0041",
+      "examples-typography.msg0042",
+      "examples-typography.msg0043",
+      "examples-typography.msg0044",
+      "examples-typography.msg0045",
+      "examples-typography.msg0046",
+      "examples-typography.msg0047",
+      "examples-typography.msg0048",
+      "examples-typography.msg0049",
+      "examples-typography.msg0050",
+      "examples-typography.msg0051",
+      "examples-typography.msg0052",
+      "examples-typography.msg0053",
+      "examples-typography.msg0054",
+      "examples-typography.msg0055",
+      "examples-typography.msg0056",
+      "examples-typography.msg0057",
+      "examples-typography.msg0058",
+      "examples-typography.msg0059",
+      "examples-typography.msg0060",
+      "examples-typography.msg0061",
+      "examples-typography.msg0062",
+      "examples-typography.msg0063",
+      "examples-typography.msg0064",
+      "examples-typography.msg0065",
+      "examples-typography.msg0066",
+      "examples-typography.msg0067",
+      "examples-typography.msg0068"
+    ],
+    "bindings": {
+      "examples-typography.msg0001": {
+        "slots": []
+      },
+      "examples-typography.msg0002": {
+        "slots": []
+      },
+      "examples-typography.msg0003": {
+        "slots": []
+      },
+      "examples-typography.msg0004": {
+        "slots": []
+      },
+      "examples-typography.msg0005": {
+        "slots": []
+      },
+      "examples-typography.msg0006": {
+        "slots": []
+      },
+      "examples-typography.msg0007": {
+        "slots": []
+      },
+      "examples-typography.msg0008": {
+        "slots": []
+      },
+      "examples-typography.msg0009": {
+        "slots": []
+      },
+      "examples-typography.msg0010": {
+        "slots": []
+      },
+      "examples-typography.msg0011": {
+        "slots": [
+          {
+            "tag": "strong",
+            "attrs": {}
+          }
+        ]
+      },
+      "examples-typography.msg0012": {
+        "slots": []
+      },
+      "examples-typography.msg0013": {
+        "slots": []
+      },
+      "examples-typography.msg0014": {
+        "slots": [
+          {
+            "tag": "br",
+            "attrs": {}
+          }
+        ]
+      },
+      "examples-typography.msg0015": {
+        "slots": []
+      },
+      "examples-typography.msg0016": {
+        "slots": [
+          {
+            "tag": "strong",
+            "attrs": {}
+          },
+          {
+            "tag": "span",
+            "attrs": {}
+          }
+        ]
+      },
+      "examples-typography.msg0017": {
+        "slots": [
+          {
+            "tag": "strong",
+            "attrs": {}
+          },
+          {
+            "tag": "span",
+            "attrs": {}
+          }
+        ]
+      },
+      "examples-typography.msg0018": {
+        "slots": [
+          {
+            "tag": "strong",
+            "attrs": {}
+          },
+          {
+            "tag": "span",
+            "attrs": {}
+          }
+        ]
+      },
+      "examples-typography.msg0019": {
+        "slots": [
+          {
+            "tag": "strong",
+            "attrs": {}
+          },
+          {
+            "tag": "span",
+            "attrs": {}
+          }
+        ]
+      },
+      "examples-typography.msg0020": {
+        "slots": []
+      },
+      "examples-typography.msg0021": {
+        "slots": []
+      },
+      "examples-typography.msg0022": {
+        "slots": []
+      },
+      "examples-typography.msg0023": {
+        "slots": []
+      },
+      "examples-typography.msg0024": {
+        "slots": []
+      },
+      "examples-typography.msg0025": {
+        "slots": []
+      },
+      "examples-typography.msg0026": {
+        "slots": []
+      },
+      "examples-typography.msg0027": {
+        "slots": []
+      },
+      "examples-typography.msg0028": {
+        "slots": []
+      },
+      "examples-typography.msg0029": {
+        "slots": []
+      },
+      "examples-typography.msg0030": {
+        "slots": []
+      },
+      "examples-typography.msg0031": {
+        "slots": []
+      },
+      "examples-typography.msg0032": {
+        "slots": []
+      },
+      "examples-typography.msg0033": {
+        "slots": []
+      },
+      "examples-typography.msg0034": {
+        "slots": []
+      },
+      "examples-typography.msg0035": {
+        "slots": []
+      },
+      "examples-typography.msg0036": {
+        "slots": []
+      },
+      "examples-typography.msg0037": {
+        "slots": []
+      },
+      "examples-typography.msg0038": {
+        "slots": []
+      },
+      "examples-typography.msg0039": {
+        "slots": []
+      },
+      "examples-typography.msg0040": {
+        "slots": []
+      },
+      "examples-typography.msg0041": {
+        "slots": []
+      },
+      "examples-typography.msg0042": {
+        "slots": []
+      },
+      "examples-typography.msg0043": {
+        "slots": []
+      },
+      "examples-typography.msg0044": {
+        "slots": []
+      },
+      "examples-typography.msg0045": {
+        "slots": []
+      },
+      "examples-typography.msg0046": {
+        "slots": []
+      },
+      "examples-typography.msg0047": {
+        "slots": []
+      },
+      "examples-typography.msg0048": {
+        "slots": []
+      },
+      "examples-typography.msg0049": {
+        "slots": []
+      },
+      "examples-typography.msg0050": {
+        "slots": []
+      },
+      "examples-typography.msg0051": {
+        "slots": []
+      },
+      "examples-typography.msg0052": {
+        "slots": []
+      },
+      "examples-typography.msg0053": {
+        "slots": []
+      },
+      "examples-typography.msg0054": {
+        "slots": []
+      },
+      "examples-typography.msg0055": {
+        "slots": []
+      },
+      "examples-typography.msg0056": {
+        "slots": []
+      },
+      "examples-typography.msg0057": {
+        "slots": []
+      },
+      "examples-typography.msg0058": {
+        "slots": []
+      },
+      "examples-typography.msg0059": {
+        "slots": []
+      },
+      "examples-typography.msg0060": {
+        "slots": []
+      },
+      "examples-typography.msg0061": {
+        "slots": []
+      },
+      "examples-typography.msg0062": {
+        "slots": []
+      },
+      "examples-typography.msg0063": {
+        "slots": [
+          {
+            "tag": "a",
+            "attrs": {
+              "href": "../styles/fonts/liberation/AUTHORS"
+            }
+          }
+        ]
+      },
+      "examples-typography.msg0064": {
+        "slots": [
+          {
+            "tag": "a",
+            "attrs": {
+              "href": "../styles/fonts/liberation/LICENSE"
+            }
+          }
+        ]
+      },
+      "examples-typography.msg0065": {
+        "slots": [
+          {
+            "tag": "a",
+            "attrs": {
+              "href": "../styles/fonts/liberation/LICENSE-Sans-Narrow.txt"
+            }
+          }
+        ]
+      },
+      "examples-typography.msg0066": {
+        "slots": [
+          {
+            "tag": "a",
+            "attrs": {
+              "href": "../styles/fonts/liberation/PROVENANCE.json"
+            }
+          }
+        ]
+      },
+      "examples-typography.msg0067": {
+        "slots": [
+          {
+            "tag": "a",
+            "attrs": {
+              "href": "https://www.w3.org/TR/css-fonts-4/#descdef-font-face-unicode-range"
+            }
+          }
+        ]
+      },
+      "examples-typography.msg0068": {
+        "slots": [
+          {
+            "tag": "a",
+            "attrs": {
+              "href": "https://www.w3.org/TR/css-font-loading-3/"
+            }
+          }
+        ]
+      }
+    }
+  },
   "starter-index": {
     "page": "starter/index.html",
     "assetdir": "starter/i18n/pages/starter-index",
@@ -3044,6 +3497,8 @@
       "readme.msg0009",
       "readme.msg0010",
       "readme.msg0011",
+      "readme.msg0048",
+      "readme.msg0049",
       "readme.msg0012",
       "readme.msg0013",
       "readme.msg0014",
@@ -3079,6 +3534,7 @@
       "readme.msg0044",
       "readme.msg0045",
       "readme.msg0046",
+      "readme.msg0050",
       "readme.msg0047"
     ],
     "bindings": {
@@ -3136,6 +3592,19 @@
         ]
       },
       "readme.msg0011": {
+        "slots": []
+      },
+      "readme.msg0048": {
+        "slots": [
+          {
+            "tag": "a",
+            "attrs": {
+              "href": "examples/typography.html"
+            }
+          }
+        ]
+      },
+      "readme.msg0049": {
         "slots": []
       },
       "readme.msg0012": {
@@ -3471,6 +3940,18 @@
           {
             "tag": "strong",
             "attrs": {}
+          }
+        ]
+      },
+      "readme.msg0050": {
+        "slots": [
+          {
+            "tag": "code",
+            "attrs": {
+              "translate": "no",
+              "lang": "en"
+            },
+            "literal": "styles/fonts/liberation/"
           }
         ]
       },
@@ -8214,6 +8695,7 @@
       "guides-visual-style-spec.msg0016",
       "guides-visual-style-spec.msg0017",
       "guides-visual-style-spec.msg0018",
+      "guides-visual-style-spec.msg0058",
       "guides-visual-style-spec.msg0019",
       "guides-visual-style-spec.msg0020",
       "guides-visual-style-spec.msg0021",
@@ -8372,6 +8854,16 @@
       },
       "guides-visual-style-spec.msg0018": {
         "slots": []
+      },
+      "guides-visual-style-spec.msg0058": {
+        "slots": [
+          {
+            "tag": "a",
+            "attrs": {
+              "href": "../examples/typography.html"
+            }
+          }
+        ]
       },
       "guides-visual-style-spec.msg0019": {
         "slots": []
@@ -8940,6 +9432,7 @@
       "starter-readme.msg0008",
       "starter-readme.msg0009",
       "starter-readme.msg0010",
+      "starter-readme.msg0026",
       "starter-readme.msg0011",
       "starter-readme.msg0012",
       "starter-readme.msg0013",
@@ -9035,6 +9528,18 @@
               "lang": "en"
             },
             "literal": "demo.js"
+          }
+        ]
+      },
+      "starter-readme.msg0026": {
+        "slots": [
+          {
+            "tag": "code",
+            "attrs": {
+              "translate": "no",
+              "lang": "en"
+            },
+            "literal": "fonts/liberation/"
           }
         ]
       },
@@ -9143,6 +9648,14 @@
             "attrs": {
               "href": "../LICENSE"
             }
+          },
+          {
+            "tag": "code",
+            "attrs": {
+              "translate": "no",
+              "lang": "en"
+            },
+            "literal": "fonts/liberation/"
           }
         ]
       },

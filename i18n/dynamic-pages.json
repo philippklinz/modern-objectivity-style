@@ -1,0 +1,16 @@
+{
+  "examples-typography": {
+    "fonts.math": "Mathematical symbols",
+    "fonts.used": "Used",
+    "fonts.unused": "Not used",
+    "fonts.unloaded": "Not requested",
+    "fonts.loading": "Loading",
+    "fonts.loaded": "Loaded",
+    "fonts.error": "Unavailable",
+    "fonts.summary": "{loaded} of {total} subset faces loaded · {size} KiB of font files",
+    "fonts.covered": "All printable characters in this sample are present in the selected face's subsets.",
+    "fonts.fallback": "Characters outside these subsets use fallback fonts: {characters}",
+    "fonts.noApi": "This browser cannot report font loading. The sample uses the regular font stack.",
+    "fonts.empty": "Enter some text to explore its character coverage."
+  }
+}

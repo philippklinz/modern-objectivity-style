@@ -1,3 +1,5 @@
+@import url("fonts/liberation/LiberationFontsWeb.css");
+
 /*
 Modern Objectivity — Laboratory Style Kit v0.1
 GPL-2.0-only • practical reference implementation, not a universal brand.
@@ -5,9 +7,9 @@ Semantic tokens are intentionally overridable for each laboratory stage.
 */
 :root {
   color-scheme: light;
-  --mo-font: "Liberation Sans", "DejaVu Sans", Arial, sans-serif;
-  --mo-mono: "Liberation Mono", "DejaVu Sans Mono", Consolas, monospace;
-  --mo-serif: "Liberation Serif", Georgia, serif;
+  --mo-font: "Liberation Sans Web", "Liberation Sans", "DejaVu Sans", Arial, sans-serif;
+  --mo-mono: "Liberation Mono Web", "Liberation Mono", "DejaVu Sans Mono", Consolas, monospace;
+  --mo-serif: "Liberation Serif Web", "Liberation Serif", Georgia, serif;
   --mo-bg: #f3f7f7;
   --mo-surface: #ffffff;
   --mo-surface-2: #edf3f3;
@@ -35,6 +37,9 @@ Semantic tokens are intentionally overridable for each laboratory stage.
   --mo-rail-muted: #94b0b5;
   --mo-shadow: 0 14px 40px rgba(12, 45, 50, .07);
   /* Interface containers and controls have square corners. */
+  --mo-control-height: 2.75rem;
+  --mo-control-height-sm: 2.25rem;
+  --mo-control-height-lg: 3rem;
   --mo-radius: 0;
   --mo-radius-sm: 0;
   --mo-space-1: 4px;
@@ -120,6 +125,7 @@ code { font-size: .89em; }
 .mo-topbar-path { font:12px var(--mo-mono); color:var(--mo-muted); word-break:break-word; }
 .mo-topbar-path strong { color:var(--mo-text-strong); font-weight:700; }
 .mo-topbar-actions { display:flex; gap:9px; align-items:center; flex-wrap:wrap; }
+.mo-topbar .mo-btn,.mo-topbar .mo-select { min-height:var(--mo-control-height); padding-block:9px; font-size:.8125rem; line-height:1.25; }
 .mo-content { width:min(100%, var(--mo-page-width)); margin:0 auto; padding:38px clamp(20px,4vw,56px) 90px; }
 .mo-section { padding-top:46px; padding-bottom:46px; border-bottom:1px solid var(--mo-border); }
 .mo-section-head { display:flex; justify-content:space-between; align-items:end; gap:22px; margin-bottom:25px; }
@@ -153,7 +159,7 @@ code { font-size: .89em; }
 .mo-stat-foot { font:11px var(--mo-mono); color:var(--mo-accent); margin-top:8px; }
 
 /* Controls */
-.mo-btn { display:inline-flex; align-items:center; justify-content:center; gap:8px; appearance:none; padding:10px 15px; min-height:39px; color:var(--mo-text); background:var(--mo-surface); border:1px solid var(--mo-border-strong); border-radius:var(--mo-radius-sm); font:700 12px/1.3 var(--mo-font); text-decoration:none; transition:background .13s,border-color .13s,transform .13s; white-space:nowrap; }
+.mo-btn { display:inline-flex; align-items:center; justify-content:center; gap:8px; appearance:none; padding:10px 15px; min-height:var(--mo-control-height); color:var(--mo-text); background:var(--mo-surface); border:1px solid var(--mo-border-strong); border-radius:var(--mo-radius-sm); font:700 .875rem/1.25 var(--mo-font); text-decoration:none; transition:background .13s,border-color .13s,transform .13s; white-space:nowrap; }
 .mo-btn:hover { background:var(--mo-surface-2); color:var(--mo-text-strong); border-color:var(--mo-accent); }
 .mo-btn:active { transform:translateY(1px); }
 .mo-btn:disabled { opacity:.48; cursor:not-allowed; transform:none; }
@@ -162,14 +168,14 @@ code { font-size: .89em; }
 .mo-btn-quiet { background:transparent; border-color:transparent; }
 .mo-btn-quiet:hover { background:var(--mo-surface-2); }
 .mo-btn-danger { color:var(--mo-danger); border-color:var(--mo-danger); }
-.mo-btn-sm { min-height:32px; padding:7px 11px; font-size:11px; }
-.mo-btn-lg { min-height:47px; padding:12px 21px; }
+.mo-btn-sm { min-height:var(--mo-control-height-sm); padding:7px 11px; font-size:.8125rem; }
+.mo-btn-lg { min-height:var(--mo-control-height-lg); padding:12px 21px; }
 .mo-btn-on-dark { background:#1a494a; color:#e9fffc; border-color:#3d817b; }
 .mo-btn-on-dark:hover { background:#23605f; border-color:#69d7ca; color:#fff; }
 .mo-field { display:grid; gap:7px; min-width:0; }
 .mo-field-label { font-size:12px; font-weight:700; color:var(--mo-text-strong); }
 .mo-field-help { font-size:11px; color:var(--mo-muted); }
-.mo-input,.mo-select,.mo-textarea { width:100%; min-height:41px; border:1px solid var(--mo-border-strong); border-radius:var(--mo-radius-sm); background:var(--mo-surface); color:var(--mo-text-strong); padding:9px 11px; outline:none; }
+.mo-input,.mo-select,.mo-textarea { width:100%; min-height:var(--mo-control-height); font-size:.875rem; line-height:1.25; border:1px solid var(--mo-border-strong); border-radius:var(--mo-radius-sm); background:var(--mo-surface); color:var(--mo-text-strong); padding:9px 11px; outline:none; }
 .mo-input::placeholder,.mo-textarea::placeholder { color:var(--mo-muted); opacity:.85; }
 .mo-input:focus,.mo-select:focus,.mo-textarea:focus { border-color:var(--mo-accent); box-shadow:0 0 0 3px var(--mo-accent-light); }
 .mo-input:disabled,.mo-select:disabled { opacity:.55; }

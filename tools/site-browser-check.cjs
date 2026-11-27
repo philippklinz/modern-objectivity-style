@@ -16,7 +16,7 @@ async function main(){
    if(pathname.endsWith('/'))pathname+='index.html';
    const file=path.resolve(root,'.'+pathname);
    if(!file.startsWith(root+path.sep)){res.writeHead(403).end();return;}
-   const types={'.html':'text/html','.js':'text/javascript','.css':'text/css','.json':'application/json'};
+   const types={'.html':'text/html','.js':'text/javascript','.css':'text/css','.json':'application/json','.woff2':'font/woff2'};
    res.writeHead(200,{'Content-Type':`${types[path.extname(file)]||'text/plain'}; charset=utf-8`}).end(await fs.readFile(file));
   }catch(_){res.writeHead(404).end();}
  });
@@ -61,6 +61,8 @@ async function main(){
   assert.deepEqual(errors,[],'Uncaught page errors');assert.deepEqual(badRequests,[],'Missing local assets');assert.deepEqual(external,[],'Unexpected external runtime dependency');
   const target=sourceOnly?'en':'de';
   await page.goto(base+'/index.html');await ready();
+  const heights=await page.locator('.mo-topbar .mo-select,.mo-topbar .mo-btn').evaluateAll(nodes=>nodes.map(node=>node.getBoundingClientRect().height));
+  assert.ok(heights.length>=3&&Math.max(...heights)-Math.min(...heights)<1,'Header controls share one height');
   await page.locator('#sample-filter').fill('S-003');await page.locator('#tab-method').click();
   await page.locator('#load-range').press('ArrowRight');await page.locator('#preview-live-toggle').uncheck();
   await page.locator('[data-theme-toggle]').click();
@@ -101,6 +103,36 @@ async function main(){
   assert.equal(await page.locator('#wave').getAttribute('d'),wave);
   assert.equal(await page.locator('#amplitude').inputValue(),amplitude);
   assert.equal(await page.locator('#toggle-play').getAttribute('aria-pressed'),'false');
+  // Fresh context: demonstrate demand loading independently of earlier page visits.
+  const fontContext=await browser.newContext(),fontPage=await fontContext.newPage();
+  await fontPage.goto(base+'/examples/typography.html?lang=en');
+  await fontPage.waitForFunction(()=>document.querySelector('[data-subset="latin"] [data-state="loaded"]'));
+  assert.equal(await fontPage.locator('#font-loading-rows [data-state="loaded"]').count(),1);
+  for(const [sample,subset] of [['el','greek'],['bg','cyrillic'],['pl','latin-ext'],['math','math']]){
+   await fontPage.locator('#font-language').selectOption(sample);
+   await fontPage.waitForFunction(subset=>document.querySelector(`[data-subset="${subset}"] [data-state="loaded"]`),subset);
+   assert.equal(await fontPage.locator('#font-coverage').getAttribute('data-fallback'),'false');
+  }
+  for(const family of ['Sans','Serif','Mono','SansNarrow']){
+   await fontPage.locator('#font-family').selectOption(family);
+   for(const face of ['Regular','Italic','Bold','BoldItalic']){
+    await fontPage.locator('#font-face').selectOption(face);
+    await fontPage.locator('#font-language').selectOption('mt');
+    await fontPage.waitForFunction(()=>document.querySelector('[data-subset="latin-ext"] [data-state="loaded"]'));
+    assert.equal(await fontPage.locator('#font-coverage').getAttribute('data-fallback'),'false');
+    assert.equal(await fontPage.locator('#font-preview').evaluate(el=>getComputedStyle(el).fontSynthesis),'none');
+   }
+  }
+  await fontPage.locator('#font-text').fill('Ångström 🧪 中文');
+  assert.equal(await fontPage.locator('#font-coverage').getAttribute('data-fallback'),'true');
+  await fontPage.locator('#mo-language').selectOption(target);
+  await fontPage.waitForFunction(code=>document.documentElement.lang===code&&document.querySelector('#mo-language-bar').getAttribute('aria-busy')==='false',target);
+  assert.equal(await fontPage.locator('#font-text').inputValue(),'Ångström 🧪 中文');
+  assert.equal(await fontPage.locator('#font-family').inputValue(),'SansNarrow');
+  assert.equal(await fontPage.locator('#font-face').inputValue(),'BoldItalic');
+  assert.equal(await fontPage.locator('#font-preview').getAttribute('lang'),'mt');
+  assert.ok((await fontPage.locator('#font-coverage').textContent()).includes('U+1F9EA'));
+  await fontContext.close();
   await page.goto(base+'/starter/index.html');await ready();
   const savedDefault=await page.locator('#name').inputValue();await page.locator('#save-settings').click();
   await change(target);

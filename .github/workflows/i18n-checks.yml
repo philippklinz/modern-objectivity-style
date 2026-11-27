@@ -16,6 +16,7 @@ jobs:
           node-version: '24'
       - name: Check every catalogue and fallback behavior
         run: |
+          node tools/check-font-assets.cjs
           node tools/check-site-i18n.cjs
           node patterns/i18n/check.cjs
           node --test patterns/i18n/test.cjs

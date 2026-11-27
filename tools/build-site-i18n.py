@@ -25,7 +25,7 @@ from lxml import html, etree
 ROOT = Path(__file__).resolve().parents[1]
 I18N = ROOT / 'i18n'
 LANGS = ['bg','hr','cs','da','nl','en','et','fi','fr','de','el','hu','ga','it','lv','lt','mt','pl','pt','ro','sk','sl','es','sv']
-LIVE = ['index.html','examples/lab-console.html','examples/experiment.html','starter/index.html']
+LIVE = ['index.html','examples/lab-console.html','examples/experiment.html','examples/typography.html','starter/index.html']
 SKIP = {'script','style','pre','code','textarea','template','noscript'}
 INLINE = {'a','strong','em','span','small','b','i','u','s','sub','sup','kbd','abbr','br','code','mark'}
 BLOCKS = {'title','h1','h2','h3','h4','h5','h6','p','li','dt','dd','th','td','a','button','option','label','legend','summary','figcaption','text','span','small','strong','div','footer'}
@@ -94,6 +94,7 @@ def extract():
     keyfile=I18N/'source/keys.json'
     old=json.loads(keyfile.read_text()) if keyfile.exists() else {}
     messages=json.loads((I18N/'dynamic-en.json').read_text())
+    page_dynamic=json.loads((I18N/'dynamic-pages.json').read_text()) if (I18N/'dynamic-pages.json').exists() else {}
     messages.update({
       'site.language':'Language',
       'site.loading':'Loading language…',
@@ -151,6 +152,8 @@ def extract():
                 visit(child,locator+'/'+str(child.tag)+f'[{index}]')
         visit(tree,'html')
         module=module_id(page)
+        dynamic=page_dynamic.get(module,{})
+        messages.update(dynamic)
         previous=old.get(module,{'next':1,'entries':[]})
         used=set(); assignments={}
         # Match unchanged content before using positions for edited messages.
@@ -189,7 +192,7 @@ def extract():
             script=html.Element('script',src=local_ref(page,src)); script.set('data-mo-generated','runtime'); head.insert(index+3,script)
         rendered='<!doctype html>\n'+html.tostring(tree,encoding='unicode',method='html')+'\n'
         (ROOT/page).write_text(rendered)
-        manifests[module]={'page':page,'assetdir':assetdir,'keys':common+keys,'bindings':bindings}
+        manifests[module]={'page':page,'assetdir':assetdir,'keys':common+list(dynamic)+keys,'bindings':bindings}
     # The independent pattern retains its own helper, full-page catalogue and model.
     pattern=html.document_fromstring((ROOT/'patterns/i18n/index.html').read_text())
     sourcepack=read_script_pack(ROOT/'patterns/i18n/locales/en.js')

@@ -1,6 +1,6 @@
 {
   "index": {
-    "next": 158,
+    "next": 161,
     "entries": [
       {
         "locator": "html/head[0]/meta[3]@content",
@@ -57,6 +57,12 @@
         "key": "index.msg0009"
       },
       {
+        "locator": "html/body[1]/div[0]/aside[0]/nav[1]/div[1]/div[2]",
+        "source": "<s0>Typography lab</s0>",
+        "attribute": null,
+        "key": "index.msg0158"
+      },
+      {
         "locator": "html/body[1]/div[0]/aside[0]/nav[1]/div[2]/div[0]",
         "source": "03 / Reference",
         "attribute": null,
@@ -81,13 +87,7 @@
         "key": "index.msg0013"
       },
       {
-        "locator": "html/body[1]/div[0]/main[1]/header[0]/div[1]/span[0]",
-        "source": "CSS + HTML",
-        "attribute": null,
-        "key": "index.msg0014"
-      },
-      {
-        "locator": "html/body[1]/div[0]/main[1]/header[0]/div[1]/a[2]",
+        "locator": "html/body[1]/div[0]/main[1]/header[0]/div[1]/a[1]",
         "source": "Use this style ↗",
         "attribute": null,
         "key": "index.msg0015"
@@ -189,12 +189,6 @@
         "key": "index.msg0031"
       },
       {
-        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[1]/div[1]/div[1]/div[0]/span[1]",
-        "source": "LIBERATION / FALLBACKS",
-        "attribute": null,
-        "key": "index.msg0032"
-      },
-      {
         "locator": "html/body[1]/div[0]/main[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[0]",
         "source": "<s0>Display / 60</s0><s1>Observation.</s1>",
         "attribute": null,
@@ -217,6 +211,18 @@
         "source": "<s0>Body / 15</s0><s1>Information stays readable and details remain inspectable.</s1>",
         "attribute": null,
         "key": "index.msg0036"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[1]/div[1]/div[1]/p[2]",
+        "source": "Local web fonts, real language samples and observable subset loading.",
+        "attribute": null,
+        "key": "index.msg0159"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[1]/div[1]/div[1]/a[3]",
+        "source": "Explore the typography lab",
+        "attribute": null,
+        "key": "index.msg0160"
       },
       {
         "locator": "html/body[1]/div[0]/main[1]/div[1]/section[1]/div[2]/div[0]/span[0]",
@@ -1682,6 +1688,419 @@
       }
     ]
   },
+  "examples-typography": {
+    "next": 69,
+    "entries": [
+      {
+        "locator": "html/head[0]/meta[2]@content",
+        "source": "Explore Liberation web fonts, 24 language samples, real subset loading and copyable typography recipes.",
+        "attribute": "content",
+        "key": "examples-typography.msg0001"
+      },
+      {
+        "locator": "html/head[0]/title[3]",
+        "source": "Typography / Modern Objectivity",
+        "attribute": null,
+        "key": "examples-typography.msg0002"
+      },
+      {
+        "locator": "html/body[1]/div[0]/aside[0]/nav[1]@aria-label",
+        "source": "Typography navigation",
+        "attribute": "aria-label",
+        "key": "examples-typography.msg0003"
+      },
+      {
+        "locator": "html/body[1]/div[0]/aside[0]/nav[1]/a[0]",
+        "source": "Style showcase",
+        "attribute": null,
+        "key": "examples-typography.msg0004"
+      },
+      {
+        "locator": "html/body[1]/div[0]/aside[0]/nav[1]/a[1]",
+        "source": "Font families",
+        "attribute": null,
+        "key": "examples-typography.msg0005"
+      },
+      {
+        "locator": "html/body[1]/div[0]/aside[0]/nav[1]/a[2]",
+        "source": "Language playground",
+        "attribute": null,
+        "key": "examples-typography.msg0006"
+      },
+      {
+        "locator": "html/body[1]/div[0]/aside[0]/nav[1]/a[3]",
+        "source": "Loading monitor",
+        "attribute": null,
+        "key": "examples-typography.msg0007"
+      },
+      {
+        "locator": "html/body[1]/div[0]/aside[0]/nav[1]/a[4]",
+        "source": "Use in your lab",
+        "attribute": null,
+        "key": "examples-typography.msg0008"
+      },
+      {
+        "locator": "html/body[1]/div[0]/aside[0]/nav[1]/a[5]",
+        "source": "Sources and licenses",
+        "attribute": null,
+        "key": "examples-typography.msg0009"
+      },
+      {
+        "locator": "html/body[1]/div[0]/aside[0]/p[2]",
+        "source": "Local files. Real glyphs. Observable loading.",
+        "attribute": null,
+        "key": "examples-typography.msg0010"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/header[0]/div[0]",
+        "source": "STYLE / <s0>TYPOGRAPHY</s0>",
+        "attribute": null,
+        "key": "examples-typography.msg0011"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/header[0]/div[1]/a[1]",
+        "source": "Use this style",
+        "attribute": null,
+        "key": "examples-typography.msg0012"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[0]/span[0]",
+        "source": "Liberation / Web typography",
+        "attribute": null,
+        "key": "examples-typography.msg0013"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[0]/h1[1]",
+        "source": "One family of ideas.<s0></s0>Many ways to read.",
+        "attribute": null,
+        "key": "examples-typography.msg0014"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[0]/p[2]",
+        "source": "Liberation gives our laboratories a consistent voice across interfaces, texts, code and languages. This site uses the actual WOFF2 files prepared by Philipp Klinz in LiberationFontsWeb, served locally with each laboratory.",
+        "attribute": null,
+        "key": "examples-typography.msg0015"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[0]/div[3]/div[0]",
+        "source": "<s0>4</s0><s1>Font families</s1>",
+        "attribute": null,
+        "key": "examples-typography.msg0016"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[0]/div[3]/div[1]",
+        "source": "<s0>4</s0><s1>Faces per family</s1>",
+        "attribute": null,
+        "key": "examples-typography.msg0017"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[0]/div[3]/div[2]",
+        "source": "<s0>5</s0><s1>Character subsets</s1>",
+        "attribute": null,
+        "key": "examples-typography.msg0018"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[0]/div[3]/div[3]",
+        "source": "<s0>24</s0><s1>EU language samples</s1>",
+        "attribute": null,
+        "key": "examples-typography.msg0019"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[1]/div[0]/div[0]/h2[0]",
+        "source": "A role for every voice.",
+        "attribute": null,
+        "key": "examples-typography.msg0020"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[1]/div[0]/div[0]/p[1]",
+        "source": "Choose a family for the job. Regular, italic, bold and bold italic are real faces at weights 400 and 700.",
+        "attribute": null,
+        "key": "examples-typography.msg0021"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[1]/div[1]/article[0]/p[2]",
+        "source": "Interfaces, navigation and everyday reading. This is the default voice of the laboratory.",
+        "attribute": null,
+        "key": "examples-typography.msg0022"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[1]/div[1]/article[1]/p[2]",
+        "source": "Editorial emphasis, quotations and longer reading. Give paragraphs comfortable line spacing.",
+        "attribute": null,
+        "key": "examples-typography.msg0023"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[1]/div[1]/article[2]/p[2]",
+        "source": "Code, identifiers and aligned numbers. Equal character widths make sequences easier to compare.",
+        "attribute": null,
+        "key": "examples-typography.msg0024"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[1]/div[1]/article[3]/p[2]",
+        "source": "Compact headings and short labels. Keep reading text comfortably sized instead of squeezing more into every line.",
+        "attribute": null,
+        "key": "examples-typography.msg0025"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[2]/div[0]/div[0]/h2[0]",
+        "source": "Try the writing you actually use.",
+        "attribute": null,
+        "key": "examples-typography.msg0026"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[2]/div[0]/div[0]/p[1]",
+        "source": "Change the family, face or sample language, then edit the text. Changing the interface language preserves your experiment.",
+        "attribute": null,
+        "key": "examples-typography.msg0027"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[2]/div[1]/div[0]/label[0]/span[0]",
+        "source": "Font family",
+        "attribute": null,
+        "key": "examples-typography.msg0028"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[2]/div[1]/div[0]/label[1]/span[0]",
+        "source": "Face",
+        "attribute": null,
+        "key": "examples-typography.msg0029"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[2]/div[1]/div[0]/label[1]/select[1]/option[0]",
+        "source": "Regular · 400",
+        "attribute": null,
+        "key": "examples-typography.msg0030"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[2]/div[1]/div[0]/label[1]/select[1]/option[1]",
+        "source": "Italic · 400",
+        "attribute": null,
+        "key": "examples-typography.msg0031"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[2]/div[1]/div[0]/label[1]/select[1]/option[2]",
+        "source": "Bold · 700",
+        "attribute": null,
+        "key": "examples-typography.msg0032"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[2]/div[1]/div[0]/label[1]/select[1]/option[3]",
+        "source": "Bold italic · 700",
+        "attribute": null,
+        "key": "examples-typography.msg0033"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[2]/div[1]/div[0]/label[2]/span[0]",
+        "source": "Sample language",
+        "attribute": null,
+        "key": "examples-typography.msg0034"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[2]/div[1]/div[0]/label[3]/span[0]",
+        "source": "Text size",
+        "attribute": null,
+        "key": "examples-typography.msg0035"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[2]/div[1]/label[1]/span[0]",
+        "source": "Your sample text",
+        "attribute": null,
+        "key": "examples-typography.msg0036"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[2]/div[1]/p[2]",
+        "source": "The sample stays on this page. Nothing you type is sent to a server.",
+        "attribute": null,
+        "key": "examples-typography.msg0037"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[3]/div[0]/div[0]/h2[0]",
+        "source": "Watch the subsets become available.",
+        "attribute": null,
+        "key": "examples-typography.msg0038"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[3]/div[0]/div[0]/p[1]",
+        "source": "Choose a Greek or Bulgarian sample, or try the mathematical symbols. The monitor reads the preview's own font faces without preloading them.",
+        "attribute": null,
+        "key": "examples-typography.msg0039"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[3]/div[1]/div[1]/table[0]/thead[0]/tr[0]/th[0]",
+        "source": "Subset",
+        "attribute": null,
+        "key": "examples-typography.msg0040"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[3]/div[1]/div[1]/table[0]/thead[0]/tr[0]/th[1]",
+        "source": "Current text",
+        "attribute": null,
+        "key": "examples-typography.msg0041"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[3]/div[1]/div[1]/table[0]/thead[0]/tr[0]/th[2]",
+        "source": "File size",
+        "attribute": null,
+        "key": "examples-typography.msg0042"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[3]/div[1]/div[1]/table[0]/thead[0]/tr[0]/th[3]",
+        "source": "Face status",
+        "attribute": null,
+        "key": "examples-typography.msg0043"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[3]/div[1]/p[2]",
+        "source": "Already loaded faces stay available while you explore. File sizes describe the stored WOFF2 files, not network traffic: the browser may reuse its cache.",
+        "attribute": null,
+        "key": "examples-typography.msg0044"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[3]/div[2]/article[0]/h3[0]",
+        "source": "Characters decide.",
+        "attribute": null,
+        "key": "examples-typography.msg0045"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[3]/div[2]/article[0]/p[1]",
+        "source": "The browser matches family, weight, style and characters. A language can use several subsets; different languages can share one. The lang attribute describes the language, while unicode-range controls character matching.",
+        "attribute": null,
+        "key": "examples-typography.msg0046"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[3]/div[2]/article[1]/h3[0]",
+        "source": "Read while loading.",
+        "attribute": null,
+        "key": "examples-typography.msg0047"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[3]/div[2]/article[1]/p[1]",
+        "source": "font-display: swap lets fallback text appear while the requested font becomes available. It controls display timing; it does not choose the subset.",
+        "attribute": null,
+        "key": "examples-typography.msg0048"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[3]/div[2]/article[2]/h3[0]",
+        "source": "Coverage has boundaries.",
+        "attribute": null,
+        "key": "examples-typography.msg0049"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[3]/div[2]/article[2]/p[1]",
+        "source": "These files cover Latin, extended Latin, Greek, Cyrillic and selected mathematical symbols. Combining marks, emoji and other scripts may use fallback fonts. The math subset is not a complete equation font.",
+        "attribute": null,
+        "key": "examples-typography.msg0050"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[4]/div[0]/div[0]/h2[0]",
+        "source": "Use the same files in your laboratory.",
+        "attribute": null,
+        "key": "examples-typography.msg0051"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[4]/div[0]/div[0]/p[1]",
+        "source": "The starter already includes the fonts. Keep its fonts folder beside modern-objectivity.css when copying it. No CDN, package runtime or build step is needed.",
+        "attribute": null,
+        "key": "examples-typography.msg0052"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[4]/div[1]/article[0]/h3[0]",
+        "source": "Include the bundle.",
+        "attribute": null,
+        "key": "examples-typography.msg0053"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[4]/div[1]/article[0]/p[1]",
+        "source": "For a separate project, copy the font folder with its notices and load the bundle. You can also choose an individual family stylesheet.",
+        "attribute": null,
+        "key": "examples-typography.msg0054"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[4]/div[1]/article[1]/h3[0]",
+        "source": "Assign semantic roles.",
+        "attribute": null,
+        "key": "examples-typography.msg0055"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[4]/div[1]/article[1]/p[1]",
+        "source": "Use the Web family names. Keep generic fallbacks for unavailable fonts or characters. Request 400 or 700 when you want the supplied regular or bold face.",
+        "attribute": null,
+        "key": "examples-typography.msg0056"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[4]/details[2]/summary[0]",
+        "source": "Inspect a subset declaration.",
+        "attribute": null,
+        "key": "examples-typography.msg0057"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[4]/details[2]/p[1]",
+        "source": "This is the regular Greek face from the package. Declaring it makes it available; using matching characters causes the browser to request it. Avoid preloading every subset.",
+        "attribute": null,
+        "key": "examples-typography.msg0058"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[4]/details[3]/summary[0]",
+        "source": "Keep language and typography separate.",
+        "attribute": null,
+        "key": "examples-typography.msg0059"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[4]/details[3]/p[1]",
+        "source": "Use the correct lang value for pronunciation, hyphenation and language-aware tools. Selecting a font does not translate content or guarantee that every glyph is present.",
+        "attribute": null,
+        "key": "examples-typography.msg0060"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[5]/h2[0]",
+        "source": "Source, credit and reuse.",
+        "attribute": null,
+        "key": "examples-typography.msg0061"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[5]/p[1]",
+        "source": "The font files are copied unchanged from Philipp Klinz's LiberationFontsWeb repository. The package records its source commit and file hashes. Sans, Serif and Mono retain the SIL Open Font License; Sans Narrow's upstream GPL license and font exception are also included.",
+        "attribute": null,
+        "key": "examples-typography.msg0062"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[5]/ul[2]/li[1]",
+        "source": "<s0>Font authors and web preparation</s0>",
+        "attribute": null,
+        "key": "examples-typography.msg0063"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[5]/ul[2]/li[2]",
+        "source": "<s0>Sans, Serif and Mono license</s0>",
+        "attribute": null,
+        "key": "examples-typography.msg0064"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[5]/ul[2]/li[3]",
+        "source": "<s0>Sans Narrow license and exception</s0>",
+        "attribute": null,
+        "key": "examples-typography.msg0065"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[5]/ul[2]/li[4]",
+        "source": "<s0>Source version and file hashes</s0>",
+        "attribute": null,
+        "key": "examples-typography.msg0066"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[5]/ul[2]/li[5]",
+        "source": "<s0>CSS Fonts: character ranges</s0>",
+        "attribute": null,
+        "key": "examples-typography.msg0067"
+      },
+      {
+        "locator": "html/body[1]/div[0]/main[1]/div[1]/section[5]/ul[2]/li[6]",
+        "source": "<s0>CSS Font Loading API</s0>",
+        "attribute": null,
+        "key": "examples-typography.msg0068"
+      }
+    ]
+  },
   "starter-index": {
     "next": 65,
     "entries": [
@@ -2286,7 +2705,7 @@
     ]
   },
   "readme": {
-    "next": 48,
+    "next": 51,
     "entries": [
       {
         "locator": "html/head[0]/title[2]",
@@ -2356,48 +2775,60 @@
       },
       {
         "locator": "html/body[1]/main[0]/article[1]/table[4]/tbody[1]/tr[1]/td[0]",
+        "source": "<s0>Typography lab</s0>",
+        "attribute": null,
+        "key": "readme.msg0048"
+      },
+      {
+        "locator": "html/body[1]/main[0]/article[1]/table[4]/tbody[1]/tr[1]/td[1]",
+        "source": "Four local web-font families, 24 language samples, actual subset-loading states and integration recipes",
+        "attribute": null,
+        "key": "readme.msg0049"
+      },
+      {
+        "locator": "html/body[1]/main[0]/article[1]/table[4]/tbody[1]/tr[2]/td[0]",
         "source": "<s0>Lab console</s0>",
         "attribute": null,
         "key": "readme.msg0012"
       },
       {
-        "locator": "html/body[1]/main[0]/article[1]/table[4]/tbody[1]/tr[1]/td[1]",
+        "locator": "html/body[1]/main[0]/article[1]/table[4]/tbody[1]/tr[2]/td[1]",
         "source": "Functional data generation, plotting, filter/search, inspection, CSV export",
         "attribute": null,
         "key": "readme.msg0013"
       },
       {
-        "locator": "html/body[1]/main[0]/article[1]/table[4]/tbody[1]/tr[2]/td[0]",
+        "locator": "html/body[1]/main[0]/article[1]/table[4]/tbody[1]/tr[3]/td[0]",
         "source": "<s0>Interactive experiment</s0>",
         "attribute": null,
         "key": "readme.msg0014"
       },
       {
-        "locator": "html/body[1]/main[0]/article[1]/table[4]/tbody[1]/tr[2]/td[1]",
+        "locator": "html/body[1]/main[0]/article[1]/table[4]/tbody[1]/tr[3]/td[1]",
         "source": "Real point–line–time wave model with sliders, play/pause, stepping and probing",
         "attribute": null,
         "key": "readme.msg0015"
       },
       {
-        "locator": "html/body[1]/main[0]/article[1]/table[4]/tbody[1]/tr[3]/td[0]",
+        "locator": "html/body[1]/main[0]/article[1]/table[4]/tbody[1]/tr[4]/td[0]",
         "source": "<s0>Multilingual pattern</s0>",
         "attribute": null,
         "key": "readme.msg0016"
       },
       {
-        "locator": "html/body[1]/main[0]/article[1]/table[4]/tbody[1]/tr[3]/td[1]",
+        "locator": "html/body[1]/main[0]/article[1]/table[4]/tbody[1]/tr[4]/td[1]",
         "source": "24 local sample catalogues, plural forms, numeric formatting, checked source revisions and state-preserving language changes",
         "attribute": null,
         "key": "readme.msg0017"
       },
       {
-        "locator": "html/body[1]/main[0]/article[1]/table[4]/tbody[1]/tr[4]/td[0]",
+        "locator": "html/body[1]/main[0]/article[1]/table[4]/tbody[1]/tr[5]/td[0]",
         "source": "<s0>Starter lab</s0>",
         "attribute": null,
         "key": "readme.msg0018"
       },
       {
-        "locator": "html/body[1]/main[0]/article[1]/table[4]/tbody[1]/tr[4]/td[1]",
+        "locator": "html/body[1]/main[0]/article[1]/table[4]/tbody[1]/tr[5]/td[1]",
         "source": "Copyable app shell for a new laboratory, with standalone CSS and JavaScript",
         "attribute": null,
         "key": "readme.msg0019"
@@ -2440,7 +2871,7 @@
       },
       {
         "locator": "html/body[1]/main[0]/article[1]/ul[12]/li[1]",
-        "source": "<s0>Typography:</s0> Liberation Sans / Liberation Mono with system fallbacks.",
+        "source": "<s0>Typography:</s0> locally served Liberation Sans Web, Serif Web and Mono Web, with character subsets and system fallbacks.",
         "attribute": null,
         "key": "readme.msg0026"
       },
@@ -2563,6 +2994,12 @@
         "source": "<s0>License:</s0> <s1>GNU GPL version 2 only (GPL-2.0-only)</s1>. <s2>Version:</s2> practical style v0.1.0-draft. Verify accessibility and scientific correctness for your real use cases.",
         "attribute": null,
         "key": "readme.msg0046"
+      },
+      {
+        "locator": "html/body[1]/main[0]/article[1]/p[20]",
+        "source": "The bundled LiberationFontsWeb files retain their font licenses and credits in <s0></s0>, with self-contained copies in the starter and multilingual pattern.",
+        "attribute": null,
+        "key": "readme.msg0050"
       },
       {
         "locator": "html/body[1]/main[0]/footer[2]",
@@ -5880,7 +6317,7 @@
     ]
   },
   "guides-visual-style-spec": {
-    "next": 58,
+    "next": 59,
     "entries": [
       {
         "locator": "html/head[0]/title[2]",
@@ -5938,7 +6375,7 @@
       },
       {
         "locator": "html/body[1]/main[0]/article[1]/ul[3]/li[3]",
-        "source": "<s0>Type:</s0> Liberation Sans for UI and reading, Liberation Mono for technical labels and figures, Liberation Serif for deliberate editorial accents; local system fallbacks included.",
+        "source": "<s0>Type:</s0> Locally served Liberation Sans Web for UI and reading, Liberation Mono Web for technical labels and figures, Liberation Serif Web for editorial accents; system fallbacks remain available.",
         "attribute": null,
         "key": "guides-visual-style-spec.msg0010"
       },
@@ -5991,229 +6428,235 @@
         "key": "guides-visual-style-spec.msg0018"
       },
       {
-        "locator": "html/body[1]/main[0]/article[1]/h2[8]",
+        "locator": "html/body[1]/main[0]/article[1]/p[8]",
+        "source": "<s0>Explore families, languages and subset loading in the typography lab</s0>.",
+        "attribute": null,
+        "key": "guides-visual-style-spec.msg0058"
+      },
+      {
+        "locator": "html/body[1]/main[0]/article[1]/h2[9]",
         "source": "3. Responsive layout",
         "attribute": null,
         "key": "guides-visual-style-spec.msg0019"
       },
       {
-        "locator": "html/body[1]/main[0]/article[1]/p[9]",
+        "locator": "html/body[1]/main[0]/article[1]/p[10]",
         "source": "The full shell uses a 254 px navigation rail and fluid content area. At 900 px width or narrower, navigation becomes a horizontal, scrollable section. At 640 px or narrower, content grids become single-column. Data tables maintain readable columns and scroll horizontally rather than compressing values beyond recognition.",
         "attribute": null,
         "key": "guides-visual-style-spec.msg0020"
       },
       {
-        "locator": "html/body[1]/main[0]/article[1]/h2[10]",
+        "locator": "html/body[1]/main[0]/article[1]/h2[11]",
         "source": "4. Core components",
         "attribute": null,
         "key": "guides-visual-style-spec.msg0021"
       },
       {
-        "locator": "html/body[1]/main[0]/article[1]/table[11]/thead[0]/tr[0]/th[0]",
+        "locator": "html/body[1]/main[0]/article[1]/table[12]/thead[0]/tr[0]/th[0]",
         "source": "Component",
         "attribute": null,
         "key": "guides-visual-style-spec.msg0022"
       },
       {
-        "locator": "html/body[1]/main[0]/article[1]/table[11]/thead[0]/tr[0]/th[1]",
+        "locator": "html/body[1]/main[0]/article[1]/table[12]/thead[0]/tr[0]/th[1]",
         "source": "CSS classes",
         "attribute": null,
         "key": "guides-visual-style-spec.msg0023"
       },
       {
-        "locator": "html/body[1]/main[0]/article[1]/table[11]/thead[0]/tr[0]/th[2]",
+        "locator": "html/body[1]/main[0]/article[1]/table[12]/thead[0]/tr[0]/th[2]",
         "source": "Functional usage",
         "attribute": null,
         "key": "guides-visual-style-spec.msg0024"
       },
       {
-        "locator": "html/body[1]/main[0]/article[1]/table[11]/tbody[1]/tr[0]/td[0]",
+        "locator": "html/body[1]/main[0]/article[1]/table[12]/tbody[1]/tr[0]/td[0]",
         "source": "App shell",
         "attribute": null,
         "key": "guides-visual-style-spec.msg0025"
       },
       {
-        "locator": "html/body[1]/main[0]/article[1]/table[11]/tbody[1]/tr[0]/td[2]",
+        "locator": "html/body[1]/main[0]/article[1]/table[12]/tbody[1]/tr[0]/td[2]",
         "source": "Navigation + content",
         "attribute": null,
         "key": "guides-visual-style-spec.msg0026"
       },
       {
-        "locator": "html/body[1]/main[0]/article[1]/table[11]/tbody[1]/tr[1]/td[0]",
+        "locator": "html/body[1]/main[0]/article[1]/table[12]/tbody[1]/tr[1]/td[0]",
         "source": "Cards and panels",
         "attribute": null,
         "key": "guides-visual-style-spec.msg0027"
       },
       {
-        "locator": "html/body[1]/main[0]/article[1]/table[11]/tbody[1]/tr[1]/td[2]",
+        "locator": "html/body[1]/main[0]/article[1]/table[12]/tbody[1]/tr[1]/td[2]",
         "source": "Group relevant information",
         "attribute": null,
         "key": "guides-visual-style-spec.msg0028"
       },
       {
-        "locator": "html/body[1]/main[0]/article[1]/table[11]/tbody[1]/tr[2]/td[0]",
+        "locator": "html/body[1]/main[0]/article[1]/table[12]/tbody[1]/tr[2]/td[0]",
         "source": "Actions",
         "attribute": null,
         "key": "guides-visual-style-spec.msg0029"
       },
       {
-        "locator": "html/body[1]/main[0]/article[1]/table[11]/tbody[1]/tr[2]/td[2]",
+        "locator": "html/body[1]/main[0]/article[1]/table[12]/tbody[1]/tr[2]/td[2]",
         "source": "Distinct hierarchy and risk",
         "attribute": null,
         "key": "guides-visual-style-spec.msg0030"
       },
       {
-        "locator": "html/body[1]/main[0]/article[1]/table[11]/tbody[1]/tr[3]/td[0]",
+        "locator": "html/body[1]/main[0]/article[1]/table[12]/tbody[1]/tr[3]/td[0]",
         "source": "Fields",
         "attribute": null,
         "key": "guides-visual-style-spec.msg0031"
       },
       {
-        "locator": "html/body[1]/main[0]/article[1]/table[11]/tbody[1]/tr[3]/td[2]",
+        "locator": "html/body[1]/main[0]/article[1]/table[12]/tbody[1]/tr[3]/td[2]",
         "source": "Accessible label + input",
         "attribute": null,
         "key": "guides-visual-style-spec.msg0032"
       },
       {
-        "locator": "html/body[1]/main[0]/article[1]/table[11]/tbody[1]/tr[4]/td[0]",
+        "locator": "html/body[1]/main[0]/article[1]/table[12]/tbody[1]/tr[4]/td[0]",
         "source": "Status",
         "attribute": null,
         "key": "guides-visual-style-spec.msg0033"
       },
       {
-        "locator": "html/body[1]/main[0]/article[1]/table[11]/tbody[1]/tr[4]/td[2]",
+        "locator": "html/body[1]/main[0]/article[1]/table[12]/tbody[1]/tr[4]/td[2]",
         "source": "Success, warning, error, info",
         "attribute": null,
         "key": "guides-visual-style-spec.msg0034"
       },
       {
-        "locator": "html/body[1]/main[0]/article[1]/table[11]/tbody[1]/tr[5]/td[0]",
+        "locator": "html/body[1]/main[0]/article[1]/table[12]/tbody[1]/tr[5]/td[0]",
         "source": "Tables",
         "attribute": null,
         "key": "guides-visual-style-spec.msg0035"
       },
       {
-        "locator": "html/body[1]/main[0]/article[1]/table[11]/tbody[1]/tr[5]/td[2]",
+        "locator": "html/body[1]/main[0]/article[1]/table[12]/tbody[1]/tr[5]/td[2]",
         "source": "Numeric alignment + overflow",
         "attribute": null,
         "key": "guides-visual-style-spec.msg0036"
       },
       {
-        "locator": "html/body[1]/main[0]/article[1]/table[11]/tbody[1]/tr[6]/td[0]",
+        "locator": "html/body[1]/main[0]/article[1]/table[12]/tbody[1]/tr[6]/td[0]",
         "source": "Charts",
         "attribute": null,
         "key": "guides-visual-style-spec.msg0037"
       },
       {
-        "locator": "html/body[1]/main[0]/article[1]/table[11]/tbody[1]/tr[6]/td[2]",
+        "locator": "html/body[1]/main[0]/article[1]/table[12]/tbody[1]/tr[6]/td[2]",
         "source": "Visual layer, SVG content",
         "attribute": null,
         "key": "guides-visual-style-spec.msg0038"
       },
       {
-        "locator": "html/body[1]/main[0]/article[1]/table[11]/tbody[1]/tr[7]/td[0]",
+        "locator": "html/body[1]/main[0]/article[1]/table[12]/tbody[1]/tr[7]/td[0]",
         "source": "Tabs",
         "attribute": null,
         "key": "guides-visual-style-spec.msg0039"
       },
       {
-        "locator": "html/body[1]/main[0]/article[1]/table[11]/tbody[1]/tr[7]/td[2]",
+        "locator": "html/body[1]/main[0]/article[1]/table[12]/tbody[1]/tr[7]/td[2]",
         "source": "Use ARIA tab and panel semantics",
         "attribute": null,
         "key": "guides-visual-style-spec.msg0040"
       },
       {
-        "locator": "html/body[1]/main[0]/article[1]/table[11]/tbody[1]/tr[8]/td[0]",
+        "locator": "html/body[1]/main[0]/article[1]/table[12]/tbody[1]/tr[8]/td[0]",
         "source": "Progress",
         "attribute": null,
         "key": "guides-visual-style-spec.msg0041"
       },
       {
-        "locator": "html/body[1]/main[0]/article[1]/table[11]/tbody[1]/tr[8]/td[2]",
+        "locator": "html/body[1]/main[0]/article[1]/table[12]/tbody[1]/tr[8]/td[2]",
         "source": "Actual or <s0>clearly labeled simulated</s0> progress",
         "attribute": null,
         "key": "guides-visual-style-spec.msg0042"
       },
       {
-        "locator": "html/body[1]/main[0]/article[1]/h2[12]",
+        "locator": "html/body[1]/main[0]/article[1]/h2[13]",
         "source": "5. A real HTML component",
         "attribute": null,
         "key": "guides-visual-style-spec.msg0043"
       },
       {
-        "locator": "html/body[1]/main[0]/article[1]/p[14]",
+        "locator": "html/body[1]/main[0]/article[1]/p[15]",
         "source": "A lab should implement a meaningful handler for its actions. Styling alone does not create behavior.",
         "attribute": null,
         "key": "guides-visual-style-spec.msg0044"
       },
       {
-        "locator": "html/body[1]/main[0]/article[1]/h2[15]",
+        "locator": "html/body[1]/main[0]/article[1]/h2[16]",
         "source": "6. Change the style for your own lab",
         "attribute": null,
         "key": "guides-visual-style-spec.msg0045"
       },
       {
-        "locator": "html/body[1]/main[0]/article[1]/p[16]",
+        "locator": "html/body[1]/main[0]/article[1]/p[17]",
         "source": "Override semantic roles rather than replacing each component selector:",
         "attribute": null,
         "key": "guides-visual-style-spec.msg0046"
       },
       {
-        "locator": "html/body[1]/main[0]/article[1]/p[18]",
+        "locator": "html/body[1]/main[0]/article[1]/p[19]",
         "source": "Check contrast, focus visibility and status differentiation again after any palette changes.",
         "attribute": null,
         "key": "guides-visual-style-spec.msg0047"
       },
       {
-        "locator": "html/body[1]/main[0]/article[1]/h2[19]",
+        "locator": "html/body[1]/main[0]/article[1]/h2[20]",
         "source": "7. What works in the examples",
         "attribute": null,
         "key": "guides-visual-style-spec.msg0048"
       },
       {
-        "locator": "html/body[1]/main[0]/article[1]/ul[20]/li[0]",
+        "locator": "html/body[1]/main[0]/article[1]/ul[21]/li[0]",
         "source": "<s0>Style showcase</s0>: theme switching, active tabs, input controls, filterable table, simulated progress and toast feedback.",
         "attribute": null,
         "key": "guides-visual-style-spec.msg0049"
       },
       {
-        "locator": "html/body[1]/main[0]/article[1]/ul[20]/li[1]",
+        "locator": "html/body[1]/main[0]/article[1]/ul[21]/li[1]",
         "source": "<s0>Lab console</s0>: local synthetic data generation, status classification, filtering, detail inspection, chart updates and CSV export.",
         "attribute": null,
         "key": "guides-visual-style-spec.msg0050"
       },
       {
-        "locator": "html/body[1]/main[0]/article[1]/ul[20]/li[2]",
+        "locator": "html/body[1]/main[0]/article[1]/ul[21]/li[2]",
         "source": "<s0>Live experiment</s0>: mathematically defined wave, changing parameters, pause, play, step, reset and inspectable probe values.",
         "attribute": null,
         "key": "guides-visual-style-spec.msg0051"
       },
       {
-        "locator": "html/body[1]/main[0]/article[1]/ul[20]/li[3]",
+        "locator": "html/body[1]/main[0]/article[1]/ul[21]/li[3]",
         "source": "<s0>Standalone starter</s0>: working application shell, local synthetic observations, search, filtering, CSV export and clear empty state.",
         "attribute": null,
         "key": "guides-visual-style-spec.msg0052"
       },
       {
-        "locator": "html/body[1]/main[0]/article[1]/ul[20]/li[4]",
+        "locator": "html/body[1]/main[0]/article[1]/ul[21]/li[4]",
         "source": "<s0>Multilingual pattern</s0>: a 24-language sample panel with local catalogues, number/plural formatting, state-preserving switches and source checks. <s1>MO-13</s1> applies to the entire published style kit, all examples and handbook content.",
         "attribute": null,
         "key": "guides-visual-style-spec.msg0053"
       },
       {
-        "locator": "html/body[1]/main[0]/article[1]/p[21]",
+        "locator": "html/body[1]/main[0]/article[1]/p[22]",
         "source": "<s0>Data integrity:</s0> Every generated value is explicitly labeled synthetic. No example implies a real instrument has been connected or a user study has been completed.",
         "attribute": null,
         "key": "guides-visual-style-spec.msg0054"
       },
       {
-        "locator": "html/body[1]/main[0]/article[1]/h2[22]",
+        "locator": "html/body[1]/main[0]/article[1]/h2[23]",
         "source": "8. Implementation limits",
         "attribute": null,
         "key": "guides-visual-style-spec.msg0055"
       },
       {
-        "locator": "html/body[1]/main[0]/article[1]/p[23]",
+        "locator": "html/body[1]/main[0]/article[1]/p[24]",
         "source": "The stylesheet is a concrete starting point; it does not certify WCAG compliance or universal usability. Verify it on target browsers, devices and assistive technologies before deploying a production laboratory. No backend, authentication, storage or external instrumentation is provided.",
         "attribute": null,
         "key": "guides-visual-style-spec.msg0056"
@@ -6394,7 +6837,7 @@
     ]
   },
   "starter-readme": {
-    "next": 26,
+    "next": 27,
     "entries": [
       {
         "locator": "html/head[0]/title[2]",
@@ -6455,6 +6898,12 @@
         "source": "<s0></s0> — optional helper for the light/dark theme and sample notifications.",
         "attribute": null,
         "key": "starter-readme.msg0010"
+      },
+      {
+        "locator": "html/body[1]/main[0]/article[1]/ul[4]/li[3]",
+        "source": "<s0></s0> — local WOFF2 subsets from LiberationFontsWeb, with source hashes, credits and font licenses. Keep this folder beside the stylesheet.",
+        "attribute": null,
+        "key": "starter-readme.msg0026"
       },
       {
         "locator": "html/body[1]/main[0]/article[1]/h2[5]",
@@ -6536,7 +6985,7 @@
       },
       {
         "locator": "html/body[1]/main[0]/article[1]/p[15]",
-        "source": "GNU General Public License version 2 only, <s0>GPL-2.0-only</s0>. Check the license conditions when copying or distributing this starter.",
+        "source": "The starter code uses <s0>GPL-2.0-only</s0>. The bundled fonts retain their own notices in <s1></s1>: SIL OFL 1.1 for Sans, Serif and Mono; the upstream GPL license with its font exception for Sans Narrow. Preserve these notices when copying the folder.",
         "attribute": null,
         "key": "starter-readme.msg0024"
       },

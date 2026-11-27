@@ -7,7 +7,7 @@ This page documents the **actual CSS implementation**, not theoretical recommend
 - **Character:** structured laboratory instrument / editorial technical interface.
 - **Composition:** deep graphite navigation rail, precise typography, restrained low-relief cards, thin lines, high information density with generous reading space.
 - **Default:** light canvas with teal action accent; dark mode supported through semantic tokens.
-- **Type:** Liberation Sans for UI and reading, Liberation Mono for technical labels and figures, Liberation Serif for deliberate editorial accents; local system fallbacks included.
+- **Type:** Locally served Liberation Sans Web for UI and reading, Liberation Mono Web for technical labels and figures, Liberation Serif Web for editorial accents; system fallbacks remain available.
 - **Layout:** 4 px base rhythm, square corners (0 px radius) on all UI containers and controls, clear type hierarchy.
 - **Interaction:** visible focus, semantic status distinctions, filterable data, explicit handling of empty/error states.
 
@@ -27,6 +27,8 @@ This is the first **practical example skin**, not a restriction that every adopt
 | `--mo-focus` | `#0B9FBE` | `#81D8FF` |
 
 For all values, including status colors, consult the CSS. Recheck contrast before changing tokens.
+
+[Explore families, languages and subset loading in the typography lab](../examples/typography.html).
 
 ## 3. Responsive layout
 

@@ -9,6 +9,7 @@
 | Live example | What it demonstrates |
 | --- | --- |
 | [Style showcase](index.html) | Colors, typography, layout, cards, buttons, inputs, states, tables, charts and themes |
+| [Typography lab](examples/typography.html) | Four local web-font families, 24 language samples, actual subset-loading states and integration recipes |
 | [Lab console](examples/lab-console.html) | Functional data generation, plotting, filter/search, inspection, CSV export |
 | [Interactive experiment](examples/experiment.html) | Real point–line–time wave model with sliders, play/pause, stepping and probing |
 | [Multilingual pattern](patterns/i18n/index.html) | 24 local sample catalogues, plural forms, numeric formatting, checked source revisions and state-preserving language changes |
@@ -42,7 +43,7 @@ Open [http://localhost:8000](http://localhost:8000).
 ## Design specification
 
 - **Colors:** light canvas, graphite, peacock-teal accents; full light and dark themes with semantic tokens.
-- **Typography:** Liberation Sans / Liberation Mono with system fallbacks.
+- **Typography:** locally served Liberation Sans Web, Serif Web and Mono Web, with character subsets and system fallbacks.
 - **Layout:** responsive laboratory rail, data panels, 4 px base spacing, deliberate hierarchy.
 - **Components:** actions, inputs, tables, status, progress, tab navigation, charts.
 - **Real demonstrations:** JavaScript behavior and generated values, explicitly marked as simulations.
@@ -70,3 +71,5 @@ The practical style is one **reference implementation** of Modern Objectivity. T
 The actual lab UI examples intentionally have a **specific aesthetic**. It can be modified without abandoning the design language.
 
 **License:** [GNU GPL version 2 only (GPL-2.0-only)](LICENSE). **Version:** practical style v0.1.0-draft. Verify accessibility and scientific correctness for your real use cases.
+
+The bundled LiberationFontsWeb files retain their font licenses and credits in `styles/fonts/liberation/`, with self-contained copies in the starter and multilingual pattern.
